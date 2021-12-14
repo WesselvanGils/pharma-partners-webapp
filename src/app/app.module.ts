@@ -2,10 +2,10 @@ import { NgModule } from "@angular/core"
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
 import { HttpClientModule } from "@angular/common/http"
+import { FormsModule, ReactiveFormsModule } from "@angular/forms"
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
-import { RegisterComponent } from "./core/auth/register/register.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
 import { AboutComponent } from "./pages/about/about.component"
 import { SpinnerComponent } from "./shared/spinner/spinner.component"
@@ -18,7 +18,6 @@ import { AlertComponent } from "./shared/alert/alert.component"
 @NgModule({
 	declarations: [
 		LoginComponent,
-		RegisterComponent,
 		HomepageComponent,
 		AboutComponent,
 		SpinnerComponent,
@@ -27,14 +26,14 @@ import { AlertComponent } from "./shared/alert/alert.component"
 		FooterComponent,
   		RootComponent,
 		AlertComponent,
-		LoginComponent,
-		RegisterComponent
 	],
 	imports: [
 		BrowserModule, 
 		AppRoutingModule,
 		NgbModule,
-		HttpClientModule
+		HttpClientModule,
+		FormsModule,
+		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [RootComponent]

@@ -1,1 +1,50 @@
-<p>login works!</p>
+<div class="container login-container">
+	<div class="row justify-content-center">
+		<div class="col-sm-10 col-md-8 col-lg-6 my-5">
+			<div class="card card-auth shadow-lg p-3 px-md-5 py-md-4">
+				<h2>Sign In</h2>
+				<form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+					<div class="form-group">
+						<input type="email" placeholder="Email address" formControlName="email" id="inputEmail"
+							aria-describedby="emailHelp"
+							[ngClass]="{'is-invalid':loginForm.get('email').invalid && loginForm.get('email').touched}" />
+						<span *ngIf="
+							!loginForm.get('email').valid && loginForm.get('email').touched
+							"class="invalid-feedback">
+							<p id="email-invalid">Please enter a valid email address</p>
+						</span>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" formControlName="password"
+							id="inputPassword" [ngClass]="{
+								'is-invalid':
+								loginForm.get('password').invalid &&
+								loginForm.get('password').touched}" />
+						<span *ngIf="
+							!loginForm.get('password').valid &&
+							loginForm.get('password').touched" class="invalid-feedback">
+							<p id="password-invalid">Please enter a valid password</p>
+						</span>
+					</div>
+
+					<div class="form-group">
+						<button id="submitbutton" class="btn btn-block" type="submit"
+							[disabled]="!loginForm.valid && !submitted">
+							Sign in
+						</button>
+					</div>
+
+					<p>
+						<a routerLink="/">Homepage</a> |
+						Don't have an account?
+						<a routerLink="/signup">Sign up</a>
+					</p>
+
+					<div class="form-group">
+						<app-alert></app-alert>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
