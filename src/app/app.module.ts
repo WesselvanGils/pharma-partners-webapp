@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core"
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
+import { HttpClientModule } from "@angular/common/http"
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -25,12 +26,15 @@ import { AlertComponent } from "./shared/alert/alert.component"
 		NavbarComponent,
 		FooterComponent,
   		RootComponent,
-		AlertComponent
+		AlertComponent,
+		LoginComponent,
+		RegisterComponent
 	],
 	imports: [
 		BrowserModule, 
 		AppRoutingModule,
-		NgbModule
+		NgbModule,
+		HttpClientModule
 	],
 	providers: [],
 	bootstrap: [RootComponent]

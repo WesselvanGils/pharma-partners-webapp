@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { EntityService } from './entity.service';
 import { LogItem } from '../models/logItem.model';
 import { environment } from 'src/environments/environment';

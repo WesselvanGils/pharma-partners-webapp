@@ -8,9 +8,7 @@ import { AlertService } from 'src/app/shared/alert/alert.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { LoggingService } from 'src/app/shared/logging.service';
 
-@Injectable({
-	providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class AuthService
 {
 	public currentUser$ = new BehaviorSubject<User>(undefined);
