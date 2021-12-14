@@ -10,7 +10,8 @@ import { AboutComponent } from "./pages/about/about.component"
 import { SpinnerComponent } from "./shared/spinner/spinner.component"
 import { LayoutComponent } from "./core/layout/layout.component"
 import { NavbarComponent } from "./core/navbar/navbar.component"
-import { FooterComponent } from "./core/footer/footer.component"
+import { FooterComponent } from "./core/footer/footer.component";
+import { RootComponent } from './core/root/root.component'
 
 @NgModule({
 	declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from "./core/footer/footer.component"
 		SpinnerComponent,
 		LayoutComponent,
 		NavbarComponent,
-		FooterComponent
+		FooterComponent,
+  		RootComponent
 	],
 	imports: [
 		BrowserModule, 
@@ -29,7 +31,7 @@ import { FooterComponent } from "./core/footer/footer.component"
 		NgbModule
 	],
 	providers: [],
-	bootstrap: [LayoutComponent]
+	bootstrap: [RootComponent]
 })
 
 export class AppModule {}
