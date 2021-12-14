@@ -12,6 +12,7 @@ import { LayoutComponent } from "./core/layout/layout.component"
 import { NavbarComponent } from "./core/navbar/navbar.component"
 import { FooterComponent } from "./core/footer/footer.component";
 import { RootComponent } from './core/root/root.component'
+import { AlertComponent } from "./shared/alert/alert.component"
 
 @NgModule({
 	declarations: [
@@ -23,7 +24,8 @@ import { RootComponent } from './core/root/root.component'
 		LayoutComponent,
 		NavbarComponent,
 		FooterComponent,
-  		RootComponent
+  		RootComponent,
+		AlertComponent
 	],
 	imports: [
 		BrowserModule, 
