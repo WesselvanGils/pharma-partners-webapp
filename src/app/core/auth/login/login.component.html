@@ -1,13 +1,14 @@
 <div class="container login-container">
 	<div class="row justify-content-center">
 		<div class="col-sm-10 col-md-8 col-lg-6 my-5">
-			<div class="card card-auth shadow-lg p-3 px-md-5 py-md-4">
+			<div class="card card-auth shadow-sm p-3 px-md-5 py-md-4">
 				<h2>Sign In</h2>
 				<form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 					<div class="form-group">
-						<input type="email" placeholder="Email address" formControlName="email" id="inputEmail"
+						<input type="email" class="form-control" placeholder="Email address" formControlName="email" id="inputEmail"
 							aria-describedby="emailHelp"
-							[ngClass]="{'is-invalid':loginForm.get('email').invalid && loginForm.get('email').touched}" />
+							[ngClass]="{'is-invalid':loginForm.get('email').invalid && loginForm.get('email').touched}" 
+							/>
 						<span *ngIf="
 							!loginForm.get('email').valid && loginForm.get('email').touched
 							"class="invalid-feedback">
@@ -15,7 +16,7 @@
 						</span>
 					</div>
 					<div class="form-group">
-						<input type="password" placeholder="Password" formControlName="password"
+						<input type="password" class="form-control" placeholder="Password" formControlName="password"
 							id="inputPassword" [ngClass]="{
 								'is-invalid':
 								loginForm.get('password').invalid &&
@@ -28,7 +29,7 @@
 					</div>
 
 					<div class="form-group">
-						<button id="submitbutton" class="btn btn-block" type="submit"
+						<button id="submitbutton" class="btn btn-outline-primary btn-block" type="submit"
 							[disabled]="!loginForm.valid && !submitted">
 							Log In
 						</button>
