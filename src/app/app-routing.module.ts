@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core"
 import { RouterModule, Routes } from "@angular/router"
 import { LoggedInAuthGuard } from "./core/auth/auth.guard"
 import { LoginComponent } from "./core/auth/login/login.component"
-import { RegisterComponent } from "./core/auth/register/register.component"
 import { LayoutComponent } from "./core/layout/layout.component"
 import { AboutComponent } from "./pages/about/about.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
@@ -19,7 +18,6 @@ const routes: Routes = [
 		]
 	},
 	{ path: "login", component: LoginComponent },
-	{ path: "register", component: RegisterComponent },
 	{path: "**", redirectTo: "/"}
 ]
 
