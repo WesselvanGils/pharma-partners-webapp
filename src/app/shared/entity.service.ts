@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Observable, catchError, throwError } from "rxjs";
-import { Entity } from "../models/entity";
+import { Entity } from "../models/entity.model";
 import { Alert } from "./alert/alert.service";
 
 const httpOptions = {
