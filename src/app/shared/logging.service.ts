@@ -17,7 +17,7 @@ export class LoggingService extends EntityService<LogItem>
 
     public log( message: string )
     {
-        console.log(message)
+        console.log(`${message} has been added to the logs`)
         this.logs.messages.push(message)
     }
 
