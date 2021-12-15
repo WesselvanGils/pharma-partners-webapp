@@ -96,7 +96,7 @@ export class AuthService
 			this.loggingService.log(`User with email: ${user.email} attempted to log out.`)		
 		
 			this.router
-				.navigate([ '/' ])
+				.navigate([ 'login' ])
 				.then((success) =>
 				{
 					// true when canDeactivate allows us to leave the page.
