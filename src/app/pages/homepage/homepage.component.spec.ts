@@ -1,25 +1,38 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing"
+import { LoggingService } from "src/app/shared/logging.service"
 
-import { HomepageComponent } from './homepage.component';
+import { HomepageComponent } from "./homepage.component"
 
-describe('HomepageComponent', () => {
-  let component: HomepageComponent;
-  let fixture: ComponentFixture<HomepageComponent>;
+describe("HomepageComponent", () =>
+{
+	let loggingServiceSpy
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HomepageComponent ]
-    })
-    .compileComponents();
-  });
+	let component: HomepageComponent
+	let fixture: ComponentFixture<HomepageComponent>
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HomepageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(async () =>
+	{
+		loggingServiceSpy = jasmine.createSpyObj("LoggingService", [ "log" ])
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+		await TestBed.configureTestingModule({
+			declarations: [ HomepageComponent ],
+			imports: [],
+			providers: 
+			[ 
+				{ provide: LoggingService, useValue: loggingServiceSpy}
+			]
+		}).compileComponents()
+	})
+
+	beforeEach(() =>
+	{
+		fixture = TestBed.createComponent(HomepageComponent)
+		component = fixture.componentInstance
+		fixture.detectChanges()
+	})
+
+	it("should create", () =>
+	{
+		expect(component).toBeTruthy()
+	})
+})
