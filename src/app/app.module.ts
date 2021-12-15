@@ -35,7 +35,7 @@ import { PatientComponent } from './pages/patient/patient.component'
 		MeetingComponent,
 		PatientListComponent,
 		PatientDetailComponent,
-  PatientComponent
+		PatientComponent
 	],
 	imports: [
 		BrowserModule,
@@ -46,6 +46,6 @@ import { PatientComponent } from './pages/patient/patient.component'
 		ReactiveFormsModule
 	],
 	providers: [],
-	bootstrap: [RootComponent]
+	bootstrap: [ RootComponent ]
 })
-export class AppModule {}
+export class AppModule { }
