@@ -11,9 +11,14 @@ import { AboutComponent } from "./pages/about/about.component"
 import { SpinnerComponent } from "./shared/spinner/spinner.component"
 import { LayoutComponent } from "./core/layout/layout.component"
 import { NavbarComponent } from "./core/navbar/navbar.component"
-import { FooterComponent } from "./core/footer/footer.component";
-import { RootComponent } from './core/root/root.component'
+import { FooterComponent } from "./core/footer/footer.component"
+import { RootComponent } from "./core/root/root.component"
 import { AlertComponent } from "./shared/alert/alert.component"
+import { CalendarComponent } from "./pages/calendar/calendar.component"
+import { MeetingComponent } from "./pages/meeting/meeting.component"
+import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
+import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
+import { PatientComponent } from './pages/patient/patient.component'
 
 @NgModule({
 	declarations: [
@@ -24,11 +29,16 @@ import { AlertComponent } from "./shared/alert/alert.component"
 		LayoutComponent,
 		NavbarComponent,
 		FooterComponent,
-  		RootComponent,
+		RootComponent,
 		AlertComponent,
+		CalendarComponent,
+		MeetingComponent,
+		PatientListComponent,
+		PatientDetailComponent,
+  PatientComponent
 	],
 	imports: [
-		BrowserModule, 
+		BrowserModule,
 		AppRoutingModule,
 		NgbModule,
 		HttpClientModule,
@@ -38,5 +48,4 @@ import { AlertComponent } from "./shared/alert/alert.component"
 	providers: [],
 	bootstrap: [RootComponent]
 })
-
 export class AppModule {}

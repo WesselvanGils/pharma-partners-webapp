@@ -7,5 +7,5 @@ import { Component } from "@angular/core"
 })
 export class LayoutComponent
 {
-	title = "Overwatch Hero Listing"
+	title = "Pharma Magic"
 }
