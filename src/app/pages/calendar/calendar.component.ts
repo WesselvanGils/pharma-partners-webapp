@@ -1,6 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from "@fullcalendar/angular"
+import { Meeting } from 'src/app/models/meeting.model';
+import { CalendarService } from './calendar.service';
 
 @Component({
 	selector: 'app-calendar',
@@ -9,29 +10,50 @@ import { CalendarOptions } from "@fullcalendar/angular"
 })
 export class CalendarComponent implements OnInit
 {
-	Events = [
-		{
-			title: "Event Name",
-			start: "2021-12-15T10:30:00",
-			end: "2021-12-15T11:30:00",
-			description: "Lecture"
-		}
-	];
+	Events;
 	calendarOptions: CalendarOptions;
 
-	constructor() { }
+	constructor(private calendarService: CalendarService) { }
 
 	ngOnInit()
 	{
+		this.calendarService.list().subscribe((result) =>
+			this.convertDates(result, (formattedDates: any[]) => 
+			{
+				this.Events = formattedDates
+				this.calendarOptions = {
+					initialView: 'dayGridWeek',
+					eventClick: this.handleEventClick.bind(this),
+					events: this.Events
+				}
+			})
+		)
+
 		this.calendarOptions = {
 			initialView: 'dayGridWeek',
-			dateClick: this.onDateClick.bind(this),
 			events: this.Events
 		}
 	}
 
-	onDateClick(res)
+	handleEventClick( arg ) 
 	{
-		// alert('Clicked on date : ' + res.dateStr)
+		alert(arg.event._def.title)	
+	}
+
+	convertDates(input: Meeting[], callback)
+	{
+
+		let result = []
+
+		input.forEach(meeting => 
+		{
+			result.push({
+				start: meeting.startDate,
+				end: meeting.endDate,
+				title: `${meeting.patient.firstname} ${meeting.subject}`,
+			})
+		})
+
+		callback(result)
 	}
 }
