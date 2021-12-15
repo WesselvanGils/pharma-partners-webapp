@@ -1,25 +1,58 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing"
+import { Router } from "@angular/router"
+import { of } from "rxjs"
+import { role, User } from "src/app/models/user.model"
+import { AuthService } from "../auth.service"
 
-import { LoginComponent } from './login.component';
+import { LoginComponent } from "./login.component"
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+describe("LoginComponent", () =>
+{
+	const expectedUserData: User =
+	{
+		_id: "123",
+		doctorPrefix: "",
+		email: "test@test.nl",
+		employeePrefix: "",
+		firstName: "test",
+		lastName: "test",
+		role: role.ADMIN,
+		token: "123"
+	}
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
-    })
-    .compileComponents();
-  });
+	let authServiceSpy
+	let routerSpy
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	let component: LoginComponent
+	let fixture: ComponentFixture<LoginComponent>
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+	beforeEach(async () =>
+	{
+		authServiceSpy = jasmine.createSpyObj("AuthService", [ "login", "getUserFromLocalStorage" ])
+		routerSpy = jasmine.createSpyObj("Router", [ "navigate" ])
+
+		await TestBed.configureTestingModule({
+			declarations: [ LoginComponent ],
+			imports: [],
+			providers: 
+			[
+				{ provide: AuthService, useValue: authServiceSpy },
+				{ provide: Router, useValue: routerSpy }
+			]
+		}).compileComponents()
+	})
+
+	beforeEach(() =>
+	{
+		authServiceSpy.getUserFromLocalStorage.and.returnValue(of(expectedUserData))
+
+		fixture = TestBed.createComponent(LoginComponent)
+		component = fixture.componentInstance
+		fixture.detectChanges()
+	})
+
+	it("should create", () =>
+	{
+		expect(component).toBeTruthy()
+	})
+})
