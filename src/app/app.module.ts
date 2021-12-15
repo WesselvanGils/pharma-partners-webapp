@@ -3,6 +3,9 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
 import { HttpClientModule } from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
+import { FullCalendarModule } from "@fullcalendar/angular"
+import interactionPlugin from "@fullcalendar/interaction"
+import dayGridPlugin from "@fullcalendar/daygrid"
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -19,6 +22,11 @@ import { MeetingComponent } from "./pages/calendar/meeting/meeting.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
 import { PatientComponent } from './pages/patient/patient.component'
+
+FullCalendarModule.registerPlugins([
+	interactionPlugin,
+	dayGridPlugin
+])
 
 @NgModule({
 	declarations: [
@@ -43,7 +51,8 @@ import { PatientComponent } from './pages/patient/patient.component'
 		NgbModule,
 		HttpClientModule,
 		FormsModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		FullCalendarModule
 	],
 	providers: [],
 	bootstrap: [RootComponent]
