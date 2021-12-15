@@ -43,7 +43,7 @@ FullCalendarModule.registerPlugins([
 		MeetingComponent,
 		PatientListComponent,
 		PatientDetailComponent,
-  PatientComponent
+		PatientComponent
 	],
 	imports: [
 		BrowserModule,
@@ -55,6 +55,6 @@ FullCalendarModule.registerPlugins([
 		FullCalendarModule
 	],
 	providers: [],
-	bootstrap: [RootComponent]
+	bootstrap: [ RootComponent ]
 })
-export class AppModule {}
+export class AppModule { }
