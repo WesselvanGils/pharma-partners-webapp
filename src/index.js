@@ -16,7 +16,7 @@ app.use(compression())
 //
 // Replace the name below to match your own "defaultProject" value!
 //
-const appname = 'my-app'
+const appname = 'pharma-partners-webapp'
 
 // Set express options
 const options = {
