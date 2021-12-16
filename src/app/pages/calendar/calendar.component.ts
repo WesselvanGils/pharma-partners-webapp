@@ -38,7 +38,7 @@ export class CalendarComponent implements OnInit
 
 	handleEventClick( arg ) 
 	{
-		Swal.fire("Hello world!");	
+		Swal.fire(arg.event._def);	
 	}
 
 	convertDates(input: Meeting[], callback)
