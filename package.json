@@ -10,9 +10,9 @@
   "main": "scr/index.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serveng serve",
     "build": "ng build",
-    "postinstall": "ng build --prod",
+    "postinstall": "ng build --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --code-coverage --no-watch --no-progress",
     "build:prod": "ng build --prod",
