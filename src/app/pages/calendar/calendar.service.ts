@@ -9,6 +9,6 @@ export class CalendarService extends EntityService<Meeting>
 {
 	constructor (http: HttpClient)
     {
-        super(http, environment.apiUrl, "meetings")
+        super(http, environment.apiUrl, "/meetings")
     }
 }
