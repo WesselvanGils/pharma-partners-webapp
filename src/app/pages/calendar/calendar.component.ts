@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from "@fullcalendar/angular"
 import { Meeting } from 'src/app/models/meeting.model';
+import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
 
 @Component({
@@ -37,7 +38,7 @@ export class CalendarComponent implements OnInit
 
 	handleEventClick( arg ) 
 	{
-		alert(arg.event._def.title)	
+		Swal.fire("Hello world!");	
 	}
 
 	convertDates(input: Meeting[], callback)

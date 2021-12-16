@@ -23,6 +23,7 @@ import { PatientListComponent } from "./pages/patient/patient-list/patient-list.
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 FullCalendarModule.registerPlugins([
 	interactionPlugin,
@@ -54,7 +55,8 @@ FullCalendarModule.registerPlugins([
 		HttpClientModule,
 		FormsModule,
 		ReactiveFormsModule,
-		FullCalendarModule
+		FullCalendarModule,
+		SweetAlert2Module
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]
