@@ -1,1 +1,3 @@
-<p>meeting works!</p>
+<div *ngIf="meeting$ | async as meeting">
+    <p>meeting works! Your appointment is with: {{meeting.title}} at starts at {{meeting.start}}</p>
+</div>

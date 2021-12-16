@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from "@fullcalendar/angular"
+import { Observable, of } from 'rxjs';
 import { Meeting } from 'src/app/models/meeting.model';
 import { CalendarService } from './calendar.service';
 
@@ -10,39 +11,40 @@ import { CalendarService } from './calendar.service';
 })
 export class CalendarComponent implements OnInit
 {
-	Events;
+	events;
 	calendarOptions: CalendarOptions;
+	activeMeeting$: Observable<Meeting>
 
 	constructor(private calendarService: CalendarService) { }
 
 	ngOnInit()
 	{
 		this.calendarService.list().subscribe((result) =>
-			this.convertDates(result, (formattedDates: any[]) => 
+			this.convertDates(result, (formattedDates) => 
 			{
-				this.Events = formattedDates
+				this.events = formattedDates
 				this.calendarOptions = {
 					initialView: 'dayGridWeek',
 					eventClick: this.handleEventClick.bind(this),
-					events: this.Events
+					events: this.events
 				}
 			})
 		)
 
 		this.calendarOptions = {
 			initialView: 'dayGridWeek',
-			events: this.Events
+			events: this.events
 		}
 	}
 
 	handleEventClick( arg ) 
 	{
-		alert(arg.event._def.title)	
+		this.activeMeeting$ = of(arg.event._def)
+		console.log(arg.event)
 	}
 
 	convertDates(input: Meeting[], callback)
 	{
-
 		let result = []
 
 		input.forEach(meeting => 
