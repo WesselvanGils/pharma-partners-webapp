@@ -3,6 +3,9 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
 import { HttpClientModule } from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
+import { FullCalendarModule } from "@fullcalendar/angular"
+import interactionPlugin from "@fullcalendar/interaction"
+import dayGridPlugin from "@fullcalendar/daygrid"
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -15,10 +18,15 @@ import { FooterComponent } from "./core/footer/footer.component"
 import { RootComponent } from "./core/root/root.component"
 import { AlertComponent } from "./shared/alert/alert.component"
 import { CalendarComponent } from "./pages/calendar/calendar.component"
-import { MeetingComponent } from "./pages/meeting/meeting.component"
+import { MeetingComponent } from "./pages/calendar/meeting/meeting.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
 import { PatientComponent } from './pages/patient/patient.component'
+
+FullCalendarModule.registerPlugins([
+	interactionPlugin,
+	dayGridPlugin
+])
 
 @NgModule({
 	declarations: [
@@ -35,7 +43,7 @@ import { PatientComponent } from './pages/patient/patient.component'
 		MeetingComponent,
 		PatientListComponent,
 		PatientDetailComponent,
-  PatientComponent
+		PatientComponent
 	],
 	imports: [
 		BrowserModule,
@@ -43,9 +51,10 @@ import { PatientComponent } from './pages/patient/patient.component'
 		NgbModule,
 		HttpClientModule,
 		FormsModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		FullCalendarModule
 	],
 	providers: [],
-	bootstrap: [RootComponent]
+	bootstrap: [ RootComponent ]
 })
-export class AppModule {}
+export class AppModule { }

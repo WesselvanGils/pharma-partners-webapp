@@ -1,25 +1,52 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { of } from 'rxjs';
+import { role, User } from 'src/app/models/user.model';
+import { AuthService } from '../auth/auth.service';
 
 import { NavbarComponent } from './navbar.component';
 
-describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+describe('NavbarComponent', () =>
+{
+	const expectedUserData: User =
+	{
+		_id: "123",
+		doctorPrefix: "",
+		email: "test@test.nl",
+		employeePrefix: "",
+		firstName: "test",
+		lastName: "test",
+		role: role.ADMIN,
+		token: "123"
+	}
+	let authServiceSpy
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
-    })
-    .compileComponents();
-  });
+	let component: NavbarComponent;
+	let fixture: ComponentFixture<NavbarComponent>;
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(NavbarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(async () =>
+	{
+		authServiceSpy = jasmine.createSpyObj("AuthService", [ "login", "getUserFromLocalStorage" ])
+		await TestBed.configureTestingModule({
+			declarations: [ NavbarComponent ],
+			providers: 
+			[
+				{ provide: AuthService, useValue: authServiceSpy }
+			]
+		})
+		.compileComponents();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	beforeEach(() =>
+	{
+		authServiceSpy.getUserFromLocalStorage.and.returnValue(of(expectedUserData))
+
+		fixture = TestBed.createComponent(NavbarComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
+
+	it('should create', () =>
+	{
+		expect(component).toBeTruthy();
+	});
 });

@@ -19,17 +19,13 @@
 
             <ul class="navbar-nav" style="margin-right: 1rem;">
                 <li class="nav-item">
-                    <span class="navbar-text text-right">
-                        <a class="nav-link" routerLink="Login"
-                            [routerLinkActive]="['active']">
-                            <i class="fas fa-sign-in-alt"></i> Login</a>
-                    </span>
-                </li>
-                <li class="nav-item">
                     <span class="navbar-text text-rigth">
                         <a class="nav-link"
+                            (click)="logUserOut()"
+                            routerLink=""
                             [routerLinkActive]="['active']">
-                            <i class="fas fa-sign-out-alt"></i> Logout</a>
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
                     </span>
                 </li>
             </ul>

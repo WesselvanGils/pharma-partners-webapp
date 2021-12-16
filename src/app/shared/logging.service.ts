@@ -7,12 +7,13 @@ import { environment } from 'src/environments/environment';
 @Injectable({ providedIn: 'root' })
 export class LoggingService extends EntityService<LogItem>
 {
-    protected logs: LogItem
+    logs: LogItem = new LogItem("1")
     protected entityService: EntityService<LogItem>
 
 	constructor (http: HttpClient)
     {
         super(http, environment.apiUrl, "log")
+		this.logs.messages = []
     }
 
     public log( message: string )

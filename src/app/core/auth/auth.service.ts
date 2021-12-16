@@ -54,11 +54,11 @@ export class AuthService
 	// Returns an error if the login was unsuccessfull or an error occured at the api
 	login(email: string, password: string): Observable<User>
 	{
-		this.loggingService.log(`Sign in at ${environment.apiUrl} with email ${email}`)
+		this.loggingService.log(`Sign in at ${environment.apiUrl}/authentication/login with email ${email}`)
 
 		return this.http
 			.post<User>(
-				`${environment.apiUrl}auth/signin`,
+				`${environment.apiUrl}/authentication/login`,
 				{ email: email, password: password },
 				{ headers: this.headers }
 			)
@@ -96,7 +96,7 @@ export class AuthService
 			this.loggingService.log(`User with email: ${user.email} attempted to log out.`)		
 		
 			this.router
-				.navigate([ '/' ])
+				.navigate([ 'login' ])
 				.then((success) =>
 				{
 					// true when canDeactivate allows us to leave the page.
