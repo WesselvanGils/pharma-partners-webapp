@@ -21,7 +21,8 @@ import { CalendarComponent } from "./pages/calendar/calendar.component"
 import { MeetingComponent } from "./pages/calendar/meeting/meeting.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
-import { PatientComponent } from './pages/patient/patient.component'
+import { PatientComponent } from './pages/patient/patient.component';
+import { ContactComponent } from './pages/contact/contact.component'
 
 FullCalendarModule.registerPlugins([
 	interactionPlugin,
@@ -43,7 +44,8 @@ FullCalendarModule.registerPlugins([
 		MeetingComponent,
 		PatientListComponent,
 		PatientDetailComponent,
-		PatientComponent
+		PatientComponent,
+  ContactComponent
 	],
 	imports: [
 		BrowserModule,
