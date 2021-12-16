@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+/* --- General design elements - typography --- */
+body {
+    background-color: #efefef;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    color: #010005;
+    font-size: 15px;
+}
+
+/* Headers */
+h1 {
+    font-weight: lighter;
+    font-size: 48px;
+}
+h2 {
+    font-weight: lighter;
+    font-size: 32px;
+}
+h3 {
+    font-size: 26px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+h5 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+h6 {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+/* --- Button - custom colors --- */
+/* Button outline primary */
+.btn-outline-primary {
+    border-color: #3d6c99;
+    color: #3d6c99!important;
+}
+.btn-outline-primary[disabled]:hover {
+    border-color: #3d6c99;
+    color: #3d6c99;
+    background-color: #fff;
+}
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #3d6c99;
+}
+
+/* --- Form validation - custom colors --- */
+/* Invalid input error text*/
+.invalid-feedback {
+    font-size: 13px;
+    color: #c1272d;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #c1272d;
+    background-image: url();
+}
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    border-color: #c1272d;
+    box-shadow: 0 0 0 0.2rem rgb(193, 39, 45, 0.25);
+}
+/* Regular focus on input */
+.form-control:focus {
+    border-color: #3d6c99;
+    box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25);
+}

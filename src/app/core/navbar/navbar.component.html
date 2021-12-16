@@ -10,26 +10,22 @@
         <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="user-list" [routerLinkActive]="['active']">User List</a>
+                    <a class="nav-link" routerLink="calendar" [routerLinkActive]="['active']"> Agenda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="hero-list" [routerLinkActive]="['active']"> Hero List</a>
+                    <a class="nav-link" routerLink="patient-list" [routerLinkActive]="['active']"> Patienten</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav" style="margin-right: 1rem;">
                 <li class="nav-item">
-                    <span class="navbar-text text-right">
-                        <a class="nav-link" routerLink="Login"
-                            [routerLinkActive]="['active']">
-                            <i class="fas fa-sign-in-alt"></i> Login</a>
-                    </span>
-                </li>
-                <li class="nav-item">
                     <span class="navbar-text text-rigth">
                         <a class="nav-link"
+                            (click)="logUserOut()"
+                            routerLink=""
                             [routerLinkActive]="['active']">
-                            <i class="fas fa-sign-out-alt"></i> Logout</a>
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
                     </span>
                 </li>
             </ul>
