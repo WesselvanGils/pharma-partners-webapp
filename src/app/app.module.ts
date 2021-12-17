@@ -3,9 +3,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
 import { HttpClientModule } from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
-import { FullCalendarModule } from "@fullcalendar/angular"
-import interactionPlugin from "@fullcalendar/interaction"
-import dayGridPlugin from "@fullcalendar/daygrid"
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -25,11 +24,6 @@ import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
-FullCalendarModule.registerPlugins([
-	interactionPlugin,
-	dayGridPlugin
-])
-
 @NgModule({
 	declarations: [
 		LoginComponent,
@@ -46,7 +40,7 @@ FullCalendarModule.registerPlugins([
 		PatientListComponent,
 		PatientDetailComponent,
 		PatientComponent,
-  ContactComponent
+		ContactComponent
 	],
 	imports: [
 		BrowserModule,
@@ -55,8 +49,13 @@ FullCalendarModule.registerPlugins([
 		HttpClientModule,
 		FormsModule,
 		ReactiveFormsModule,
-		FullCalendarModule,
-		SweetAlert2Module
+		SweetAlert2Module,
+		CalendarModule.forRoot(
+			{
+				provide: DateAdapter,
+				useFactory: adapterFactory
+			}
+		)
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]
