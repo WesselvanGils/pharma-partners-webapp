@@ -9,6 +9,8 @@ import { ContactComponent } from "./pages/contact/contact.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientComponent } from "./pages/patient/patient.component"
+import { MedicationComponent } from './pages/medication/medication.component';
+import { MedicationAddComponent } from "./pages/medication/medication-add/medication-add.component"
 
 const routes: Routes = [
 	{
@@ -22,12 +24,15 @@ const routes: Routes = [
 			{ path: "about", component: AboutComponent },
 			{ path: "contact", component: ContactComponent },
 			{ path: "calendar", component: CalendarComponent },
+			{ path: "medicijn", component: MedicationComponent},
+			{ path: "medicijn/toevoegen", component: MedicationAddComponent},
 			{ path: "patient", component: PatientComponent,
 				children: 
 				[
 					{ path: "list", component: PatientListComponent },
 					{ path: "detail", component: PatientListComponent }
 				]
+			
 			}
 		]
 	},
