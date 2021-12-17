@@ -25,8 +25,8 @@ const routes: Routes = [
 			{ path: "patient", component: PatientComponent,
 				children: 
 				[
-					{ path: "patient/list", component: PatientListComponent },
-					{ path: "patient/detail", component: PatientListComponent }
+					{ path: "list", component: PatientListComponent },
+					{ path: "detail", component: PatientListComponent }
 				]
 			}
 		]

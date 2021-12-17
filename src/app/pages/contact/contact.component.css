@@ -1,6 +1,4 @@
-
 body {
-  font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
@@ -20,22 +18,6 @@ a:focus {
   outline: none !important;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-  line-height: 1.5;
-  font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
-  color: #000;
 }
 
 .bg-primary {
@@ -63,41 +45,6 @@ h5,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.form-control {
-  height: 52px;
-  background: #fff;
-  color: #000;
-  font-size: 14px;
-  border-radius: 2px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-.form-control:-ms-input-placeholder {
-  /* IE 0+ */
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-.form-control:focus,
-.form-control:active {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-textarea.form-control {
-  height: inherit !important;
 }
 
 .wrapper {
@@ -235,5 +182,5 @@ textarea.form-control {
 }
 
 .pharma-primary {
-background-color: #003E79;
+  background-color: #003E79;
 }
