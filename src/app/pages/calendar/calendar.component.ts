@@ -1,61 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { CalendarOptions } from "@fullcalendar/angular"
-import { Observable, of } from 'rxjs';
-import { Meeting } from 'src/app/models/meeting.model';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { CalendarEvent, CalendarView } from 'angular-calendar';
 import Swal from 'sweetalert2';
-import { CalendarService } from './calendar.service';
+import { colors } from './calendar-header/colors';
 
 @Component({
 	selector: 'app-calendar',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './calendar.component.html',
-	styleUrls: [ './calendar.component.css' ]
 })
-export class CalendarComponent implements OnInit
+export class CalendarComponent
 {
-	events;
-	calendarOptions: CalendarOptions;
-	activeMeeting$: Observable<Meeting>
+	view: CalendarView = CalendarView.Week;
 
-	constructor(private calendarService: CalendarService) { }
+	viewDate: Date = new Date();
 
-	ngOnInit()
-	{
-		this.calendarService.list().subscribe((result) =>
-			this.convertDates(result, (formattedDates) => 
-			{
-				this.events = formattedDates
-				this.calendarOptions = {
-					initialView: 'dayGridWeek',
-					eventClick: this.handleEventClick.bind(this),
-					events: this.events
-				}
-			})
-		)
-
-		this.calendarOptions = {
-			initialView: 'dayGridWeek',
-			events: this.events
-		}
-	}
-
-	handleEventClick( arg ) 
-	{
-		Swal.fire(arg.event._def);	
-	}
-
-	convertDates(input: Meeting[], callback)
-	{
-		let result = []
-
-		input.forEach(meeting => 
+	events: CalendarEvent[] = [
 		{
-			result.push({
-				start: meeting.startDate,
-				end: meeting.endDate,
-				title: `${meeting.patient.firstname} ${meeting.subject}`,
-			})
-		})
+			title: 'Click me',
+			color: colors.yellow,
+			start: new Date(),
+		},
+		{
+			title: 'Or click me',
+			color: colors.blue,
+			start: new Date(),
+		},
+	]
 
-		callback(result)
+	eventClicked({ event }: { event: CalendarEvent }): void
+	{
+		Swal.fire(`${event.title}`)
 	}
 }

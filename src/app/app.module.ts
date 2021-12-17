@@ -1,10 +1,12 @@
 import { NgModule } from "@angular/core"
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { HttpClientModule } from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { CalendarUtilsModule } from "./pages/calendar/calendar-header/module"
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -40,7 +42,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 		PatientListComponent,
 		PatientDetailComponent,
 		PatientComponent,
-		ContactComponent
+		ContactComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -50,6 +52,8 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 		FormsModule,
 		ReactiveFormsModule,
 		SweetAlert2Module,
+		CalendarUtilsModule,
+		BrowserAnimationsModule,
 		CalendarModule.forRoot(
 			{
 				provide: DateAdapter,
