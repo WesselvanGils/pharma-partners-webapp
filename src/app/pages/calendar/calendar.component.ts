@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from "@fullcalendar/angular"
 import { Observable, of } from 'rxjs';
 import { Meeting } from 'src/app/models/meeting.model';
+import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
 
 @Component({
@@ -39,8 +40,7 @@ export class CalendarComponent implements OnInit
 
 	handleEventClick( arg ) 
 	{
-		this.activeMeeting$ = of(arg.event._def)
-		console.log(arg.event)
+		Swal.fire(arg.event._def);	
 	}
 
 	convertDates(input: Meeting[], callback)

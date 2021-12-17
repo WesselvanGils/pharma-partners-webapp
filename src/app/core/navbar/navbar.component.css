@@ -1,0 +1,33 @@
+nav {
+  padding: 0;
+  background-color: #fff;
+}
+
+/* logo tekst */
+.navbar-brand {
+    color: #003E79 !important;
+}
+
+/* linkjes */
+.nav-link {
+  color:rgba(0, 63, 121, 0.7)!important;
+}
+.nav-link.active {
+    color:#003E79 !important;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color:#003E79 !important;
+}
+
+/* logout knop */
+.logout {
+  cursor: pointer;
+  font-weight: 400!important;
+  color:rgba(0, 63, 121, 0.7)!important;
+  margin-right: 1.5rem;
+}
+.logout:hover {
+  color:#003E79 !important;
+
+}
