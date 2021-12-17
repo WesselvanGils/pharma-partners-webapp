@@ -18,35 +18,41 @@ export class AuthService
 	});
 
 	constructor
-	(
-		private alertService: AlertService,
-		private http: HttpClient,
-		private router: Router,
-		private loggingService: LoggingService
-	)
+		(
+			private alertService: AlertService,
+			private http: HttpClient,
+			private router: Router,
+			private loggingService: LoggingService
+		)
 	{
 		// Initializes the authentication service with the user from
-		// the local storage making it so users stay logged in. 
+		// the local storage making it so users stays logged in. 
 		this.getUserFromLocalStorage()
-			.pipe(
-				switchMap((user: User) =>
+			.subscribe((userFromLocalStorage) =>
+			{
+				if (userFromLocalStorage != undefined)
 				{
-					if (user)
+					loggingService.log(`Attempting to login ${userFromLocalStorage.email} automatically`)
+					this.validateToken(userFromLocalStorage).subscribe((result) => 
 					{
-						// Executes if a user is found in the local storage
-						console.log('User found in local storage');
-						this.currentUser$.next(user);
-						return of(user);
-					} else
-					{
-						// Executes if there is no user in the local storage
-						console.log(`No current user found`);
-						return of(undefined);
-					}
-				})
-			)
-			// Notifies that the authentication service has successfully initialized.
-			.subscribe(() => console.log('Startup auth done'));
+						if (result != undefined)
+						{
+							this.loggingService.log(`User with email:${result.email} was logged in automatically`)
+							this.currentUser$.next(result)
+							this.router.navigate(["/homepage"])
+							return result
+						}else
+						{
+							this.loggingService.log(`User ${userFromLocalStorage.email}'s token wasn't valid`)
+							return undefined
+						}
+					})
+				} else
+				{
+					console.log(`No user in the local storage`)
+				}
+			}
+		)
 	}
 
 	// Sends a login request to the backend api taking the email and password as input
@@ -54,24 +60,27 @@ export class AuthService
 	// Returns an error if the login was unsuccessfull or an error occured at the api
 	login(email: string, password: string): Observable<User>
 	{
-		this.loggingService.log(`Sign in at ${environment.apiUrl}/authentication/login with email ${email}`)
+		this.loggingService.log(`Sign in at ${environment.apiUrl}authentication/login with email ${email}`)
 
 		return this.http
 			.post<User>(
-				`${environment.apiUrl}/authentication/login`,
+				`${environment.apiUrl}authentication/login`,
 				{ email: email, password: password },
 				{ headers: this.headers }
 			)
 			.pipe(
-				map((user) =>
+				map((response: any) =>
 				{
 					// Executes if the login is approved by the api
 					this.loggingService.log(`User with email: ${email} successfully logged in`)
 
-					this.saveUserToLocalStorage(user);
-					this.currentUser$.next(user);
+					const userToSave: User = response.employee
+					userToSave.token = response.token
+
+					this.saveUserToLocalStorage(userToSave);
+					this.currentUser$.next(userToSave)
 					this.alertService.success('You have been signed in');
-					return user;
+					return userToSave;
 				}),
 				catchError((error: any) =>
 				{
@@ -93,8 +102,8 @@ export class AuthService
 	{
 		this.getUserFromLocalStorage().subscribe(user => 
 		{
-			this.loggingService.log(`User with email: ${user.email} attempted to log out.`)		
-		
+			this.loggingService.log(`User with email: ${user.email} attempted to log out.`)
+
 			this.router
 				.navigate([ 'login' ])
 				.then((success) =>
@@ -104,21 +113,21 @@ export class AuthService
 					{
 						this.loggingService.log(`User with email:${user.email} was successfully logged out.`)
 						localStorage.removeItem(this.CURRENT_USER);
-						this.currentUser$.next(undefined);
+						this.currentUser$.next(undefined)
 						this.alertService.success('You have been logged out.');
 					} else
 					{
 						this.loggingService.log(`User with email:${user.email} couldn't be logged out.`)
 					}
 				})
-			.catch((error) => console.log(`An error occured! ${error}`));
+				.catch((error) => console.log(`An error occured! ${error}`));
 		})
 	}
 
 	// Validates a users token
 	validateToken(userData: User): Observable<User>
 	{
-		const url = `${environment.apiUrl}auth/validate`;
+		const url = `${environment.apiUrl}authentication/validate/${userData._id}`;
 		const httpOptions = {
 			headers: new HttpHeaders({
 				'Content-Type': 'application/json',
@@ -131,14 +140,15 @@ export class AuthService
 			map((response) =>
 			{
 				this.loggingService.log(`token of user with email:${userData.email} was validated`)
-				console.log('token is valid');
-				return response;
+				const responseUser: User = response.employee
+				responseUser.token = response.token
+				return responseUser;
 			}),
 			catchError((error: any) =>
 			{
 				this.loggingService.log(`token of user with email:${userData.email} could not validated`)
 				this.logout();
-				this.currentUser$.next(undefined);
+				this.currentUser$.next(undefined)
 				return of(undefined);
 			})
 		);

@@ -41,12 +41,38 @@ h6 {
 }
 .btn-outline-primary[disabled]:hover {
     border-color: #3d6c99;
-    color: #3d6c99;
-    background-color: #fff;
+    color: #3d6c99 !important;
+    background-color: rgba(255, 255, 255, 0);
 }
 .btn-outline-primary:hover {
-    color: white;
+    color: white !important;
     background-color: #3d6c99;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3d6c99;
+    border-color: #3d6c99;
+}
+
+/* Button primary */
+.btn-primary {
+    border-color: #3d6c99!important;
+    background-color: #3d6c99!important;
+    color: #fff!important;
+}
+.btn-primary[disabled]:hover {
+    border-color: #3d6c99!important;
+    background-color: #3d6c99!important;
+    color: #fff !important;
+}
+.btn-primary:hover {
+    color: white !important;
+    background-color: #003E79 !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3d6c99;
+    border-color: #3d6c99;
 }
 
 /* --- Form validation - custom colors --- */

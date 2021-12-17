@@ -1,1 +1,8 @@
-<full-calendar [options]="calendarOptions"></full-calendar>
+<div class="row">
+    <div class="col-6">
+        <full-calendar [options]="calendarOptions"></full-calendar>
+    </div>
+    <div class="col-6">
+        <app-meeting [meeting$]="activeMeeting$"></app-meeting>
+    </div>
+</div>
