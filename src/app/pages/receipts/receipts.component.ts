@@ -25,7 +25,7 @@ export class ReceiptsComponent implements OnInit {
     preparation: '',
     dosage: '',
     publicationDate: new Date('25-12-2021'),
-    daysToTake: 0,
+    daysToTake: '',
     medication: undefined
   }
 

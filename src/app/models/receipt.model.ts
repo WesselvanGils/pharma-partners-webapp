@@ -6,6 +6,6 @@ export class Receipt extends Entity
     preparation: string
     dosage: string
     publicationDate: Date
-    daysToTake: Number
+    daysToTake: String
     medication?: Medication
 }

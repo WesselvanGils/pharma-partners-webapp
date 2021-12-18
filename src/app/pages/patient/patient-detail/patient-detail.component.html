@@ -224,7 +224,7 @@
                         <div class="row">
                             <h3 class="col-8">Recepten</h3>
                             <span class="col-4">
-                                <button class="btn btn-info btn-sm float-right"><i class="fas fa-plus"></i> Voeg recept toe</button>
+                                <button routerLink="/recept" class="btn btn-info btn-sm float-right"><i class="fas fa-plus"></i> Voeg recept toe</button>
                             </span>
                         </div>
                         <div class="table-responsive">
@@ -239,45 +239,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr *ngFor="let receipt of receipts$ | async">
                                         <th scope="row">1</th>
-                                        <td class="align-middle">Paracetamol</td>
-                                        <td class="align-middle">1 per dag</td>
-                                        <td class="align-middle">1 week</td>
+                                        <td class="align-middle">{{receipt.medication.name}} {{receipt.medication.unit}}</td>
+                                        <td class="align-middle">{{receipt.dosage}} </td>
+                                        <td class="align-middle">{{receipt.daysToTake}} </td>
                                         <td class="align-middle"><button class='btn btn-primary btn-sm'
                                                 routerLink="/patient">
-                                                <i class='fa fa-info-circle'></i> Details</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Ibuprofen</td>
-                                        <td>2 per dag</td>
-                                        <td>2 weken</td>
-                                        <td><button class='btn btn-primary btn-sm' routerLink="/patient">
-                                                <i class='fa fa-info-circle'></i> Details</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Advil</td>
-                                        <td>3 per week</td>
-                                        <td>1 maand</td>
-                                        <td><button class='btn btn-primary btn-sm' routerLink="/patient">
-                                                <i class='fa fa-info-circle'></i> Details</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Advil</td>
-                                        <td>3 per week</td>
-                                        <td>1 maand</td>
-                                        <td><button class='btn btn-primary btn-sm' routerLink="/patient">
-                                                <i class='fa fa-info-circle'></i> Details</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Advil</td>
-                                        <td>3 per week</td>
-                                        <td>1 maand</td>
-                                        <td><button class='btn btn-primary btn-sm' routerLink="/patient">
                                                 <i class='fa fa-info-circle'></i> Details</button></td>
                                     </tr>
                                 </tbody>

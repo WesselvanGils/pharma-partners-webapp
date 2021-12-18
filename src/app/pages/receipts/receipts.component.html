@@ -20,10 +20,10 @@
                         <div class="col-sm-3">
                             <h6 class="mb-0 mt-2">Voorbereiding</h6>
                         </div>
-                        <div class="col-3 p-0 pr-1">
+                        <div class="col-8 p-0 ">
                             <input type="text" class="form-control" formControlName="preparation" placeholder="Voorbereiding"
-                                [ngClass]="{'is-invalid': receiptForm.get('Preparation').invalid && receiptForm.get('Preparation').touched }" />
-                            <span *ngIf="!receiptForm.get('Preparation').valid && receiptForm.get('Preparation').touched"
+                                [ngClass]="{'is-invalid': receiptForm.get('preparation').invalid && receiptForm.get('preparation').touched }" />
+                            <span *ngIf="!receiptForm.get('preparation').valid && receiptForm.get('preparation').touched"
                                 class="invalid-feedback">
                                 <p>Voorbereiding is niet geldig.</p>
                             </span>
@@ -35,7 +35,7 @@
                             <h6 class="mb-0 mt-2">Dosis</h6>
                         </div>
                         <div class="col-8 p-0">
-                            <input type="text" class="form-control" formControlName="dosage" placeholder="Dosage"
+                            <input type="text" class="form-control" formControlName="dosage" placeholder="Dosis"
                                 [ngClass]="{'is-invalid': receiptForm.get('dosage').invalid && receiptForm.get('dosage').touched }" />
                             <span *ngIf="!receiptForm.get('dosage').valid && receiptForm.get('dosage').touched"
                                 class="invalid-feedback">
@@ -49,10 +49,10 @@
                             <h6 class="mb-0 mt-2">Datum van Publicatie</h6>
                         </div>
                         <div class="col-8 p-0">
-                            <input type="datetime" class="form-control" placeholder="Publication Date" formControlName="publicationDate"
+                            <input type="date" class="form-control"  formControlName="publicationDate"
                             id="inputEmail" aria-describedby="emailHelp" 
-                            [ngClass]="{'is-invalid': receiptForm.get('email').invalid && receiptForm.get('email').touched }" />
-                            <span *ngIf="!receiptForm.get('email').valid && receiptForm.get('email').touched"
+                            [ngClass]="{'is-invalid': receiptForm.get('publicationDate').invalid && receiptForm.get('publicationDate').touched }" />
+                            <span *ngIf="!receiptForm.get('publicationDate').valid && receiptForm.get('publicationDate').touched"
                                 class="invalid-feedback">
                                 <p id="email-invalid">Datum van publicatie is niet geldig.</p>
                             </span>

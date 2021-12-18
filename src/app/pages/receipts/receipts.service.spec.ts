@@ -20,7 +20,7 @@ const medicationIbuprofen: Medication =
       dosage: '5x per dag',
       preparation: '1201',
       publicationDate: new Date("1999-07-4"),
-      daysToTake: 2,
+      daysToTake: '5 dagen twee stuks',
       medication: medicationIbuprofen
       }]
 

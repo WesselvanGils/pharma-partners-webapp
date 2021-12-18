@@ -41,14 +41,20 @@ export class EntityService<T extends Entity> {
     );
   }
 
-  public list(id?: number | string, options?: any): Observable<T[]> {
-    let endpoint = `${this.url}${this.endpoint}`;
-    if (id) endpoint = endpoint + `/${id}`;
-    console.log(`list ${endpoint}`);
-    return this.http
-      .get<T[]>(endpoint, { ...options, ...httpOptions })
-      .pipe(catchError(this.handleError));
-  }
+  /**
+   * Get all items.
+   *
+   * @options options
+   */
+   public list(id?: number | string, options?: any): Observable<T[]>
+   {
+       let endpoint = `${this.url}${this.endpoint}`;
+       if (id) endpoint = endpoint + `/${id}`
+       console.log(`list ${endpoint}`);
+       return this.http
+           .get<T[]>(endpoint, { ...options, ...httpOptions })
+           .pipe(catchError(this.handleError));
+   }
 
   /**
    * Get a single item from the service.
