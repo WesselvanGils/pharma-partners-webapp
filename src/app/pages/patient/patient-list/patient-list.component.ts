@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Patient } from 'src/app/models/patient.model';
+import { PatientTempService } from '../patientTemp.service';
 
 @Component({
   selector: 'app-patient-list',
@@ -6,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./patient-list.component.css']
 })
 export class PatientListComponent implements OnInit {
+  patients$!: Observable<Patient[] | null>
 
-  constructor() { }
+  constructor(private patientTempService: PatientTempService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.patients$ = this.patientTempService.getPatients()
   }
 
 }
