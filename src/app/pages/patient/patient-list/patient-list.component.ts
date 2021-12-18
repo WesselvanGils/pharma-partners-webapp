@@ -12,7 +12,6 @@ import { PatientService } from '../patient.service';
 export class PatientListComponent implements OnInit {
   patients$!: Observable<Patient[] | null>
 
-  patients$!: Observable<Patient[] | null>
   selectedId=0
 
   patients: Patient[] = [];
