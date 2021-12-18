@@ -24,6 +24,7 @@ import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-d
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { DataTablesModule } from "angular-datatables"
 
 FullCalendarModule.registerPlugins([
 	interactionPlugin,
@@ -56,7 +57,8 @@ FullCalendarModule.registerPlugins([
 		FormsModule,
 		ReactiveFormsModule,
 		FullCalendarModule,
-		SweetAlert2Module
+		SweetAlert2Module,
+		DataTablesModule
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]
