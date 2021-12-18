@@ -7,6 +7,7 @@ import { AboutComponent } from "./pages/about/about.component"
 import { CalendarComponent } from "./pages/calendar/calendar.component"
 import { ContactComponent } from "./pages/contact/contact.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
+import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientComponent } from "./pages/patient/patient.component"
 import { MedicationComponent } from './pages/medication/medication.component';
@@ -32,10 +33,9 @@ const routes: Routes = [
 				children: 
 				[
 					{ path: "list", component: PatientListComponent },
-					{ path: "detail", component: PatientListComponent }
 				]
-			
-			}
+			},
+			{ path: "patient/detail/:_id", component: PatientDetailComponent }
 		]
 	},
 	{ path: "login", component: LoginComponent },

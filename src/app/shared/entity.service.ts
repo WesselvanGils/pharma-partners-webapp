@@ -27,19 +27,19 @@ export class EntityService<T extends Entity> {
       );
   }
 
-    /**
+  /**
    * Update (put) new info.
    *
    * @param item The new item.
    */
-     public update(item: T, options?: any): Observable<T> {
-      const endpoint = `${this.url}${this.endpoint}/${item._id}`
-      console.log(`update ${endpoint}`)
-      return this.http.put(endpoint, item, { ...options, ...httpOptions }).pipe(
-        // map((response: any) => response.result),
-        catchError(this.handleError)
-      )
-    }
+  public update(item: T, options?: any): Observable<T> {
+    const endpoint = `${this.url}${this.endpoint}/${item._id}`;
+    console.log(`update ${endpoint}`);
+    return this.http.put(endpoint, item, { ...options, ...httpOptions }).pipe(
+      // map((response: any) => response.result),
+      catchError(this.handleError)
+    );
+  }
 
   public list(id?: number | string, options?: any): Observable<T[]> {
     let endpoint = `${this.url}${this.endpoint}`;
@@ -63,8 +63,6 @@ export class EntityService<T extends Entity> {
       catchError(this.handleError)
     );
   }
-
-
 
   /**
    * Delete an item at the service.
