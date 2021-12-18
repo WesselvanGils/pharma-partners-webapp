@@ -17,7 +17,7 @@ const medicationIbuprofen: Medication =
   const RECEIPTS: Receipt[] = [
     {
       _id: "61ba02f558e9383c03e2a9af",
-      dosage: 'Admin Account',
+      dosage: '5x per dag',
       preparation: '1201',
       publicationDate: new Date("1999-07-4"),
       daysToTake: 2,
