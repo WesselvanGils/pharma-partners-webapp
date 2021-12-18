@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { Patient } from 'src/app/models/patient.model';
-import { PatientTempService } from '../patientTemp.service';
+import { PatientService } from '../patient.service';
 
 @Component({
   selector: 'app-patient-detail',
@@ -12,12 +12,13 @@ import { PatientTempService } from '../patientTemp.service';
 export class PatientDetailComponent implements OnInit {
   patient$!: Observable<Patient>
 
-  constructor(private route: ActivatedRoute, private router: Router, private patientService: PatientTempService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private patientService: PatientService) { }
 
   ngOnInit(){
     this.patient$ = this.route.paramMap.pipe(
-      switchMap((params: ParamMap) => this.patientService.getPatient(params.get('_id')!))
-    )
+      switchMap((params: ParamMap) =>
+        this.patientService.read(params.get('_id')!))
+    );
   }
 
 }

@@ -29,6 +29,20 @@ export class EntityService<T extends Entity>
 			);
 	}
 
+	  /**
+   * Get a single item from the service.
+   *
+   * @param id ID of the item to get.
+   */
+	   public read(id: number | string, options?: any): Observable<T> {
+		const endpoint = `${this.url}${this.endpoint}/${id}`
+		console.log(`read ${endpoint}`)
+		return this.http.get<T[]>(endpoint, { ...options, ...httpOptions }).pipe(
+		  // tap(console.log),
+		  catchError(this.handleError)
+		)
+	  }
+
 	public list(id?: number | string, options?: any): Observable<T[]>
 	{
 		let endpoint = `${this.url}${this.endpoint}`;

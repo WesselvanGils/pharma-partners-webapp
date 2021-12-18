@@ -31,16 +31,7 @@ export class PatientListComponent implements OnInit {
       pagingType: 'full_numbers',
       pageLength: 2
     };
-
-
-
-    // this.patients$ = this.activatedRoute.paramMap.pipe(
-    //   switchMap(params => {
-    //     this.selectedId = parseInt(params.get('id')!, 10)
-    //     return this.patientService.list();
-    //   })
-    // )
-
+    
     this.patientService.list()
     .subscribe(data => {
       this.patients = data;
