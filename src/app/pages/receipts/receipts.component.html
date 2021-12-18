@@ -1,0 +1,108 @@
+<div *ngIf="tempReceipt as receipt">
+    <h1 [hidden]="receipt._id != undefined">Voeg een recept toe</h1>
+    <h1 [hidden]="receipt._id == undefined">Wijzig een recept</h1>
+    <div class="row gutters-sm" [formGroup]="receiptForm">
+        <div class="col-md-4 mb-3">
+            <div class="card">
+            </div>
+            <div class="card card-body px-2 mt-3 align-items-center text-center">
+                <div class="col-10 ">
+                    <button id='back' class="btn btn-danger mr-3" (click)="gotoUser(receipt)"> Back </button>
+                    <button id='confirm' class="btn btn-success" (click)="onSubmit()" [disabled]="!receiptForm.valid">
+                        <span id='check'><i class='fa fa-check'></i></span> Confirm </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0 mt-2">Voorbereiding</h6>
+                        </div>
+                        <div class="col-3 p-0 pr-1">
+                            <input type="text" class="form-control" formControlName="preparation" placeholder="Voorbereiding"
+                                [ngClass]="{'is-invalid': receiptForm.get('Preparation').invalid && receiptForm.get('Preparation').touched }" />
+                            <span *ngIf="!receiptForm.get('Preparation').valid && receiptForm.get('Preparation').touched"
+                                class="invalid-feedback">
+                                <p>Voorbereiding is niet geldig.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0 mt-2">Dosis</h6>
+                        </div>
+                        <div class="col-8 p-0">
+                            <input type="text" class="form-control" formControlName="dosage" placeholder="Dosage"
+                                [ngClass]="{'is-invalid': receiptForm.get('dosage').invalid && receiptForm.get('dosage').touched }" />
+                            <span *ngIf="!receiptForm.get('dosage').valid && receiptForm.get('dosage').touched"
+                                class="invalid-feedback">
+                                <p>Dosis is niet geldig.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0 mt-2">Datum van Publicatie</h6>
+                        </div>
+                        <div class="col-8 p-0">
+                            <input type="datetime" class="form-control" placeholder="Publication Date" formControlName="publicationDate"
+                            id="inputEmail" aria-describedby="emailHelp" 
+                            [ngClass]="{'is-invalid': receiptForm.get('email').invalid && receiptForm.get('email').touched }" />
+                            <span *ngIf="!receiptForm.get('email').valid && receiptForm.get('email').touched"
+                                class="invalid-feedback">
+                                <p id="email-invalid">Datum van publicatie is niet geldig.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0 mt-2">Aantal dagen slikken</h6>
+                        </div>
+                        <div class="col-8 p-0">
+                            <input type="text" class="form-control" placeholder="Aantal dagen" formControlName="daysToTake"
+                            id="inputEmail" aria-describedby="emailHelp" 
+                            [ngClass]="{'is-invalid': receiptForm.get('daysToTake').invalid && receiptForm.get('daysToTake').touched }" />
+                            <span *ngIf="!receiptForm.get('daysToTake').valid && receiptForm.get('daysToTake').touched"
+                                class="invalid-feedback">
+                                <p id="email-invalid">Aantal dagen is niet geldig.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0 mt-2">Medicijn</h6>
+                        </div>
+                        <div class="col-8 p-0">
+                            <select
+                            class="form-control"
+                            formControlName="medication"
+                            id="inputDriver"
+                            [ngClass]="{
+                              'is-invalid':
+                              receiptForm.get('medication').invalid && receiptForm.get('medication').touched
+                            }"
+                          >
+                            <option selected disabled>Kies een medicijn..</option>
+                            <option *ngFor="let medication of medications$ | async" [value]="medication._id">
+                              {{ medication.name }}  {{ medication.unit }} 
+                            </option>
+                          </select>
+                          <span
+                            *ngIf="!receiptForm.get('medication').valid && receiptForm.get('medication').touched"
+                            class="invalid-feedback"
+                          >
+                            <p id="name-invalid">Medicijn is niet geldig.</p>
+                          </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

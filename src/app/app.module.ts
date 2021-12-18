@@ -26,6 +26,7 @@ import { ContactComponent } from './pages/contact/contact.component'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { MedicationComponent } from './pages/medication/medication.component';
 import { MedicationAddComponent } from './pages/medication/medication-add/medication-add.component';
+import { ReceiptsComponent } from './pages/receipts/receipts.component';
 
 FullCalendarModule.registerPlugins([
 	interactionPlugin,
@@ -50,7 +51,8 @@ FullCalendarModule.registerPlugins([
 		PatientComponent,
   ContactComponent,
   MedicationComponent,
-  MedicationAddComponent
+  MedicationAddComponent,
+  ReceiptsComponent
 	],
 	imports: [
 		BrowserModule,

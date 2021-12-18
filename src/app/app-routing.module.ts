@@ -11,6 +11,7 @@ import { PatientListComponent } from "./pages/patient/patient-list/patient-list.
 import { PatientComponent } from "./pages/patient/patient.component"
 import { MedicationComponent } from './pages/medication/medication.component';
 import { MedicationAddComponent } from "./pages/medication/medication-add/medication-add.component"
+import { ReceiptsComponent } from "./pages/receipts/receipts.component"
 
 const routes: Routes = [
 	{
@@ -24,6 +25,7 @@ const routes: Routes = [
 			{ path: "about", component: AboutComponent },
 			{ path: "contact", component: ContactComponent },
 			{ path: "calendar", component: CalendarComponent },
+			{ path: "recept", component: ReceiptsComponent },
 			{ path: "medicijn", component: MedicationComponent},
 			{ path: "medicijn/toevoegen", component: MedicationAddComponent},
 			{ path: "patient", component: PatientComponent,
