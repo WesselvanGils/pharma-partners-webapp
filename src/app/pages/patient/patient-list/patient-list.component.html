@@ -1,1 +1,27 @@
-<p>patient-list works!</p>
+<!-- <h2>Patient list</h2>
+<button class='btn btn-info' routerLink="/patient/detail/61ba02f558e9383c03e2a9af">
+    <i class='fa fa-info-circle'></i> details</button>
+ -->
+
+<div class='row mb-3'>
+    <h1 class='col-lg-12 col-md-12 col-sm-12'>Overview of all patients</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let patient of patients$ | async">
+            <td>{{patient._id}}</td>
+            <td>{{ patient.firstname }} {{patient.prefix}} {{ patient.lastname }}</td>
+            <td> <button class='btn btn-info' routerLink="/patient/detail/{{patient._id}}">
+                    <i class='fa fa-info-circle'></i> details</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
