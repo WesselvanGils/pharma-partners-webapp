@@ -29,6 +29,7 @@ import { MedicationAddComponent } from './pages/medication/medication-add/medica
 import { ReceiptsComponent } from './pages/receipts/receipts.component';
 import { DataTablesModule } from "angular-datatables";
 import { EpisodeComponent } from './pages/episode/episode.component'
+import { MatRadioModule } from '@angular/material/radio';
 
 FullCalendarModule.registerPlugins([
 	interactionPlugin,
@@ -66,7 +67,8 @@ FullCalendarModule.registerPlugins([
 		ReactiveFormsModule,
 		FullCalendarModule,
 		SweetAlert2Module,
-		DataTablesModule
+		DataTablesModule,
+		MatRadioModule
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]
