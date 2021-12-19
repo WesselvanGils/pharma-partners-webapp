@@ -3,6 +3,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { Patient } from 'src/app/models/patient.model';
 import { Receipt } from 'src/app/models/receipt.model';
+import Swal from 'sweetalert2';
 import { ReceiptService } from '../../receipts/receipts.service';
 import { PatientService } from '../patient.service';
 
@@ -30,4 +31,12 @@ export class PatientDetailComponent implements OnInit {
     );
     this.receipts$ = this.receiptService.list();
   }
+
+  detailReceipt(receipt: Receipt) {
+   Swal.fire(receipt.dosage)
+  }
+
+
 }
+
+

@@ -244,8 +244,7 @@
                                         <td class="align-middle">{{receipt.medication.name}} {{receipt.medication.unit}}</td>
                                         <td class="align-middle">{{receipt.dosage}} </td>
                                         <td class="align-middle">{{receipt.daysToTake}} </td>
-                                        <td class="align-middle"><button class='btn btn-primary btn-sm'
-                                                routerLink="/patient">
+                                        <td class="align-middle"><button class='btn btn-primary btn-sm' (click)="detailReceipt(receipt)">
                                                 <i class='fa fa-info-circle'></i> Details</button></td>
                                     </tr>
                                 </tbody>
