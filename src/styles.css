@@ -2,7 +2,7 @@
 /* --- General design elements - typography --- */
 body {
     background-color: #efefef;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: #010005;
     font-size: 15px;
