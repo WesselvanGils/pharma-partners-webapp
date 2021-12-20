@@ -8,6 +8,9 @@ import Swal from 'sweetalert2';
 import { MedicationService } from './medication.service';
 import { PrescriptionService } from './prescription.service';
 import { PatientService } from '../patient.service';
+import { EpisodeService } from '../../episode/episode.service';
+import { Episode } from 'src/app/models/episode.model';
+import { start } from 'repl';
 
 @Component({
 	selector: 'app-patient-detail',
@@ -19,12 +22,14 @@ export class PatientDetailComponent implements OnInit
 	patient$: Observable<Patient>
 	prescriptions$: Observable<Prescription[]>
 	medications$: Observable<Medication[]>
+	episodes$: Observable<Episode[]>
 
 	constructor(
 		private route: ActivatedRoute,
 		private patientService: PatientService,
 		private prescriptionService: PrescriptionService,
-		private medicationService: MedicationService
+		private medicationService: MedicationService,
+		private episodeService: EpisodeService
 	) { }
 
 	ngOnInit()
@@ -36,6 +41,7 @@ export class PatientDetailComponent implements OnInit
 		)
 		this.prescriptions$ = this.prescriptionService.list()
 		this.medications$ = this.medicationService.list()
+		this.episodes$ = this.episodeService.list()
 	}
 
 	detailPrescription(prescription: Prescription, patient: Patient)
@@ -102,6 +108,68 @@ export class PatientDetailComponent implements OnInit
 				{
 					if (result) this.prescriptions$ = this.prescriptionService.list()
 				})
+			})
+		})
+	}
+
+	addEpisode ()
+	{
+		const ICPC: string[] = [ 'B81', 'C80', 'A55', 'C11', 'F22' ]
+		let ICPCOptions: string
+
+		ICPC.forEach(element => 
+		{
+			ICPCOptions = ICPCOptions + `<option>${element}</option>`	
+		})
+
+		Swal.fire({
+			title: "Voeg episode toe",
+			html: `
+			<input type="text" id="description" class="swal2-input" placeholder="Omschrijving">
+			<input type="date" id="startDate" class="swal2-input" placeholder="Start Datum">
+			<br>
+			<span>Prioriteit</span><input type="checkbox" id="priority" class="swal2-input">
+			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
+				<option selected disabled>Kies een ICPC code..</option>
+				${ICPCOptions}
+			</select>`,
+			confirmButtonText: 'Toevoegen',
+			showDenyButton: true,
+			denyButtonText: "Afbreken",
+			focusConfirm: false,
+			preConfirm: () =>
+			{
+				const description = Swal.getPopup().querySelector<HTMLInputElement>('#description').value
+				const startDate = Swal.getPopup().querySelector<HTMLInputElement>('#startDate').value as unknown as Date
+				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>('#ICPC').value
+				const priority = Swal.getPopup().querySelector<HTMLInputElement>("#priority").value 
+
+				if (!description || !startDate || !ICPC || !priority )
+				{
+					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+				}
+				return {
+					description: description,
+					startDate: startDate,
+					ICPC: ICPC,
+					priority: priority,
+				}
+			}
+		}).then((result) =>
+		{
+			let entry: Episode =
+			{
+				_id: undefined,
+				description: result.value.description,
+				priority: result.value.priority == "on" ? true : false,
+				startDate: result.value.startDate,
+				ICPC: result.value.ICPC,
+				publicationDate: new Date()
+			}
+
+			this.episodeService.create(entry).subscribe( (result) =>
+			{
+				if (result) this.episodes$ = this.episodeService.list()
 			})
 		})
 	}

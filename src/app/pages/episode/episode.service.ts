@@ -7,12 +7,8 @@ import { Episode } from 'src/app/models/episode.model';
 @Injectable({ providedIn: 'root' })
 export class EpisodeService extends EntityService<Episode>
 {
-
-	constructor (http: HttpClient)
-    {
-        super(http, environment.apiUrl, "episodes")
-    }
-
-   
+	constructor(http: HttpClient)
+	{
+		super(http, environment.apiUrl, "episodes")
+	}
 }
-
