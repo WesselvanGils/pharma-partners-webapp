@@ -22,8 +22,8 @@ const PATIENTS: Patient[] = [
   {
     _id: 'some_id',
     prefix: 'mw',
-    firstname: 'Jane',
-    lastname: 'Doe',
+    firstName: 'Jane',
+    lastName: 'Doe',
     BSN: '123456789',
     adress: 'Straatnaam 1',
     patientNumber: '2173624',
