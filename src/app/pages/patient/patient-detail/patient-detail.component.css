@@ -1,0 +1,13 @@
+hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.table-responsive {
+    max-height: 220px;
+    overflow: auto
+}
+thead{
+    position: sticky; 
+    top: -2px; 
+}

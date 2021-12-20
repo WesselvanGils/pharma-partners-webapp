@@ -1,12 +1,11 @@
 import { Entity } from "./entity.model";
 import { Patient } from "./patient.model";
 import { User } from "./user.model";
+import { CalendarEvent } from 'angular-calendar';
 
-export class Meeting extends Entity
+export class Appointment extends Entity
 {
-    startDate: Date
-	endDate: Date
-	subject: string
-	employee: User
+    employee: User
 	patient: Patient
+	meeting: CalendarEvent
 }

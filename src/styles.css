@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /* --- General design elements - typography --- */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 body {
     background-color: #efefef;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
@@ -93,4 +94,11 @@ h6 {
 .form-control:focus {
     border-color: #3d6c99;
     box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25);
+}
+
+
+/* --- Table colors --- */
+/* Hover over table row */
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #cbe5fd40;
 }

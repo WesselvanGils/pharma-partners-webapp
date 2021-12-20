@@ -1,61 +1,47 @@
-import { Component, OnInit } from '@angular/core';
-import { CalendarOptions } from "@fullcalendar/angular"
-import { Observable, of } from 'rxjs';
-import { Meeting } from 'src/app/models/meeting.model';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { CalendarEvent, CalendarView } from 'angular-calendar';
+import { Subject } from 'rxjs';
+import { Appointment } from 'src/app/models/appointment.model';
 import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
 
 @Component({
 	selector: 'app-calendar',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './calendar.component.html',
-	styleUrls: [ './calendar.component.css' ]
 })
 export class CalendarComponent implements OnInit
 {
-	events;
-	calendarOptions: CalendarOptions;
-	activeMeeting$: Observable<Meeting>
+	view: CalendarView = CalendarView.Week
+	viewDate: Date = new Date()
+	events: CalendarEvent[] = []
+	refresh: Subject<any> = new Subject<any>()
+	focusedMeeting: CalendarEvent
 
 	constructor(private calendarService: CalendarService) { }
 
-	ngOnInit()
+	ngOnInit(): void 
 	{
-		this.calendarService.list().subscribe((result) =>
-			this.convertDates(result, (formattedDates) => 
-			{
-				this.events = formattedDates
-				this.calendarOptions = {
-					initialView: 'dayGridWeek',
-					eventClick: this.handleEventClick.bind(this),
-					events: this.events
-				}
-			})
-		)
-
-		this.calendarOptions = {
-			initialView: 'dayGridWeek',
-			events: this.events
-		}
-	}
-
-	handleEventClick( arg ) 
-	{
-		Swal.fire(arg.event._def);	
-	}
-
-	convertDates(input: Meeting[], callback)
-	{
-		let result = []
-
-		input.forEach(meeting => 
+		this.calendarService.list().subscribe( (result) =>
 		{
-			result.push({
-				start: meeting.startDate,
-				end: meeting.endDate,
-				title: `${meeting.patient.firstname} ${meeting.subject}`,
+			result.forEach( (item: Appointment) =>
+			{
+				this.events = [...this.events, 
+					{
+						id: item._id,
+						title: item.meeting.title, 
+						start: new Date(item.meeting.start), 
+						end: new Date(item.meeting.end)
+					}
+				]
 			})
+			this.refresh.next("refresh")
 		})
+	}
 
-		callback(result)
+	eventClicked({ event }: { event: CalendarEvent }): void
+	{
+		this.focusedMeeting = event
+		Swal.fire(`${event.id}`)
 	}
 }

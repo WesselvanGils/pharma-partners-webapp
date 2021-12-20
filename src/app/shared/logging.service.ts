@@ -12,7 +12,7 @@ export class LoggingService extends EntityService<LogItem>
 
 	constructor (http: HttpClient)
     {
-        super(http, environment.apiUrl, "log")
+        super(http, environment.apiUrl, "logs")
 		this.logs.messages = []
     }
 
