@@ -15,7 +15,7 @@
         <tr *ngFor="let patient of patients">
           <td scope="row">{{ patient.patientNumber }}</td>
           <td scope="row">
-            {{ patient.prefix }}. {{ patient.firstname }} {{ patient.lastname }}
+            {{ patient.prefix }}. {{ patient.firstName }} {{ patient.lastName }}
           </td>
           <td scope="row">{{ patient.dateofbirth | date: "dd-MM-yyyy" }}</td>
           <td scope="row">{{ patient.gender }}</td>

@@ -35,7 +35,7 @@ export class PatientDetailComponent implements OnInit
 
 	detailReceipt(receipt: Receipt, patient: Patient)
 	{
-		const title = `Het recept van ${patient.firstname + ' ' + patient.lastname}`
+		const title = `Het recept van ${patient.firstName + ' ' + patient.lastName}`
 		const message = `${receipt.dosage + ' ' + receipt.medication.name}`
 		Swal.fire(title, message)
 	}

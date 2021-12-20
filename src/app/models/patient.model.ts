@@ -3,8 +3,8 @@ import { Entity } from "./entity.model";
 export class Patient extends Entity
 {
     BSN: string
-    firstname: string
-    lastname: string
+    firstName: string
+    lastName: string
     adress: string
     prefix: string
     patientNumber: string
