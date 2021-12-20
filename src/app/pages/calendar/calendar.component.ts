@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
 import { Subject } from 'rxjs';
-import { Appointment } from 'src/app/models/meeting.model';
+import { Appointment } from 'src/app/models/appointment.model';
 import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
 

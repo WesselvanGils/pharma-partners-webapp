@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { Meeting } from 'src/app/models/meeting.model';
+import { Meeting } from 'src/app/models/appointment.model';
 import { Patient } from 'src/app/models/patient.model';
 import { User } from 'src/app/models/user.model';
 
