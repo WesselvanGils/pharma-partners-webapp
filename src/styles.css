@@ -126,12 +126,10 @@ h6 {
     padding-right: 5px !important;
     color: #fff !important;
 }
-
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    border: 2px solid #cbe5fd!important;
-    background: linear-gradient(to bottom, #cbe5fd 100%, #cbe5fd 100%)!important;
+    border: 1px solid #989898!important;
+    background: linear-gradient(to bottom, #fff 100%, #fff 100%)!important;
 } 
-
 .dataTables_wrapper .dataTables_filter input :focus { 
     border-color: #3d6c99!important;
     box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25)!important;
@@ -143,15 +141,12 @@ h6 {
  * Without these overrides, it will take the default style of the swal2 elements.
  */
 /* Confirm button */ 
-/* TODO: Danine - Deze kleuren nog aanpassen volgens styleguide */
 .swal2-styled.swal2-confirm {
     background-color: #17a2b8 !important;
 }
-/* FIXME: AANPASSEN */
 .swal2-styled.swal2-confirm:focus {
     box-shadow: 0 0 0 3px #17a2b8 !important;
 }
-
 /* Close button hover*/
 .swal2-close:hover {
     color: #ed1e79 !important;
@@ -171,11 +166,22 @@ h6 {
 
 /* ----- Calendar - colors ----- */
 .cal-week-view .cal-header.cal-today {
-    background-color: rgb(237, 30, 121, 0.1)!important;
+    background-color: #ed1e7823!important;
 }
 .cal-week-view .cal-current-time-marker {
     background-color: #ed1e79!important;
 }
 .cal-week-view .cal-header.cal-weekend span {
     color: #d81067!important;
+}
+.cal-week-view .cal-event {
+    background-color: #cbe5fdb0;
+    border-color: #004b9100;
+    border-left: 5px solid #7ba8d3;
+    color: #004A91;
+    font-size:medium;
+}
+.cal-week-view .cal-event:hover {
+    transition: 0.3s;
+    background-color: #cbe5fd;
 }
