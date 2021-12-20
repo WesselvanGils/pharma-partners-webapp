@@ -1,1 +1,306 @@
-<p>patient-detail works!</p>
+<div *ngIf="patient$ | async as patient">
+	<div class="row mb-1">
+		<h1 class="col-sm-10 col-md-7 col-lg-8">Patiënt dossier</h1>
+		<div class="col-sm-2 col-md-5 col-lg-4">
+			<button class="btn btn-warning float-right mt-sm-1 mt-md-3 mt-lg-3">
+				<!-- FIXME: kleurtje aanpassen -->
+				<i class="fas fa-plus"></i> Voeg vervolg afspraak toe
+			</button>
+		</div>
+	</div>
+	<div class="row gutters-sm">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="row gutters-sm">
+				<div class="col-sm-12 col-md-4 col-lg-4 pr-md-0 mb-sm-3">
+					<div class="card h-100 mb-3">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
+									<h6 class="mb-0">Naam</h6>
+								</div>
+								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
+									{{ patient.prefix }} {{ patient.firstname }}
+									{{ patient.lastname }}
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
+									<h6 class="mb-0">Geslacht</h6>
+								</div>
+								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
+									{{ patient.gender }}
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
+									<h6 class="mb-0">Geboorte datum</h6>
+								</div>
+								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
+									{{ patient.dateofbirth | date: "dd-MM-yyyy" }}
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
+									<h6 class="mb-0">BSN</h6>
+								</div>
+								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
+									{{ patient.BSN }}
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
+									<h6 class="mb-0">Adress</h6>
+								</div>
+								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
+									{{ patient.adress }}
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
+									<h6 class="mb-0">Telefoon</h6>
+								</div>
+								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
+									{{ patient.phonenumber }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-8 col-lg-8 mb-sm-3">
+					<div class="card h-100">
+						<div class="card-body">
+							<div class="row">
+								<h3 class="col-8">Episodes</h3>
+								<span class="col-4">
+									<button class="btn btn-info btn-sm float-right" (click)="addEpisode()">
+										<i class="fas fa-plus"></i> Voeg episode toe
+									</button>
+								</span>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-sm">
+									<thead class="thead-light">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Omschrijving</th>
+											<th scope="col">Datum</th>
+											<th scope="col">Code</th>
+											<th scope="col">Prioriteit</th>
+											<th scope="col">Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td class="align-middle">Hoofdpijn</td>
+											<td class="align-middle">11-12-2021</td>
+											<td class="align-middle">AB1</td>
+											<td class="align-middle">P</td>
+											<td class="align-middle">
+												<button class="btn btn-primary btn-sm" routerLink="/patient">
+													<i class="fa fa-info-circle fa-sm"></i> Details
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Misselijkheid</td>
+											<td>14-12-2021</td>
+											<td>BC4</td>
+											<td>NP</td>
+											<td>
+												<button class="btn btn-primary btn-sm" routerLink="/patient">
+													<i class="fa fa-info-circle fa-sm"></i> Details
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Pijn in been</td>
+											<td>01-12-2021</td>
+											<td>FE8</td>
+											<td>NP</td>
+											<td>
+												<button class="btn btn-primary btn-sm" routerLink="/patient">
+													<i class="fa fa-info-circle fa-sm"></i> Details
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">4</th>
+											<td>Pijn in arm</td>
+											<td>29-11-2021</td>
+											<td>OR1</td>
+											<td>P</td>
+											<td>
+												<button class="btn btn-primary btn-sm" routerLink="/patient">
+													<i class="fa fa-info-circle fa-sm"></i> Details
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">5</th>
+											<td>Buikpijn</td>
+											<td>25-11-2021</td>
+											<td>FH8</td>
+											<td>P</td>
+											<td>
+												<button class="btn btn-primary btn-sm" routerLink="/patient">
+													<i class="fa fa-info-circle fa-sm"></i> Details
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12 mb-3">
+			<!-- dit geheel in een child component -->
+			<div class="card">
+				<div class="card-body">
+					<h3>Journaalregels</h3>
+					<div class="table-responsive">
+						<table class="table table-sm">
+							<thead class="thead-light">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Journaalregels</th>
+									<th scope="col">SOEP</th>
+									<th scope="col">Datum</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" class="align-middle">1</th>
+									<td class="align-middle">Leuke opmerking...</td>
+									<td class="align-middle">
+										S ... <br />O ... <br />E ... <br />P ...
+									</td>
+									<td class="align-middle">12-12-2021</td>
+								</tr>
+								<tr>
+									<th scope="row" class="align-middle">2</th>
+									<td class="align-middle">Nog weer een mooie opmerking</td>
+									<td class="align-middle">
+										S ... <br />O ... <br />E ... <br />P ...
+									</td>
+									<td class="align-middle">14-12-2021</td>
+								</tr>
+								<tr>
+									<th scope="row" class="align-middle">3</th>
+									<td class="align-middle">Prachtig mooie opmerking</td>
+									<td class="align-middle">
+										S ... <br />O ... <br />E ... <br />P ...
+									</td>
+									<td class="align-middle">17-12-2021</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- dit geheel in een child component -->
+		</div>
+
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="row gutters-sm">
+				<div class="col-sm-12 col-md-5 col-lg-4 pr-md-0">
+					<div class="card mb-3">
+						<div class="card-body">
+							<h3>Metingen</h3>
+							<div class="table-responsive">
+								<table class="table table-sm">
+									<thead class="thead-light">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Meting</th>
+											<th scope="col">Waarde</th>
+											<th scope="col">Datum</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td class="align-middle">Gewicht</td>
+											<td class="align-middle">70 kg</td>
+											<td class="align-middle">12-12-2021</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Lengte</td>
+											<td>180 cm</td>
+											<td>12-12-2021</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Bloeddruk</td>
+											<td>135 mmHg</td>
+											<td>12-12-2021</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<span class="row justify-content-center mt-3">
+								<button class="btn btn-info btn-sm">
+									<i class="fas fa-plus"></i> Voeg meting toe
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-7 col-lg-8 mb-3">
+					<div class="card h-100">
+						<div class="card-body">
+							<div class="row">
+								<h3 class="col-8">Recepten</h3>
+								<span class="col-4">
+									<button class="btn btn-info btn-sm float-right" (click)="addPrescription()">
+										<i class="fas fa-plus"></i> Voeg recept toe
+									</button>
+								</span>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-sm">
+									<thead class="thead-light">
+										<tr>
+											<th scope="col">Medicijn</th>
+											<th scope="col">Dosering</th>
+											<th scope="col">Periode</th>
+											<th scope="col">Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr *ngFor="let prescription of prescriptions$ | async">
+											<td class="align-middle">
+												{{ prescription.medication.name }}
+												{{ prescription.medication.unit }}
+											</td>
+											<td class="align-middle">{{ prescription.dosage }}</td>
+											<td class="align-middle">{{ prescription.period }}</td>
+											<td class="align-middle">
+												<button class="btn btn-primary btn-sm"
+													(click)="detailPrescription(prescription, patient)">
+													<i class="fa fa-info-circle"></i> Details
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

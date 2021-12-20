@@ -24,6 +24,10 @@ import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-d
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { DataTablesModule } from "angular-datatables";
+import { EpisodeComponent } from './pages/episode/episode.component'
+import { MatRadioModule } from '@angular/material/radio';
+
 import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
 
 @NgModule({
@@ -42,7 +46,9 @@ import { AppointmentComponent } from './pages/calendar/appointment/appointment.c
 		PatientDetailComponent,
 		PatientComponent,
 		ContactComponent,
-  		AppointmentComponent,
+		EpisodeComponent,
+		ContactComponent,
+		AppointmentComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -51,6 +57,9 @@ import { AppointmentComponent } from './pages/calendar/appointment/appointment.c
 		HttpClientModule,
 		FormsModule,
 		ReactiveFormsModule,
+		SweetAlert2Module,
+		DataTablesModule,
+		MatRadioModule,
 		SweetAlert2Module,
 		CalendarUtilsModule,
 		BrowserAnimationsModule,
