@@ -64,16 +64,17 @@ export class PatientDetailComponent implements OnInit
 			Swal.fire({
 				title: 'Voeg recept toe',
 				html: `
-				<select type="text" id="medication" class="swal2-input" placeholder="Medicatie">
-					<option selected disabled>Kies een medicijn..</option>
+				<select type="text" id="medication" class="swal2-input px-4" placeholder="Medicatie">
+					<option selected disabled>Kies een medicijn...</option>
 					${medicationOptions}
 				</select>
-				<input type="text" id="description" class="swal2-input" placeholder="Beschrijving">
-				<input type="text" id="dosage" class="swal2-input" placeholder="Dosering">
-				<input type="text" id="period" class="swal2-input" placeholder="Periode van inname">`,
-				confirmButtonText: 'Toevoegen',
+				<input type="text" id="description" class="swal2-input px-1" placeholder="Beschrijving">
+				<input type="text" id="dosage" class="swal2-input px-1" placeholder="Dosering">
+				<input type="text" id="period" class="swal2-input px-1" placeholder="Periode van inname">`,
+				confirmButtonText: 'Voeg toe',
+				showCloseButton: true,
 				showDenyButton: true,
-				denyButtonText: "Afbreken",
+				denyButtonText: "Annuleer",
 				focusConfirm: false,
 				preConfirm: () =>
 				{
@@ -125,17 +126,36 @@ export class PatientDetailComponent implements OnInit
 		Swal.fire({
 			title: "Voeg episode toe",
 			html: `
-			<input type="text" id="description" class="swal2-input" placeholder="Omschrijving">
+			<style>
+				input[type=checkbox]
+				{
+				/* Double-sized Checkboxes */
+				-ms-transform: scale(1.5); /* IE */
+				-moz-transform: scale(1.5); /* FF */
+				-webkit-transform: scale(1.5); /* Safari and Chrome */
+				-o-transform: scale(1.5); /* Opera */
+				transform: scale(1.5);
+				margin: 0;
+				margin-right: 3px;
+				}
+			</style>
+			<input type="text" id="description" class="swal2-input px-1" placeholder="Omschrijving">
 			<input type="date" id="startDate" class="swal2-input" placeholder="Start Datum">
-			<br>
-			<span>Prioriteit</span><input type="checkbox" id="priority" class="swal2-input">
 			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
-				<option selected disabled>Kies een ICPC code..</option>
+				<option selected disabled>Kies een ICPC code...</option>
 				${ICPCOptions}
-			</select>`,
-			confirmButtonText: 'Toevoegen',
+				</select>
+			<div class="form-check mt-3">
+				<input type="checkbox" id="priority" class="swal2-checkbox">
+				<label class="form-check-label" for="priority">
+					Priority
+				</label>    
+            </div>`,
+			confirmButtonText: 'Voeg toe',
 			showDenyButton: true,
-			denyButtonText: "Afbreken",
+			showCloseButton: true,
+			denyButtonText: "Annuleer",
+			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
 			{
