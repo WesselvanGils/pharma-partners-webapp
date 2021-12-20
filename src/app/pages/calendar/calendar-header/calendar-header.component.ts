@@ -12,16 +12,14 @@ import { CalendarView } from 'angular-calendar';
             mwlCalendarPreviousView
             [view]="view"
             [(viewDate)]="viewDate"
-            (viewDateChange)="viewDateChange.next(viewDate)"
-          >
-            Previous
+            (viewDateChange)="viewDateChange.next(viewDate)">
+           <i class="fas fa-angle-left"></i>
           </div>
           <div
             class="btn btn-outline-secondary"
             mwlCalendarToday
             [(viewDate)]="viewDate"
-            (viewDateChange)="viewDateChange.next(viewDate)"
-          >
+            (viewDateChange)="viewDateChange.next(viewDate)">
             Today
           </div>
           <div
@@ -29,10 +27,9 @@ import { CalendarView } from 'angular-calendar';
             mwlCalendarNextView
             [view]="view"
             [(viewDate)]="viewDate"
-            (viewDateChange)="viewDateChange.next(viewDate)"
-          >
-            Next
-          </div>
+            (viewDateChange)="viewDateChange.next(viewDate)">
+            <i class="fas fa-angle-right"></i>
+            </div>
         </div>
       </div>
       <div class="col-md-4">
