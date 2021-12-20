@@ -1,14 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-/* --- General design elements - typography --- */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+/* ----- General design elements - typography ----- */
+/* Body */
 body {
     background-color: #efefef;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: #010005;
     font-size: 15px;
 }
-
 /* Headers */
 h1 {
     font-weight: lighter;
@@ -34,7 +34,8 @@ h6 {
     font-size: 16px;
 }
 
-/* --- Button - custom colors --- */
+
+/* ----- Button - custom colors ----- */
 /* Button outline primary */
 .btn-outline-primary {
     border-color: #3d6c99;
@@ -54,7 +55,6 @@ h6 {
     background-color: #3d6c99;
     border-color: #3d6c99;
 }
-
 /* Button primary */
 .btn-primary {
     border-color: #3d6c99!important;
@@ -68,15 +68,31 @@ h6 {
 }
 .btn-primary:hover {
     color: white !important;
-    background-color: #003E79 !important;
+    background-color: #2d5983!important;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #3d6c99;
     border-color: #3d6c99;
 }
+/* Button warning */
+.btn-warning {
+    border-color: #003e79!important;
+    background-color: #003e79!important;
+    color: #fff!important;
+}
+.btn-warning[disabled]:hover {
+    border-color: #003e79!important;
+    background-color: #003e79!important;
+    color: #fff !important;
+}
+.btn-warning:hover {
+    color: white !important;
+    background-color: #002c55!important;
+}
 
-/* --- Form validation - custom colors --- */
+
+/* ----- Form validation - custom colors ----- */
 /* Invalid input error text*/
 .invalid-feedback {
     font-size: 13px;
@@ -97,8 +113,68 @@ h6 {
 }
 
 
-/* --- Table colors --- */
+/* ----- Table customization ----- */
 /* Hover over table row */
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
     background-color: #cbe5fd40;
+}
+/* Pagination button */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0!important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    border: 2px solid #cbe5fd!important;
+    background: linear-gradient(to bottom, #cbe5fd 100%, #cbe5fd 100%)!important;
+} 
+
+.dataTables_wrapper .dataTables_filter input :focus { 
+    border-color: #3d6c99!important;
+    box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25)!important;
+}
+
+
+/* ----- Sweet Alerts - custom colors ----- */
+/* These all need to have the !important tags behind them.
+ * Without these overrides, it will take the default style of the swal2 elements.
+ */
+/* Confirm button */ 
+/* TODO: Danine - Deze kleuren nog aanpassen volgens styleguide */
+.swal2-styled.swal2-confirm {
+    background-color: #17a2b8 !important;
+}
+/* FIXME: AANPASSEN */
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px #17a2b8 !important;
+}
+
+/* Close button hover*/
+.swal2-close:hover {
+    color: #ed1e79 !important;
+}
+/* Deny button */
+.swal2-styled.swal2-deny {
+    background-color: #ed1e79 !important;
+}
+.swal2-styled.swal2-deny:focus {
+    box-shadow: 0 0 0 3px rgb(237, 30, 121, 0.5) !important;
+}
+/* Error message icon */
+.swal2-validation-message::before {
+    background-color: #c1272d !important;
+}
+
+
+/* ----- Calendar - colors ----- */
+.cal-week-view .cal-header.cal-today {
+    background-color: rgb(237, 30, 121, 0.1)!important;
+}
+.cal-week-view .cal-current-time-marker {
+    background-color: #ed1e79!important;
+}
+.cal-week-view .cal-header.cal-weekend span {
+    color: #d81067!important;
 }
