@@ -7,5 +7,5 @@ export class Meeting extends Entity
 {
     employee: User
 	patient: Patient
-	calendarEvent: CalendarEvent
+	meeting: CalendarEvent
 }

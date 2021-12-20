@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
-import { Observable } from 'rxjs';
+import { flatMap, map, mergeMap, mergeMapTo, Observable, Subject, Subscriber, Subscription, switchMap } from 'rxjs';
 import { Meeting } from 'src/app/models/meeting.model';
+import { LoggingService } from 'src/app/shared/logging.service';
 import Swal from 'sweetalert2';
-import { colors } from './calendar-header/colors';
 import { CalendarService } from './calendar.service';
 
 @Component({
@@ -13,17 +13,28 @@ import { CalendarService } from './calendar.service';
 })
 export class CalendarComponent implements OnInit
 {
-	view: CalendarView = CalendarView.Week;
-	viewDate: Date = new Date();
+	view: CalendarView = CalendarView.Week
+	viewDate: Date = new Date()
 	events: CalendarEvent[] = []
+	refresh: Subject<any> = new Subject<any>()
 
-	constructor (private calendarService: CalendarService) {}
+	constructor(private calendarService: CalendarService) { }
 
 	ngOnInit(): void 
 	{
-		this.calendarService.getAllMeetings().forEach(meeting => 
+		this.calendarService.list().subscribe( (result) =>
 		{
-			this.events.push(meeting.calendarEvent)	
+			result.forEach(item =>
+			{
+				this.events = [...this.events, 
+					{
+						title: item.meeting.title, 
+						start: new Date(item.meeting.start), 
+						end: new Date(item.meeting.end)
+					}
+				]
+			})
+			this.refresh.next("refresh")
 		})
 	}
 

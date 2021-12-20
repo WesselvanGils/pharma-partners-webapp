@@ -17,23 +17,4 @@ export class CalendarService extends EntityService<Meeting>
 	{
 		super(http, environment.apiUrl, "meetings")
 	}
-
-	public getAllMeetings( options?: any ): Meeting[]
-	{
-		let endpoint = `${this.url}${this.endpoint}`;
-		console.log(`list ${endpoint}`);
-		const response = this.http
-			.get<Meeting[]>(endpoint, { ...options, ...httpOptions })
-			.pipe(catchError(this.handleError)
-		)
-		let returnList = []
-		response.subscribe((result) =>
-			result.forEach(item => 
-			{
-				returnList.push(item)
-			}
-		))
-
-		return returnList
-	}
 }
