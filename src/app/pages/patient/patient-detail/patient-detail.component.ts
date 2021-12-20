@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 import { MedicationService } from './medication.service';
 import { PrescriptionService } from './prescription.service';
 import { PatientService } from '../patient.service';
-import { EpisodeService } from '../../episode/episode.service';
+import { EpisodeService } from './episode.service';
 import { Episode } from 'src/app/models/episode.model';
 import { start } from 'repl';
 

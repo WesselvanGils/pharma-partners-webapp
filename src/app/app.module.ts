@@ -25,7 +25,6 @@ import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { DataTablesModule } from "angular-datatables";
-import { EpisodeComponent } from './pages/episode/episode.component'
 import { MatRadioModule } from '@angular/material/radio';
 
 import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
@@ -46,7 +45,6 @@ import { AppointmentComponent } from './pages/calendar/appointment/appointment.c
 		PatientDetailComponent,
 		PatientComponent,
 		ContactComponent,
-		EpisodeComponent,
 		ContactComponent,
 		AppointmentComponent,
 	],
