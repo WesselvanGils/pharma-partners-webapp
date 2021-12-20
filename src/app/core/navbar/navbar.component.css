@@ -29,5 +29,11 @@ nav {
 }
 .logout:hover {
   color:#003E79 !important;
+}
 
+.user{
+  cursor: pointer;
+}
+.user:hover{
+  color:#003E79 !important;
 }
