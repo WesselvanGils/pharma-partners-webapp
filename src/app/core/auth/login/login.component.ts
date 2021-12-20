@@ -1,23 +1,25 @@
 import { Component, OnInit } from "@angular/core"
 import { FormGroup, FormControl, Validators } from "@angular/forms"
 import { Router } from "@angular/router"
-import { Subscription } from "rxjs"
+import { BehaviorSubject, map, Observable, Subscription } from "rxjs"
 import { User } from "src/app/models/user.model"
 import { AuthService } from "../auth.service"
 
 @Component({
 	selector: "app-login",
 	templateUrl: "./login.component.html",
-	styleUrls: ["./login.component.css"]
+	styleUrls: [ "./login.component.css" ]
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit
+{
 	loginForm: FormGroup
-	subs: Subscription
+	subs: Observable<User>
 	submitted = false
 
-	constructor(private authService: AuthService, private router: Router) {}
+	constructor(private authService: AuthService, private router: Router) { }
 
-	ngOnInit(): void {
+	ngOnInit(): void
+	{
 		this.loginForm = new FormGroup({
 			email: new FormControl(null, [
 				Validators.required,
@@ -29,62 +31,61 @@ export class LoginComponent implements OnInit {
 			])
 		})
 
-		this.subs = this.authService
-			.getUserFromLocalStorage()
-			.subscribe((user: User) => {
-				if (user) {
-					console.log("User already logged in > to dashboard")
-					this.router.navigate(["/"])
-				}
-			})
+		this.authService.currentUser$.subscribe( (result) =>
+		{
+			if (result)
+			{
+				console.log("already logged in, rerouting to home")
+				this.router.navigate(["/home"])
+			}
+		})
 	}
 
-	ngOnDestroy(): void {
-		if (this.subs) {
-			this.subs.unsubscribe()
-		}
-	}
-
-	onSubmit(): void {
-		if (this.loginForm.valid) {
+	onSubmit(): void
+	{
+		if (this.loginForm.valid)
+		{
 			this.submitted = true
 			const email = this.loginForm.value.email
 			const password = this.loginForm.value.password
 			this.authService
 				.login(email, password)
-				// .pipe(delay(1000))
-				.subscribe(user => {
-					if (user) {
-						console.log("Logged in")
-						this.router.navigate(["/"])
-					}
+				.subscribe(user =>
+				{
 					this.submitted = false
 				})
-		} else {
+		} else
+		{
 			this.submitted = false
 			console.error("loginForm invalid")
 		}
 	}
 
-	validEmail(control: FormControl): { [s: string]: boolean } {
+	validEmail(control: FormControl): { [ s: string ]: boolean }
+	{
 		const email = control.value
 		const regexp = new RegExp(
 			"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
 		)
-		if (regexp.test(email) !== true) {
+		if (regexp.test(email) !== true)
+		{
 			return { email: false }
-		} else {
+		} else
+		{
 			return null
 		}
 	}
 
-	validPassword(control: FormControl): { [s: string]: boolean } {
+	validPassword(control: FormControl): { [ s: string ]: boolean }
+	{
 		const password = control.value
 		const regexp = new RegExp("^[a-zA-Z]([a-zA-Z0-9]){2,14}")
 		const test = regexp.test(password)
-		if (regexp.test(password) !== true) {
+		if (regexp.test(password) !== true)
+		{
 			return { password: false }
-		} else {
+		} else
+		{
 			return null
 		}
 	}
