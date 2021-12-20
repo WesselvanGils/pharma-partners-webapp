@@ -46,7 +46,7 @@ export class PatientDetailComponent implements OnInit
 
 	detailPrescription(prescription: Prescription, patient: Patient)
 	{
-		const title = `Het recept van ${patient.firstname + ' ' + patient.lastname}`
+		const title = `Het recept van ${patient.firstName + ' ' + patient.lastName}`
 		const message = `${prescription.dosage + ' ' + prescription.medication.name}`
 		Swal.fire(title, message)
 	}
