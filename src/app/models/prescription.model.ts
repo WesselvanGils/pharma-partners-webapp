@@ -1,11 +1,11 @@
 import { Entity } from "./entity.model";
 import { Medication } from "./medication.model";
 
-export class Receipt extends Entity
+export class Prescription extends Entity
 {
-    preparation: string
+    description: string
     dosage: string
     publicationDate: Date
-    daysToTake: String
-    medication?: Medication
+    period: string
+    medication: Medication
 }

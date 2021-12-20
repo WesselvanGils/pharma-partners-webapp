@@ -4,8 +4,8 @@ import { Entity } from "./entity.model";
 export class Episode extends Entity
 {
     publicationDate: Date
-    description: String
+    description: string
     priority: boolean
-    ICPC: String
+    ICPC: string
     startDate: Date
 }

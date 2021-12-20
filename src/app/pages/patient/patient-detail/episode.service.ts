@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { EntityService } from 'src/app/shared/entity.service';
-import { Receipt } from 'src/app/models/receipt.model';
+import { Episode } from 'src/app/models/episode.model';
 
 @Injectable({ providedIn: 'root' })
-export class ReceiptService extends EntityService<Receipt>
+export class EpisodeService extends EntityService<Episode>
 {
-	constructor (http: HttpClient)
-    {
-        super(http, environment.apiUrl, "receipts")
-    }
+	constructor(http: HttpClient)
+	{
+		super(http, environment.apiUrl, "episodes")
+	}
 }

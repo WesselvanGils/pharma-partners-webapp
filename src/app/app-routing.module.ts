@@ -10,8 +10,6 @@ import { HomepageComponent } from "./pages/homepage/homepage.component"
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientComponent } from "./pages/patient/patient.component"
-import { ReceiptsComponent } from "./pages/receipts/receipts.component"
-import { EpisodeComponent } from "./pages/episode/episode.component"
 
 const routes: Routes = [
 	{
@@ -25,8 +23,6 @@ const routes: Routes = [
 			{ path: "about", component: AboutComponent },
 			{ path: "contact", component: ContactComponent },
 			{ path: "calendar", component: CalendarComponent },
-			{ path: "recept", component: ReceiptsComponent },
-			{ path: "episode", component: EpisodeComponent },
 			{ path: "patient", component: PatientComponent,
 				children: 
 				[
