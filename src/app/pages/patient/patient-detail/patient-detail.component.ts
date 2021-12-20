@@ -5,8 +5,8 @@ import { Medication } from 'src/app/models/medication.model';
 import { Patient } from 'src/app/models/patient.model';
 import { Prescription } from 'src/app/models/prescription.model';
 import Swal from 'sweetalert2';
-import { MedicationService } from '../../receipts/medication.service';
-import { PrescriptionService } from '../../receipts/prescription.service';
+import { MedicationService } from './medication.service';
+import { PrescriptionService } from './prescription.service';
 import { PatientService } from '../patient.service';
 
 @Component({
