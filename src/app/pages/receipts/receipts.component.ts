@@ -3,10 +3,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { catchError, Observable, of, Subscription, switchMap } from 'rxjs';
 import { Medication } from 'src/app/models/medication.model';
-import { Receipt } from 'src/app/models/receipt.model';
+import { Prescription } from 'src/app/models/prescription.model';
 import { Alert, AlertService } from 'src/app/shared/alert/alert.service';
 import { MedicationService } from './medication.service';
-import { ReceiptService } from './receipts.service';
+import { PrescriptionService } from './prescription.service';
 
 @Component({
 	selector: 'app-receipts',
@@ -20,13 +20,13 @@ export class ReceiptsComponent implements OnInit
 	subscription: Subscription
 	medications$: Observable<Medication[]>
 
-	tempReceipt!: Receipt
-	newReceipt: Receipt = {
+	tempReceipt: Prescription
+	newReceipt: Prescription = {
 		_id: undefined,
-		preparation: '',
+		description: '',
 		dosage: '',
 		publicationDate: new Date('25-12-2021'),
-		daysToTake: '',
+		period: '',
 		medication: undefined
 	}
 
@@ -35,7 +35,7 @@ export class ReceiptsComponent implements OnInit
 			private route: ActivatedRoute,
 			private alertService: AlertService,
 			private router: Router,
-			private receiptService: ReceiptService,
+			private prescriptionService: PrescriptionService,
 			private medicationService: MedicationService
 		)
 	{ }
@@ -50,7 +50,7 @@ export class ReceiptsComponent implements OnInit
 					return of(this.newReceipt)
 				} else
 				{
-					return this.receiptService.read(params.get('_id')!)
+					return this.prescriptionService.read(params.get('_id')!)
 				}
 			})
 		).subscribe((receipt) =>
@@ -58,10 +58,10 @@ export class ReceiptsComponent implements OnInit
 			this.tempReceipt = receipt
 			this.receiptForm = new FormGroup({
 				_id: new FormControl(receipt._id),
-				preparation: new FormControl(receipt.preparation, [ Validators.required ]),
+				preparation: new FormControl(receipt.description, [ Validators.required ]),
 				dosage: new FormControl(receipt.dosage, [ Validators.required ]),
 				publicationDate: new FormControl(receipt.publicationDate, [ Validators.required ]),
-				daysToTake: new FormControl(receipt.daysToTake, [ Validators.required ]),
+				daysToTake: new FormControl(receipt.period, [ Validators.required ]),
 				medication: new FormControl(receipt.medication, [ Validators.required ]),
 			});
 		})
@@ -74,7 +74,7 @@ export class ReceiptsComponent implements OnInit
 		{
 			if (this.tempReceipt._id)
 			{
-				this.receiptService.update(this.receiptForm.value)
+				this.prescriptionService.update(this.receiptForm.value)
 					.pipe(catchError((error: Alert) =>
 					{
 						console.log(error)
@@ -91,7 +91,7 @@ export class ReceiptsComponent implements OnInit
 					})
 			} else
 			{
-				this.receiptService.create(this.receiptForm.value)
+				this.prescriptionService.create(this.receiptForm.value)
 					.pipe(catchError((error: Alert) =>
 					{
 						console.log(error)
@@ -115,14 +115,14 @@ export class ReceiptsComponent implements OnInit
 		this.subscription?.unsubscribe()
 	}
 
-	gotoUser(receipt: Receipt)
+	gotoUser(prescription: Prescription)
 	{
-		if (receipt._id == undefined)
+		if (prescription._id == undefined)
 		{
 			this.router.navigate([ '/home' ]);
 		} else
 		{
-			const userIdQuery = receipt ? receipt._id : null;
+			const userIdQuery = prescription ? prescription._id : null;
 			this.router.navigate([ '../patient/detail/' + userIdQuery ]);
 		}
 	}

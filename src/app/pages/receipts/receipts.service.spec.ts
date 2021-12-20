@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing'
 import { Observable, of } from 'rxjs'
 
 import { HttpClient } from '@angular/common/http'
-import { ReceiptService } from './receipts.service';
+import { ReceiptService } from './prescription.service';
 import { Receipt } from 'src/app/models/receipt.model';
 import { Medication } from 'src/app/models/medication.model';
 
