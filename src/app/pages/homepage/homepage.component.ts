@@ -6,6 +6,7 @@ import { CalendarService } from "src/app/pages/calendar/calendar.service";
 import { Appointment } from "src/app/models/appointment.model";
 import { User } from "src/app/models/user.model";
 import { LoggingService } from "src/app/shared/logging.service";
+import Swal from "sweetalert2";
 
 @Component({
 	selector: "app-homepage",
@@ -29,4 +30,7 @@ export class HomepageComponent implements OnInit {
 		this.appointments$ = this.appointmentService.list()
 	}
 
+	goToAppointment() {
+		Swal.fire({title: "dit wordt een component"})
+	}
 }
