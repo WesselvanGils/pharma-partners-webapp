@@ -19,7 +19,6 @@ import { FooterComponent } from "./core/footer/footer.component"
 import { RootComponent } from "./core/root/root.component"
 import { AlertComponent } from "./shared/alert/alert.component"
 import { CalendarComponent } from "./pages/calendar/calendar.component"
-import { MeetingComponent } from "./pages/calendar/meeting/meeting.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
 import { PatientComponent } from './pages/patient/patient.component';
@@ -38,7 +37,6 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 		RootComponent,
 		AlertComponent,
 		CalendarComponent,
-		MeetingComponent,
 		PatientListComponent,
 		PatientDetailComponent,
 		PatientComponent,
