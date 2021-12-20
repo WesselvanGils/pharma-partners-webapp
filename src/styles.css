@@ -49,6 +49,7 @@ h6 {
 .btn-outline-primary:hover {
     color: white !important;
     background-color: #3d6c99;
+    border-color: #3d6c99;
 }
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
     color: #fff;
