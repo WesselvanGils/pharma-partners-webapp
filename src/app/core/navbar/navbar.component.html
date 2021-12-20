@@ -26,7 +26,9 @@
             <ul class="navbar-nav" style="margin-right: 1rem;">
                 <li class="nav-item">
                     <span class="navbar-text" *ngIf="(loggedInUser | async) as loggedInUser">
-                        {{loggedInUser.email}}
+                        <a class="nav-link disabled">
+                            {{loggedInUser.email}}
+                        </a>
                     </span>
                 </li>
                 <li class="nav-item">
@@ -36,7 +38,7 @@
                             <i class="fas fa-sign-out-alt"></i> Uitloggen
                         </a>
                     </span>
-                </li>
+                </li>   
             </ul>
         </div>
     </div>
