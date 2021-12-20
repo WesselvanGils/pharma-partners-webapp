@@ -16,6 +16,7 @@ export class CalendarComponent implements OnInit
 	viewDate: Date = new Date()
 	events: CalendarEvent[] = []
 	refresh: Subject<any> = new Subject<any>()
+	focusedMeeting: CalendarEvent
 
 	constructor(private calendarService: CalendarService) { }
 
@@ -40,6 +41,7 @@ export class CalendarComponent implements OnInit
 
 	eventClicked({ event }: { event: CalendarEvent }): void
 	{
+		this.focusedMeeting = event
 		Swal.fire(`${event.id}`)
 	}
 }

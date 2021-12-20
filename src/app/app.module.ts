@@ -24,6 +24,7 @@ import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-d
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
 
 @NgModule({
 	declarations: [
@@ -41,6 +42,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 		PatientDetailComponent,
 		PatientComponent,
 		ContactComponent,
+  		AppointmentComponent,
 	],
 	imports: [
 		BrowserModule,
