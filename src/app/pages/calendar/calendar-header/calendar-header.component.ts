@@ -4,11 +4,11 @@ import { CalendarView } from 'angular-calendar';
 @Component({
 	selector: 'app-calendar-header',
 	template: `
-    <div class="row text-center">
-      <div class="col-md-4">
-        <div class="btn-group">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="btn-group" id="buttonGroup">
           <div
-            class="btn btn-primary"
+            class="btn btn-primary btn-sm"
             mwlCalendarPreviousView
             [view]="view"
             [(viewDate)]="viewDate"
@@ -16,14 +16,14 @@ import { CalendarView } from 'angular-calendar';
            <i class="fas fa-angle-left"></i>
           </div>
           <div
-            class="btn btn-outline-secondary"
+            class="btn btn-outline-primary btn-sm"
             mwlCalendarToday
             [(viewDate)]="viewDate"
             (viewDateChange)="viewDateChange.next(viewDate)">
             Today
           </div>
           <div
-            class="btn btn-primary"
+            class="btn btn-primary btn-sm"
             mwlCalendarNextView
             [view]="view"
             [(viewDate)]="viewDate"
@@ -32,11 +32,11 @@ import { CalendarView } from 'angular-calendar';
             </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-8 col-lg-8">
         <h3>{{ viewDate | calendarDate: view + 'ViewTitle':locale }}</h3>
       </div>
-      <div class="col-md-4">
-        <div class="btn-group">
+      <!-- <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="btn-group" id="buttonGroup">
           <div
             class="btn btn-primary"
             (click)="viewChange.emit(CalendarView.Month)"
@@ -59,7 +59,7 @@ import { CalendarView } from 'angular-calendar';
             Day
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <br />
   `,

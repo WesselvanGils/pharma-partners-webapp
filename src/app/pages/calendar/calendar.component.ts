@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
 import { Subject } from 'rxjs';
-import { Appointment } from 'src/app/models/appointment.model';
+import { Appointment } from '../../models/appointment.model';
 import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
 
@@ -40,8 +40,11 @@ export class CalendarComponent implements OnInit
 	}
 
 	eventClicked({ event }: { event: CalendarEvent }): void
+
 	{
+		let calendar = document.getElementById('calendarColumns')
+		calendar.className = 'col-sm-12 col-md-7 col-lg-7'
 		this.focusedMeeting = event
-		Swal.fire(`${event.id}`)
+		// Swal.fire(`${event.id}`)
 	}
 }

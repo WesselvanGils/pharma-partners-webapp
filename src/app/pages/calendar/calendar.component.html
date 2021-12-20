@@ -1,5 +1,5 @@
 <div class="row" style="padding-top: 2rem;">
-	<div class="col-10">
+	<div class="col-sm-12 col-md-12 col-lg-12" id="calendarColumns">
 		<app-calendar-header [(view)]="view" [(viewDate)]="viewDate">
 		</app-calendar-header>
 
@@ -7,7 +7,8 @@
 			<mwl-calendar-month-view *ngSwitchCase="'month'" [viewDate]="viewDate" [events]="events"
 				[activeDayIsOpen]="true" (eventClicked)="eventClicked($event)">
 			</mwl-calendar-month-view>
-			<mwl-calendar-week-view *ngSwitchCase="'week'" [viewDate]="viewDate" [events]="events" [refresh]="refresh" [dayStartHour]="7" [dayEndHour]="18"
+			<mwl-calendar-week-view *ngSwitchCase="'week'" [viewDate]="viewDate" [events]="events" [refresh]="refresh" [hourDuration]="60"
+			[hourSegments]="2" [dayStartHour]="8" [dayEndHour]="19"
 				(eventClicked)="eventClicked($event)">
 			</mwl-calendar-week-view>
 			<mwl-calendar-day-view *ngSwitchCase="'day'" [viewDate]="viewDate" [events]="events"
@@ -15,7 +16,7 @@
 			</mwl-calendar-day-view>
 		</div>
 	</div>
-	<div class="col-2">
+	<div class="col-sm-12 col-md-5 col-lg-5">
 		<app-appointment [focusedMeeting]="focusedMeeting"></app-appointment>
 	</div>
 </div>
