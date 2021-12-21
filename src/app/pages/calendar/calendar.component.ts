@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { Appointment } from '../../models/appointment.model';
 import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
+import { AuthService } from 'src/app/core/auth/auth.service';
 
 @Component({
 	selector: 'app-calendar',
@@ -18,11 +19,11 @@ export class CalendarComponent implements OnInit
 	refresh: Subject<any> = new Subject<any>()
 	focusedMeeting: CalendarEvent
 
-	constructor(private calendarService: CalendarService) { }
+	constructor(private calendarService: CalendarService, private authService: AuthService) { }
 
 	ngOnInit(): void 
 	{
-		this.calendarService.list().subscribe( (result) =>
+		this.calendarService.list(this.authService.currentUser$.value._id).subscribe( (result) =>
 		{
 			result.forEach( (item: Appointment) =>
 			{

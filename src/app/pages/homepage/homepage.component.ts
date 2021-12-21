@@ -15,8 +15,8 @@ import Swal from "sweetalert2";
 export class HomepageComponent implements OnInit
 {
 	getDatetime = new Date();
-	loggedInUser$!: Observable<User>;
-	appointments$!: Observable<Appointment[]>
+	loggedInUser$: Observable<User>;
+	appointments$: Observable<Appointment[]>
 
 	constructor
 	(
@@ -28,7 +28,7 @@ export class HomepageComponent implements OnInit
 	ngOnInit(): void
 	{
 		this.loggedInUser$ = this.authService.currentUser$
-		this.appointments$ = this.appointmentService.list()
+		this.appointments$ = this.appointmentService.list(this.authService.currentUser$.value._id)
 	}
 
 	goToAppointment()
