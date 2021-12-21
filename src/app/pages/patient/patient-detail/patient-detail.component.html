@@ -164,7 +164,7 @@
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row gutters-sm">
-				<div class="col-sm-12 col-md-5 col-lg-4 pr-md-0">
+				<div class="col-sm-12 col-md-5 col-lg-6 pr-md-0">
 					<div class="card mb-3">
 						<div class="card-body">
 							<h3>Metingen</h3>
@@ -172,36 +172,31 @@
 								<table class="table table-sm">
 									<thead class="thead-light">
 										<tr>
-											<th scope="col">#</th>
 											<th scope="col">Meting</th>
 											<th scope="col">Waarde</th>
 											<th scope="col">Datum</th>
+											<th scope="col"></th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td class="align-middle">Gewicht</td>
-											<td class="align-middle">70 kg</td>
-											<td class="align-middle">12-12-2021</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Lengte</td>
-											<td>180 cm</td>
-											<td>12-12-2021</td>
-										</tr>
-										<tr>
-											<th scope="row">3</th>
-											<td>Bloeddruk</td>
-											<td>135 mmHg</td>
-											<td>12-12-2021</td>
+										<tr *ngFor="let diagnostic of diagnostics$ | async">
+											<td>{{diagnostic.name}} ({{diagnostic.unit}})</td>
+											<td>{{diagnostic.measurements[diagnostic.measurements.length - 1].valueNumber}} {{diagnostic.measurements[diagnostic.measurements.length - 1].unit}}</td>
+											<td>{{diagnostic.measurements[diagnostic.measurements.length - 1].date | date: "dd-MM-yyyy" }}</td>
+											<td>
+												<button class="btn btn-info btn-sm" style="float:center" (click)="getMeasurementHistory(diagnostic)">
+													<i class="fas fa-history"></i>
+												</button>
+												<button class="btn btn-info btn-sm" style="margin-left: 10px;" (click)="addMeasurement(diagnostic)">
+													<i class="fas fa-plus"></i>
+												</button>
+											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 							<span class="row justify-content-center mt-3">
-								<button class="btn btn-info btn-sm">
+								<button class="btn btn-info btn-sm" (click)="addDiagnostic()">
 									<i class="fas fa-plus"></i> Voeg meting toe
 								</button>
 							</span>
@@ -209,7 +204,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-7 col-lg-8 mb-3">
+				<div class="col-sm-12 col-md-7 col-lg-6 mb-3">
 					<div class="card h-100">
 						<div class="card-body">
 							<div class="row">

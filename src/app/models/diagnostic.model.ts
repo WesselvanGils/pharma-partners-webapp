@@ -1,8 +1,9 @@
 import { Entity } from "./entity.model";
+import { Measurement } from "./measurement.model";
 
 export class Diagnostic extends Entity
 {
-    measurement?: string[]
+    measurements?: Measurement[]
     name: string
     unit: string
 }
