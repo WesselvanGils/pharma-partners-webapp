@@ -40,7 +40,7 @@ export class PatientDetailComponent implements OnInit
 			switchMap((params: ParamMap) =>
 				this.patientService.read(params.get('_id')!)
 			)
-		).subscribe( result =>
+		).subscribe(result =>
 		{
 			this.patient$ = of(result)
 			this.prescriptions$ = of(result.medicalrecord.prescriptions)
@@ -117,7 +117,7 @@ export class PatientDetailComponent implements OnInit
 						this.patient$.subscribe(patient =>
 						{
 							patient.medicalrecord.prescriptions.push(result)
-							this.medicalRecordService.update(patient.medicalrecord).subscribe( result =>
+							this.medicalRecordService.update(patient.medicalrecord).subscribe(result =>
 							{
 								if (result) this.ngOnInit()
 							})
@@ -204,9 +204,16 @@ export class PatientDetailComponent implements OnInit
 					publicationDate: new Date()
 				}
 
-				this.episodeService.create(entry).subscribe((result) =>
+				this.episodeService.create(entry).subscribe(result =>
 				{
-					if (result) this.episodes$ = this.episodeService.list()
+					this.patient$.subscribe(patient =>
+					{
+						patient.medicalrecord.episodes.push(result)
+						this.medicalRecordService.update(patient.medicalrecord).subscribe(result =>
+						{
+							if (result) this.ngOnInit()
+						})
+					})
 				})
 			}
 		})
