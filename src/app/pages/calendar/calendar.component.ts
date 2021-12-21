@@ -40,7 +40,6 @@ export class CalendarComponent implements OnInit
 	}
 
 	eventClicked({ event }: { event: CalendarEvent }): void
-
 	{
 		let calendar = document.getElementById('calendarColumns')
 		calendar.className = 'col-sm-12 col-md-7 col-lg-7'
