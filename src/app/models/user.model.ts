@@ -5,8 +5,8 @@ export class User extends Entity
     firstName: string
     lastName: string
     email: string
-    employeeCode: string
-    doctorCode: string
+    employeePrefix: string
+    doctorPrefix: string
     token: string
     role: role
 }

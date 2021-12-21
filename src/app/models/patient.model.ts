@@ -1,5 +1,4 @@
 import { Entity } from "./entity.model";
-import { MedicalRecord } from "./medicalRecord.model";
 
 export class Patient extends Entity
 {
@@ -12,5 +11,5 @@ export class Patient extends Entity
     gender: string
     dateofbirth: Date
     phonenumber: string
-    medicalrecord: MedicalRecord 
+    medicalrecord?: string
 }

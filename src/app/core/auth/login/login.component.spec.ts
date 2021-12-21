@@ -11,9 +11,9 @@ describe("LoginComponent", () =>
 	const expectedUserData: User =
 	{
 		_id: "123",
-		doctorCode: "",
+		doctorPrefix: "",
 		email: "test@test.nl",
-		employeeCode: "",
+		employeePrefix: "",
 		firstName: "test",
 		lastName: "test",
 		role: role.ADMIN,
