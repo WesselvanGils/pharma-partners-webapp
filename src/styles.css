@@ -170,6 +170,8 @@ h6 {
 }
 .cal-week-view .cal-current-time-marker {
     background-color: #ed1e79!important;
+    height: 3px;
+    border-radius: 15px;
 }
 .cal-week-view .cal-header.cal-weekend span {
     color: #d81067!important;

@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CalendarEvent } from 'angular-calendar';
+import { Observable } from 'rxjs';
+import { Appointment } from 'src/app/models/appointment.model';
 
 @Component({
 	selector: 'app-appointment',
@@ -9,9 +11,9 @@ import { CalendarEvent } from 'angular-calendar';
 
 export class AppointmentComponent implements OnInit
 {
-	@Input() focusedMeeting: CalendarEvent
+	@Input() focusedMeeting: Observable<Appointment>
 	constructor() { }
-
+	
 	ngOnInit(): void 
 	{
 

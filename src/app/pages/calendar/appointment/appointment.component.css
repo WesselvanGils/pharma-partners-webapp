@@ -22,6 +22,10 @@ img{
     border-radius: .25rem;
 }
 
-h6{
-    margin-top: 5px;
+h2 {
+    margin-bottom: 0;
+}
+hr {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
 }

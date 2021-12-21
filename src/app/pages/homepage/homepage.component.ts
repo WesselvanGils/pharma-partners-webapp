@@ -21,7 +21,8 @@ export class HomepageComponent implements OnInit
 	constructor
 	(
 		private appointmentService: CalendarService,
-		private authService: AuthService
+		private authService: AuthService,
+		private router: Router
 	)
 	{ }
 
@@ -44,6 +45,8 @@ export class HomepageComponent implements OnInit
 
 	goToAppointment()
 	{
-		Swal.fire({ title: "dit wordt een component" })
+		this.router.navigate(['/calendar'])
+		// TODO: Deze wellicht doorrouten naar de informatie van die afspraak?
+		// Swal.fire({ title: "Dit zou doorgestuurd moeten worden naar de info voor de details" })
 	}
 }
