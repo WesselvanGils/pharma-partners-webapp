@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Observable, of, switchMap, take } from 'rxjs';
+import { Observable, of, switchMap } from 'rxjs';
 import { Medication } from 'src/app/models/medication.model';
 import { Patient } from 'src/app/models/patient.model';
 import { Prescription } from 'src/app/models/prescription.model';
@@ -11,6 +11,9 @@ import { PatientService } from '../patient.service';
 import { EpisodeService } from './episode.service';
 import { Episode } from 'src/app/models/episode.model';
 import { MedicalRecordService } from './medicalRecord.service';
+import { Appointment } from 'src/app/models/appointment.model';
+import { AuthService } from 'src/app/core/auth/auth.service';
+import { CalendarService } from '../../calendar/calendar.service';
 
 @Component({
 	selector: 'app-patient-detail',
@@ -30,7 +33,9 @@ export class PatientDetailComponent implements OnInit
 		private prescriptionService: PrescriptionService,
 		private medicationService: MedicationService,
 		private episodeService: EpisodeService,
-		private medicalRecordService: MedicalRecordService
+		private medicalRecordService: MedicalRecordService,
+		private authService: AuthService,
+		private calendarService: CalendarService
 	) { }
 
 	ngOnInit()
@@ -214,6 +219,67 @@ export class PatientDetailComponent implements OnInit
 							if (result) this.ngOnInit()
 						})
 					})
+				})
+			}
+		})
+	}
+
+	addAppointment() 
+	{
+		Swal.fire({
+			title: "Voeg afspraak toe",
+			html: `
+			<input type="text" id="title" class="swal2-input px-1" placeholder="Afspraak naam">
+			<input type="date" id="date" class="swal2-input" placeholder="Datum">
+			<input type="time" id="startTime" class="swal2-input" placeholder="Begin tijd">
+			<input type="time" id="endTime" class="swal2-input" placeholder="Eind tijd">
+			`,
+			confirmButtonText: 'Voeg toe',
+			showDenyButton: true,
+			showCloseButton: true,
+			denyButtonText: "Annuleer",
+			focusDeny: false,
+			focusConfirm: false,
+			preConfirm: () =>
+			{
+				const title = Swal.getPopup().querySelector<HTMLInputElement>('#title').value
+				const date = Swal.getPopup().querySelector<HTMLInputElement>('#date').value
+				const startTime = Swal.getPopup().querySelector<HTMLInputElement>('#startTime').value
+				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
+
+				if (!title || !date || !startTime || !endTime)
+				{
+					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+				}
+				return {
+					title: title,
+					date: date,
+					startTime: startTime,
+					endTime: endTime,
+				}
+			}
+		}).then((result) =>
+		{
+			if (result.isConfirmed)
+			{
+				this.patient$.subscribe(patient => 
+				{
+					const formattedStart: Date = new Date(`${result.value.date}T${result.value.startTime}`)
+					const formattedEnd: Date = new Date(`${result.value.date}T${result.value.endTime}`)
+
+					const entry: Appointment =
+					{
+						_id: undefined,
+						employee: this.authService.currentUser$.value,
+						patient: patient,
+						meeting:
+						{
+							title: result.value.title,
+							start: formattedStart,
+							end: formattedEnd,
+						}
+					}
+					this.calendarService.create(entry).subscribe()
 				})
 			}
 		})
