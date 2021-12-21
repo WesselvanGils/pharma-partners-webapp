@@ -43,7 +43,7 @@ export class CalendarComponent implements OnInit
 
 	{
 		let calendar = document.getElementById('calendarColumns')
-		calendar.className = 'card col-sm-12 col-md-7 col-lg-7 p-0'
+		calendar.className = 'col-sm-12 col-md-7 col-lg-7'
 		this.focusedMeeting = event
 		// Swal.fire(`${event.id}`)
 	}

@@ -4,7 +4,7 @@ import { CalendarView } from 'angular-calendar';
 @Component({
 	selector: 'app-calendar-header',
 	template: `
-    <div class="row mb-3">
+    <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
         <div class="btn-group" id="buttonGroup">
           <div
@@ -33,7 +33,7 @@ import { CalendarView } from 'angular-calendar';
         </div>
       </div>
       <div class="col-sm-12 col-md-8 col-lg-8">
-        <h3 class="m-0">{{ viewDate | calendarDate: view + 'ViewTitle':locale }}</h3>
+        <h3>{{ viewDate | calendarDate: view + 'ViewTitle':locale }}</h3>
       </div>
       <!-- <div class="col-sm-12 col-md-4 col-lg-4">
         <div class="btn-group" id="buttonGroup">
@@ -61,7 +61,7 @@ import { CalendarView } from 'angular-calendar';
         </div>
       </div> -->
     </div>
-    
+    <br />
   `,
 })
 export class CalendarHeaderComponent

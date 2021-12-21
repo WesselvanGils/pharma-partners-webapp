@@ -86,20 +86,24 @@
 								<table class="table table-sm">
 									<thead class="thead-light">
 										<tr>
+											<th scope="col">Publicatie datum</th>
 											<th scope="col">Omschrijving</th>
-											<th scope="col">Datum</th>
+											<th scope="col">Start datum</th>
+											<th scope="col">Code</th>
 											<th scope="col">Prioriteit</th>
-											<th scope="col">Details</th>
+											<th scope="col">Journaalregels</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr *ngFor="let episode of episodes$ | async">
-											<td class="align-middle">{{episode.description}}</td>
 											<td class="align-middle">{{episode.publicationDate | date: 'dd-MM-yyyy'}}</td>
-											<td class="align-middle" style="color: #ed1e79; font-weight: bold;">{{episode.priority ? 'P' : 'NP'}}</td>
+											<td class="align-middle">{{episode.description}}</td>
+											<td class="align-middle">{{episode.startDate | date: 'dd-MM-yyyy'}}</td>
+											<td class="align-middle">{{episode.ICPC}}</td>
+											<td class="align-middle text-center" style="color: #ed1e79; font-weight: bold;">{{episode.priority ? 'P' : ' '}}</td>
 											<td class="align-middle">
 												<button class="btn btn-info btn-sm">
-													<i class="fa fa-info-circle fa-sm"></i> Details
+													<i class="fas fa-list-alt btn-sm p-0 pr-1"></i> Journaalregels
 												</button>
 											</td>
 										</tr>
