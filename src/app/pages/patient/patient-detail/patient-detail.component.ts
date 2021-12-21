@@ -230,6 +230,7 @@ export class PatientDetailComponent implements OnInit
 			title: "Voeg afspraak toe",
 			html: `
 			<input type="text" id="title" class="swal2-input px-1" placeholder="Afspraak naam">
+			<input type="text" id="description" class="swal2-input px-1" placeholder="Afspraak Omschrijving">
 			<input type="date" id="date" class="swal2-input" placeholder="Datum">
 			<input type="time" id="startTime" class="swal2-input" placeholder="Begin tijd">
 			<input type="time" id="endTime" class="swal2-input" placeholder="Eind tijd">
@@ -243,6 +244,7 @@ export class PatientDetailComponent implements OnInit
 			preConfirm: () =>
 			{
 				const title = Swal.getPopup().querySelector<HTMLInputElement>('#title').value
+				const description = Swal.getPopup().querySelector<HTMLInputElement>('#description').value
 				const date = Swal.getPopup().querySelector<HTMLInputElement>('#date').value
 				const startTime = Swal.getPopup().querySelector<HTMLInputElement>('#startTime').value
 				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
@@ -253,6 +255,7 @@ export class PatientDetailComponent implements OnInit
 				}
 				return {
 					title: title,
+					description: description,
 					date: date,
 					startTime: startTime,
 					endTime: endTime,
@@ -272,6 +275,7 @@ export class PatientDetailComponent implements OnInit
 						_id: undefined,
 						employee: this.authService.currentUser$.value,
 						patient: patient,
+						description: result.value.date,
 						meeting:
 						{
 							title: result.value.title,
