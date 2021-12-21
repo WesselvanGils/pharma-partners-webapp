@@ -100,7 +100,7 @@ export class PatientDetailComponent implements OnInit
 				}
 			}).then((result) =>
 			{
-				if (result.isConfirmed)
+				let entry: Prescription =
 				{
 					let entry: Prescription =
 					{
@@ -124,18 +124,22 @@ export class PatientDetailComponent implements OnInit
 						})
 					})
 				}
+				this.prescriptionService.create(entry).subscribe( (result) =>
+				{
+					if (result) this.prescriptions$ = this.prescriptionService.list()
+				})
 			})
 		})
 	}
 
-	addEpisode()
+	addEpisode ()
 	{
 		const ICPC: string[] = [ 'B81', 'C80', 'A55', 'C11', 'F22' ]
 		let ICPCOptions: string
 
 		ICPC.forEach(element => 
 		{
-			ICPCOptions = ICPCOptions + `<option>${element}</option>`
+			ICPCOptions = ICPCOptions + `<option>${element}</option>`	
 		})
 
 		Swal.fire({
@@ -177,9 +181,9 @@ export class PatientDetailComponent implements OnInit
 				const description = Swal.getPopup().querySelector<HTMLInputElement>('#description').value
 				const startDate = Swal.getPopup().querySelector<HTMLInputElement>('#startDate').value as unknown as Date
 				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>('#ICPC').value
-				const priorityInput = <HTMLInputElement>document.getElementById('priority')
+				const priorityInput = <HTMLInputElement> document.getElementById('priority')
 				const priority = priorityInput.checked
-				if (!description || !startDate || !ICPC)
+				if (!description || !startDate || !ICPC )
 				{
 					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
 				}
@@ -192,7 +196,7 @@ export class PatientDetailComponent implements OnInit
 			}
 		}).then((result) =>
 		{
-			if (result.isConfirmed)
+			let entry: Episode =
 			{
 				const entry: Episode =
 				{
@@ -216,6 +220,11 @@ export class PatientDetailComponent implements OnInit
 					})
 				})
 			}
+
+			this.episodeService.create(entry).subscribe( (result) =>
+			{
+				if (result) this.episodes$ = this.episodeService.list()
+			})
 		})
 	}
 }
