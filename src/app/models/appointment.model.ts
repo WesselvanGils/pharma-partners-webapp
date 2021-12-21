@@ -8,4 +8,5 @@ export class Appointment extends Entity
     employee: User
 	patient: Patient
 	meeting: CalendarEvent
+	description: String
 }

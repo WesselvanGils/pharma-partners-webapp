@@ -1,9 +1,10 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Appointment } from '../../models/appointment.model';
 import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-calendar',
@@ -16,9 +17,9 @@ export class CalendarComponent implements OnInit
 	viewDate: Date = new Date()
 	events: CalendarEvent[] = []
 	refresh: Subject<any> = new Subject<any>()
-	focusedMeeting: CalendarEvent
+	focusedMeeting: Observable<Appointment>
 
-	constructor(private calendarService: CalendarService) { }
+	constructor(private calendarService: CalendarService, private router: Router) { }
 
 	ngOnInit(): void 
 	{
@@ -31,7 +32,7 @@ export class CalendarComponent implements OnInit
 						id: item._id,
 						title: item.meeting.title, 
 						start: new Date(item.meeting.start), 
-						end: new Date(item.meeting.end)
+						end: new Date(item.meeting.end),
 					}
 				]
 			})
@@ -39,11 +40,15 @@ export class CalendarComponent implements OnInit
 		})
 	}
 
-	eventClicked({ event }: { event: CalendarEvent }): void
-	{
+	eventClicked({ event }: { event: CalendarEvent }): void {
 		let calendar = document.getElementById('calendarColumns')
 		calendar.className = 'card col-sm-12 col-md-7 col-lg-7 p-0'
-		this.focusedMeeting = event
-		// Swal.fire(`${event.id}`)
+		this.calendarService.read(event.id).pipe((data) => this.focusedMeeting = data)
+	}
+
+	backToCalendar(){
+		let calendar = document.getElementById('calendarColumns')
+		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
+		this.focusedMeeting = undefined
 	}
 }
