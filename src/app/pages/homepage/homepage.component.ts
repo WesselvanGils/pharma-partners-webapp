@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from "@angular/core"
 import { ActivatedRoute, ParamMap, Router } from "@angular/router";
-import { Observable, switchMap } from "rxjs";
+import { Observable, of, switchMap } from "rxjs";
 import { AuthService } from "src/app/core/auth/auth.service";
 import { CalendarService } from "src/app/pages/calendar/calendar.service";
 import { Appointment } from "src/app/models/appointment.model";
@@ -28,7 +28,18 @@ export class HomepageComponent implements OnInit
 	ngOnInit(): void
 	{
 		this.loggedInUser$ = this.authService.currentUser$
-		this.appointments$ = this.appointmentService.list(this.authService.currentUser$.value._id)
+		this.appointmentService.list(this.authService.currentUser$.value._id).subscribe(result =>
+		{
+			let appointmentList: Appointment[] = []
+			result.forEach( (appointment: Appointment) =>
+			{
+				if (new Date(`${appointment.meeting.start}`).getDay() == new Date().getDay())
+				{
+					appointmentList.push(appointment)
+				}
+			})
+			this.appointments$ = of(appointmentList)
+		})
 	}
 
 	goToAppointment()
