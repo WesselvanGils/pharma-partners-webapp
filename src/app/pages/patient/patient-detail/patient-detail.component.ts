@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Observable, of, switchMap } from 'rxjs';
+import { Observable, of, switchMap, take } from 'rxjs';
 import { Medication } from 'src/app/models/medication.model';
 import { Patient } from 'src/app/models/patient.model';
 import { Prescription } from 'src/app/models/prescription.model';
@@ -10,6 +10,7 @@ import { PrescriptionService } from './prescription.service';
 import { PatientService } from '../patient.service';
 import { EpisodeService } from './episode.service';
 import { Episode } from 'src/app/models/episode.model';
+import { MedicalRecordService } from './medicalRecord.service';
 
 @Component({
 	selector: 'app-patient-detail',
@@ -28,21 +29,20 @@ export class PatientDetailComponent implements OnInit
 		private patientService: PatientService,
 		private prescriptionService: PrescriptionService,
 		private medicationService: MedicationService,
-		private episodeService: EpisodeService
+		private episodeService: EpisodeService,
+		private medicalRecordService: MedicalRecordService
 	) { }
 
 	ngOnInit()
 	{
-		this.medications$ = this.medicationService.list()
-		this.patient$ = this.route.paramMap.pipe(
+		if (!this.medications$) this.medications$ = this.medicationService.list()
+		this.route.paramMap.pipe(
 			switchMap((params: ParamMap) =>
 				this.patientService.read(params.get('_id')!)
 			)
-		)
-
-		this.patient$.subscribe(result => 
+		).subscribe( result =>
 		{
-			console.log(result)
+			this.patient$ = of(result)
 			this.prescriptions$ = of(result.medicalrecord.prescriptions)
 			this.episodes$ = of(result.medicalrecord.episodes)
 		})
@@ -111,9 +111,17 @@ export class PatientDetailComponent implements OnInit
 						publicationDate: new Date(),
 						medication: medications.find(medication => medication._id == result.value.medication)
 					}
-					this.prescriptionService.create(entry).subscribe((result) =>
+
+					this.prescriptionService.create(entry).subscribe(result =>
 					{
-						if (result) this.prescriptions$ = this.prescriptionService.list()
+						this.patient$.subscribe(patient =>
+						{
+							patient.medicalrecord.prescriptions.push(result)
+							this.medicalRecordService.update(patient.medicalrecord).subscribe( result =>
+							{
+								if (result) this.ngOnInit()
+							})
+						})
 					})
 				}
 			})
