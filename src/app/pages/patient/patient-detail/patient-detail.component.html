@@ -75,9 +75,9 @@
 					<div class="card h-100">
 						<div class="card-body">
 							<div class="row">
-								<h3 class="col-8">Episodes</h3>
-								<span class="col-4">
-									<button class="btn btn-info btn-sm float-right" (click)="addEpisode()">
+								<h3 class="col-sm-6 col-md-6 col-lg-8">Episodes</h3>
+								<span class="col-sm-6 col-md-6 col-lg-4">
+									<button class="btn btn-primary btn-sm float-right" (click)="addEpisode()">
 										<i class="fas fa-plus"></i> Voeg episode toe
 									</button>
 								</span>
@@ -86,72 +86,24 @@
 								<table class="table table-sm">
 									<thead class="thead-light">
 										<tr>
-											<th scope="col">#</th>
+											<th scope="col">Publicatie datum</th>
 											<th scope="col">Omschrijving</th>
-											<th scope="col">Datum</th>
+											<th scope="col">Start datum</th>
 											<th scope="col">Code</th>
 											<th scope="col">Prioriteit</th>
-											<th scope="col">Details</th>
+											<th scope="col">Journaalregels</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td class="align-middle">Hoofdpijn</td>
-											<td class="align-middle">11-12-2021</td>
-											<td class="align-middle">AB1</td>
-											<td class="align-middle">P</td>
+										<tr *ngFor="let episode of episodes$ | async">
+											<td class="align-middle">{{episode.publicationDate | date: 'dd-MM-yyyy'}}</td>
+											<td class="align-middle">{{episode.description}}</td>
+											<td class="align-middle">{{episode.startDate | date: 'dd-MM-yyyy'}}</td>
+											<td class="align-middle">{{episode.ICPC}}</td>
+											<td class="align-middle text-center" style="color: #ed1e79; font-weight: bold;">{{episode.priority ? 'P' : ' '}}</td>
 											<td class="align-middle">
-												<button class="btn btn-primary btn-sm" routerLink="/patient">
-													<i class="fa fa-info-circle fa-sm"></i> Details
-												</button>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Misselijkheid</td>
-											<td>14-12-2021</td>
-											<td>BC4</td>
-											<td>NP</td>
-											<td>
-												<button class="btn btn-primary btn-sm" routerLink="/patient">
-													<i class="fa fa-info-circle fa-sm"></i> Details
-												</button>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">3</th>
-											<td>Pijn in been</td>
-											<td>01-12-2021</td>
-											<td>FE8</td>
-											<td>NP</td>
-											<td>
-												<button class="btn btn-primary btn-sm" routerLink="/patient">
-													<i class="fa fa-info-circle fa-sm"></i> Details
-												</button>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">4</th>
-											<td>Pijn in arm</td>
-											<td>29-11-2021</td>
-											<td>OR1</td>
-											<td>P</td>
-											<td>
-												<button class="btn btn-primary btn-sm" routerLink="/patient">
-													<i class="fa fa-info-circle fa-sm"></i> Details
-												</button>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">5</th>
-											<td>Buikpijn</td>
-											<td>25-11-2021</td>
-											<td>FH8</td>
-											<td>P</td>
-											<td>
-												<button class="btn btn-primary btn-sm" routerLink="/patient">
-													<i class="fa fa-info-circle fa-sm"></i> Details
+												<button class="btn btn-info btn-sm">
+													<i class="fas fa-list-alt btn-sm p-0 pr-1"></i> Journaalregels
 												</button>
 											</td>
 										</tr>
@@ -210,7 +162,6 @@
 			</div>
 			<!-- dit geheel in een child component -->
 		</div>
-
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row gutters-sm">
 				<div class="col-sm-12 col-md-5 col-lg-4 pr-md-0">
@@ -262,8 +213,8 @@
 					<div class="card h-100">
 						<div class="card-body">
 							<div class="row">
-								<h3 class="col-8">Recepten</h3>
-								<span class="col-4">
+								<h3 class="col-sm-6 col-md-6 col-lg-8">Recepten</h3>
+								<span class="col-sm-6 col-md-6 col-lg-4">
 									<button class="btn btn-info btn-sm float-right" (click)="addPrescription()">
 										<i class="fas fa-plus"></i> Voeg recept toe
 									</button>
@@ -288,7 +239,7 @@
 											<td class="align-middle">{{ prescription.dosage }}</td>
 											<td class="align-middle">{{ prescription.period }}</td>
 											<td class="align-middle">
-												<button class="btn btn-primary btn-sm"
+												<button class="btn btn-info btn-sm"
 													(click)="detailPrescription(prescription, patient)">
 													<i class="fa fa-info-circle"></i> Details
 												</button>

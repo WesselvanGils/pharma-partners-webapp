@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { Meeting } from 'src/app/models/appointment.model';
+import { Appointment } from 'src/app/models/appointment.model';
 import { Patient } from 'src/app/models/patient.model';
 import { User } from 'src/app/models/user.model';
 
@@ -9,15 +9,19 @@ import { CalendarService } from './calendar.service';
 
 describe('CalendarComponent', () =>
 {
-	const expectedMeetingData: Meeting[] =
+	const expectedMeetingData: Appointment[] =
 	[
 		{
 			_id: "123",
 			employee: undefined,
-			endDate: new Date(),
 			patient: undefined,
-			startDate: new Date(),
-			subject: ""
+			meeting: 
+			{
+				id: "456",
+				title: "test",
+				start: new Date(),
+				end: new Date()
+			}
 		}
 	]
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { Observable, switchMap } from 'rxjs';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Observable, of, switchMap, take } from 'rxjs';
 import { Medication } from 'src/app/models/medication.model';
 import { Patient } from 'src/app/models/patient.model';
 import { Prescription } from 'src/app/models/prescription.model';
@@ -10,7 +10,7 @@ import { PrescriptionService } from './prescription.service';
 import { PatientService } from '../patient.service';
 import { EpisodeService } from './episode.service';
 import { Episode } from 'src/app/models/episode.model';
-import { start } from 'repl';
+import { MedicalRecordService } from './medicalRecord.service';
 
 @Component({
 	selector: 'app-patient-detail',
@@ -29,19 +29,23 @@ export class PatientDetailComponent implements OnInit
 		private patientService: PatientService,
 		private prescriptionService: PrescriptionService,
 		private medicationService: MedicationService,
-		private episodeService: EpisodeService
+		private episodeService: EpisodeService,
+		private medicalRecordService: MedicalRecordService
 	) { }
 
 	ngOnInit()
 	{
-		this.patient$ = this.route.paramMap.pipe(
+		if (!this.medications$) this.medications$ = this.medicationService.list()
+		this.route.paramMap.pipe(
 			switchMap((params: ParamMap) =>
 				this.patientService.read(params.get('_id')!)
 			)
-		)
-		this.prescriptions$ = this.prescriptionService.list()
-		this.medications$ = this.medicationService.list()
-		this.episodes$ = this.episodeService.list()
+		).subscribe(result =>
+		{
+			this.patient$ = of(result)
+			this.prescriptions$ = of(result.medicalrecord.prescriptions)
+			this.episodes$ = of(result.medicalrecord.episodes)
+		})
 	}
 
 	detailPrescription(prescription: Prescription, patient: Patient)
@@ -64,16 +68,17 @@ export class PatientDetailComponent implements OnInit
 			Swal.fire({
 				title: 'Voeg recept toe',
 				html: `
-				<select type="text" id="medication" class="swal2-input" placeholder="Medicatie">
-					<option selected disabled>Kies een medicijn..</option>
+				<select type="text" id="medication" class="swal2-input px-4" placeholder="Medicatie">
+					<option selected disabled>Kies een medicijn...</option>
 					${medicationOptions}
 				</select>
-				<input type="text" id="description" class="swal2-input" placeholder="Beschrijving">
-				<input type="text" id="dosage" class="swal2-input" placeholder="Dosering">
-				<input type="text" id="period" class="swal2-input" placeholder="Periode van inname">`,
-				confirmButtonText: 'Toevoegen',
+				<input type="text" id="description" class="swal2-input px-1" placeholder="Beschrijving">
+				<input type="text" id="dosage" class="swal2-input px-1" placeholder="Dosering">
+				<input type="text" id="period" class="swal2-input px-1" placeholder="Periode van inname">`,
+				confirmButtonText: 'Voeg toe',
+				showCloseButton: true,
 				showDenyButton: true,
-				denyButtonText: "Afbreken",
+				denyButtonText: "Annuleer",
 				focusConfirm: false,
 				preConfirm: () =>
 				{
@@ -95,56 +100,86 @@ export class PatientDetailComponent implements OnInit
 				}
 			}).then((result) =>
 			{
-				let entry: Prescription =
+				if (result.isConfirmed)
 				{
-					_id: undefined,
-					description: result.value.description,
-					dosage: result.value.dosage,
-					period: result.value.period,
-					publicationDate: new Date(),
-					medication: medications.find( medication => medication._id == result.value.medication)
+					let entry: Prescription =
+					{
+						_id: undefined,
+						description: result.value.description,
+						dosage: result.value.dosage,
+						period: result.value.period,
+						publicationDate: new Date(),
+						medication: medications.find(medication => medication._id == result.value.medication)
+					}
+
+					this.prescriptionService.create(entry).subscribe(result =>
+					{
+						this.patient$.subscribe(patient =>
+						{
+							patient.medicalrecord.prescriptions.push(result)
+							this.medicalRecordService.update(patient.medicalrecord).subscribe(result =>
+							{
+								if (result) this.ngOnInit()
+							})
+						})
+					})
 				}
-				this.prescriptionService.create(entry).subscribe( (result) =>
-				{
-					if (result) this.prescriptions$ = this.prescriptionService.list()
-				})
 			})
 		})
 	}
 
-	addEpisode ()
+	addEpisode()
 	{
 		const ICPC: string[] = [ 'B81', 'C80', 'A55', 'C11', 'F22' ]
 		let ICPCOptions: string
 
 		ICPC.forEach(element => 
 		{
-			ICPCOptions = ICPCOptions + `<option>${element}</option>`	
+			ICPCOptions = ICPCOptions + `<option>${element}</option>`
 		})
 
 		Swal.fire({
 			title: "Voeg episode toe",
 			html: `
-			<input type="text" id="description" class="swal2-input" placeholder="Omschrijving">
+			<style>
+				input[type=checkbox]
+				{
+				/* Double-sized Checkboxes */
+				-ms-transform: scale(1.5); /* IE */
+				-moz-transform: scale(1.5); /* FF */
+				-webkit-transform: scale(1.5); /* Safari and Chrome */
+				-o-transform: scale(1.5); /* Opera */
+				transform: scale(1.5);
+				margin: 0;
+				margin-right: 3px;
+				}
+			</style>
+			<input type="text" id="description" class="swal2-input px-1" placeholder="Omschrijving">
 			<input type="date" id="startDate" class="swal2-input" placeholder="Start Datum">
-			<br>
-			<span>Prioriteit</span><input type="checkbox" id="priority" class="swal2-input">
 			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
-				<option selected disabled>Kies een ICPC code..</option>
+				<option selected disabled>Kies een ICPC code...</option>
 				${ICPCOptions}
-			</select>`,
-			confirmButtonText: 'Toevoegen',
+				</select>
+				<br>
+				<input type="checkbox" id="priority" class="swal2-checkbox mt-3">
+				<label class="form-check-label" for="priority">
+					Priority
+				</label>    
+			`,
+			confirmButtonText: 'Voeg toe',
 			showDenyButton: true,
-			denyButtonText: "Afbreken",
+			showCloseButton: true,
+			denyButtonText: "Annuleer",
+			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
 			{
 				const description = Swal.getPopup().querySelector<HTMLInputElement>('#description').value
 				const startDate = Swal.getPopup().querySelector<HTMLInputElement>('#startDate').value as unknown as Date
 				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>('#ICPC').value
-				const priority = Swal.getPopup().querySelector<HTMLInputElement>("#priority").value 
-
-				if (!description || !startDate || !ICPC || !priority )
+				const priorityInput = <HTMLInputElement>document.getElementById('priority')
+				const priority = priorityInput.checked
+				if (!description || !startDate || !ICPC)
 				{
 					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
 				}
@@ -157,20 +192,30 @@ export class PatientDetailComponent implements OnInit
 			}
 		}).then((result) =>
 		{
-			let entry: Episode =
+			if (result.isConfirmed)
 			{
-				_id: undefined,
-				description: result.value.description,
-				priority: result.value.priority == "on" ? true : false,
-				startDate: result.value.startDate,
-				ICPC: result.value.ICPC,
-				publicationDate: new Date()
-			}
+				const entry: Episode =
+				{
+					_id: undefined,
+					description: result.value.description,
+					priority: result.value.priority,
+					startDate: result.value.startDate,
+					ICPC: result.value.ICPC,
+					publicationDate: new Date()
+				}
 
-			this.episodeService.create(entry).subscribe( (result) =>
-			{
-				if (result) this.episodes$ = this.episodeService.list()
-			})
+				this.episodeService.create(entry).subscribe(result =>
+				{
+					this.patient$.subscribe(patient =>
+					{
+						patient.medicalrecord.episodes.push(result)
+						this.medicalRecordService.update(patient.medicalrecord).subscribe(result =>
+						{
+							if (result) this.ngOnInit()
+						})
+					})
+				})
+			}
 		})
 	}
 }
