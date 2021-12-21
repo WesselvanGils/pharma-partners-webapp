@@ -275,7 +275,7 @@ export class PatientDetailComponent implements OnInit
 						_id: undefined,
 						employee: this.authService.currentUser$.value,
 						patient: patient,
-						description: result.value.date,
+						description: result.value.description,
 						meeting:
 						{
 							title: result.value.title,
