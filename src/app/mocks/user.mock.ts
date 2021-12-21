@@ -4,9 +4,9 @@ export const mockUsers: User[] =
 [
     {
         _id: "0",
-        doctorPrefix: "",
+        doctorCode: "",
         email: "test@test.nl",
-        employeePrefix: "",
+        employeeCode: "",
         firstName: "test",
         lastName: "test",
         role: role.ADMIN,
