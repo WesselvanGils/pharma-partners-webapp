@@ -1,25 +1,29 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing"
-import { LoggingService } from "src/app/shared/logging.service"
+import { AuthService } from "src/app/core/auth/auth.service"
+import { CalendarService } from "../calendar/calendar.service"
 
 import { HomepageComponent } from "./homepage.component"
 
 describe("HomepageComponent", () =>
 {
-	let loggingServiceSpy
+	let authServiceSpy
+	let calendarServiceSpy
 
 	let component: HomepageComponent
 	let fixture: ComponentFixture<HomepageComponent>
 
 	beforeEach(async () =>
 	{
-		loggingServiceSpy = jasmine.createSpyObj("LoggingService", [ "log" ])
+		authServiceSpy = jasmine.createSpyObj("AuthService", ["currentUser"])
+		calendarServiceSpy = jasmine.createSpyObj("CalendarService", ["list"])
 
 		await TestBed.configureTestingModule({
 			declarations: [ HomepageComponent ],
 			imports: [],
 			providers: 
 			[ 
-				{ provide: LoggingService, useValue: loggingServiceSpy}
+				{ provide: AuthService, useValue: authServiceSpy },
+				{ provide: CalendarService, useValue: calendarServiceSpy }
 			]
 		}).compileComponents()
 	})

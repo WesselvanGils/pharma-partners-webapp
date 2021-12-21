@@ -7,6 +7,9 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms"
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { CalendarUtilsModule } from "./pages/calendar/calendar-header/module"
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { DataTablesModule } from "angular-datatables";
+import { MatRadioModule } from '@angular/material/radio';
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -23,10 +26,6 @@ import { PatientListComponent } from "./pages/patient/patient-list/patient-list.
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
-import { DataTablesModule } from "angular-datatables";
-import { MatRadioModule } from '@angular/material/radio';
-
 import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
 
 @NgModule({

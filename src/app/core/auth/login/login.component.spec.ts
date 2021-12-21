@@ -44,6 +44,7 @@ describe("LoginComponent", () =>
 
 	beforeEach(() =>
 	{
+		authServiceSpy.currentUser$ = of(expectedUserData)
 		authServiceSpy.getUserFromLocalStorage.and.returnValue(of(expectedUserData))
 
 		fixture = TestBed.createComponent(LoginComponent)

@@ -51,7 +51,7 @@ export class EntityService<T extends Entity> {
 	public list(id?: number | string, options?: any): Observable<T[]>
 	{
 		let endpoint = `${this.url}${this.endpoint}`;
-		if (id) endpoint = endpoint + `/${id}`
+		if (id) endpoint = endpoint + `/doctor/${id}`
 		console.log(`list ${endpoint}`);
 		return this.http
 			.get<T[]>(endpoint, { ...options, ...httpOptions })

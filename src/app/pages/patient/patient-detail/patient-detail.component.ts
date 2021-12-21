@@ -15,6 +15,9 @@ import { Diagnostic } from 'src/app/models/diagnostic.model';
 import { DiagnosticService } from './diagnostic.service';
 import { Measurement } from 'src/app/models/measurement.model';
 import { MeasurementService } from './measurement.service';
+import { Appointment } from 'src/app/models/appointment.model';
+import { AuthService } from 'src/app/core/auth/auth.service';
+import { CalendarService } from '../../calendar/calendar.service';
 
 @Component({
   selector: 'app-patient-detail',
@@ -36,7 +39,9 @@ export class PatientDetailComponent implements OnInit {
     private episodeService: EpisodeService,
     private medicalRecordService: MedicalRecordService,
     private diagnosticService: DiagnosticService,
-    private measurementService: MeasurementService
+    private measurementService: MeasurementService,
+		private authService: AuthService,
+		private calendarService: CalendarService
   ) {}
 
   ngOnInit() {
@@ -74,9 +79,9 @@ export class PatientDetailComponent implements OnInit {
           `<option value=${medication._id}>${medication.name} ${medication.unit}</option>`;
       });
 
-      Swal.fire({
-        title: 'Voeg recept toe',
-        html: `
+			Swal.fire({
+				title: 'Voeg recept toe',
+				html: `
 				<select type="text" id="medication" class="swal2-input px-4" placeholder="Medicatie">
 					<option selected disabled>Kies een medicijn...</option>
 					${medicationOptions}
@@ -387,4 +392,71 @@ export class PatientDetailComponent implements OnInit {
       }
     });
   }
+
+				
+
+	addAppointment() 
+	{
+		Swal.fire({
+			title: "Voeg afspraak toe",
+			html: `
+			<input type="text" id="title" class="swal2-input px-1" placeholder="Afspraak naam">
+			<input type="text" id="description" class="swal2-input px-1" placeholder="Afspraak Omschrijving">
+			<input type="date" id="date" class="swal2-input" placeholder="Datum">
+			<input type="time" id="startTime" class="swal2-input" placeholder="Begin tijd">
+			<input type="time" id="endTime" class="swal2-input" placeholder="Eind tijd">
+			`,
+			confirmButtonText: 'Voeg toe',
+			showDenyButton: true,
+			showCloseButton: true,
+			denyButtonText: "Annuleer",
+			focusDeny: false,
+			focusConfirm: false,
+			preConfirm: () =>
+			{
+				const title = Swal.getPopup().querySelector<HTMLInputElement>('#title').value
+				const description = Swal.getPopup().querySelector<HTMLInputElement>('#description').value
+				const date = Swal.getPopup().querySelector<HTMLInputElement>('#date').value
+				const startTime = Swal.getPopup().querySelector<HTMLInputElement>('#startTime').value
+				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
+
+				if (!title || !date || !startTime || !endTime)
+				{
+					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+				}
+				return {
+					title: title,
+					description: description,
+					date: date,
+					startTime: startTime,
+					endTime: endTime,
+				}
+			}
+		}).then((result) =>
+		{
+			if (result.isConfirmed)
+			{
+				this.patient$.subscribe(patient => 
+				{
+					const formattedStart: Date = new Date(`${result.value.date}T${result.value.startTime}`)
+					const formattedEnd: Date = new Date(`${result.value.date}T${result.value.endTime}`)
+
+					const entry: Appointment =
+					{
+						_id: undefined,
+						employee: this.authService.currentUser$.value,
+						patient: patient,
+						description: result.value.description,
+						meeting:
+						{
+							title: result.value.title,
+							start: formattedStart,
+							end: formattedEnd,
+						}
+					}
+					this.calendarService.create(entry).subscribe()
+				})
+			}
+		})
+	}
 }

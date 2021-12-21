@@ -1,14 +1,42 @@
-<div *ngIf="focusedMeeting" class="row gutters-sm mb-3">
-    <div class="col-12">
-        <h3>Afspraak detail</h3>
+<div *ngIf="focusedMeeting | async as focusedMeeting" class="row gutters-sm mb-3">
+    <div class="col-12 mb-1">
+        <h3>{{focusedMeeting.meeting.title}}</h3>
     </div>
     <div class="col-md-12 mb-3">
         <div class="card">
             <div class="card-body">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <div class="mt-3">
-                        <h4 class="mb-1">{{focusedMeeting.title}}</h4>
-                        <p class="text-secondary">testtest</p>
+                <h2 style="font-size: large;">Patiënt informatie</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <h6>Naam</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 text-secondary">
+                      <p>{{focusedMeeting.patient.prefix}}. {{focusedMeeting.patient.firstName}} {{focusedMeeting.patient.lastName}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <h6>Geslacht</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 text-secondary">
+                        <p>{{focusedMeeting.patient.gender}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <h6>Geboorte datum</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 text-secondary">
+                        <p>{{focusedMeeting.patient.dateofbirth | date: 'dd-MM-yyyy'}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <h6>Adress</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 text-secondary">
+                        <p>{{focusedMeeting.patient.adress}}</p>
                     </div>
                 </div>
             </div>
@@ -17,24 +45,32 @@
     <div class="col-md-12">
         <div class="card mb-3">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h6 class=" ">Starttijd</h6>
-                    </div>
-                    <div class="col-sm-6 text-secondary">
-                        {{focusedMeeting.start | date:'hh:mm, dd MMM'}} 
-                    </div>
-                </div>
+                <h2 style="font-size: large;">Afspraak informatie</h2>
                 <hr>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h6 class=" ">Eindtijd</h6>
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <h6>Datum</h6>
                     </div>
-                    <div class="col-sm-6 text-secondary">
-                        {{focusedMeeting.end | date:'hh:mm, dd MMM'}}
+                    <div class="col-sm-12 col-md-12 col-lg-7 text-secondary">
+                       <p>{{focusedMeeting.meeting.end | date: 'dd MMMM'}}</p>
                     </div>
                 </div>
-                <hr>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <h6>Tijd</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 text-secondary">
+                        <p>{{focusedMeeting.meeting.start | date:'hh:mm'}} - {{focusedMeeting.meeting.end | date: 'hh:mm'}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h6>Omschrijving</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-secondary">
+                        <p>{{focusedMeeting.description}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
