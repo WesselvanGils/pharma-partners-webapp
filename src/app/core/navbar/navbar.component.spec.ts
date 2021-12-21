@@ -10,9 +10,9 @@ describe('NavbarComponent', () =>
 	const expectedUserData: User =
 	{
 		_id: "123",
-		doctorPrefix: "",
+		doctorCode: "",
 		email: "test@test.nl",
-		employeePrefix: "",
+		employeeCode: "",
 		firstName: "test",
 		lastName: "test",
 		role: role.ADMIN,

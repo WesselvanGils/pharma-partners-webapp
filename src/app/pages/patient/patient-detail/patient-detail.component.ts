@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { Observable, switchMap } from 'rxjs';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Observable, of, switchMap } from 'rxjs';
 import { Medication } from 'src/app/models/medication.model';
 import { Patient } from 'src/app/models/patient.model';
 import { Prescription } from 'src/app/models/prescription.model';
@@ -10,7 +10,6 @@ import { PrescriptionService } from './prescription.service';
 import { PatientService } from '../patient.service';
 import { EpisodeService } from './episode.service';
 import { Episode } from 'src/app/models/episode.model';
-import { start } from 'repl';
 
 @Component({
 	selector: 'app-patient-detail',
@@ -34,14 +33,19 @@ export class PatientDetailComponent implements OnInit
 
 	ngOnInit()
 	{
+		this.medications$ = this.medicationService.list()
 		this.patient$ = this.route.paramMap.pipe(
 			switchMap((params: ParamMap) =>
 				this.patientService.read(params.get('_id')!)
 			)
 		)
-		this.prescriptions$ = this.prescriptionService.list()
-		this.medications$ = this.medicationService.list()
-		this.episodes$ = this.episodeService.list()
+
+		this.patient$.subscribe(result => 
+		{
+			console.log(result)
+			this.prescriptions$ = of(result.medicalrecord.prescriptions)
+			this.episodes$ = of(result.medicalrecord.episodes)
+		})
 	}
 
 	detailPrescription(prescription: Prescription, patient: Patient)
@@ -96,31 +100,34 @@ export class PatientDetailComponent implements OnInit
 				}
 			}).then((result) =>
 			{
-				let entry: Prescription =
+				if (result.isConfirmed)
 				{
-					_id: undefined,
-					description: result.value.description,
-					dosage: result.value.dosage,
-					period: result.value.period,
-					publicationDate: new Date(),
-					medication: medications.find( medication => medication._id == result.value.medication)
+					let entry: Prescription =
+					{
+						_id: undefined,
+						description: result.value.description,
+						dosage: result.value.dosage,
+						period: result.value.period,
+						publicationDate: new Date(),
+						medication: medications.find(medication => medication._id == result.value.medication)
+					}
+					this.prescriptionService.create(entry).subscribe((result) =>
+					{
+						if (result) this.prescriptions$ = this.prescriptionService.list()
+					})
 				}
-				this.prescriptionService.create(entry).subscribe( (result) =>
-				{
-					if (result) this.prescriptions$ = this.prescriptionService.list()
-				})
 			})
 		})
 	}
 
-	addEpisode ()
+	addEpisode()
 	{
 		const ICPC: string[] = [ 'B81', 'C80', 'A55', 'C11', 'F22' ]
 		let ICPCOptions: string
 
 		ICPC.forEach(element => 
 		{
-			ICPCOptions = ICPCOptions + `<option>${element}</option>`	
+			ICPCOptions = ICPCOptions + `<option>${element}</option>`
 		})
 
 		Swal.fire({
@@ -162,9 +169,9 @@ export class PatientDetailComponent implements OnInit
 				const description = Swal.getPopup().querySelector<HTMLInputElement>('#description').value
 				const startDate = Swal.getPopup().querySelector<HTMLInputElement>('#startDate').value as unknown as Date
 				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>('#ICPC').value
-				const priorityInput = <HTMLInputElement> document.getElementById('priority')
+				const priorityInput = <HTMLInputElement>document.getElementById('priority')
 				const priority = priorityInput.checked
-				if (!description || !startDate || !ICPC )
+				if (!description || !startDate || !ICPC)
 				{
 					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
 				}
@@ -177,20 +184,23 @@ export class PatientDetailComponent implements OnInit
 			}
 		}).then((result) =>
 		{
-			let entry: Episode =
+			if (result.isConfirmed)
 			{
-				_id: undefined,
-				description: result.value.description,
-				priority: result.value.priority,
-				startDate: result.value.startDate,
-				ICPC: result.value.ICPC,
-				publicationDate: new Date()
-			}
+				const entry: Episode =
+				{
+					_id: undefined,
+					description: result.value.description,
+					priority: result.value.priority,
+					startDate: result.value.startDate,
+					ICPC: result.value.ICPC,
+					publicationDate: new Date()
+				}
 
-			this.episodeService.create(entry).subscribe( (result) =>
-			{
-				if (result) this.episodes$ = this.episodeService.list()
-			})
+				this.episodeService.create(entry).subscribe((result) =>
+				{
+					if (result) this.episodes$ = this.episodeService.list()
+				})
+			}
 		})
 	}
 }
