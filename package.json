@@ -11,12 +11,16 @@
   "scripts": {
     "ng": "ng",
     "start": "node src/index.js",
+    "start:mockapi": "node cypress/plugins/mockserver.js",
     "build": "ng build",
     "postinstall": "ng build --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --code-coverage --no-watch --no-progress",
     "build:prod": "ng build --prod",
-    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
+    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "engines": {
@@ -36,13 +40,13 @@
     "@angular/router": "~13.0.0",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@sweetalert2/ngx-sweetalert2": "^10.0.0",
-    "angular-datatables": "^13.0.1",
-    "datatables.net": "^1.11.3",
-    "datatables.net-dt": "^1.11.3",
     "angular-calendar": "^0.29.0",
+    "angular-datatables": "^13.0.1",
     "bootstrap": "^4.5.0",
     "compress": "^0.99.0",
     "compression": "^1.7.4",
+    "datatables.net": "^1.11.3",
+    "datatables.net-dt": "^1.11.3",
     "date-fns": "^2.27.0",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
@@ -56,6 +60,7 @@
     "@angular-devkit/build-angular": "~13.0.3",
     "@angular/cli": "~13.0.3",
     "@angular/compiler-cli": "~13.0.0",
+    "@cypress/schematic": "^1.6.0",
     "@types/datatables.net": "^1.10.21",
     "@types/jasmine": "~3.10.0",
     "@types/jquery": "^3.5.10",
@@ -66,6 +71,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "cypress": "latest"
   }
 }
