@@ -305,6 +305,10 @@ export class PatientDetailComponent implements OnInit
 				const date = (Swal.getPopup().querySelector<HTMLInputElement>(
 					"#date"
 				).value as unknown) as Date
+				if (!name || !unit || !valueNumber || !date)
+				{
+					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+				}
 				return {
 					name: name,
 					unit: unit,
@@ -340,22 +344,26 @@ export class PatientDetailComponent implements OnInit
 								.update(patient.medicalrecord)
 								.subscribe(result =>
 								{
-									if (result) this.ngOnInit()
-								})
+									this.measurementService
+										.create(measurementEntry)
+										.subscribe(result =>
+										{
+											diagnostic.measurements.push(result)
+
+											this.diagnosticService
+												.update(diagnostic)
+												.subscribe(result =>
+												{
+													if (result) this.ngOnInit()
+												}
+											)
+										}
+									)
+								}
+							)
 						})
-
-						this.measurementService
-							.create(measurementEntry)
-							.subscribe(result =>
-							{
-								console.log(diagnostic.measurements)
-								diagnostic.measurements.push(result)
-
-								this.diagnosticService
-									.update(diagnostic)
-									.subscribe()
-							})
-					})
+					}
+				)
 			}
 		})
 	}
@@ -368,7 +376,10 @@ export class PatientDetailComponent implements OnInit
 		{
 			if (measurement)
 			{
-				measurementOptions += `<tr> <td>${measurement.valueNumber}</td> <td>${measurement.date}</td> </tr>`
+				measurementOptions += `<tr> <td>${measurement.valueNumber
+					}</td> <td>${new Date(
+						measurement.date
+					).toLocaleDateString()}</td> </tr>`
 			}
 		})
 
@@ -411,6 +422,10 @@ export class PatientDetailComponent implements OnInit
 				const date = (Swal.getPopup().querySelector<HTMLInputElement>(
 					"#date"
 				).value as unknown) as Date
+				if (!valueNumber || !date)
+				{
+					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+				}
 				return {
 					valueNumber: valueNumber,
 					date: date
