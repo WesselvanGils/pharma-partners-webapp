@@ -18,6 +18,7 @@ import { MeasurementService } from "./measurement.service"
 import { Appointment } from "src/app/models/appointment.model"
 import { AuthService } from "src/app/core/auth/auth.service"
 import { CalendarService } from "../../calendar/calendar.service"
+import { Journal } from "src/app/models/journal.model"
 
 @Component({
 	selector: "app-patient-detail",
@@ -31,6 +32,9 @@ export class PatientDetailComponent implements OnInit
 	medications$: Observable<Medication[]>
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
+	selectedJournal: Journal[]
+	selectedEpisode: Episode
+	showJournals: boolean = false
 
 	constructor(
 		private route: ActivatedRoute,
@@ -61,6 +65,7 @@ export class PatientDetailComponent implements OnInit
 				this.prescriptions$ = of(result.medicalrecord.prescriptions)
 				this.episodes$ = of(result.medicalrecord.episodes)
 				this.diagnostics$ = of(result.medicalrecord.diagnostics)
+				console.log(result)
 			})
 	}
 
@@ -526,5 +531,12 @@ export class PatientDetailComponent implements OnInit
 				})
 			}
 		})
+	}
+
+	setJournal(journal: Journal[], episode: Episode)
+	{
+		this.selectedJournal = journal
+		this.selectedEpisode = episode
+		this.showJournals = true
 	}
 }

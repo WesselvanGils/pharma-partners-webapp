@@ -1,5 +1,5 @@
 import { Entity } from "./entity.model";
-
+import { Journal } from "./journal.model";
 
 export class Episode extends Entity
 {
@@ -8,4 +8,5 @@ export class Episode extends Entity
     priority: boolean
     ICPC: string
     startDate: Date
+    journals?: Journal[]
 }

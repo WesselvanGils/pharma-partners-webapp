@@ -102,7 +102,7 @@
 											<td class="align-middle">{{episode.ICPC}}</td>
 											<td class="align-middle text-center" style="color: #ed1e79; font-weight: bold;">{{episode.priority ? 'P' : ' '}}</td>
 											<td class="align-middle">
-												<button class="btn btn-info btn-sm">
+												<button class="btn btn-info btn-sm" (click)="setJournal(episode.journals, episode)">
 													<i class="fas fa-list-alt btn-sm p-0 pr-1"></i> Journaalregels
 												</button>
 											</td>
@@ -117,49 +117,8 @@
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12 mb-3">
 			<!-- dit geheel in een child component -->
-			<div class="card">
-				<div class="card-body">
-					<h3>Journaalregels</h3>
-					<div class="table-responsive">
-						<table class="table table-sm">
-							<thead class="thead-light">
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Journaalregels</th>
-									<th scope="col">SOEP</th>
-									<th scope="col">Datum</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row" class="align-middle">1</th>
-									<td class="align-middle">Leuke opmerking...</td>
-									<td class="align-middle">
-										S ... <br />O ... <br />E ... <br />P ...
-									</td>
-									<td class="align-middle">12-12-2021</td>
-								</tr>
-								<tr>
-									<th scope="row" class="align-middle">2</th>
-									<td class="align-middle">Nog weer een mooie opmerking</td>
-									<td class="align-middle">
-										S ... <br />O ... <br />E ... <br />P ...
-									</td>
-									<td class="align-middle">14-12-2021</td>
-								</tr>
-								<tr>
-									<th scope="row" class="align-middle">3</th>
-									<td class="align-middle">Prachtig mooie opmerking</td>
-									<td class="align-middle">
-										S ... <br />O ... <br />E ... <br />P ...
-									</td>
-									<td class="align-middle">17-12-2021</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
+			<app-patient-journal [journals]="selectedJournal" [(episode)]="selectedEpisode" [(show)]="showJournals"></app-patient-journal>
+		
 			<!-- dit geheel in een child component -->
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
