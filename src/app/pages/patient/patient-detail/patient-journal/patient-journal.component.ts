@@ -23,11 +23,6 @@ export class PatientJournalComponent
 		private episodeService: EpisodeService 
 	) { }
 
-	emitClose ()
-	{
-		this.showChange.emit(false)
-	}
-
 	addJournal()
 	{
 		Swal.fire({
