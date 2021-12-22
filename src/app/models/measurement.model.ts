@@ -4,5 +4,4 @@ export class Measurement extends Entity
 {
     valueNumber: number
     date: Date
-    unit: string
 }

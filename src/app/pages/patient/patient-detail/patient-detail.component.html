@@ -181,7 +181,7 @@
 									<tbody>
 										<tr *ngFor="let diagnostic of diagnostics$ | async">
 											<td>{{diagnostic.name}} ({{diagnostic.unit}})</td>
-											<td>{{diagnostic.measurements[diagnostic.measurements.length - 1].valueNumber}} {{diagnostic.measurements[diagnostic.measurements.length - 1].unit}}</td>
+											<td>{{diagnostic.measurements[diagnostic.measurements.length - 1].valueNumber}}</td>
 											<td>{{diagnostic.measurements[diagnostic.measurements.length - 1].date | date: "dd-MM-yyyy" }}</td>
 											<td>
 												<button class="btn btn-info btn-sm" style="float:center" (click)="getMeasurementHistory(diagnostic)">

@@ -319,7 +319,6 @@ export class PatientDetailComponent implements OnInit
 				const measurementEntry: Measurement = {
 					_id: undefined,
 					valueNumber: result.value.valueNumber,
-					unit: result.value.unit,
 					date: result.value.date
 				}
 
@@ -369,7 +368,7 @@ export class PatientDetailComponent implements OnInit
 		{
 			if (measurement)
 			{
-				measurementOptions += `<tr> <td>${measurement.valueNumber} ${measurement.unit}</td> <td>${measurement.date}</td> </tr>`
+				measurementOptions += `<tr> <td>${measurement.valueNumber}</td> <td>${measurement.date}</td> </tr>`
 			}
 		})
 
@@ -398,7 +397,6 @@ export class PatientDetailComponent implements OnInit
 			html: `
 				<h5>${diagnostic.name} (${diagnostic.unit})</h5>
 				<input type="number" id="valueNumber" class="swal2-input px-1" placeholder="Waarde">
-				<input type="text" id="unit" class="swal2-input px-1" placeholder="Eenheid">
 				<input type="date" id="date" class="swal2-input px-1" placeholder="Datum">`,
 			confirmButtonText: "Voeg toe",
 			showCloseButton: true,
@@ -410,15 +408,11 @@ export class PatientDetailComponent implements OnInit
 				const valueNumber = (Swal.getPopup().querySelector<
 					HTMLInputElement
 				>("#valueNumber").value as unknown) as number
-				const unit = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#unit"
-				).value
 				const date = (Swal.getPopup().querySelector<HTMLInputElement>(
 					"#date"
 				).value as unknown) as Date
 				return {
 					valueNumber: valueNumber,
-					unit: unit,
 					date: date
 				}
 			}
@@ -429,13 +423,11 @@ export class PatientDetailComponent implements OnInit
 				let entry: Measurement = {
 					_id: undefined,
 					valueNumber: result.value.valueNumber,
-					unit: result.value.unit,
 					date: result.value.date
 				}
 
 				this.measurementService.create(entry).subscribe(result =>
 				{
-					console.log(result.unit)
 					diagnostic.measurements.push(result)
 
 					this.diagnosticService.update(diagnostic).subscribe()
