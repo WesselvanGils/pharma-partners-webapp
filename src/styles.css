@@ -3,187 +3,224 @@
 /* ----- General design elements - typography ----- */
 /* Body */
 body {
-    background-color: #efefef;
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    color: #010005;
-    font-size: 15px;
+  background-color: #efefef;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #010005;
+  font-size: 15px;
 }
 /* Headers */
 h1 {
-    font-weight: lighter;
-    font-size: 48px;
+  font-weight: lighter;
+  font-size: 48px;
 }
 h2 {
-    font-weight: lighter;
-    font-size: 32px;
+  font-weight: lighter;
+  font-size: 32px;
 }
 h3 {
-    font-size: 26px;
+  font-size: 26px;
 }
 h4 {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 h5 {
-    font-weight: bolder;
-    font-size: 18px;
+  font-weight: bolder;
+  font-size: 18px;
 }
 h6 {
-    font-weight: bolder;
-    font-size: 16px;
+  font-weight: bolder;
+  font-size: 16px;
 }
-
 
 /* ----- Button - custom colors ----- */
 /* Button outline primary */
 .btn-outline-primary {
-    border-color: #3d6c99;
-    color: #3d6c99!important;
+  border-color: #3d6c99;
+  color: #3d6c99 !important;
 }
 .btn-outline-primary[disabled]:hover {
-    border-color: #3d6c99;
-    color: #3d6c99 !important;
-    background-color: rgba(255, 255, 255, 0);
+  border-color: #3d6c99;
+  color: #3d6c99 !important;
+  background-color: rgba(255, 255, 255, 0);
 }
 .btn-outline-primary:hover {
-    color: white !important;
-    background-color: #3d6c99;
-    border-color: #3d6c99;
+  color: white !important;
+  background-color: #3d6c99;
+  border-color: #3d6c99;
 }
-.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #3d6c99;
-    border-color: #3d6c99;
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #3d6c99;
+  border-color: #3d6c99;
 }
 /* Button primary */
 .btn-primary {
-    border-color: #3d6c99!important;
-    background-color: #3d6c99!important;
-    color: #fff!important;
+  border-color: #3d6c99 !important;
+  background-color: #3d6c99 !important;
+  color: #fff !important;
 }
 .btn-primary[disabled]:hover {
-    border-color: #3d6c99!important;
-    background-color: #3d6c99!important;
-    color: #fff !important;
+  border-color: #3d6c99 !important;
+  background-color: #3d6c99 !important;
+  color: #fff !important;
 }
 .btn-primary:hover {
-    color: white !important;
-    background-color: #2d5983!important;
+  color: white !important;
+  background-color: #2d5983 !important;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #3d6c99;
-    border-color: #3d6c99;
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #3d6c99;
+  border-color: #3d6c99;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #3d6c9980 !important;
 }
 /* Button warning */
 .btn-warning {
-    border-color: #003e79!important;
-    background-color: #003e79!important;
-    color: #fff!important;
+  border-color: #003e79 !important;
+  background-color: #003e79 !important;
+  color: #fff !important;
 }
 .btn-warning[disabled]:hover {
-    border-color: #003e79!important;
-    background-color: #003e79!important;
-    color: #fff !important;
+  border-color: #003e79 !important;
+  background-color: #003e79 !important;
+  color: #fff !important;
 }
 .btn-warning:hover {
-    color: white !important;
-    background-color: #002c55!important;
+  color: white !important;
+  background-color: #002c55 !important;
 }
-
+.btn-warning.focus,
+.btn-warning:focus {
+  box-shadow: 0 0 0 0.2rem #003e7980 !important;
+}
+/* Button danger */
+.btn-danger {
+  border-color: #ed1e79 !important;
+  background-color: #ed1e79 !important;
+  color: #fff !important;
+}
+.btn-danger[disabled]:hover {
+  border-color: #ed1e79 !important;
+  background-color: #ed1e79 !important;
+  color: #fff !important;
+}
+.btn-danger:hover {
+  color: white !important;
+  background-color: #ce0f62 !important;
+}
+.btn-danger.focus,
+.btn-danger:focus {
+  box-shadow: 0 0 0 0.2rem #ed1e7980 !important;
+}
 
 /* ----- Form validation - custom colors ----- */
 /* Invalid input error text*/
 .invalid-feedback {
-    font-size: 13px;
-    color: #c1272d;
+  font-size: 13px;
+  color: #c1272d;
 }
-.form-control.is-invalid, .was-validated .form-control:invalid {
-    border-color: #c1272d;
-    background-image: url();
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: #c1272d;
+  background-image: url();
 }
-.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
-    border-color: #c1272d;
-    box-shadow: 0 0 0 0.2rem rgb(193, 39, 45, 0.25);
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: #c1272d;
+  box-shadow: 0 0 0 0.2rem rgb(193, 39, 45, 0.25);
 }
 /* Regular focus on input */
 .form-control:focus {
-    border-color: #3d6c99;
-    box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25);
+  border-color: #3d6c99;
+  box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25);
 }
-
 
 /* ----- Table customization ----- */
 /* Hover over table row */
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-    background-color: #cbe5fd40;
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #cbe5fd40;
 }
 /* Pagination button */
 .dataTables_wrapper .dataTables_paginate .paginate_button {
-    padding: 0!important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    color: #fff !important;
+  padding: 0 !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  color: #fff !important;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    border: 1px solid #989898!important;
-    background: linear-gradient(to bottom, #fff 100%, #fff 100%)!important;
-} 
-.dataTables_wrapper .dataTables_filter input :focus { 
-    border-color: #3d6c99!important;
-    box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25)!important;
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border: 1px solid #989898 !important;
+  background: linear-gradient(to bottom, #fff 100%, #fff 100%) !important;
 }
-
+.dataTables_wrapper .dataTables_filter input :focus {
+  border-color: #3d6c99 !important;
+  box-shadow: 0 0 0 0.2rem rgba(61, 108, 153, 0.25) !important;
+}
 
 /* ----- Sweet Alerts - custom colors ----- */
 /* These all need to have the !important tags behind them.
  * Without these overrides, it will take the default style of the swal2 elements.
  */
-/* Confirm button */ 
+/* Confirm button */
 .swal2-styled.swal2-confirm {
-    background-color: #17a2b8 !important;
+  background-color: #17a2b8 !important;
 }
 .swal2-styled.swal2-confirm:focus {
-    box-shadow: 0 0 0 3px #17a2b8 !important;
+  box-shadow: 0 0 0 3px #17a2b8 !important;
 }
 /* Close button hover*/
 .swal2-close:hover {
-    color: #ed1e79 !important;
+  color: #ed1e79 !important;
 }
 /* Deny button */
 .swal2-styled.swal2-deny {
-    background-color: #ed1e79 !important;
+  background-color: #ed1e79 !important;
 }
 .swal2-styled.swal2-deny:focus {
-    box-shadow: 0 0 0 3px rgb(237, 30, 121, 0.5) !important;
+  box-shadow: 0 0 0 3px rgb(237, 30, 121, 0.5) !important;
 }
 /* Error message icon */
 .swal2-validation-message::before {
-    background-color: #c1272d !important;
+  background-color: #c1272d !important;
 }
 
-
-/* ----- Calendar - colors ----- */
+/* ----- Calendar - customization ----- */
+/* Header */
 .cal-week-view .cal-header.cal-today {
-    background-color: #ed1e7823!important;
-}
-.cal-week-view .cal-current-time-marker {
-    background-color: #ed1e79!important;
-    height: 3px;
-    border-radius: 15px;
+  background-color: #ed1e7823 !important;
 }
 .cal-week-view .cal-header.cal-weekend span {
-    color: #d81067!important;
+  color: #d81067 !important;
 }
+/* Time marker */
+.cal-week-view .cal-current-time-marker {
+  background-color: #ed1e79 !important;
+  height: 3px;
+  border-radius: 15px;
+}
+/* Event */
 .cal-week-view .cal-event {
-    background-color: #cbe5fdb0;
-    border-color: #004b9100;
-    border-left: 5px solid #7ba8d3;
-    color: #004A91;
-    font-size:medium;
+  background-color: #cbe5fdb0;
+  border-color: #004b9100;
+  border-left: 5px solid #7ba8d3;
+  color: #004a91;
+  font-size: medium;
 }
 .cal-week-view .cal-event:hover {
-    transition: 0.3s;
-    background-color: #cbe5fd;
+  transition: 0.3s;
+  background-color: #cbe5fd;
+}
+.cal-event.focus,
+.cal-event:focus {
+  box-shadow: 0 0 0 0.2rem #7ba8d380 !important;
 }
