@@ -27,6 +27,7 @@ import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-d
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
+import { PatientJournalComponent } from './pages/patient/patient-detail/patient-journal/patient-journal.component';
 
 @NgModule({
 	declarations: [
@@ -46,6 +47,7 @@ import { AppointmentComponent } from './pages/calendar/appointment/appointment.c
 		ContactComponent,
 		ContactComponent,
 		AppointmentComponent,
+  PatientJournalComponent,
 	],
 	imports: [
 		BrowserModule,

@@ -1,0 +1,45 @@
+<div class="card" *ngIf="this.show">
+    <div class="card-body">
+        <div class="row">
+            <h3 class="col-sm-6 col-md-6 col-lg-8">Journaalregels</h3>
+            <span class="col-sm-6 col-md-6 col-lg-4">
+                <button class="btn btn-danger btn-sm float-right ml-2" (click)="emitClose()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="btn btn-info btn-sm float-right" (click)="addJournal()">
+                    <i class="fas fa-plus"></i> Voeg journaalregel toe
+                </button>
+            </span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">SOEP</th>
+                        <th scope="col">Kenmerk</th>
+                        <th scope="col">ICPC</th>
+                        <th scope="col">Consult</th>
+                        <th scope="col">Datum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let journal of journals ">
+                        <td class="align-middle" style="width: 50%;">
+                            <span *ngIf="journal.SOEP.S">S: {{journal.SOEP.S}}</span>  
+                            <br/>
+                            <span *ngIf="journal.SOEP.O">O: {{journal.SOEP.O}}</span>
+                            <br/>
+                            <span *ngIf="journal.SOEP.E">E: {{journal.SOEP.E}} </span>
+                            <br/>
+                            <span *ngIf="journal.SOEP.P">P: {{journal.SOEP.P}}</span>
+                        </td>
+                        <td class="align-middle">{{journal.characteristics}}</td>
+                        <td class="align-middle">{{journal.ICPC}}</td>
+                        <td class="align-middle">{{journal.consult}}</td>
+                        <td class="align-middle">{{journal.publicationDate | date: "dd-MM-yyyy"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
