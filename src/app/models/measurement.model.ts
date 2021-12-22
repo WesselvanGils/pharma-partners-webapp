@@ -2,7 +2,7 @@ import { Entity } from "./entity.model";
 
 export class Measurement extends Entity
 {
-    valueNumber: Number
+    valueNumber: number
     date: Date
     unit: string
 }
