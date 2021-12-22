@@ -33,6 +33,7 @@ export class PatientDetailComponent implements OnInit
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
 	selectedJournal: Journal[]
+	selectedEpisode: Episode
 	showJournals: boolean = false
 
 	constructor(
@@ -532,9 +533,10 @@ export class PatientDetailComponent implements OnInit
 		})
 	}
 
-	setJournal(journal: Journal[])
+	setJournal(journal: Journal[], episode: Episode)
 	{
 		this.selectedJournal = journal
+		this.selectedEpisode = episode
 		this.showJournals = true
 	}
 }

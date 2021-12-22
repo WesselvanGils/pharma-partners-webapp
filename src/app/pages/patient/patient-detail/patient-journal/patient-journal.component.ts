@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core"
+import { Episode } from "src/app/models/episode.model"
 import { Journal } from "src/app/models/journal.model"
 import Swal from "sweetalert2"
+import { EpisodeService } from "../episode.service"
 import { JournalService } from "./journal.service"
 
 @Component({
@@ -11,9 +13,15 @@ import { JournalService } from "./journal.service"
 export class PatientJournalComponent
 {
 	@Input() journals: Journal[]
+	@Input() episode: Episode
 	@Input() show: boolean
 	@Output() showChange = new EventEmitter<boolean>()
-	constructor( private journalService: JournalService ) { }
+	@Output() episodeChange = new EventEmitter<Episode>()
+	constructor
+	( 
+		private journalService: JournalService,
+		private episodeService: EpisodeService 
+	) { }
 
 	emitClose ()
 	{
@@ -92,7 +100,8 @@ export class PatientJournalComponent
 			{
 				this.journalService.create(result.value).subscribe(result =>
 				{
-					console.log(result)
+					this.episode.journals.push(result)
+					this.episodeService.update(this.episode).subscribe()
 				})
 			}
 		})

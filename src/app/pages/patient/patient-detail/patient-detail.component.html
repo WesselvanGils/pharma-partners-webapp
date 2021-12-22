@@ -102,7 +102,7 @@
 											<td class="align-middle">{{episode.ICPC}}</td>
 											<td class="align-middle text-center" style="color: #ed1e79; font-weight: bold;">{{episode.priority ? 'P' : ' '}}</td>
 											<td class="align-middle">
-												<button class="btn btn-info btn-sm" (click)="setJournal(episode.journals)">
+												<button class="btn btn-info btn-sm" (click)="setJournal(episode.journals, episode)">
 													<i class="fas fa-list-alt btn-sm p-0 pr-1"></i> Journaalregels
 												</button>
 											</td>
@@ -117,7 +117,7 @@
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12 mb-3">
 			<!-- dit geheel in een child component -->
-			<app-patient-journal [journals]="selectedJournal" [(show)]="showJournals"></app-patient-journal>
+			<app-patient-journal [journals]="selectedJournal" [(episode)]="selectedEpisode" [(show)]="showJournals"></app-patient-journal>
 		
 			<!-- dit geheel in een child component -->
 		</div>
