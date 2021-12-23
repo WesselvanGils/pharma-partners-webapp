@@ -19,6 +19,7 @@
     "build:prod": "ng build --prod",
     "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
     "e2e": "ng e2e",
+    "cypress:e2e": "start-server-and-test start http://localhost:4200 cypress:run",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
@@ -52,6 +53,7 @@
     "jquery": "^3.6.0",
     "path": "^0.12.7",
     "rxjs": "~7.4.0",
+    "start-server-and-test": "^1.14.0",
     "sweetalert2": "^11.3.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -65,13 +67,13 @@
     "@types/jasmine": "~3.10.0",
     "@types/jquery": "^3.5.10",
     "@types/node": "^16.11.13",
+    "cypress": "latest",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.4.3",
-    "cypress": "latest"
+    "typescript": "~4.4.3"
   }
 }
