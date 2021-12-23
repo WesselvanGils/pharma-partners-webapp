@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core"
 import { ActivatedRoute, ParamMap } from "@angular/router"
 import { Observable, of, switchMap } from "rxjs"
-import { Medication } from "src/app/models/medication.model"
 import { Patient } from "src/app/models/patient.model"
 import { Prescription } from "src/app/models/prescription.model"
 import Swal from "sweetalert2"
@@ -11,7 +10,6 @@ import { Diagnostic } from "src/app/models/diagnostic.model"
 import { Appointment } from "src/app/models/appointment.model"
 import { AuthService } from "src/app/core/auth/auth.service"
 import { CalendarService } from "../../calendar/calendar.service"
-import { Journal } from "src/app/models/journal.model"
 
 @Component({
 	selector: "app-patient-detail",
@@ -22,12 +20,8 @@ export class PatientDetailComponent implements OnInit
 {
 	patient$: Observable<Patient>
 	prescriptions$: Observable<Prescription[]>
-	medications$: Observable<Medication[]>
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
-	selectedJournal: Journal[]
-	selectedEpisode: Episode
-	showJournals: boolean
 
 	constructor(
 		private route: ActivatedRoute,
