@@ -30,6 +30,7 @@ import { AppointmentComponent } from './pages/calendar/appointment/appointment.c
 import { PatientJournalComponent } from './pages/patient/patient-detail/patient-journal/patient-journal.component';
 import { PatientEpisodeComponent } from './pages/patient/patient-detail/patient-episode/patient-episode.component';
 import { PatientDiagnosticComponent } from './pages/patient/patient-detail/patient-diagnostic/patient-diagnostic.component';
+import { PatientPrescriptionComponent } from './pages/patient/patient-detail/patient-prescription/patient-prescription.component';
 
 @NgModule({
 	declarations: [
@@ -52,6 +53,7 @@ import { PatientDiagnosticComponent } from './pages/patient/patient-detail/patie
   PatientJournalComponent,
   PatientEpisodeComponent,
   PatientDiagnosticComponent,
+  PatientPrescriptionComponent,
 	],
 	imports: [
 		BrowserModule,

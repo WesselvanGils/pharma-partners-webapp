@@ -5,10 +5,10 @@ import { Patient } from "src/app/models/patient.model"
 import { PatientService } from "../patient.service"
 import { EpisodeService } from "./patient-episode/episode.service"
 import { MedicalRecordService } from "./medicalRecord.service"
-import { MedicationService } from "./medication.service"
+import { MedicationService } from "./patient-prescription/medication.service"
 
 import { PatientDetailComponent } from "./patient-detail.component"
-import { PrescriptionService } from "./prescription.service"
+import { PrescriptionService } from "./patient-prescription/prescription.service"
 
 describe("PatientDetailComponent", () =>
 {
