@@ -3,7 +3,7 @@ import { BehaviorSubject, Observable, of } from 'rxjs';
 import { User } from 'src/app/models/user.model';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import { map, catchError, switchMap } from 'rxjs/operators';
+import { map, catchError } from 'rxjs/operators';
 import { AlertService } from 'src/app/shared/alert/alert.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
