@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core"
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from "@angular/core"
 import { Observable } from "rxjs"
 import { Episode } from "src/app/models/episode.model"
 import Swal from "sweetalert2"
@@ -25,6 +25,8 @@ export class PatientEpisodeComponent implements OnInit
 	) { }
 
 	ngOnInit(): void { }
+
+	
 
 	setJournal(journals: Journal[], episode: Episode)
 	{

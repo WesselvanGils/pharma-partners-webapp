@@ -81,7 +81,7 @@ export class PatientDetailComponent implements OnInit
 				).value
 				const startTime = Swal.getPopup().querySelector<
 					HTMLInputElement
-				>("#startTimePrescription").value
+				>("#startTime").value
 				const endTime = Swal.getPopup().querySelector<HTMLInputElement>(
 					"#endTime"
 				).value
