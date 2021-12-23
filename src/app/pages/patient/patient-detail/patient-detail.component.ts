@@ -71,12 +71,8 @@ export class PatientDetailComponent implements OnInit
 
 	detailPrescription(prescription: Prescription, patient: Patient)
 	{
-		const title = `Het recept van ${patient.firstName +
-			" " +
-			patient.lastName}`
-		const message = `${prescription.dosage +
-			" " +
-			prescription.medication.name}`
+		const title = `Het recept van ${patient.firstName + " " + patient.lastName}`
+		const message = `${prescription.dosage + " " + prescription.medication.name}`
 		Swal.fire(title, message)
 	}
 
@@ -95,7 +91,7 @@ export class PatientDetailComponent implements OnInit
 			Swal.fire({
 				title: "Voeg recept toe",
 				html: `
-				<select type="text" id="medication" class="swal2-input px-4" placeholder="Medicatie">
+				<select type="text" id="medication" class="swal2-input px-1" placeholder="Medicatie">
 					<option selected disabled>Kies een medicijn...</option>
 					${medicationOptions}
 				</select>
@@ -171,7 +167,6 @@ export class PatientDetailComponent implements OnInit
 	{
 		const ICPC: string[] = [ "B81", "C80", "A55", "C11", "F22" ]
 		let ICPCOptions: string
-
 		ICPC.forEach(element =>
 		{
 			ICPCOptions = ICPCOptions + `<option>${element}</option>`
@@ -193,17 +188,17 @@ export class PatientDetailComponent implements OnInit
 				margin-right: 3px;
 				}
 			</style>
-			<input type="text" id="description" class="swal2-input px-1" placeholder="Omschrijving">
+			<input type="text" id="description" class="swal2-input" placeholder="Omschrijving">
 			<input type="date" id="startDate" class="swal2-input" placeholder="Start Datum">
 			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
 				<option selected disabled>Kies een ICPC code...</option>
 				${ICPCOptions}
-				</select>
-				<br>
-				<input type="checkbox" id="priority" class="swal2-checkbox mt-3">
-				<label class="form-check-label" for="priority">
-					Priority
-				</label>    
+			</select>
+			<br>
+			<input type="checkbox" id="priority" class="swal2-checkbox mt-3">
+			<label class="form-check-label" for="priority">
+				Priority
+			</label>    
 			`,
 			confirmButtonText: "Voeg toe",
 			showDenyButton: true,
@@ -213,18 +208,10 @@ export class PatientDetailComponent implements OnInit
 			focusConfirm: false,
 			preConfirm: () =>
 			{
-				const description = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#description").value
-				const startDate = (Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#startDate").value as unknown) as Date
-				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#ICPC"
-				).value
-				const priorityInput = <HTMLInputElement>(
-					document.getElementById("priority")
-				)
+				const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
+				const startDate = (Swal.getPopup().querySelector<	HTMLInputElement>("#startDate").value as unknown) as Date
+				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>("#ICPC").value
+				const priorityInput = <HTMLInputElement>(document.getElementById("priority"))
 				const priority = priorityInput.checked
 				if (!description || !startDate || !ICPC)
 				{
@@ -272,21 +259,8 @@ export class PatientDetailComponent implements OnInit
 		Swal.fire({
 			title: "Voeg meting toe",
 			html: `
-			<style>
-				input[type=checkbox]
-				{
-				/* Double-sized Checkboxes */
-				-ms-transform: scale(1.5); /* IE */
-				-moz-transform: scale(1.5); /* FF */
-				-webkit-transform: scale(1.5); /* Safari and Chrome */
-				-o-transform: scale(1.5); /* Opera */
-				transform: scale(1.5);
-				margin: 0;
-				margin-right: 3px;
-				}
-			</style>
-			<input type="text" id="name" class="swal2-input px-1" placeholder="Naam">
-			<input type="number" id="valueNumber" class="swal2-input" placeholder="Waarde">
+			<input type="text" id="name" class="swal2-input" placeholder="Naam">
+			<input type="number" min="0" id="valueNumber" class="swal2-input" placeholder="Waarde (getal)">
 			<input type="text" id="unit" class="swal2-input" placeholder="Eenheid">
 			<input type="date" id="date" class="swal2-input" placeholder="Datum">
 			`,
@@ -376,31 +350,36 @@ export class PatientDetailComponent implements OnInit
 	getMeasurementHistory(diagnostic: Diagnostic)
 	{
 		let measurementOptions: string = ""
-
 		diagnostic.measurements.forEach(measurement =>
 		{
 			if (measurement)
 			{
-				measurementOptions += `<tr> <td>${measurement.valueNumber
-					}</td> <td>${new Date(
-						measurement.date
-					).toLocaleDateString()}</td> </tr>`
+				measurementOptions += `<tr> <td>${measurement.valueNumber}</td> 
+				 <td>${new Date(measurement.date).toLocaleDateString()}</td> </tr>`
 			}
 		})
 
 		Swal.fire({
 			title: `${diagnostic.name} (${diagnostic.unit})`,
-			html: `<table class="table table-sm">
-					<thead class="thead-light">
-						<tr>
-							<th scope="col">Waarde</th>
-							<th scope="col">Datum</th>
-						</tr>
-					</thead>
-					<tbody>
-						${measurementOptions}
-					</tbody>
-				</table>`,
+			html: `<style>
+						thead{
+							position: sticky; 
+							top: -2px; 
+						}
+					</style>
+					<div style="max-height: 200px!important;"class="table-responsive">
+					<table class="table table-sm">
+						<thead class="thead-light">
+							<tr>
+								<th scope="col">Waarde</th>
+								<th scope="col">Datum</th>
+							</tr>
+						</thead>
+						<tbody>
+							${measurementOptions}
+						</tbody>
+					</table>
+				   </div>`,
 			showCloseButton: true,
 			focusConfirm: false
 		})
@@ -409,11 +388,11 @@ export class PatientDetailComponent implements OnInit
 	addMeasurement(diagnostic: Diagnostic)
 	{
 		Swal.fire({
-			title: "Voeg waarde toe",
+			title: "Voeg waarde toe aan: ",
 			html: `
-				<h5>${diagnostic.name} (${diagnostic.unit})</h5>
-				<input type="number" id="valueNumber" class="swal2-input px-1" placeholder="Waarde">
-				<input type="date" id="date" class="swal2-input px-1" placeholder="Datum">`,
+				<h3 style="font-weight: normal; color: #004a91;">${diagnostic.name} (${diagnostic.unit})</h3>
+				<input type="number" min="0" id="valueNumber" class="swal2-input" placeholder="Waarde (getal)">
+				<input type="date" id="date" class="swal2-input" placeholder="Datum">`,
 			confirmButtonText: "Voeg toe",
 			showCloseButton: true,
 			showDenyButton: true,
@@ -461,11 +440,15 @@ export class PatientDetailComponent implements OnInit
 		Swal.fire({
 			title: "Voeg afspraak toe",
 			html: `
-			<input type="text" id="title" class="swal2-input px-1" placeholder="Afspraak naam">
-			<input type="text" id="description" class="swal2-input px-1" placeholder="Afspraak Omschrijving">
-			<input type="date" id="date" class="swal2-input" placeholder="Datum">
-			<input type="time" id="startTime" class="swal2-input" placeholder="Begin tijd">
-			<input type="time" id="endTime" class="swal2-input" placeholder="Eind tijd">
+			<input type="text" id="title" class="swal2-input" placeholder="Afspraak naam">
+			<input type="text" id="description" class="swal2-input" placeholder="Afspraak Omschrijving">
+			<input type="date" id="date" class="swal2-input " placeholder="Datum">
+			<div>
+			<label for="startTime">Start tijd:</label>
+			<input type="time" id="startTime" class="swal2-input ml-1 mr-2" placeholder="Begin tijd">
+			<label for="endTime">Eind tijd:</label>
+			<input type="time" id="endTime" class="swal2-input mx-1" placeholder="Eind tijd">
+			</div>
 			`,
 			confirmButtonText: "Voeg toe",
 			showDenyButton: true,
