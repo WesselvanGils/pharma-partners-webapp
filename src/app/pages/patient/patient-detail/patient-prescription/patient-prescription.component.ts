@@ -28,7 +28,7 @@ export class PatientPrescriptionComponent implements OnInit
 		private medicalRecordService: MedicalRecordService
 	) { }
 
-	ngOnInit(): void 
+	ngOnInit(): void
 	{
 		this.medications$ = this.medicationService.list()
 	}

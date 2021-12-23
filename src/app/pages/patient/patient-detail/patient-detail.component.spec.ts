@@ -36,35 +36,17 @@ describe("PatientDetailComponent", () =>
 	let fixture: ComponentFixture<PatientDetailComponent>
 
 	let patientServiceSpy
-	let prescriptionServiceSpy
-	let medicationServiceSpy
-	let episodeServiceSpy
-	let medicalRecordServiceSpy
-	let diagnosticServiceSpy
-	let MeasurementServiceSpy
 	let authServiceSpy
 	let CalendarServiceSpy
 
 	beforeEach(async () =>
 	{
 		patientServiceSpy = jasmine.createSpyObj("PatientService", ["list"])
-		prescriptionServiceSpy = jasmine.createSpyObj("PrescriptionService", ["list"])
-		medicationServiceSpy = jasmine.createSpyObj("MedicationService", ["list"])
-		episodeServiceSpy = jasmine.createSpyObj("EpisodeService", ["list"])
-		medicalRecordServiceSpy = jasmine.createSpyObj("MedicalRecordService", ["list"])
-		diagnosticServiceSpy = jasmine.createSpyObj("DiagnosticService", ["list"])
-		MeasurementServiceSpy = jasmine.createSpyObj("MeasurementService", ["list"])
 
 		await TestBed.configureTestingModule({
 			declarations: [ PatientDetailComponent ],
 			providers: [
 				{ provide: PatientService, useValue: patientServiceSpy },
-				{ provide: PrescriptionService, useValue: prescriptionServiceSpy },
-				{ provide: MedicationService, useValue: medicationServiceSpy },
-				{ provide: EpisodeService, useValue: episodeServiceSpy },
-				{ provide: MedicalRecordService, useValue: medicalRecordServiceSpy },
-				{ provide: DiagnosticService, useValue: diagnosticServiceSpy },
-				{ provide: MeasurementService, useValue: MeasurementServiceSpy },
 				{ provide: AuthService, useValue: authServiceSpy },
 				{ provide: CalendarService, useValue: CalendarServiceSpy },
 				{ provide: ActivatedRoute, useValue: {

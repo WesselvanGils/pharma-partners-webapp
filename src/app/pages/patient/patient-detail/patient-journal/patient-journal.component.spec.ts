@@ -1,34 +1,72 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EpisodeService } from '../episode.service';
-import { JournalService } from './journal.service';
+import { ComponentFixture, TestBed } from "@angular/core/testing"
+import { of } from "rxjs"
+import { Episode } from "src/app/models/episode.model"
+import { Journal } from "src/app/models/journal.model"
+import { EpisodeService } from "../patient-episode/episode.service"
+import { JournalService } from "./journal.service"
 
-import { PatientJournalComponent } from './patient-journal.component';
+import { PatientJournalComponent } from "./patient-journal.component"
 
-describe('PatientJournalComponent', () => {
-  let component: PatientJournalComponent;
-  let fixture: ComponentFixture<PatientJournalComponent>;
-  let JournalServiceSpy;
-  let EpisodeServiceSpy;
+describe("PatientJournalComponent", () =>
+{
+	let component: PatientJournalComponent
+	let fixture: ComponentFixture<PatientJournalComponent>
+	let journalServiceSpy
+	let episodeServiceSpy
 
-  beforeEach(async () => {
-  
-    await TestBed.configureTestingModule({
-      declarations: [ PatientJournalComponent ],
-      providers: [
-				{ provide: JournalService, useValue: JournalServiceSpy },
-				{ provide: EpisodeService, useValue: EpisodeServiceSpy },
-      ],
-    })
-    .compileComponents();
-  });
+	const expectedJournal: Journal[] =
+	[{
+		_id: undefined,
+		ICPC: undefined,
+		SOEP:
+		{
+			S: undefined,
+			O: undefined,
+			E: undefined,
+			P: undefined
+		},
+		characteristics: undefined,
+		consult: undefined,
+		publicationDate: undefined
+	}]
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(PatientJournalComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	const expectedEpisode: Episode =
+	{
+		_id: undefined,
+		ICPC: undefined,
+		description: undefined,
+		priority: undefined,
+		publicationDate: undefined,
+		startDate: undefined,
+		journals: undefined
+	}
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+	beforeEach(async () =>
+	{
+		journalServiceSpy = jasmine.createSpyObj("JournalService", ["currentJournal"])
+		episodeServiceSpy = jasmine.createSpyObj("EpisodeService", ["currentEpisode"])
+
+		await TestBed.configureTestingModule({
+			declarations: [ PatientJournalComponent ],
+			providers: [
+				{ provide: JournalService, useValue: journalServiceSpy },
+				{ provide: EpisodeService, useValue: episodeServiceSpy }
+			]
+		}).compileComponents()
+	})
+
+	beforeEach(() =>
+	{
+		episodeServiceSpy.currentJournal = of(expectedJournal)
+		episodeServiceSpy.currentEpisode = of(expectedEpisode)
+
+		fixture = TestBed.createComponent(PatientJournalComponent)
+		component = fixture.componentInstance
+		fixture.detectChanges()
+	})
+
+	it("should create", () =>
+	{
+		expect(component).toBeTruthy()
+	})
+})

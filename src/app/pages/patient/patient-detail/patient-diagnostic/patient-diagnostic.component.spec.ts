@@ -1,25 +1,44 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing"
+import { MedicalRecordService } from "../medicalRecord.service"
+import { DiagnosticService } from "./diagnostic.service"
+import { MeasurementService } from "./measurement.service"
+import { PatientDiagnosticComponent } from "./patient-diagnostic.component"
 
-import { PatientDiagnosticComponent } from './patient-diagnostic.component';
+describe("PatientDiagnosticComponent", () =>
+{
+	let diagnosticServiceSpy
+	let medicalRecordServiceSpy
+	let measurementServiceSpy
 
-describe('PatientDiagnosticComponent', () => {
-  let component: PatientDiagnosticComponent;
-  let fixture: ComponentFixture<PatientDiagnosticComponent>;
+	let component: PatientDiagnosticComponent
+	let fixture: ComponentFixture<PatientDiagnosticComponent>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ PatientDiagnosticComponent ]
-    })
-    .compileComponents();
-  });
+	beforeEach(async () =>
+	{
+		diagnosticServiceSpy = jasmine.createSpyObj("DiagnosticService", ["list"])
+		medicalRecordServiceSpy = jasmine.createSpyObj("MedicalRecordService", ["list"])
+		measurementServiceSpy = jasmine.createSpyObj("MeasurementService", ["list"])
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(PatientDiagnosticComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+		await TestBed.configureTestingModule({
+			declarations: [ PatientDiagnosticComponent ],
+			providers:
+			[
+				{ provide: DiagnosticService, useValue: diagnosticServiceSpy },
+				{ provide: MedicalRecordService, useValue: medicalRecordServiceSpy },
+				{ provide: MeasurementService, useValue: measurementServiceSpy },
+			]
+		}).compileComponents()
+	})
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+	beforeEach(() =>
+	{
+		fixture = TestBed.createComponent(PatientDiagnosticComponent)
+		component = fixture.componentInstance
+		fixture.detectChanges()
+	})
+
+	it("should create", () =>
+	{
+		expect(component).toBeTruthy()
+	})
+})
