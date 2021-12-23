@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-patient',
-  templateUrl: './patient.component.html',
-  styleUrls: ['./patient.component.css']
+  template: "<router-outlet></router-outlet>",
 })
 export class PatientComponent implements OnInit {
 
