@@ -193,7 +193,10 @@ h6 {
 .swal2-validation-message::before {
   background-color: #c1272d !important;
 }
-
+/* Date input field */
+.swal2-input#startDate, .swal2-input#date {
+    padding: 0px 1.9rem !important;
+}
 /* ----- Calendar - customization ----- */
 /* Header */
 .cal-week-view .cal-header.cal-today {
