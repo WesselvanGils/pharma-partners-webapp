@@ -44,4 +44,6 @@ jobs:
           npm run start:mockapi
 
       - name: Start Cypress tests
-        run: npm run cypress:e2e
+        run: | 
+          npm ci
+          npm run cypress:e2e
