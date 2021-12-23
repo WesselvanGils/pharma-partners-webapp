@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core"
+import { Component, OnChanges, OnInit, SimpleChanges } from "@angular/core"
 import { ActivatedRoute, ParamMap } from "@angular/router"
 import { Observable, of, switchMap, take } from "rxjs"
 import { Medication } from "src/app/models/medication.model"
@@ -34,7 +34,7 @@ export class PatientDetailComponent implements OnInit
 	diagnostics$: Observable<Diagnostic[]>
 	selectedJournal: Journal[]
 	selectedEpisode: Episode
-	showJournals: boolean = false
+	showJournals: boolean
 
 	constructor(
 		private route: ActivatedRoute,
@@ -65,7 +65,6 @@ export class PatientDetailComponent implements OnInit
 				this.prescriptions$ = of(result.medicalrecord.prescriptions)
 				this.episodes$ = of(result.medicalrecord.episodes)
 				this.diagnostics$ = of(result.medicalrecord.diagnostics)
-				console.log(result)
 			})
 	}
 
@@ -516,10 +515,10 @@ export class PatientDetailComponent implements OnInit
 		})
 	}
 
-	setJournal(journal: Journal[], episode: Episode)
+	setJournal(journal?: Journal[], episode?: Episode)
 	{
-		this.selectedJournal = journal
-		this.selectedEpisode = episode
+		if (journal) this.selectedJournal = journal
+		if (episode) this.selectedEpisode = episode
 		this.showJournals = true
 	}
 }

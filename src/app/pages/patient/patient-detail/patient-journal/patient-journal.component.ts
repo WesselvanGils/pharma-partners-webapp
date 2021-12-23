@@ -23,6 +23,11 @@ export class PatientJournalComponent
 		private episodeService: EpisodeService 
 	) { }
 
+	emitClose ()
+	{
+		this.showChange.emit(false)
+	}
+
 	addJournal()
 	{
 		const ICPC: string[] = [ "B81", "C80", "A55", "C11", "F22" ]
