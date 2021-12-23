@@ -38,4 +38,4 @@ jobs:
         with:
           start: |
             npm run start:mockapi 
-            npm run ci:start-server
+            npm run ng serve
