@@ -25,6 +25,12 @@ export class PatientJournalComponent
 
 	addJournal()
 	{
+		const ICPC: string[] = [ "B81", "C80", "A55", "C11", "F22" ]
+		let ICPCOptions: string
+		ICPC.forEach(element =>
+		{
+			ICPCOptions = ICPCOptions + `<option>${element}</option>`
+		})
 		Swal.fire({
 			title: "Voeg journal toe",
 			html: `
@@ -34,7 +40,10 @@ export class PatientJournalComponent
 			<input type="text" id="P" class="swal2-input px-1" placeholder="P">
 			<input type="text" id="characteristics" class="swal2-input px-1" placeholder="Kenmerken">
 			<input type="text" id="consult" class="swal2-input px-1" placeholder="Consult">
-			<input type="text" id="ICPC" class="swal2-input px-1" placeholder="ICPC">
+			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
+				<option selected disabled>Kies een ICPC code...</option>
+				${ICPCOptions}
+			</select>
 			<input type="date" id="date" class="swal2-input px-1">`,
 			confirmButtonText: "Voeg toe",
 			showCloseButton: true,
@@ -43,30 +52,14 @@ export class PatientJournalComponent
 			focusConfirm: false,
 			preConfirm: () =>
 			{
-				const S = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#S").value
-				const O = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#O").value
-				const E = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#E").value
-				const P = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#P").value
-				const characteristics = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#characteristics").value
-				const consult = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#consult").value
-				const ICPC = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#ICPC").value
-				const date = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#date").value as unknown as Date
+				const S = Swal.getPopup().querySelector<HTMLInputElement>("#S").value
+				const O = Swal.getPopup().querySelector<HTMLInputElement>("#O").value
+				const E = Swal.getPopup().querySelector<HTMLInputElement>("#E").value
+				const P = Swal.getPopup().querySelector<HTMLInputElement>("#P").value
+				const characteristics = Swal.getPopup().querySelector<HTMLInputElement>("#characteristics").value
+				const consult = Swal.getPopup().querySelector<	HTMLInputElement>("#consult").value
+				const ICPC = Swal.getPopup().querySelector<	HTMLInputElement>("#ICPC").value
+				const date = Swal.getPopup().querySelector<	HTMLInputElement>("#date").value as unknown as Date
 
 				if (!characteristics || !consult || !ICPC || !date)
 				{
