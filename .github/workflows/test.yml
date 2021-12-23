@@ -39,8 +39,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Start mockapi
-      - run: npm ci
-      - run: npm run start:mockapi
+        run: | 
+          npm ci
+          npm run start:mockapi
 
       - name: Start Cypress tests
-      - run: npm run cypress:e2e
+        run: npm run cypress:e2e
