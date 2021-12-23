@@ -1,9 +1,13 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing"
 import { ActivatedRoute, convertToParamMap } from "@angular/router"
 import { of } from "rxjs"
+import { AuthService } from "src/app/core/auth/auth.service"
 import { Patient } from "src/app/models/patient.model"
+import { CalendarService } from "../../calendar/calendar.service"
 import { PatientService } from "../patient.service"
-import { EpisodeService } from "./patient-episode/episode.service"
+import { DiagnosticService } from "./patient-diagnostic/diagnostic.service" 
+import { EpisodeService } from "./patient-episode/episode.service" 
+import { MeasurementService } from "./patient-diagnostic/measurement.service" 
 import { MedicalRecordService } from "./medicalRecord.service"
 import { MedicationService } from "./patient-prescription/medication.service"
 
@@ -36,6 +40,10 @@ describe("PatientDetailComponent", () =>
 	let medicationServiceSpy
 	let episodeServiceSpy
 	let medicalRecordServiceSpy
+	let diagnosticServiceSpy
+	let MeasurementServiceSpy
+	let authServiceSpy
+	let CalendarServiceSpy
 
 	beforeEach(async () =>
 	{
@@ -44,6 +52,8 @@ describe("PatientDetailComponent", () =>
 		medicationServiceSpy = jasmine.createSpyObj("MedicationService", ["list"])
 		episodeServiceSpy = jasmine.createSpyObj("EpisodeService", ["list"])
 		medicalRecordServiceSpy = jasmine.createSpyObj("MedicalRecordService", ["list"])
+		diagnosticServiceSpy = jasmine.createSpyObj("DiagnosticService", ["list"])
+		MeasurementServiceSpy = jasmine.createSpyObj("MeasurementService", ["list"])
 
 		await TestBed.configureTestingModule({
 			declarations: [ PatientDetailComponent ],
@@ -53,6 +63,10 @@ describe("PatientDetailComponent", () =>
 				{ provide: MedicationService, useValue: medicationServiceSpy },
 				{ provide: EpisodeService, useValue: episodeServiceSpy },
 				{ provide: MedicalRecordService, useValue: medicalRecordServiceSpy },
+				{ provide: DiagnosticService, useValue: diagnosticServiceSpy },
+				{ provide: MeasurementService, useValue: MeasurementServiceSpy },
+				{ provide: AuthService, useValue: authServiceSpy },
+				{ provide: CalendarService, useValue: CalendarServiceSpy },
 				{ provide: ActivatedRoute, useValue: {
 					paramMap: of(
 						convertToParamMap({_id: "some_id"})
