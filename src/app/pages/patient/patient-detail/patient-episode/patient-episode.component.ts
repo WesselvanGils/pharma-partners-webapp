@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core"
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from "@angular/core"
 import { Observable } from "rxjs"
 import { Episode } from "src/app/models/episode.model"
 import Swal from "sweetalert2"
@@ -12,7 +12,7 @@ import { Patient } from "src/app/models/patient.model"
 	templateUrl: "./patient-episode.component.html",
 	styleUrls: [ "./patient-episode.component.css" ]
 })
-export class PatientEpisodeComponent implements OnInit
+export class PatientEpisodeComponent implements OnInit, OnDestroy
 {
 	@Input() episodes$: Observable<Episode[]>
 	@Input() patient$: Observable<Patient>
@@ -25,6 +25,10 @@ export class PatientEpisodeComponent implements OnInit
 	) { }
 
 	ngOnInit(): void { }
+
+	ngOnDestroy(): void {
+		this.episodeService.currentJournal = undefined
+	}
 
 	setJournal(journals: Journal[], episode: Episode)
 	{
