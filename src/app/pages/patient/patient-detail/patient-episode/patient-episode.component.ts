@@ -12,7 +12,7 @@ import { Patient } from "src/app/models/patient.model"
 	templateUrl: "./patient-episode.component.html",
 	styleUrls: [ "./patient-episode.component.css" ]
 })
-export class PatientEpisodeComponent implements OnInit, OnDestroy
+export class PatientEpisodeComponent implements OnInit
 {
 	@Input() episodes$: Observable<Episode[]>
 	@Input() patient$: Observable<Patient>
@@ -26,9 +26,7 @@ export class PatientEpisodeComponent implements OnInit, OnDestroy
 
 	ngOnInit(): void { }
 
-	ngOnDestroy(): void {
-		this.episodeService.currentJournal = undefined
-	}
+	
 
 	setJournal(journals: Journal[], episode: Episode)
 	{
