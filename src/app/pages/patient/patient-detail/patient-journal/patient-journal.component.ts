@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core"
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from "@angular/core"
 import { Observable } from "rxjs"
 import { Episode } from "src/app/models/episode.model"
 import { Journal } from "src/app/models/journal.model"
@@ -11,7 +11,7 @@ import { JournalService } from "./journal.service"
 	templateUrl: "./patient-journal.component.html",
 	styleUrls: [ "./patient-journal.component.css" ]
 })
-export class PatientJournalComponent implements OnInit
+export class PatientJournalComponent implements OnInit, OnDestroy
 {
 	journals: Journal[]
 	episode: Episode
@@ -21,6 +21,11 @@ export class PatientJournalComponent implements OnInit
 		private journalService: JournalService,
 		private episodeService: EpisodeService 
 	) { }
+
+	
+	ngOnDestroy(): void {
+		this.episodeService.changeJournal(undefined, undefined)
+	}
 
 	ngOnInit(): void 
 	{
