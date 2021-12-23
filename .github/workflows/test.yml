@@ -36,4 +36,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npm run start:mockapi, npm run ci:start-server
+          start: |
+            npm run start:mockapi 
+            npm run ci:start-server
+          wait-on: "http://localhost:3000"
