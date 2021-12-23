@@ -20,7 +20,7 @@ export class CalendarComponent implements OnInit
 	refresh: Subject<any> = new Subject<any>()
 	focusedMeeting: Observable<Appointment>
 
-	constructor(private calendarService: CalendarService, private authService: AuthService, private router: Router) { }
+	constructor(private calendarService: CalendarService, private authService: AuthService) { }
 
 	ngOnInit(): void 
 	{
