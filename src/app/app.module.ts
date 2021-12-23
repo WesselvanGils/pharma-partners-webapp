@@ -1,11 +1,15 @@
 import { NgModule } from "@angular/core"
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 import { BrowserModule } from "@angular/platform-browser"
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { HttpClientModule } from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
-import { FullCalendarModule } from "@fullcalendar/angular"
-import interactionPlugin from "@fullcalendar/interaction"
-import dayGridPlugin from "@fullcalendar/daygrid"
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { CalendarUtilsModule } from "./pages/calendar/calendar-header/module"
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { DataTablesModule } from "angular-datatables";
+import { MatRadioModule } from '@angular/material/radio';
 
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
@@ -18,17 +22,15 @@ import { FooterComponent } from "./core/footer/footer.component"
 import { RootComponent } from "./core/root/root.component"
 import { AlertComponent } from "./shared/alert/alert.component"
 import { CalendarComponent } from "./pages/calendar/calendar.component"
-import { MeetingComponent } from "./pages/calendar/meeting/meeting.component"
 import { PatientListComponent } from "./pages/patient/patient-list/patient-list.component"
 import { PatientDetailComponent } from "./pages/patient/patient-detail/patient-detail.component";
 import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
-
-FullCalendarModule.registerPlugins([
-	interactionPlugin,
-	dayGridPlugin
-])
+import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
+import { PatientJournalComponent } from './pages/patient/patient-detail/patient-journal/patient-journal.component';
+import { PatientEpisodeComponent } from './pages/patient/patient-detail/patient-episode/patient-episode.component';
+import { PatientDiagnosticComponent } from './pages/patient/patient-detail/patient-diagnostic/patient-diagnostic.component';
+import { PatientPrescriptionComponent } from './pages/patient/patient-detail/patient-prescription/patient-prescription.component';
 
 @NgModule({
 	declarations: [
@@ -42,11 +44,16 @@ FullCalendarModule.registerPlugins([
 		RootComponent,
 		AlertComponent,
 		CalendarComponent,
-		MeetingComponent,
 		PatientListComponent,
 		PatientDetailComponent,
 		PatientComponent,
-  ContactComponent
+		ContactComponent,
+		ContactComponent,
+		AppointmentComponent,
+  PatientJournalComponent,
+  PatientEpisodeComponent,
+  PatientDiagnosticComponent,
+  PatientPrescriptionComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -55,8 +62,18 @@ FullCalendarModule.registerPlugins([
 		HttpClientModule,
 		FormsModule,
 		ReactiveFormsModule,
-		FullCalendarModule,
-		SweetAlert2Module
+		SweetAlert2Module,
+		DataTablesModule,
+		MatRadioModule,
+		SweetAlert2Module,
+		CalendarUtilsModule,
+		BrowserAnimationsModule,
+		CalendarModule.forRoot(
+			{
+				provide: DateAdapter,
+				useFactory: adapterFactory
+			}
+		)
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]

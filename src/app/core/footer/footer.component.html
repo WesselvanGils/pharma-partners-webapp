@@ -1,22 +1,19 @@
-<footer class="footer">
-    <div class="container">
+<footer class="col-12 footer">
       <div class="row justify-content-center">
         <div class="col-md-9 text-center">
-          <div class="footer-site-logo mb-4">
-            <a href="#">PharmaPartners</a>
+          <div class="footer-site-logo mt-4">
+            <a routerLink="/">PharmaPartners</a>
           </div>
           <ul class="list-unstyled nav-links mb-5">
             <li><a class="nav-link" routerLink="home" [routerLinkActive]="['active']">Home</a></li>
             <li><a class="nav-link" routerLink="calendar" [routerLinkActive]="['active']">Agenda</a></li>
-            <li><a class="nav-link" routerLink="patient-list" [routerLinkActive]="['active']">Patient</a></li>
+            <li><a class="nav-link" routerLink="patient/list" [routerLinkActive]="['active']">Patient</a></li>
             <li><a class="nav-link" routerLink="contact" [routerLinkActive]="['active']">Contact</a></li>
           </ul>
 
           <div class="copyright">
             <p class="mb-0"><small>&copy; PharmaPartners. All Rights Reserved.</small></p>
           </div>
-
         </div>
-      </div>
     </div>
   </footer>

@@ -1,0 +1,74 @@
+<div class="card mb-3" *ngIf="journals">
+    <div class="card-body">
+        <div class="row">
+            <h3 class="col-sm-6 col-md-6 col-lg-8">Journaalregels</h3>
+            <span class="col-sm-6 col-md-6 col-lg-4">
+                <button class="btn btn-danger btn-sm float-right ml-2" (click)="close()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="btn btn-primary btn-sm float-right" (click)="addJournal()">
+                    <i class="fas fa-plus"></i> Voeg journaalregel toe
+                </button>
+            </span>
+        </div>
+        <div class="table-responsive" style="max-height: 500px;">
+            <table class="table table-sm">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">SOEP</th>
+                        <th scope="col">Kenmerk</th>
+                        <th scope="col">ICPC</th>
+                        <th scope="col">Consult</th>
+                        <th scope="col">Datum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let journal of journals">
+                        <td class="align-middle" style="width: 50%; max-width: 425px;">
+                            <table class="table table-sm table-striped mb-0">
+                                <tbody>
+                                    <tr *ngIf="journal.SOEP.S">
+                                        <td class="soep-code"> S: </td>
+                                        <td>    
+                                            <div class="overflow-auto soep-text">
+                                                {{journal.SOEP.S}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="journal.SOEP.O">
+                                        <td class="soep-code"> O: </td>
+                                        <td>    
+                                            <div class="overflow-auto soep-text">
+                                                {{journal.SOEP.O}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="journal.SOEP.E">
+                                        <td class="soep-code"> E: </td>
+                                        <td>    
+                                            <div class="overflow-auto soep-text">
+                                                {{journal.SOEP.E}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="journal.SOEP.P">
+                                        <td class="soep-code"> P: </td>
+                                        <td>    
+                                            <div class="overflow-auto soep-text">
+                                                {{journal.SOEP.P}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                        </td>
+                        <td class="align-middle">{{journal.characteristics}}</td>
+                        <td class="align-middle">{{journal.ICPC}}</td>
+                        <td class="align-middle">{{journal.consult}}</td>
+                        <td class="align-middle">{{journal.publicationDate | date: "dd-MM-yyyy"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

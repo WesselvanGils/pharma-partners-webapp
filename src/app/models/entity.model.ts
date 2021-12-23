@@ -1,6 +1,6 @@
 export abstract class Entity
 {
-	readonly _id: string
+	readonly _id!: string
 
 	constructor(values: any)
 	{

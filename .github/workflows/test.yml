@@ -1,4 +1,4 @@
-name: Angular Karma Tests
+name: Karma and Cypress Tests
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  karma-run:
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,3 +22,21 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run test:prod
+
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.13.0]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: |
+            npm run start:mockapi 
+            npm run ng serve
+          wait-on: "http://localhost:4200"

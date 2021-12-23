@@ -1,1 +1,32 @@
-<p>patient-list works!</p>
+<div class="card card-body">
+  <div class="table-responsive">
+    <table id="patientTable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" sortable="patientnumber">Patientnummer</th>
+          <th scope="col" sortable="name">Naam</th>
+          <th scope="col" sortable="dateofbirth">Geboortedatum</th>
+          <th scope="col" sortable="gender">Geslacht</th>
+          <th scope="col" sortable="address">Adres</th>
+          <th scope="col">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td scope="row">{{ patient.patientNumber }}</td>
+          <td scope="row">
+            {{ patient.prefix }}. {{ patient.firstName }} {{ patient.lastName }}
+          </td>
+          <td scope="row">{{ patient.dateofbirth | date: "dd-MM-yyyy" }}</td>
+          <td scope="row">{{ patient.gender }}</td>
+          <td scope="row">{{ patient.adress }}</td>
+          <td scope="row">
+            <button class="btn btn-primary btn-sm" routerLink="/patient/detail/{{patient._id}}">
+              <i class="fa fa-info-circle fa-sm"></i> Details
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
