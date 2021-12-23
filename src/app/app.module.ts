@@ -28,6 +28,7 @@ import { PatientComponent } from './pages/patient/patient.component';
 import { ContactComponent } from './pages/contact/contact.component'
 import { AppointmentComponent } from './pages/calendar/appointment/appointment.component';
 import { PatientJournalComponent } from './pages/patient/patient-detail/patient-journal/patient-journal.component';
+import { PatientEpisodeComponent } from './pages/patient/patient-detail/patient-episode/patient-episode.component';
 
 @NgModule({
 	declarations: [
@@ -48,6 +49,7 @@ import { PatientJournalComponent } from './pages/patient/patient-detail/patient-
 		ContactComponent,
 		AppointmentComponent,
   PatientJournalComponent,
+  PatientEpisodeComponent,
 	],
 	imports: [
 		BrowserModule,

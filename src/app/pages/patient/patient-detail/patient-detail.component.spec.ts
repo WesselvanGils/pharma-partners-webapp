@@ -3,7 +3,7 @@ import { ActivatedRoute, convertToParamMap } from "@angular/router"
 import { of } from "rxjs"
 import { Patient } from "src/app/models/patient.model"
 import { PatientService } from "../patient.service"
-import { EpisodeService } from "./episode.service"
+import { EpisodeService } from "./patient-episode/episode.service"
 import { MedicalRecordService } from "./medicalRecord.service"
 import { MedicationService } from "./medication.service"
 

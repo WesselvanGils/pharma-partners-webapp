@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core"
 import { Episode } from "src/app/models/episode.model"
 import { Journal } from "src/app/models/journal.model"
 import Swal from "sweetalert2"
-import { EpisodeService } from "../episode.service"
+import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "./journal.service"
 
 @Component({
