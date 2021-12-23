@@ -1,8 +1,9 @@
-import { Component, EventEmitter, Input, Output } from "@angular/core"
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core"
+import { Observable } from "rxjs"
 import { Episode } from "src/app/models/episode.model"
 import { Journal } from "src/app/models/journal.model"
 import Swal from "sweetalert2"
-import { EpisodeService } from "../episode.service"
+import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "./journal.service"
 
 @Component({
@@ -10,22 +11,26 @@ import { JournalService } from "./journal.service"
 	templateUrl: "./patient-journal.component.html",
 	styleUrls: [ "./patient-journal.component.css" ]
 })
-export class PatientJournalComponent
+export class PatientJournalComponent implements OnInit
 {
-	@Input() journals: Journal[]
-	@Input() episode: Episode
-	@Input() show: boolean
-	@Output() showChange = new EventEmitter<boolean>()
-	@Output() episodeChange = new EventEmitter<Episode>()
+	journals: Journal[]
+	episode: Episode
+
 	constructor
 	( 
 		private journalService: JournalService,
 		private episodeService: EpisodeService 
 	) { }
 
-	emitClose ()
+	ngOnInit(): void 
 	{
-		this.showChange.emit(false)
+		this.episodeService.currentJournal.subscribe( journals => this.journals = journals)	
+		this.episodeService.currentEpisode.subscribe( episode => this.episode = episode)
+	}
+
+	close()
+	{
+		this.episodeService.changeJournal(undefined, undefined)
 	}
 
 	addJournal()

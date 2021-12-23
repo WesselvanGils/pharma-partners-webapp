@@ -71,144 +71,20 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-8 col-lg-8 mb-sm-3">
-					<div class="card h-100">
-						<div class="card-body">
-							<div class="row">
-								<h3 class="col-sm-6 col-md-6 col-lg-8">Episodes</h3>
-								<span class="col-sm-6 col-md-6 col-lg-4">
-									<button class="btn btn-primary btn-sm float-right" (click)="addEpisode()">
-										<i class="fas fa-plus"></i> Voeg episode toe
-									</button>
-								</span>
-							</div>
-							<div class="table-responsive mh-50">
-								<table class="table table-sm">
-									<thead class="thead-light">
-										<tr>
-											<th class="align-middle" scope="col">Publicatie datum</th>
-											<th class="align-middle" scope="col">Omschrijving</th>
-											<th class="align-middle" scope="col">Start datum</th>
-											<th class="align-middle" scope="col">Code</th>
-											<th class="align-middle" scope="col">Prioriteit</th>
-											<th class="align-middle" scope="col">Journaalregels</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr *ngFor="let episode of episodes$ | async">
-											<td class="align-middle">{{episode.publicationDate | date: 'dd-MM-yyyy'}}</td>
-											<td class="align-middle" >
-												<div class="overflow-auto" style="max-width: 175px; max-height: 75px!important">
-													{{episode.description}}
-												</div>
-											</td>
-											<td class="align-middle">{{episode.startDate | date: 'dd-MM-yyyy'}}</td>
-											<td class="align-middle">{{episode.ICPC}}</td>
-											<td class="align-middle text-center" style="color: #ed1e79; font-weight: bold;">{{episode.priority ? 'P' : ' '}}</td>
-											<td class="align-middle">
-												<button class="btn btn-info btn-sm" (click)="setJournal(episode.journals, episode)">
-													<i class="fas fa-list-alt fa-sm p-0"></i> Journaalregels
-												</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+					<app-patient-episode [(patient$)]="patient$" [(episodes$)]="episodes$"></app-patient-episode>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
-			<app-patient-journal [journals]="selectedJournal" [(episode)]="selectedEpisode" [(show)]="showJournals"></app-patient-journal>
+			<app-patient-journal></app-patient-journal>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row gutters-sm">
 				<div class="col-sm-12 col-md-5 col-lg-6 pr-md-0">
-					<div class="card mb-3">
-						<div class="card-body">
-							<div class="row">
-								<h3 class="col-sm-6 col-md-6 col-lg-7 pr-md-0">Metingen</h3>
-								<span class="col-sm-6 col-md-6 col-lg-5">
-									<button class="btn btn-primary btn-sm float-right mb-md-2" (click)="addDiagnostic()">
-										<i class="fas fa-plus"></i> Voeg meting toe
-									</button>
-								</span>
-							</div>
-							<div class="table-responsive">
-								<table class="table table-sm">
-									<thead class="thead-light">
-										<tr>
-											<th scope="col">Meting</th>
-											<th scope="col">Waarde</th>
-											<th scope="col">Datum</th>
-											<th scope="col"></th>
-											<th scope="col"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr *ngFor="let diagnostic of diagnostics$ | async">
-											<td class="align-middle">{{diagnostic.name}} ({{diagnostic.unit}})</td>
-											<td class="align-middle">{{diagnostic.measurements[diagnostic.measurements.length - 1]?.valueNumber}}</td>
-											<td class="align-middle">{{diagnostic.measurements[diagnostic.measurements.length - 1]?.date | date: "dd-MM-yyyy" }}</td>
-											<td class="align-middle m-0 px-0 mb-0 mt-1">
-												<button class="btn btn-info btn-sm" style="float:center" (click)="getMeasurementHistory(diagnostic)">
-													<i class="fas fa-history"></i>
-												</button>
-											</td>
-											<td class="align-middle m-0 px-0 mb-0 mt-1">
-												<button class="btn btn-primary btn-sm" style="margin-left: 10px;" (click)="addMeasurement(diagnostic)">
-													<i class="fas fa-plus"></i>
-												</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+					<app-patient-diagnostic [(patient$)]="patient$" [(diagnostics$)]="diagnostics$"></app-patient-diagnostic>
 				</div>
-
 				<div class="col-sm-12 col-md-7 col-lg-6 mb-3">
-					<div class="card h-100">
-						<div class="card-body">
-							<div class="row">
-								<h3 class="col-sm-6 col-md-6 col-lg-7">Recepten</h3>
-								<span class="col-sm-6 col-md-6 col-lg-5">
-									<button class="btn btn-primary btn-sm float-right" (click)="addPrescription()">
-										<i class="fas fa-plus"></i> Voeg recept toe
-									</button>
-								</span>
-							</div>
-							<div class="table-responsive">
-								<table class="table table-sm">
-									<thead class="thead-light">
-										<tr>
-											<th scope="col">Medicijn</th>
-											<th scope="col">Dosering</th>
-											<th scope="col">Periode</th>
-											<th scope="col">Details</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr *ngFor="let prescription of prescriptions$ | async">
-											<td class="align-middle">
-												{{ prescription.medication.name }}
-												{{ prescription.medication.unit }}
-											</td>
-											<td class="align-middle">{{ prescription.dosage }}</td>
-											<td class="align-middle">{{ prescription.period }}</td>
-											<td class="align-middle">
-												<button class="btn btn-info btn-sm"
-													(click)="detailPrescription(prescription, patient)">
-													<i class="fa fa-info-circle"></i> Details
-												</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+					<app-patient-prescription [(patient$)]="patient$" [(prescriptions$)]="prescriptions$"></app-patient-prescription>
 				</div>
 			</div>
 		</div>

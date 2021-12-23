@@ -1,0 +1,40 @@
+<div class="card h-100" *ngIf="patient$ | async as patient">
+    <div class="card-body">
+        <div class="row">
+            <h3 class="col-sm-6 col-md-6 col-lg-7">Recepten</h3>
+            <span class="col-sm-6 col-md-6 col-lg-5">
+                <button class="btn btn-primary btn-sm float-right" (click)="addPrescription()">
+                    <i class="fas fa-plus"></i> Voeg recept toe
+                </button>
+            </span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Medicijn</th>
+                        <th scope="col">Dosering</th>
+                        <th scope="col">Periode</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let prescription of prescriptions$ | async">
+                        <td class="align-middle">
+                            {{ prescription.medication.name }}
+                            {{ prescription.medication.unit }}
+                        </td>
+                        <td class="align-middle">{{ prescription.dosage }}</td>
+                        <td class="align-middle">{{ prescription.period }}</td>
+                        <td class="align-middle">
+                            <button class="btn btn-info btn-sm"
+                                (click)="detailPrescription(prescription, patient)">
+                                <i class="fa fa-info-circle"></i> Details
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

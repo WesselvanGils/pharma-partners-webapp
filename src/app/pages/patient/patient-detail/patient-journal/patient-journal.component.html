@@ -1,9 +1,9 @@
-<div class="card mb-3" *ngIf="this.show">
+<div class="card mb-3" *ngIf="journals">
     <div class="card-body">
         <div class="row">
             <h3 class="col-sm-6 col-md-6 col-lg-8">Journaalregels</h3>
             <span class="col-sm-6 col-md-6 col-lg-4">
-                <button class="btn btn-danger btn-sm float-right ml-2" (click)="emitClose()">
+                <button class="btn btn-danger btn-sm float-right ml-2" (click)="close()">
                     <i class="fas fa-times"></i>
                 </button>
                 <button class="btn btn-primary btn-sm float-right" (click)="addJournal()">
@@ -23,7 +23,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let journal of journals ">
+                    <tr *ngFor="let journal of journals">
                         <td class="align-middle" style="width: 50%; max-width: 425px;">
                             <table class="table table-sm table-striped mb-0">
                                 <tbody>
