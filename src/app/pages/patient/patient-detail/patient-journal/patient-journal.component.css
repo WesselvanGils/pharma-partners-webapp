@@ -1,0 +1,13 @@
+.soep-text {
+    max-width: 420px; 
+    max-height: 60px!important
+}
+
+.soep-code {
+    width: 2%;
+    font-weight: 500;
+}
+thead{
+    position: sticky; 
+    top: -2px; 
+}
