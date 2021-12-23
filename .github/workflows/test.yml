@@ -39,3 +39,4 @@ jobs:
           start: |
             npm run start:mockapi 
             npm run ng serve
+          wait-on: "http://localhost:4200"
