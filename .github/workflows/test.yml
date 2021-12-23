@@ -1,4 +1,4 @@
-name: Angular Karma Tests
+name: Karma and Cypress Tests
 
 on:
   push:
@@ -24,9 +24,18 @@ jobs:
       - run: npm run test:prod
 
   cypress-run:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.13.0]
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm run start:mockapi
+      - run: npm run cypress:e2e
