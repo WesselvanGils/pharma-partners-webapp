@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core"
+import { BehaviorSubject, Observable } from "rxjs"
+import { User } from "src/app/models/user.model"
 import { AuthService } from "../auth/auth.service"
 
 @Component({
@@ -9,11 +11,15 @@ import { AuthService } from "../auth/auth.service"
 export class NavbarComponent implements OnInit 
 {
 	isNavbarCollapsed = true
+	loggedInUser: Observable<User>
 	
 	@Input() title: string = ""
 	constructor(private authService: AuthService) {}
 
-	ngOnInit(): void {}
+	ngOnInit(): void 
+	{
+		this.loggedInUser = this.authService.currentUser$
+	}
 
 	logUserOut ()
 	{
