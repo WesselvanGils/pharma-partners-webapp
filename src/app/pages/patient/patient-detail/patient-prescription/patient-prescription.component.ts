@@ -72,23 +72,22 @@ export class PatientPrescriptionComponent implements OnInit
 				Swal.fire({
 					title: "Voeg recept toe",
 					html: `
-				<select type="text" id="medication" class="swal2-input px-1" placeholder="Medicatie">
-					<option selected disabled>Kies een medicijn...</option>
-					${medicationOptions}
-				</select>
-				<select type="text" id="episode" class="swal2-input px-1" placeholder="Episode">
-					<option selected disabled>Kies een Episode...</option>
-					${episodeOptions}
-				</select>
-				<input type="text" id="description" class="swal2-input px-1" placeholder="Beschrijving">
-				<input type="text" id="dosage" class="swal2-input px-1" placeholder="Dosering">
-				<input type="Date" id="periodStart" class="swal2-input px-1" placeholder="Start van inname">
-				<input type="Date" id="periodEnd" class="swal2-input px-1" placeholder="Eind van inname">`,
-					confirmButtonText: "Voeg toe",
+						<select type="text" id="medication" class="swal2-input px-1" placeholder="Medicatie">
+							<option selected disabled>Kies een medicijn...</option>
+							${medicationOptions}
+						</select>
+						<input type="text" id="description" class="swal2-input px-1" placeholder="Beschrijving">
+						<input type="text" id="dosage" class="swal2-input px-1" placeholder="Dosering">
+						<input type="Date" id="periodStart" class="swal2-input px-1" placeholder="Start van inname">
+						<input type="Date" id="periodEnd" class="swal2-input px-1" placeholder="Eind van inname">`,
+					confirmButtonText: "Voeg toe als journaalregel",
+					showCancelButton: true,
+					cancelButtonText: "Annuleer",
 					showCloseButton: true,
 					showDenyButton: true,
-					denyButtonText: "Annuleer",
+					denyButtonText: "Voeg los toe",
 					focusConfirm: false,
+					returnInputValueOnDeny: true,
 					preConfirm: () =>
 					{
 						const medication = Swal.getPopup().querySelector<
@@ -106,9 +105,6 @@ export class PatientPrescriptionComponent implements OnInit
 						const periodEnd = Swal.getPopup().querySelector<
 							HTMLInputElement
 						>("#periodEnd").value
-						const episode = Swal.getPopup().querySelector<
-							HTMLInputElement
-						>("#episode").value
 
 						if (!medication || !description || !dosage || !periodStart || !periodEnd)
 						{
@@ -119,12 +115,39 @@ export class PatientPrescriptionComponent implements OnInit
 							description: description,
 							dosage: dosage,
 							periodStart: periodStart,
-							periodEnd: periodEnd,
-							episode: episode
+							periodEnd: periodEnd
 						}
 					}
 				}).then(result =>
 				{
+					console.log(result)
+					if (result.isDenied)
+					{
+						const prescriptionEntry: Prescription = 
+						{
+							_id: undefined,
+							description: result.value.description,
+							dosage: result.value.dosage,
+							periodStart: new Date(result.value.periodStart),
+							periodEnd: new Date(result.value.periodEnd),
+							publicationDate: new Date(),
+							medication: medications.find(
+								medication =>
+									medication._id == result.value.medication
+							)
+						}
+
+						this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
+						{
+							this.patient$.subscribe(patient =>
+							{
+								patient.medicalrecord.prescriptions.push(prescription)
+								this.medicalRecordService
+									.update(patient.medicalrecord)
+									.subscribe()
+							})
+						})
+					}
 					if (result.isConfirmed)
 					{
 						const prescriptionEntry: Prescription = {
@@ -140,34 +163,86 @@ export class PatientPrescriptionComponent implements OnInit
 							)
 						}
 
-						const journalEntry: Journal =
+						const ICPC: string[] = [ "B81", "C80", "A55", "C11", "F22" ]
+						let ICPCOptions: string
+						ICPC.forEach(element =>
 						{
-							_id: undefined,
-							ICPC: "placeholder",
-							SOEP:
-							{
-								P: medications.find(medication => medication._id == result.value.medication).name
-							},
-							characteristics: "placeholder",
-							consult: "placeholder",
-							publicationDate: new Date()
-						}
+							ICPCOptions = ICPCOptions + `<option>${element}</option>`
+						})
 
-						this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
+						Swal.fire(
 						{
-							this.journalService.create(journalEntry).subscribe(journal =>
+							title: "Journaalregel toevoegen",
+							html:
+							`
+								<select type="text" id="episode" class="swal2-input px-1" placeholder="Episode">
+									<option selected disabled>Kies een Episode...</option>
+									${episodeOptions}
+								</select>
+								<input type="text" id="characteristics" class="swal2-input px-1" placeholder="Kenmerken">
+								<input type="text" id="consult" class="swal2-input px-1" placeholder="Consult">
+								<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
+									<option selected disabled>Kies een ICPC code...</option>
+									${ICPCOptions}
+								</select>
+							`,
+							showConfirmButton: true,
+							showDenyButton: true,
+							preConfirm: () =>
 							{
-								this.patient$.subscribe(patient =>
+								const episode = Swal.getPopup().querySelector<
+									HTMLInputElement
+								>("#episode").value
+								const characteristics = Swal.getPopup().querySelector<
+									HTMLInputElement
+								>("#characteristics").value
+								const consult = Swal.getPopup().querySelector<
+									HTMLInputElement
+								>("#consult").value
+								const ICPC = Swal.getPopup().querySelector<
+									HTMLInputElement
+								>("#ICPC").value
+								return {
+									episode: episode,
+									characteristics: characteristics,
+									consult: consult,
+									ICPC: ICPC
+								}
+							}
+						}).then(journalresult =>
+						{
+							if (journalresult.isConfirmed)
+							{
+								const journalEntry: Journal =
 								{
-									const episodeToUpdate = patient.medicalrecord.episodes.find(episode => episode._id == result.value.episode)
-									episodeToUpdate.journals.push(journal)
-									patient.medicalrecord.prescriptions.push(prescription)
-									this.episodeService.update(episodeToUpdate).subscribe()
-									this.medicalRecordService
-										.update(patient.medicalrecord)
-										.subscribe()
+									_id: undefined,
+									ICPC: journalresult.value.ICPC,
+									SOEP:
+									{
+										P: medications.find(medication => medication._id == result.value.medication).name
+									},
+									characteristics: journalresult.value.characteristics,
+									consult: journalresult.value.consult,
+									publicationDate: new Date()
+								}
+		
+								this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
+								{
+									this.journalService.create(journalEntry).subscribe(journal =>
+									{
+										this.patient$.subscribe(patient =>
+										{
+											const episodeToUpdate = patient.medicalrecord.episodes.find(episode => episode._id == journalresult.value.episode)
+											episodeToUpdate.journals.push(journal)
+											patient.medicalrecord.prescriptions.push(prescription)
+											this.episodeService.update(episodeToUpdate).subscribe()
+											this.medicalRecordService
+												.update(patient.medicalrecord)
+												.subscribe()
+										})
+									})
 								})
-							})
+							}
 						})
 					}
 				})
