@@ -34,8 +34,10 @@ export class PatientDiagnosticComponent implements OnInit
 			title: "Voeg waarde toe aan: ",
 			html: `
 				<h3 style="font-weight: normal; color: #004a91;">${diagnostic.name} (${diagnostic.unit})</h3>
+				<p class='mt-4 mb-0 mr-4'>Datum:</p>
+				<input type="date" id="date" class="swal2-input mt-1" placeholder="Datum">
 				<input type="number" min="0" id="valueNumber" class="swal2-input" placeholder="Waarde (getal)">
-				<input type="date" id="date" class="swal2-input" placeholder="Datum">`,
+				`,
 			confirmButtonText: "Voeg toe",
 			showCloseButton: true,
 			showDenyButton: true,
