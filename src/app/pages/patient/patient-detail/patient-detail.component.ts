@@ -58,6 +58,7 @@ export class PatientDetailComponent implements OnInit
 			<div>
 			<label for="startTime">Start tijd:</label>
 			<input type="time" id="startTime" class="swal2-input ml-1 mr-2" placeholder="Begin tijd">
+			<br>
 			<label for="endTime">Eind tijd:</label>
 			<input type="time" id="endTime" class="swal2-input mx-1" placeholder="Eind tijd">
 			</div>

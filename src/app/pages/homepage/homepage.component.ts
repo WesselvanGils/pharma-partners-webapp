@@ -34,7 +34,7 @@ export class HomepageComponent implements OnInit
 			let appointmentList: Appointment[] = []
 			result.forEach( (appointment: Appointment) =>
 			{
-				if (new Date(`${appointment.meeting.start}`).getDay() == new Date().getDay())
+				if (new Date(`${appointment.meeting.start}`).getDate() == new Date().getDate())
 				{
 					appointmentList.push(appointment)
 				}

@@ -26,8 +26,6 @@ export class PatientEpisodeComponent implements OnInit
 
 	ngOnInit(): void { }
 
-	
-
 	setJournal(journals: Journal[], episode: Episode)
 	{
 		this.episodeService.changeJournal(journals, episode)
