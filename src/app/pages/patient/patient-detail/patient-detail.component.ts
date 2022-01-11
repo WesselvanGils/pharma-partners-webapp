@@ -10,6 +10,8 @@ import { Diagnostic } from "src/app/models/diagnostic.model"
 import { Appointment } from "src/app/models/appointment.model"
 import { AuthService } from "src/app/core/auth/auth.service"
 import { CalendarService } from "../../calendar/calendar.service"
+import rootICPC from "src/assets/documents/IcpcTrimmed.json"
+import { ICPC } from "src/app/models/ICPC.model"
 
 @Component({
 	selector: "app-patient-detail",
@@ -22,6 +24,7 @@ export class PatientDetailComponent implements OnInit
 	prescriptions$: Observable<Prescription[]>
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
+	ICPCs: ICPC[] = []
 
 	constructor(
 		private route: ActivatedRoute,
@@ -45,6 +48,11 @@ export class PatientDetailComponent implements OnInit
 				this.episodes$ = of(result.medicalrecord.episodes)
 				this.diagnostics$ = of(result.medicalrecord.diagnostics)
 			})
+
+		rootICPC.forEach(element =>
+		{
+			this.ICPCs.push({IcpCode: element.IcpIcpcKode, IcpDescription: element.IcpOmschrijving})
+		})
 	}
 
 	addAppointment()

@@ -1,0 +1,7710 @@
+[
+ {
+   "IcpIcpcKode": "A01",
+   "IcpOmschrijving": "Gegeneraliseerde pijn"
+ },
+ {
+   "IcpIcpcKode": "A02",
+   "IcpOmschrijving": "Koude rillingen"
+ },
+ {
+   "IcpIcpcKode": "A03",
+   "IcpOmschrijving": "Koorts"
+ },
+ {
+   "IcpIcpcKode": "A04",
+   "IcpOmschrijving": "Moeheid/zwakte"
+ },
+ {
+   "IcpIcpcKode": "A04.01",
+   "IcpOmschrijving": "Chronisch vermoeidheidssyndroom"
+ },
+ {
+   "IcpIcpcKode": "A05",
+   "IcpOmschrijving": "Algehele achteruitgang"
+ },
+ {
+   "IcpIcpcKode": "A06",
+   "IcpOmschrijving": "Flauwvallen/syncope"
+ },
+ {
+   "IcpIcpcKode": "A07",
+   "IcpOmschrijving": "Coma"
+ },
+ {
+   "IcpIcpcKode": "A08",
+   "IcpOmschrijving": "Zwelling [ex. K07]"
+ },
+ {
+   "IcpIcpcKode": "A09",
+   "IcpOmschrijving": "Transpiratieproblemen"
+ },
+ {
+   "IcpIcpcKode": "A09.01",
+   "IcpOmschrijving": "Nachtzweten"
+ },
+ {
+   "IcpIcpcKode": "A09.02",
+   "IcpOmschrijving": "Gelokaliseerd overmatig zweten"
+ },
+ {
+   "IcpIcpcKode": "A10",
+   "IcpOmschrijving": "Bloeding"
+ },
+ {
+   "IcpIcpcKode": "A12",
+   "IcpOmschrijving": "Allergie/allergische reactie"
+ },
+ {
+   "IcpIcpcKode": "A12.01",
+   "IcpOmschrijving": "Anafylactische shock"
+ },
+ {
+   "IcpIcpcKode": "A12.02",
+   "IcpOmschrijving": "Angioneurotisch/Quinckes oedeem"
+ },
+ {
+   "IcpIcpcKode": "A13",
+   "IcpOmschrijving": "Bezorgdheid over (bij)werking geneesmiddel"
+ },
+ {
+   "IcpIcpcKode": "A14",
+   "IcpOmschrijving": "Koliek bij zuigeling"
+ },
+ {
+   "IcpIcpcKode": "A15",
+   "IcpOmschrijving": "Overmatig huilende zuigeling"
+ },
+ {
+   "IcpIcpcKode": "A16",
+   "IcpOmschrijving": "Prikkelbare/drukke zuigeling"
+ },
+ {
+   "IcpIcpcKode": "A17",
+   "IcpOmschrijving": "Algemene symptomen/klachten zuigeling"
+ },
+ {
+   "IcpIcpcKode": "A20",
+   "IcpOmschrijving": "Verzoek/gesprek over euthanasie"
+ },
+ {
+   "IcpIcpcKode": "A25",
+   "IcpOmschrijving": "Angst voor de dood"
+ },
+ {
+   "IcpIcpcKode": "A26",
+   "IcpOmschrijving": "Angst voor kanker"
+ },
+ {
+   "IcpIcpcKode": "A27",
+   "IcpOmschrijving": "Angst voor andere ziekte"
+ },
+ {
+   "IcpIcpcKode": "A28",
+   "IcpOmschrijving": "Functiebeperking/handicap"
+ },
+ {
+   "IcpIcpcKode": "A29",
+   "IcpOmschrijving": "Andere algemene symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "A29.01",
+   "IcpOmschrijving": "Hart- en vaatziekten in familie-anamnese"
+ },
+ {
+   "IcpIcpcKode": "A29.02",
+   "IcpOmschrijving": "Mammacarcinoom in familie-anamnese"
+ },
+ {
+   "IcpIcpcKode": "A29.03",
+   "IcpOmschrijving": "Ovariumcarcinoom in familie-anamnese"
+ },
+ {
+   "IcpIcpcKode": "A29.04",
+   "IcpOmschrijving": "Coloncarcinoom in familie-anamnese"
+ },
+ {
+   "IcpIcpcKode": "A29.05",
+   "IcpOmschrijving": "Diabetes in familie-anamnese"
+ },
+ {
+   "IcpIcpcKode": "A29.06",
+   "IcpOmschrijving": "Hypercholesterolemie in familie-anamnese"
+ },
+ {
+   "IcpIcpcKode": "A29.07",
+   "IcpOmschrijving": "DES-gebruik moeder"
+ },
+ {
+   "IcpIcpcKode": "A30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "A31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "A32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "A33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "A34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "A35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "A36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "A37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "A37.81",
+   "IcpOmschrijving": "EWWI ICPC_2002"
+ },
+ {
+   "IcpIcpcKode": "A38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "A39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "A40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "A41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "A42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "A43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "A44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "A45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "A46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "A47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "A48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "A49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "A49.01",
+   "IcpOmschrijving": "Ouderenzorg"
+ },
+ {
+   "IcpIcpcKode": "A49.02",
+   "IcpOmschrijving": "Polyfarmacie-Medicatiebeoordeling"
+ },
+ {
+   "IcpIcpcKode": "A50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "A51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie A53]"
+ },
+ {
+   "IcpIcpcKode": "A52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "A53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "A54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "A55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "A56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "A57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "A58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "A59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "A60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "A61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "A62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "A63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "A64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "A65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "A66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "A67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "A68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "A69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "A70",
+   "IcpOmschrijving": "Gegeneraliseerde tuberculose [ex. R70]"
+ },
+ {
+   "IcpIcpcKode": "A71",
+   "IcpOmschrijving": "Mazelen"
+ },
+ {
+   "IcpIcpcKode": "A72",
+   "IcpOmschrijving": "Waterpokken"
+ },
+ {
+   "IcpIcpcKode": "A73",
+   "IcpOmschrijving": "Malaria"
+ },
+ {
+   "IcpIcpcKode": "A74",
+   "IcpOmschrijving": "Rode hond"
+ },
+ {
+   "IcpIcpcKode": "A75",
+   "IcpOmschrijving": "Mononucleosis infectiosa"
+ },
+ {
+   "IcpIcpcKode": "A76",
+   "IcpOmschrijving": "Andere virusziekte met exantheem"
+ },
+ {
+   "IcpIcpcKode": "A76.01",
+   "IcpOmschrijving": "Exanthema subitum/zesde ziekte"
+ },
+ {
+   "IcpIcpcKode": "A76.02",
+   "IcpOmschrijving": "Erythema infectiosum/vijfde ziekte"
+ },
+ {
+   "IcpIcpcKode": "A76.03",
+   "IcpOmschrijving": "Hand-voet-mondziekte"
+ },
+ {
+   "IcpIcpcKode": "A77",
+   "IcpOmschrijving": "Andere virusziekte(n)"
+ },
+ {
+   "IcpIcpcKode": "A78",
+   "IcpOmschrijving": "Andere infectieziekte(n)"
+ },
+ {
+   "IcpIcpcKode": "A78.05",
+   "IcpOmschrijving": "Borreliose/Lyme"
+ },
+ {
+   "IcpIcpcKode": "A79",
+   "IcpOmschrijving": "Maligniteit met onbekende primaire lokalisatie"
+ },
+ {
+   "IcpIcpcKode": "A80",
+   "IcpOmschrijving": "Ongeval/letsel"
+ },
+ {
+   "IcpIcpcKode": "A81",
+   "IcpOmschrijving": "Multiple traumata/inwendig letsels"
+ },
+ {
+   "IcpIcpcKode": "A82",
+   "IcpOmschrijving": "Laat gevolg van letsel"
+ },
+ {
+   "IcpIcpcKode": "A84",
+   "IcpOmschrijving": "Geneesmiddelintoxicatie"
+ },
+ {
+   "IcpIcpcKode": "A85",
+   "IcpOmschrijving": "Geneesmiddelbijwerking"
+ },
+ {
+   "IcpIcpcKode": "A85.01",
+   "IcpOmschrijving": "Allergie voor geneesmiddel"
+ },
+ {
+   "IcpIcpcKode": "A85.02",
+   "IcpOmschrijving": "Spotting bij gebruik hormonale anticonceptie"
+ },
+ {
+   "IcpIcpcKode": "A86",
+   "IcpOmschrijving": "Intoxicatie andere chemische stof"
+ },
+ {
+   "IcpIcpcKode": "A87",
+   "IcpOmschrijving": "Complicatie(s) medische behandeling"
+ },
+ {
+   "IcpIcpcKode": "A87.01",
+   "IcpOmschrijving": "Leven met stoma"
+ },
+ {
+   "IcpIcpcKode": "A87.02",
+   "IcpOmschrijving": "Status na transplantatie"
+ },
+ {
+   "IcpIcpcKode": "A88",
+   "IcpOmschrijving": "Schadelijk gevolg fysische factor [ex. H85]"
+ },
+ {
+   "IcpIcpcKode": "A88.01",
+   "IcpOmschrijving": "Perniones"
+ },
+ {
+   "IcpIcpcKode": "A88.02",
+   "IcpOmschrijving": "Zonnesteek"
+ },
+ {
+   "IcpIcpcKode": "A88.03",
+   "IcpOmschrijving": "Reisziekte"
+ },
+ {
+   "IcpIcpcKode": "A89",
+   "IcpOmschrijving": "Aanwezigheid/gevolg prothese"
+ },
+ {
+   "IcpIcpcKode": "A89.01",
+   "IcpOmschrijving": "Aanwezigheid pacemaker/interne defibrillator"
+ },
+ {
+   "IcpIcpcKode": "A90",
+   "IcpOmschrijving": "Multiple aangeboren afwijkingen"
+ },
+ {
+   "IcpIcpcKode": "A90.01",
+   "IcpOmschrijving": "Syndroom van Down"
+ },
+ {
+   "IcpIcpcKode": "A91",
+   "IcpOmschrijving": "Afwijkende uitslag(en) onderzoek"
+ },
+ {
+   "IcpIcpcKode": "A91.05",
+   "IcpOmschrijving": "Gestoorde glucosetolerantie"
+ },
+ {
+   "IcpIcpcKode": "A91.06",
+   "IcpOmschrijving": "Subklinische hypothyreoïdie"
+ },
+ {
+   "IcpIcpcKode": "A91.07",
+   "IcpOmschrijving": "Subklinische hyperthyreoïdie"
+ },
+ {
+   "IcpIcpcKode": "A92",
+   "IcpOmschrijving": "Toxoplasmose"
+ },
+ {
+   "IcpIcpcKode": "A93",
+   "IcpOmschrijving": "Dysmatuur/prematuur/immatuur levendgeborene"
+ },
+ {
+   "IcpIcpcKode": "A94",
+   "IcpOmschrijving": "Perinatale morbiditeit"
+ },
+ {
+   "IcpIcpcKode": "A95",
+   "IcpOmschrijving": "Perinatale mortaliteit"
+ },
+ {
+   "IcpIcpcKode": "A95.01",
+   "IcpOmschrijving": "Doodgeboorte"
+ },
+ {
+   "IcpIcpcKode": "A95.02",
+   "IcpOmschrijving": "Overlijden pasgeborene"
+ },
+ {
+   "IcpIcpcKode": "A96",
+   "IcpOmschrijving": "Dood/overlijden [ex. A95]"
+ },
+ {
+   "IcpIcpcKode": "A96.01",
+   "IcpOmschrijving": "Natuurlijke dood"
+ },
+ {
+   "IcpIcpcKode": "A96.02",
+   "IcpOmschrijving": "Onnatuurlijke dood"
+ },
+ {
+   "IcpIcpcKode": "A97",
+   "IcpOmschrijving": "Geen ziekte"
+ },
+ {
+   "IcpIcpcKode": "A97.01",
+   "IcpOmschrijving": "Preventief onderzoek/consult"
+ },
+ {
+   "IcpIcpcKode": "A97.02",
+   "IcpOmschrijving": "Kinderwens"
+ },
+ {
+   "IcpIcpcKode": "A99",
+   "IcpOmschrijving": "Andere gegeneraliseerde/niet gespecificeerde ziekt"
+ },
+ {
+   "IcpIcpcKode": "A99.01",
+   "IcpOmschrijving": "Dragerschap met risico voor eigen persoon"
+ },
+ {
+   "IcpIcpcKode": "A99.02",
+   "IcpOmschrijving": "Dragerschap met risico voor nageslacht/omgeving"
+ },
+ {
+   "IcpIcpcKode": "B02",
+   "IcpOmschrijving": "Vergrote lymfeklier(en)"
+ },
+ {
+   "IcpIcpcKode": "B03",
+   "IcpOmschrijving": "Andere symptomen/klachten lymfeklieren"
+ },
+ {
+   "IcpIcpcKode": "B04",
+   "IcpOmschrijving": "Symptomen/klachten bloed/bloedvormende organen"
+ },
+ {
+   "IcpIcpcKode": "B25",
+   "IcpOmschrijving": "Angst voor AIDS"
+ },
+ {
+   "IcpIcpcKode": "B26",
+   "IcpOmschrijving": "Angst voor kanker bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B27",
+   "IcpOmschrijving": "Angst voor andere ziekte bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B28",
+   "IcpOmschrijving": "Functiebeperking/handicap bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B29",
+   "IcpOmschrijving": "Andere symptomen/klachten bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "B31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "B32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "B33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "B34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "B35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "B36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "B37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "B38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "B39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "B40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "B41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "B42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "B43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "B44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "B45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "B46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "B47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "B48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "B49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "B50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "B51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie B53]"
+ },
+ {
+   "IcpIcpcKode": "B52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "B53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "B54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "B55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "B56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "B57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "B58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "B59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "B60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "B61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "B62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "B63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "B64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "B65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "B66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "B67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "B68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "B69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "B70",
+   "IcpOmschrijving": "Acute lymphadenitis"
+ },
+ {
+   "IcpIcpcKode": "B71",
+   "IcpOmschrijving": "Chronische/niet-gespecificeerde lymphadenitis"
+ },
+ {
+   "IcpIcpcKode": "B72",
+   "IcpOmschrijving": "Ziekte van Hodgkin"
+ },
+ {
+   "IcpIcpcKode": "B72.01",
+   "IcpOmschrijving": "Ziekte van Hodgkin"
+ },
+ {
+   "IcpIcpcKode": "B72.02",
+   "IcpOmschrijving": "Non-Hodgkin lymfoom"
+ },
+ {
+   "IcpIcpcKode": "B73",
+   "IcpOmschrijving": "Leukemie"
+ },
+ {
+   "IcpIcpcKode": "B74",
+   "IcpOmschrijving": "Andere maligniteit bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B74.01",
+   "IcpOmschrijving": "Multipel myeloom"
+ },
+ {
+   "IcpIcpcKode": "B75",
+   "IcpOmschrijving": "Benigne/niet-gespecificeerd neoplasma bloed/lymfes"
+ },
+ {
+   "IcpIcpcKode": "B76",
+   "IcpOmschrijving": "Miltruptuur"
+ },
+ {
+   "IcpIcpcKode": "B77",
+   "IcpOmschrijving": "Ander letsel bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B78",
+   "IcpOmschrijving": "Erfelijke hemolytische anemie"
+ },
+ {
+   "IcpIcpcKode": "B78.01",
+   "IcpOmschrijving": "Thalassemie"
+ },
+ {
+   "IcpIcpcKode": "B78.02",
+   "IcpOmschrijving": "Sikkelcelanemie"
+ },
+ {
+   "IcpIcpcKode": "B78.03",
+   "IcpOmschrijving": "Anemie door G6PD-deficiëntie"
+ },
+ {
+   "IcpIcpcKode": "B79",
+   "IcpOmschrijving": "Andere aangeboren afwijking bloed/lymfestel"
+ },
+ {
+   "IcpIcpcKode": "B80",
+   "IcpOmschrijving": "Ijzergebrekanemie"
+ },
+ {
+   "IcpIcpcKode": "B81",
+   "IcpOmschrijving": "Pernicieuze/foliumzuurdeficiëntie-anemie"
+ },
+ {
+   "IcpIcpcKode": "B81.01",
+   "IcpOmschrijving": "Foliumzuurdeficiëntie-anemie"
+ },
+ {
+   "IcpIcpcKode": "B81.02",
+   "IcpOmschrijving": "Vitamine B12-deficiëntie-anemie"
+ },
+ {
+   "IcpIcpcKode": "B82",
+   "IcpOmschrijving": "Andere/niet-gespecificeerde anemie"
+ },
+ {
+   "IcpIcpcKode": "B83",
+   "IcpOmschrijving": "Purpura/stollingsstoornis/afwijkende trombocyten"
+ },
+ {
+   "IcpIcpcKode": "B83.01",
+   "IcpOmschrijving": "Hemofilie A/B"
+ },
+ {
+   "IcpIcpcKode": "B83.02",
+   "IcpOmschrijving": "Idiopathische trombocytopenische purpura (ITP)"
+ },
+ {
+   "IcpIcpcKode": "B83.06",
+   "IcpOmschrijving": "Verhoogde stollingsneiging"
+ },
+ {
+   "IcpIcpcKode": "B84",
+   "IcpOmschrijving": "Afwijking leukocyten"
+ },
+ {
+   "IcpIcpcKode": "B85",
+   "IcpOmschrijving": "Onverklaarde afwijking bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "B86",
+   "IcpOmschrijving": "Andere hematologische afwijking(en)"
+ },
+ {
+   "IcpIcpcKode": "B86.01",
+   "IcpOmschrijving": "Verhoogde BSE"
+ },
+ {
+   "IcpIcpcKode": "B87",
+   "IcpOmschrijving": "Splenomegalie"
+ },
+ {
+   "IcpIcpcKode": "B90",
+   "IcpOmschrijving": "HIV-infectie (AIDS/ARC)"
+ },
+ {
+   "IcpIcpcKode": "B90.01",
+   "IcpOmschrijving": "Seropositief zonder symptomen"
+ },
+ {
+   "IcpIcpcKode": "B90.02",
+   "IcpOmschrijving": "AIDS/ARC"
+ },
+ {
+   "IcpIcpcKode": "B99",
+   "IcpOmschrijving": "Andere ziekte(n) bloed/lymfestelsel"
+ },
+ {
+   "IcpIcpcKode": "B99.01",
+   "IcpOmschrijving": "Lymfoedeem"
+ },
+ {
+   "IcpIcpcKode": "D01",
+   "IcpOmschrijving": "Gegeneraliseerde buikpijn/buikkrampen"
+ },
+ {
+   "IcpIcpcKode": "D02",
+   "IcpOmschrijving": "Maagpijn"
+ },
+ {
+   "IcpIcpcKode": "D03",
+   "IcpOmschrijving": "Zuurbranden"
+ },
+ {
+   "IcpIcpcKode": "D04",
+   "IcpOmschrijving": "Pijn anus/rectum"
+ },
+ {
+   "IcpIcpcKode": "D05",
+   "IcpOmschrijving": "Perianale jeuk"
+ },
+ {
+   "IcpIcpcKode": "D06",
+   "IcpOmschrijving": "Andere gelokaliseerde buikpijn"
+ },
+ {
+   "IcpIcpcKode": "D08",
+   "IcpOmschrijving": "Flatulentie/meteorisme/boeren"
+ },
+ {
+   "IcpIcpcKode": "D09",
+   "IcpOmschrijving": "Misselijkheid"
+ },
+ {
+   "IcpIcpcKode": "D10",
+   "IcpOmschrijving": "Braken"
+ },
+ {
+   "IcpIcpcKode": "D11",
+   "IcpOmschrijving": "Diarree"
+ },
+ {
+   "IcpIcpcKode": "D12",
+   "IcpOmschrijving": "Obstipatie"
+ },
+ {
+   "IcpIcpcKode": "D13",
+   "IcpOmschrijving": "Geelzucht"
+ },
+ {
+   "IcpIcpcKode": "D14",
+   "IcpOmschrijving": "Haematemesis"
+ },
+ {
+   "IcpIcpcKode": "D15",
+   "IcpOmschrijving": "Melaena"
+ },
+ {
+   "IcpIcpcKode": "D16",
+   "IcpOmschrijving": "Rectaal bloedverlies"
+ },
+ {
+   "IcpIcpcKode": "D17",
+   "IcpOmschrijving": "Incontinentie voor ontlasting"
+ },
+ {
+   "IcpIcpcKode": "D18",
+   "IcpOmschrijving": "Verandering ontlasting/defecatiepatroon"
+ },
+ {
+   "IcpIcpcKode": "D19",
+   "IcpOmschrijving": "Symptomen/klachten tanden/tandvlees"
+ },
+ {
+   "IcpIcpcKode": "D20",
+   "IcpOmschrijving": "Symptomen/klachten mond/tong/lippen"
+ },
+ {
+   "IcpIcpcKode": "D21",
+   "IcpOmschrijving": "Slikproblemen"
+ },
+ {
+   "IcpIcpcKode": "D22",
+   "IcpOmschrijving": "Wormen/oxyuren/andere parasieten"
+ },
+ {
+   "IcpIcpcKode": "D22.01",
+   "IcpOmschrijving": "Oxyuriasis"
+ },
+ {
+   "IcpIcpcKode": "D22.02",
+   "IcpOmschrijving": "Ascariasis"
+ },
+ {
+   "IcpIcpcKode": "D22.03",
+   "IcpOmschrijving": "Taeniasis"
+ },
+ {
+   "IcpIcpcKode": "D24",
+   "IcpOmschrijving": "Zwelling in de buik"
+ },
+ {
+   "IcpIcpcKode": "D25",
+   "IcpOmschrijving": "Verandering omvang/uitzetting buik"
+ },
+ {
+   "IcpIcpcKode": "D26",
+   "IcpOmschrijving": "Angst voor kanker spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D27",
+   "IcpOmschrijving": "Angst voor andere ziekte spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D28",
+   "IcpOmschrijving": "Functiebeperking/handicap spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D29",
+   "IcpOmschrijving": "Andere symptomen/klachten spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D29.01",
+   "IcpOmschrijving": "Ascites"
+ },
+ {
+   "IcpIcpcKode": "D30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "D31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "D32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "D33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "D34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "D35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "D36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "D37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "D38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "D39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "D40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "D41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "D42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "D43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "D44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "D45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "D46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "D47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "D48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "D49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "D50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "D51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie D53]"
+ },
+ {
+   "IcpIcpcKode": "D52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "D53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "D54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "D55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "D56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "D57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "D58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "D59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "D60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "D61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "D62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "D63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "D64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "D65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "D66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "D67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "D68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "D69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "D70",
+   "IcpOmschrijving": "Infectieuze diarree, dysenterie"
+ },
+ {
+   "IcpIcpcKode": "D70.01",
+   "IcpOmschrijving": "Salmonella-darminfectie"
+ },
+ {
+   "IcpIcpcKode": "D70.02",
+   "IcpOmschrijving": "Shigella-/Yersinia-/Campylobacter-darminfectie"
+ },
+ {
+   "IcpIcpcKode": "D70.03",
+   "IcpOmschrijving": "Giardiasis"
+ },
+ {
+   "IcpIcpcKode": "D70.04",
+   "IcpOmschrijving": "Amoebiasis"
+ },
+ {
+   "IcpIcpcKode": "D71",
+   "IcpOmschrijving": "Bof"
+ },
+ {
+   "IcpIcpcKode": "D72",
+   "IcpOmschrijving": "Virus hepatitis"
+ },
+ {
+   "IcpIcpcKode": "D72.01",
+   "IcpOmschrijving": "Acute hepatitis A"
+ },
+ {
+   "IcpIcpcKode": "D72.02",
+   "IcpOmschrijving": "Acute hepatitis B"
+ },
+ {
+   "IcpIcpcKode": "D72.03",
+   "IcpOmschrijving": "Acute hepatitis C"
+ },
+ {
+   "IcpIcpcKode": "D72.04",
+   "IcpOmschrijving": "Drager hepatitis B/chronische hepatitis B"
+ },
+ {
+   "IcpIcpcKode": "D72.05",
+   "IcpOmschrijving": "Drager hepatitis C/chronische hepatitis C"
+ },
+ {
+   "IcpIcpcKode": "D73",
+   "IcpOmschrijving": "Veronderstelde gastro-intestinale infectie"
+ },
+ {
+   "IcpIcpcKode": "D74",
+   "IcpOmschrijving": "Maligniteit maag"
+ },
+ {
+   "IcpIcpcKode": "D75",
+   "IcpOmschrijving": "Maligniteit colon/rectum"
+ },
+ {
+   "IcpIcpcKode": "D76",
+   "IcpOmschrijving": "Maligniteit pancreas"
+ },
+ {
+   "IcpIcpcKode": "D77",
+   "IcpOmschrijving": "Andere/niet-gespecif.maligniteit spijsverteringsor"
+ },
+ {
+   "IcpIcpcKode": "D77.01",
+   "IcpOmschrijving": "Maligniteit oesofagus"
+ },
+ {
+   "IcpIcpcKode": "D77.02",
+   "IcpOmschrijving": "Maligniteit speekselklieren"
+ },
+ {
+   "IcpIcpcKode": "D77.03",
+   "IcpOmschrijving": "Maligniteit lip/mond/tong"
+ },
+ {
+   "IcpIcpcKode": "D77.04",
+   "IcpOmschrijving": "Maligniteit lever/galblaas/galwegen"
+ },
+ {
+   "IcpIcpcKode": "D78",
+   "IcpOmschrijving": "Benigne neoplasma spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D78.01",
+   "IcpOmschrijving": "Familiaire polyposis coli"
+ },
+ {
+   "IcpIcpcKode": "D79",
+   "IcpOmschrijving": "Corpus alienum via mond/anus"
+ },
+ {
+   "IcpIcpcKode": "D80",
+   "IcpOmschrijving": "Ander letsel spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D81",
+   "IcpOmschrijving": "Aangeboren afwijking(en) spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D81.01",
+   "IcpOmschrijving": "Sluitingsdefect lip/kaak/verhemelte"
+ },
+ {
+   "IcpIcpcKode": "D81.02",
+   "IcpOmschrijving": "Te kort tongriempje"
+ },
+ {
+   "IcpIcpcKode": "D81.03",
+   "IcpOmschrijving": "Pylorusstenose"
+ },
+ {
+   "IcpIcpcKode": "D81.04",
+   "IcpOmschrijving": "Meckel's divertikel"
+ },
+ {
+   "IcpIcpcKode": "D82",
+   "IcpOmschrijving": "Ziekte tanden/tandvlees"
+ },
+ {
+   "IcpIcpcKode": "D82.01",
+   "IcpOmschrijving": "Gingivitis"
+ },
+ {
+   "IcpIcpcKode": "D82.02",
+   "IcpOmschrijving": "Temporomandibulair gewrichtsprobleem"
+ },
+ {
+   "IcpIcpcKode": "D83",
+   "IcpOmschrijving": "Ziekte mond/tong/lippen/speekselklieren"
+ },
+ {
+   "IcpIcpcKode": "D83.01",
+   "IcpOmschrijving": "Sialoadenitis/sialolithiasis"
+ },
+ {
+   "IcpIcpcKode": "D83.02",
+   "IcpOmschrijving": "Aften"
+ },
+ {
+   "IcpIcpcKode": "D83.03",
+   "IcpOmschrijving": "Perleche/cheilitis angularis"
+ },
+ {
+   "IcpIcpcKode": "D84",
+   "IcpOmschrijving": "Ziekte oesofagus"
+ },
+ {
+   "IcpIcpcKode": "D84.01",
+   "IcpOmschrijving": "Divertikel oesofagus"
+ },
+ {
+   "IcpIcpcKode": "D84.02",
+   "IcpOmschrijving": "Oesofagale reflux zonder oesofagitis"
+ },
+ {
+   "IcpIcpcKode": "D84.03",
+   "IcpOmschrijving": "Oesofagale reflux met oesofagitis"
+ },
+ {
+   "IcpIcpcKode": "D84.05",
+   "IcpOmschrijving": "Oesophagusstenose"
+ },
+ {
+   "IcpIcpcKode": "D85",
+   "IcpOmschrijving": "Ulcus duodeni"
+ },
+ {
+   "IcpIcpcKode": "D86",
+   "IcpOmschrijving": "Ander ulcus pepticum"
+ },
+ {
+   "IcpIcpcKode": "D86.01",
+   "IcpOmschrijving": "Ulcus ventriculi"
+ },
+ {
+   "IcpIcpcKode": "D87",
+   "IcpOmschrijving": "Stoornis maagfunctie"
+ },
+ {
+   "IcpIcpcKode": "D87.01",
+   "IcpOmschrijving": "Gastritis/duodenitis"
+ },
+ {
+   "IcpIcpcKode": "D87.02",
+   "IcpOmschrijving": "Dyspepsie/indigestie"
+ },
+ {
+   "IcpIcpcKode": "D88",
+   "IcpOmschrijving": "Appendicitis"
+ },
+ {
+   "IcpIcpcKode": "D89",
+   "IcpOmschrijving": "Hernia inguinalis"
+ },
+ {
+   "IcpIcpcKode": "D90",
+   "IcpOmschrijving": "Hernia diafragmatica/hiatus"
+ },
+ {
+   "IcpIcpcKode": "D91",
+   "IcpOmschrijving": "Andere hernia abdominalis"
+ },
+ {
+   "IcpIcpcKode": "D91.01",
+   "IcpOmschrijving": "Hernia femoralis"
+ },
+ {
+   "IcpIcpcKode": "D91.02",
+   "IcpOmschrijving": "Hernia umbilicalis"
+ },
+ {
+   "IcpIcpcKode": "D91.03",
+   "IcpOmschrijving": "Hernia cicatricalis"
+ },
+ {
+   "IcpIcpcKode": "D92",
+   "IcpOmschrijving": "Diverticulose/diverticulitis"
+ },
+ {
+   "IcpIcpcKode": "D93",
+   "IcpOmschrijving": "Spastisch colon/IBS"
+ },
+ {
+   "IcpIcpcKode": "D94",
+   "IcpOmschrijving": "Colitis ulcerosa/chronische enteritis (regionalis)"
+ },
+ {
+   "IcpIcpcKode": "D94.01",
+   "IcpOmschrijving": "Colitis ulcerosa"
+ },
+ {
+   "IcpIcpcKode": "D94.02",
+   "IcpOmschrijving": "Ziekte van Crohn"
+ },
+ {
+   "IcpIcpcKode": "D95",
+   "IcpOmschrijving": "Fissura ani/perianaal abces"
+ },
+ {
+   "IcpIcpcKode": "D95.01",
+   "IcpOmschrijving": "Fissura ani"
+ },
+ {
+   "IcpIcpcKode": "D95.02",
+   "IcpOmschrijving": "Fistula ani"
+ },
+ {
+   "IcpIcpcKode": "D95.03",
+   "IcpOmschrijving": "Perianaal abces"
+ },
+ {
+   "IcpIcpcKode": "D96",
+   "IcpOmschrijving": "Hepatomegalie"
+ },
+ {
+   "IcpIcpcKode": "D97",
+   "IcpOmschrijving": "Cirrose/andere leverziekte"
+ },
+ {
+   "IcpIcpcKode": "D97.04",
+   "IcpOmschrijving": "Cirrose"
+ },
+ {
+   "IcpIcpcKode": "D97.05",
+   "IcpOmschrijving": "Leversteatose"
+ },
+ {
+   "IcpIcpcKode": "D98",
+   "IcpOmschrijving": "Cholecystitis/cholelithiasis"
+ },
+ {
+   "IcpIcpcKode": "D98.01",
+   "IcpOmschrijving": "Cholecystitis"
+ },
+ {
+   "IcpIcpcKode": "D98.02",
+   "IcpOmschrijving": "Cholangitis"
+ },
+ {
+   "IcpIcpcKode": "D98.03",
+   "IcpOmschrijving": "Cholelithiasis zonder -itis"
+ },
+ {
+   "IcpIcpcKode": "D99",
+   "IcpOmschrijving": "Andere ziekte(n) spijsverteringsorganen"
+ },
+ {
+   "IcpIcpcKode": "D99.01",
+   "IcpOmschrijving": "Niet-gespecificeerde ileus"
+ },
+ {
+   "IcpIcpcKode": "D99.02",
+   "IcpOmschrijving": "Invaginatie"
+ },
+ {
+   "IcpIcpcKode": "D99.03",
+   "IcpOmschrijving": "Peritonitis"
+ },
+ {
+   "IcpIcpcKode": "D99.04",
+   "IcpOmschrijving": "Pancreatitis"
+ },
+ {
+   "IcpIcpcKode": "D99.05",
+   "IcpOmschrijving": "Darmadhesies"
+ },
+ {
+   "IcpIcpcKode": "D99.06",
+   "IcpOmschrijving": "Coeliakie"
+ },
+ {
+   "IcpIcpcKode": "D99.07",
+   "IcpOmschrijving": "Koemelkallergie"
+ },
+ {
+   "IcpIcpcKode": "F01",
+   "IcpOmschrijving": "Pijn oog"
+ },
+ {
+   "IcpIcpcKode": "F02",
+   "IcpOmschrijving": "Rood oog"
+ },
+ {
+   "IcpIcpcKode": "F03",
+   "IcpOmschrijving": "Afscheiding uit oog"
+ },
+ {
+   "IcpIcpcKode": "F03.01",
+   "IcpOmschrijving": "Tranende ogen"
+ },
+ {
+   "IcpIcpcKode": "F04",
+   "IcpOmschrijving": "Mouches volantes/flitsen/flikkeringen"
+ },
+ {
+   "IcpIcpcKode": "F05",
+   "IcpOmschrijving": "Andere visussymptomen/-klachten [ex. F94]"
+ },
+ {
+   "IcpIcpcKode": "F13",
+   "IcpOmschrijving": "Afwijkend gevoel aan oog"
+ },
+ {
+   "IcpIcpcKode": "F14",
+   "IcpOmschrijving": "Afwijkende oogbewegingen"
+ },
+ {
+   "IcpIcpcKode": "F15",
+   "IcpOmschrijving": "Afwijkend aspect oog"
+ },
+ {
+   "IcpIcpcKode": "F16",
+   "IcpOmschrijving": "Symptomen/klachten oogleden"
+ },
+ {
+   "IcpIcpcKode": "F17",
+   "IcpOmschrijving": "Symptomen/klachten van bril"
+ },
+ {
+   "IcpIcpcKode": "F18",
+   "IcpOmschrijving": "Symptomen/klachten van contactlens"
+ },
+ {
+   "IcpIcpcKode": "F27",
+   "IcpOmschrijving": "Angst voor ziekte oog"
+ },
+ {
+   "IcpIcpcKode": "F28",
+   "IcpOmschrijving": "Functiebeperking/handicap oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F29",
+   "IcpOmschrijving": "Andere symptomen/klachten oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "F31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "F32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "F33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "F34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "F35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "F36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "F37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "F38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "F39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "F40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "F41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "F42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "F43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "F44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "F45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "F46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "F47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "F48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "F49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "F50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "F51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie F53]"
+ },
+ {
+   "IcpIcpcKode": "F52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "F53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "F54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "F55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "F56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "F57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "F58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "F59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "F60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "F61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "F62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "F63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "F64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "F65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "F66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "F67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "F68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "F69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "F70",
+   "IcpOmschrijving": "Infectieuze conjunctivitis"
+ },
+ {
+   "IcpIcpcKode": "F70.01",
+   "IcpOmschrijving": "Bacteriële conjunctivitis"
+ },
+ {
+   "IcpIcpcKode": "F70.02",
+   "IcpOmschrijving": "Virale conjunctivitis"
+ },
+ {
+   "IcpIcpcKode": "F71",
+   "IcpOmschrijving": "Allergische/niet-gespecificeerde conjunctivitis"
+ },
+ {
+   "IcpIcpcKode": "F71.01",
+   "IcpOmschrijving": "Allergische conjunctivitis"
+ },
+ {
+   "IcpIcpcKode": "F72",
+   "IcpOmschrijving": "Blepharitis/hordeolum/chalazion"
+ },
+ {
+   "IcpIcpcKode": "F72.01",
+   "IcpOmschrijving": "Blepharitis"
+ },
+ {
+   "IcpIcpcKode": "F72.02",
+   "IcpOmschrijving": "Hordeolum"
+ },
+ {
+   "IcpIcpcKode": "F72.03",
+   "IcpOmschrijving": "Chalazion"
+ },
+ {
+   "IcpIcpcKode": "F73",
+   "IcpOmschrijving": "Andere infectie/ontsteking oog/adnexen [ex. F85,F8"
+ },
+ {
+   "IcpIcpcKode": "F73.01",
+   "IcpOmschrijving": "Dacryocystitis"
+ },
+ {
+   "IcpIcpcKode": "F73.02",
+   "IcpOmschrijving": "Keratitis (incl herpes zonder ulcus)"
+ },
+ {
+   "IcpIcpcKode": "F73.03",
+   "IcpOmschrijving": "Iridocyclitis"
+ },
+ {
+   "IcpIcpcKode": "F74",
+   "IcpOmschrijving": "Neoplasma oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F74.01",
+   "IcpOmschrijving": "Maligniteit oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F74.02",
+   "IcpOmschrijving": "Benigne neoplasma oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F75",
+   "IcpOmschrijving": "Kneuzing/bloeding oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F75.01",
+   "IcpOmschrijving": "Subconjunctivale bloeding"
+ },
+ {
+   "IcpIcpcKode": "F75.02",
+   "IcpOmschrijving": "Blauw oog"
+ },
+ {
+   "IcpIcpcKode": "F76",
+   "IcpOmschrijving": "Corpus alienum oog"
+ },
+ {
+   "IcpIcpcKode": "F79",
+   "IcpOmschrijving": "Ander letsel oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F79.01",
+   "IcpOmschrijving": "Lasogen/sneeuwblindheid"
+ },
+ {
+   "IcpIcpcKode": "F79.02",
+   "IcpOmschrijving": "Cornea-erosie"
+ },
+ {
+   "IcpIcpcKode": "F80",
+   "IcpOmschrijving": "Stenose traankanaal zuigeling"
+ },
+ {
+   "IcpIcpcKode": "F81",
+   "IcpOmschrijving": "Andere aangeboren afwijking(en) oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F82",
+   "IcpOmschrijving": "Netvliesloslating"
+ },
+ {
+   "IcpIcpcKode": "F83",
+   "IcpOmschrijving": "Retinopathie"
+ },
+ {
+   "IcpIcpcKode": "F83.01",
+   "IcpOmschrijving": "Diabetische retinopathie"
+ },
+ {
+   "IcpIcpcKode": "F83.02",
+   "IcpOmschrijving": "Hypertensieve retinopathie"
+ },
+ {
+   "IcpIcpcKode": "F84",
+   "IcpOmschrijving": "Maculadegeneratie"
+ },
+ {
+   "IcpIcpcKode": "F85",
+   "IcpOmschrijving": "Ulcus corneae"
+ },
+ {
+   "IcpIcpcKode": "F85.01",
+   "IcpOmschrijving": "Keratitis dendritica"
+ },
+ {
+   "IcpIcpcKode": "F86",
+   "IcpOmschrijving": "Trachoom"
+ },
+ {
+   "IcpIcpcKode": "F91",
+   "IcpOmschrijving": "Refractie afwijking(en)"
+ },
+ {
+   "IcpIcpcKode": "F91.01",
+   "IcpOmschrijving": "Presbyopie"
+ },
+ {
+   "IcpIcpcKode": "F91.02",
+   "IcpOmschrijving": "Hypermetropie"
+ },
+ {
+   "IcpIcpcKode": "F91.03",
+   "IcpOmschrijving": "Myopie"
+ },
+ {
+   "IcpIcpcKode": "F91.04",
+   "IcpOmschrijving": "Astigmatisme"
+ },
+ {
+   "IcpIcpcKode": "F92",
+   "IcpOmschrijving": "Cataract/staar"
+ },
+ {
+   "IcpIcpcKode": "F92.01",
+   "IcpOmschrijving": "Seniel cataract"
+ },
+ {
+   "IcpIcpcKode": "F93",
+   "IcpOmschrijving": "Glaucoom/verhoogde oogdruk"
+ },
+ {
+   "IcpIcpcKode": "F93.01",
+   "IcpOmschrijving": "Verhoogde oogdruk zonder (bekend) glaucoom"
+ },
+ {
+   "IcpIcpcKode": "F93.02",
+   "IcpOmschrijving": "Primair gesloten kamerhoek glaucoom/acuut glaucoom"
+ },
+ {
+   "IcpIcpcKode": "F93.03",
+   "IcpOmschrijving": "Primair open kamerhoek glaucoom/glaucoma simplex"
+ },
+ {
+   "IcpIcpcKode": "F93.04",
+   "IcpOmschrijving": "Secundair glaucoom"
+ },
+ {
+   "IcpIcpcKode": "F94",
+   "IcpOmschrijving": "Blindheid (elke graad/vorm)"
+ },
+ {
+   "IcpIcpcKode": "F95",
+   "IcpOmschrijving": "Strabismus/scheelzien"
+ },
+ {
+   "IcpIcpcKode": "F99",
+   "IcpOmschrijving": "Andere ziekte(n) oog/adnexen"
+ },
+ {
+   "IcpIcpcKode": "F99.01",
+   "IcpOmschrijving": "Xanthelasma(ta) palpebrae"
+ },
+ {
+   "IcpIcpcKode": "F99.02",
+   "IcpOmschrijving": "Blepharochalasis"
+ },
+ {
+   "IcpIcpcKode": "F99.03",
+   "IcpOmschrijving": "Entropion/ectropion"
+ },
+ {
+   "IcpIcpcKode": "F99.04",
+   "IcpOmschrijving": "Pterygium"
+ },
+ {
+   "IcpIcpcKode": "F99.05",
+   "IcpOmschrijving": "Scleritis/episcleritis"
+ },
+ {
+   "IcpIcpcKode": "F99.06",
+   "IcpOmschrijving": "Insufficiënte traanfilm"
+ },
+ {
+   "IcpIcpcKode": "H01",
+   "IcpOmschrijving": "Oorpijn"
+ },
+ {
+   "IcpIcpcKode": "H02",
+   "IcpOmschrijving": "Gehoorklachten [ex. H84,H85,H86]"
+ },
+ {
+   "IcpIcpcKode": "H03",
+   "IcpOmschrijving": "Oorsuizen/tinnitus"
+ },
+ {
+   "IcpIcpcKode": "H04",
+   "IcpOmschrijving": "Afscheiding uit oor"
+ },
+ {
+   "IcpIcpcKode": "H05",
+   "IcpOmschrijving": "Bloed in/uit oor"
+ },
+ {
+   "IcpIcpcKode": "H13",
+   "IcpOmschrijving": "Verstopt gevoel oor"
+ },
+ {
+   "IcpIcpcKode": "H15",
+   "IcpOmschrijving": "Ontevreden/bezorgd over aspect oor"
+ },
+ {
+   "IcpIcpcKode": "H15.01",
+   "IcpOmschrijving": "Flapoor/afstaand oor"
+ },
+ {
+   "IcpIcpcKode": "H27",
+   "IcpOmschrijving": "Angst voor ziekte oor"
+ },
+ {
+   "IcpIcpcKode": "H28",
+   "IcpOmschrijving": "Functiebeperking/handicap oor"
+ },
+ {
+   "IcpIcpcKode": "H29",
+   "IcpOmschrijving": "Andere symptomen/klachten oor"
+ },
+ {
+   "IcpIcpcKode": "H30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "H31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "H32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "H33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "H34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "H35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "H36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "H37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "H38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "H39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "H40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "H41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "H42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "H43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "H44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "H45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "H46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "H47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "H48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "H49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "H50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "H51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie H53]"
+ },
+ {
+   "IcpIcpcKode": "H52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "H53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "H54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "H55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "H56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "H57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "H58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "H59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "H60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "H61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "H62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "H63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "H64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "H65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "H66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "H67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "H68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "H69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "H70",
+   "IcpOmschrijving": "Otitis externa"
+ },
+ {
+   "IcpIcpcKode": "H71",
+   "IcpOmschrijving": "Otitis media acuta/myringitis"
+ },
+ {
+   "IcpIcpcKode": "H72",
+   "IcpOmschrijving": "Otitis media met effusie"
+ },
+ {
+   "IcpIcpcKode": "H73",
+   "IcpOmschrijving": "Tubair catarre/tubastenose"
+ },
+ {
+   "IcpIcpcKode": "H74",
+   "IcpOmschrijving": "Chronische otitis media/andere infectie oor"
+ },
+ {
+   "IcpIcpcKode": "H74.01",
+   "IcpOmschrijving": "Chronische otitis media"
+ },
+ {
+   "IcpIcpcKode": "H74.02",
+   "IcpOmschrijving": "Mastoïditis"
+ },
+ {
+   "IcpIcpcKode": "H74.03",
+   "IcpOmschrijving": "Cholesteatoom"
+ },
+ {
+   "IcpIcpcKode": "H75",
+   "IcpOmschrijving": "Neoplasma oor"
+ },
+ {
+   "IcpIcpcKode": "H75.01",
+   "IcpOmschrijving": "Maligniteit oor"
+ },
+ {
+   "IcpIcpcKode": "H75.02",
+   "IcpOmschrijving": "Benigne neoplasma oor"
+ },
+ {
+   "IcpIcpcKode": "H76",
+   "IcpOmschrijving": "Corpus alienum in oor"
+ },
+ {
+   "IcpIcpcKode": "H77",
+   "IcpOmschrijving": "Perforatie trommelvlies [ex. H71]"
+ },
+ {
+   "IcpIcpcKode": "H78",
+   "IcpOmschrijving": "Oppervlakkig letsel oor"
+ },
+ {
+   "IcpIcpcKode": "H79",
+   "IcpOmschrijving": "Ander letsel oor"
+ },
+ {
+   "IcpIcpcKode": "H80",
+   "IcpOmschrijving": "Aangeboren afwijking(en) oor"
+ },
+ {
+   "IcpIcpcKode": "H81",
+   "IcpOmschrijving": "Overmatig cerumen"
+ },
+ {
+   "IcpIcpcKode": "H82",
+   "IcpOmschrijving": "Vertigosyndroom/labyrinthitis [ex. N17]"
+ },
+ {
+   "IcpIcpcKode": "H82.01",
+   "IcpOmschrijving": "Ziekte/syndroom van Menière"
+ },
+ {
+   "IcpIcpcKode": "H82.02",
+   "IcpOmschrijving": "Labyrinthitis/vestibulitis"
+ },
+ {
+   "IcpIcpcKode": "H82.03",
+   "IcpOmschrijving": "Benigne paroxysmale positie duizeligheid"
+ },
+ {
+   "IcpIcpcKode": "H83",
+   "IcpOmschrijving": "Otosclerose"
+ },
+ {
+   "IcpIcpcKode": "H84",
+   "IcpOmschrijving": "Presbyacusis"
+ },
+ {
+   "IcpIcpcKode": "H85",
+   "IcpOmschrijving": "Akoestisch letsel/lawaaidoofheid"
+ },
+ {
+   "IcpIcpcKode": "H86",
+   "IcpOmschrijving": "Doofheid/slechthorendheid"
+ },
+ {
+   "IcpIcpcKode": "H99",
+   "IcpOmschrijving": "Andere ziekte(n) oor"
+ },
+ {
+   "IcpIcpcKode": "K01",
+   "IcpOmschrijving": "Pijn toegeschreven aan hart"
+ },
+ {
+   "IcpIcpcKode": "K02",
+   "IcpOmschrijving": "Druk/beklemming toegeschreven aan hart [ex. R02]"
+ },
+ {
+   "IcpIcpcKode": "K03",
+   "IcpOmschrijving": "Andere pijn toegeschreven aan hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K04",
+   "IcpOmschrijving": "Hartkloppingen/bewust van hartslag"
+ },
+ {
+   "IcpIcpcKode": "K05",
+   "IcpOmschrijving": "Andere afwijkende/onregelmatige hartslag"
+ },
+ {
+   "IcpIcpcKode": "K06",
+   "IcpOmschrijving": "Opgezette aderen"
+ },
+ {
+   "IcpIcpcKode": "K07",
+   "IcpOmschrijving": "Gezwollen enkels/enkeloedeem"
+ },
+ {
+   "IcpIcpcKode": "K24",
+   "IcpOmschrijving": "Angst voor hartaanval"
+ },
+ {
+   "IcpIcpcKode": "K25",
+   "IcpOmschrijving": "Angst voor hoge bloeddruk"
+ },
+ {
+   "IcpIcpcKode": "K27",
+   "IcpOmschrijving": "Angst voor andere ziekte hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K28",
+   "IcpOmschrijving": "Functiebeperking/handicap hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K29",
+   "IcpOmschrijving": "Andere symptomen/klachten hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K29.01",
+   "IcpOmschrijving": "Cyanose"
+ },
+ {
+   "IcpIcpcKode": "K29.02",
+   "IcpOmschrijving": "Koude extremiteiten/acra"
+ },
+ {
+   "IcpIcpcKode": "K30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "K31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "K32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "K33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "K34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "K35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "K36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "K37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "K38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "K39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "K40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "K41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "K42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "K43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "K44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "K45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "K46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "K47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "K48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "K49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "K49.01",
+   "IcpOmschrijving": "CVRM"
+ },
+ {
+   "IcpIcpcKode": "K50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "K51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie K53]"
+ },
+ {
+   "IcpIcpcKode": "K52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "K53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "K54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "K55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "K56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "K57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "K58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "K59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "K60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "K61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "K62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "K63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "K64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "K65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "K66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "K67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "K68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "K69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "K70",
+   "IcpOmschrijving": "Infectieziekte hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K71",
+   "IcpOmschrijving": "Acuut reuma/reumatische hartziekte"
+ },
+ {
+   "IcpIcpcKode": "K71.01",
+   "IcpOmschrijving": "Acuut reuma zonder hartziekte"
+ },
+ {
+   "IcpIcpcKode": "K71.02",
+   "IcpOmschrijving": "Acuut reuma met hartziekte"
+ },
+ {
+   "IcpIcpcKode": "K72",
+   "IcpOmschrijving": "Neoplasma hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K72.01",
+   "IcpOmschrijving": "Maligniteit hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K72.02",
+   "IcpOmschrijving": "Benigne neoplasma hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K73",
+   "IcpOmschrijving": "Aangeboren afwijking(en) hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K73.01",
+   "IcpOmschrijving": "Atriumseptumdefect (ASD)"
+ },
+ {
+   "IcpIcpcKode": "K73.02",
+   "IcpOmschrijving": "Ventrikelseptumdefect (VSD)"
+ },
+ {
+   "IcpIcpcKode": "K74",
+   "IcpOmschrijving": "Angina pectoris"
+ },
+ {
+   "IcpIcpcKode": "K74.01",
+   "IcpOmschrijving": "Instabiele angina pectoris"
+ },
+ {
+   "IcpIcpcKode": "K74.02",
+   "IcpOmschrijving": "Stabiele angina pectoris"
+ },
+ {
+   "IcpIcpcKode": "K75",
+   "IcpOmschrijving": "Acuut myocardinfarct"
+ },
+ {
+   "IcpIcpcKode": "K76",
+   "IcpOmschrijving": "Andere/chronische ischemische hartziekte"
+ },
+ {
+   "IcpIcpcKode": "K76.01",
+   "IcpOmschrijving": "Coronairsclerose"
+ },
+ {
+   "IcpIcpcKode": "K76.02",
+   "IcpOmschrijving": "Vroeger myocardinfarct (> 4 wkn geleden)"
+ },
+ {
+   "IcpIcpcKode": "K77",
+   "IcpOmschrijving": "Decompensatio cordis"
+ },
+ {
+   "IcpIcpcKode": "K77.01",
+   "IcpOmschrijving": "Acute decompensatio cordis/astma cardiale"
+ },
+ {
+   "IcpIcpcKode": "K77.02",
+   "IcpOmschrijving": "Chronische decompensatio cordis"
+ },
+ {
+   "IcpIcpcKode": "K78",
+   "IcpOmschrijving": "Boezemfibrilleren/-fladderen"
+ },
+ {
+   "IcpIcpcKode": "K79",
+   "IcpOmschrijving": "Paroxysmale tachycardie"
+ },
+ {
+   "IcpIcpcKode": "K79.01",
+   "IcpOmschrijving": "Supraventriculaire tachycardie"
+ },
+ {
+   "IcpIcpcKode": "K79.02",
+   "IcpOmschrijving": "Ventriculaire tachycardie"
+ },
+ {
+   "IcpIcpcKode": "K80",
+   "IcpOmschrijving": "Ectopische slagen/extrasystolen"
+ },
+ {
+   "IcpIcpcKode": "K80.01",
+   "IcpOmschrijving": "Supraventriculaire extrasystolen"
+ },
+ {
+   "IcpIcpcKode": "K80.02",
+   "IcpOmschrijving": "Ventriculaire extrasystolen"
+ },
+ {
+   "IcpIcpcKode": "K80.03",
+   "IcpOmschrijving": "Sick sinus syndroom"
+ },
+ {
+   "IcpIcpcKode": "K81",
+   "IcpOmschrijving": "Hartgeruis"
+ },
+ {
+   "IcpIcpcKode": "K82",
+   "IcpOmschrijving": "Cor pulmonale"
+ },
+ {
+   "IcpIcpcKode": "K83",
+   "IcpOmschrijving": "Niet-reumatische klepaandoening"
+ },
+ {
+   "IcpIcpcKode": "K83.01",
+   "IcpOmschrijving": "Aortastenose"
+ },
+ {
+   "IcpIcpcKode": "K83.02",
+   "IcpOmschrijving": "Mitralisinsufficiëntie"
+ },
+ {
+   "IcpIcpcKode": "K84",
+   "IcpOmschrijving": "Andere hartziekte(n)"
+ },
+ {
+   "IcpIcpcKode": "K84.01",
+   "IcpOmschrijving": "WPW-syndroom"
+ },
+ {
+   "IcpIcpcKode": "K84.02",
+   "IcpOmschrijving": "Atrioventriculair blok"
+ },
+ {
+   "IcpIcpcKode": "K84.03",
+   "IcpOmschrijving": "Cardiomyopathie"
+ },
+ {
+   "IcpIcpcKode": "K84.07",
+   "IcpOmschrijving": "Lang QT interval syndroom (LQTS)"
+ },
+ {
+   "IcpIcpcKode": "K85",
+   "IcpOmschrijving": "Verhoogde bloeddruk [ex. K86,K87]"
+ },
+ {
+   "IcpIcpcKode": "K86",
+   "IcpOmschrijving": "Essentiële hypertensie zonder orgaanbeschadiging"
+ },
+ {
+   "IcpIcpcKode": "K87",
+   "IcpOmschrijving": "Hypertensie met orgaanbeschadiging/secundaire hype"
+ },
+ {
+   "IcpIcpcKode": "K88",
+   "IcpOmschrijving": "Orthostatische hypotensie"
+ },
+ {
+   "IcpIcpcKode": "K89",
+   "IcpOmschrijving": "Passagère cerebrale ischemie/TIA"
+ },
+ {
+   "IcpIcpcKode": "K90",
+   "IcpOmschrijving": "Cerebrovasculair accident (CVA)"
+ },
+ {
+   "IcpIcpcKode": "K90.01",
+   "IcpOmschrijving": "Subarachnoïdale bloeding"
+ },
+ {
+   "IcpIcpcKode": "K90.02",
+   "IcpOmschrijving": "Intracerebrale bloeding"
+ },
+ {
+   "IcpIcpcKode": "K90.03",
+   "IcpOmschrijving": "Cerebraal infarct"
+ },
+ {
+   "IcpIcpcKode": "K91",
+   "IcpOmschrijving": "Atherosclerose [ex. K76,K90]"
+ },
+ {
+   "IcpIcpcKode": "K92",
+   "IcpOmschrijving": "Andere ziekte(n) perifere arteriën"
+ },
+ {
+   "IcpIcpcKode": "K92.01",
+   "IcpOmschrijving": "Claudicatio intermittens"
+ },
+ {
+   "IcpIcpcKode": "K92.02",
+   "IcpOmschrijving": "Syndroom van Raynaud"
+ },
+ {
+   "IcpIcpcKode": "K92.03",
+   "IcpOmschrijving": "Ziekte van Buerger"
+ },
+ {
+   "IcpIcpcKode": "K93",
+   "IcpOmschrijving": "Longembolie/longinfarct"
+ },
+ {
+   "IcpIcpcKode": "K94",
+   "IcpOmschrijving": "Thrombophlebitis/flebotrombose"
+ },
+ {
+   "IcpIcpcKode": "K94.01",
+   "IcpOmschrijving": "Diepe veneuze trombose benen"
+ },
+ {
+   "IcpIcpcKode": "K94.02",
+   "IcpOmschrijving": "Oppervlakkige thrombophlebitis"
+ },
+ {
+   "IcpIcpcKode": "K95",
+   "IcpOmschrijving": "Varices benen [ex. S97]"
+ },
+ {
+   "IcpIcpcKode": "K96",
+   "IcpOmschrijving": "Hemorroïden"
+ },
+ {
+   "IcpIcpcKode": "K99",
+   "IcpOmschrijving": "Andere ziekte(n) hartvaatstelsel"
+ },
+ {
+   "IcpIcpcKode": "K99.01",
+   "IcpOmschrijving": "Aneurysma aorta"
+ },
+ {
+   "IcpIcpcKode": "K99.02",
+   "IcpOmschrijving": "Slokdarmvarices"
+ },
+ {
+   "IcpIcpcKode": "K99.03",
+   "IcpOmschrijving": "Varicocele"
+ },
+ {
+   "IcpIcpcKode": "K99.04",
+   "IcpOmschrijving": "Chronisch veneuze insufficiëntie"
+ },
+ {
+   "IcpIcpcKode": "K99.05",
+   "IcpOmschrijving": "Arteriitis temporalis met/zonder polymyalgia rheum"
+ },
+ {
+   "IcpIcpcKode": "K99.06",
+   "IcpOmschrijving": "Perifere diabetische angiopathie"
+ },
+ {
+   "IcpIcpcKode": "L01",
+   "IcpOmschrijving": "Nek symptomen/klachten [ex. N01]"
+ },
+ {
+   "IcpIcpcKode": "L02",
+   "IcpOmschrijving": "Rug symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L03",
+   "IcpOmschrijving": "Lage-rugpijn zonder uitstraling [ex. L86]"
+ },
+ {
+   "IcpIcpcKode": "L04",
+   "IcpOmschrijving": "Borstkas symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L05",
+   "IcpOmschrijving": "Flank symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L06",
+   "IcpOmschrijving": "Oksel symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L07",
+   "IcpOmschrijving": "Kaak(gewricht) symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L08",
+   "IcpOmschrijving": "Schouder symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L09",
+   "IcpOmschrijving": "Arm symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L10",
+   "IcpOmschrijving": "Elleboog symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L11",
+   "IcpOmschrijving": "Pols symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L12",
+   "IcpOmschrijving": "Hand/vinger symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L13",
+   "IcpOmschrijving": "Heup symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L14",
+   "IcpOmschrijving": "Been/dijbeen symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L15",
+   "IcpOmschrijving": "Knie symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L16",
+   "IcpOmschrijving": "Enkel symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L17",
+   "IcpOmschrijving": "Voet/teen symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "L17.01",
+   "IcpOmschrijving": "Metatarsalgie"
+ },
+ {
+   "IcpIcpcKode": "L18",
+   "IcpOmschrijving": "Spierpijn"
+ },
+ {
+   "IcpIcpcKode": "L18.01",
+   "IcpOmschrijving": "Fibromyalgie"
+ },
+ {
+   "IcpIcpcKode": "L19",
+   "IcpOmschrijving": "Symptomen meerdere/niet-gespecificeerde spieren"
+ },
+ {
+   "IcpIcpcKode": "L20",
+   "IcpOmschrijving": "Symptomen meerdere/niet-gespecificeerde gewrichten"
+ },
+ {
+   "IcpIcpcKode": "L26",
+   "IcpOmschrijving": "Angst voor kanker bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L27",
+   "IcpOmschrijving": "Angst voor andere ziekte bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L28",
+   "IcpOmschrijving": "Functiebeperking/handicap bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L29",
+   "IcpOmschrijving": "Andere/meerdere symptomen/klachten bewegingsappara"
+ },
+ {
+   "IcpIcpcKode": "L30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "L31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "L32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "L33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "L34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "L35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "L36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "L37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "L38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "L39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "L40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "L41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "L42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "L43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "L44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "L45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "L46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "L47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "L48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "L49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "L49.01",
+   "IcpOmschrijving": "Fractuurpreventie"
+ },
+ {
+   "IcpIcpcKode": "L50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "L51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie L53]"
+ },
+ {
+   "IcpIcpcKode": "L52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "L53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "L54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "L55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "L56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "L57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "L58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "L59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "L60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "L61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "L62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "L63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "L64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "L65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "L66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "L67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "L68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "L69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "L70",
+   "IcpOmschrijving": "Infectieziekte bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L70.01",
+   "IcpOmschrijving": "Osteomyelitis"
+ },
+ {
+   "IcpIcpcKode": "L70.02",
+   "IcpOmschrijving": "Septische arthritis"
+ },
+ {
+   "IcpIcpcKode": "L71",
+   "IcpOmschrijving": "Neoplasma bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L71.01",
+   "IcpOmschrijving": "Maligniteit bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L71.02",
+   "IcpOmschrijving": "Benigne neoplasma bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L72",
+   "IcpOmschrijving": "Fractuur radius/ulna"
+ },
+ {
+   "IcpIcpcKode": "L73",
+   "IcpOmschrijving": "Fractuur tibia/fibula"
+ },
+ {
+   "IcpIcpcKode": "L74",
+   "IcpOmschrijving": "Fractuur hand/voet"
+ },
+ {
+   "IcpIcpcKode": "L74.01",
+   "IcpOmschrijving": "Fractuur ossa phalanges hand"
+ },
+ {
+   "IcpIcpcKode": "L74.02",
+   "IcpOmschrijving": "Fractuur ossa phalanges voet"
+ },
+ {
+   "IcpIcpcKode": "L75",
+   "IcpOmschrijving": "Fractuur femur"
+ },
+ {
+   "IcpIcpcKode": "L75.01",
+   "IcpOmschrijving": "Fractuur collum femoris"
+ },
+ {
+   "IcpIcpcKode": "L76",
+   "IcpOmschrijving": "Andere fractuur"
+ },
+ {
+   "IcpIcpcKode": "L76.01",
+   "IcpOmschrijving": "Fractuur schedel"
+ },
+ {
+   "IcpIcpcKode": "L76.02",
+   "IcpOmschrijving": "Fractuur neus"
+ },
+ {
+   "IcpIcpcKode": "L76.03",
+   "IcpOmschrijving": "Fractuur clavicula"
+ },
+ {
+   "IcpIcpcKode": "L76.04",
+   "IcpOmschrijving": "Fractuur humerus"
+ },
+ {
+   "IcpIcpcKode": "L76.05",
+   "IcpOmschrijving": "Fractuur rib"
+ },
+ {
+   "IcpIcpcKode": "L76.06",
+   "IcpOmschrijving": "Fractuur wervelkolom"
+ },
+ {
+   "IcpIcpcKode": "L76.07",
+   "IcpOmschrijving": "Fractuur bekken"
+ },
+ {
+   "IcpIcpcKode": "L76.08",
+   "IcpOmschrijving": "Fractuur patella"
+ },
+ {
+   "IcpIcpcKode": "L77",
+   "IcpOmschrijving": "Verstuiking/distorsie enkel"
+ },
+ {
+   "IcpIcpcKode": "L78",
+   "IcpOmschrijving": "Verstuiking/distorsie knie"
+ },
+ {
+   "IcpIcpcKode": "L79",
+   "IcpOmschrijving": "Andere verstuiking/distorsie"
+ },
+ {
+   "IcpIcpcKode": "L79.01",
+   "IcpOmschrijving": "Whiplashtrauma cervicale wervelkolom"
+ },
+ {
+   "IcpIcpcKode": "L80",
+   "IcpOmschrijving": "Luxatie/subluxatie"
+ },
+ {
+   "IcpIcpcKode": "L80.01",
+   "IcpOmschrijving": "(Sub)luxatie schouder"
+ },
+ {
+   "IcpIcpcKode": "L80.02",
+   "IcpOmschrijving": "(Sub)luxatie kaakgewricht"
+ },
+ {
+   "IcpIcpcKode": "L80.03",
+   "IcpOmschrijving": "(Sub)luxatie vinger"
+ },
+ {
+   "IcpIcpcKode": "L80.04",
+   "IcpOmschrijving": "(Sub)luxatie acromio-claviculair gewricht"
+ },
+ {
+   "IcpIcpcKode": "L80.05",
+   "IcpOmschrijving": "(Sub)luxatie radiuskop/zondagsarmpje"
+ },
+ {
+   "IcpIcpcKode": "L81",
+   "IcpOmschrijving": "Ander letsel bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L81.01",
+   "IcpOmschrijving": "Coup de fouet/zweepslag"
+ },
+ {
+   "IcpIcpcKode": "L81.02",
+   "IcpOmschrijving": "Ribcontusie"
+ },
+ {
+   "IcpIcpcKode": "L82",
+   "IcpOmschrijving": "Aangeboren afwijking(en) bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L82.01",
+   "IcpOmschrijving": "Aangeboren heupluxatie/heupdysplasie"
+ },
+ {
+   "IcpIcpcKode": "L82.02",
+   "IcpOmschrijving": "Spina bifida occulta"
+ },
+ {
+   "IcpIcpcKode": "L82.03",
+   "IcpOmschrijving": "Halsrib"
+ },
+ {
+   "IcpIcpcKode": "L82.04",
+   "IcpOmschrijving": "Klompvoet"
+ },
+ {
+   "IcpIcpcKode": "L83",
+   "IcpOmschrijving": "Syndroom cervicale wervelkolom"
+ },
+ {
+   "IcpIcpcKode": "L83.01",
+   "IcpOmschrijving": "Hernia cervicalis"
+ },
+ {
+   "IcpIcpcKode": "L84",
+   "IcpOmschrijving": "Artrose/spondylose wervelkolom"
+ },
+ {
+   "IcpIcpcKode": "L84.01",
+   "IcpOmschrijving": "Artrose/spondylose"
+ },
+ {
+   "IcpIcpcKode": "L84.02",
+   "IcpOmschrijving": "Spondylolyse/-listhesis"
+ },
+ {
+   "IcpIcpcKode": "L85",
+   "IcpOmschrijving": "Verworven afwijking(en) wervelkolom"
+ },
+ {
+   "IcpIcpcKode": "L85.01",
+   "IcpOmschrijving": "Scoliose"
+ },
+ {
+   "IcpIcpcKode": "L86",
+   "IcpOmschrijving": "Lage-rugpijn met uitstraling"
+ },
+ {
+   "IcpIcpcKode": "L86.01",
+   "IcpOmschrijving": "HNP (thoracaal/lumbaal)"
+ },
+ {
+   "IcpIcpcKode": "L87",
+   "IcpOmschrijving": "Ganglion gewricht/pees"
+ },
+ {
+   "IcpIcpcKode": "L88",
+   "IcpOmschrijving": "Reumatoïde arthritis/verwante aandoening(en)"
+ },
+ {
+   "IcpIcpcKode": "L88.01",
+   "IcpOmschrijving": "Reumatoïde arthritis"
+ },
+ {
+   "IcpIcpcKode": "L88.02",
+   "IcpOmschrijving": "Morbus Bechterew (spondylitis ankylopoetica)"
+ },
+ {
+   "IcpIcpcKode": "L89",
+   "IcpOmschrijving": "Coxartrose"
+ },
+ {
+   "IcpIcpcKode": "L90",
+   "IcpOmschrijving": "Gonartrose"
+ },
+ {
+   "IcpIcpcKode": "L91",
+   "IcpOmschrijving": "Andere artrose/verwante aandoening(en)"
+ },
+ {
+   "IcpIcpcKode": "L92",
+   "IcpOmschrijving": "Schoudersyndroom/PHS"
+ },
+ {
+   "IcpIcpcKode": "L93",
+   "IcpOmschrijving": "Epicondylitis lateralis"
+ },
+ {
+   "IcpIcpcKode": "L94",
+   "IcpOmschrijving": "Osgood-Schlatter/andere osteochondropathie"
+ },
+ {
+   "IcpIcpcKode": "L94.01",
+   "IcpOmschrijving": "Osteochondritis dissecans"
+ },
+ {
+   "IcpIcpcKode": "L94.02",
+   "IcpOmschrijving": "Ziekte van Osgood-Schlatter"
+ },
+ {
+   "IcpIcpcKode": "L94.03",
+   "IcpOmschrijving": "Epifysiolyse femurkop"
+ },
+ {
+   "IcpIcpcKode": "L94.04",
+   "IcpOmschrijving": "Ziekte van Legg-Calvé-Perthes"
+ },
+ {
+   "IcpIcpcKode": "L95",
+   "IcpOmschrijving": "Osteoporose"
+ },
+ {
+   "IcpIcpcKode": "L95.01",
+   "IcpOmschrijving": "Osteopenie"
+ },
+ {
+   "IcpIcpcKode": "L95.02",
+   "IcpOmschrijving": "Osteoporose"
+ },
+ {
+   "IcpIcpcKode": "L96",
+   "IcpOmschrijving": "Acuut letsel meniscus/kniebanden"
+ },
+ {
+   "IcpIcpcKode": "L96.01",
+   "IcpOmschrijving": "Meniscusscheur (lat./med.)"
+ },
+ {
+   "IcpIcpcKode": "L96.02",
+   "IcpOmschrijving": "Letsel lig. cruciata (anterior/posterior)"
+ },
+ {
+   "IcpIcpcKode": "L96.03",
+   "IcpOmschrijving": "Letsel collaterale kniebanden"
+ },
+ {
+   "IcpIcpcKode": "L96.04",
+   "IcpOmschrijving": "Gecombineerd letsel menisci/lig.cruciata/collatera"
+ },
+ {
+   "IcpIcpcKode": "L97",
+   "IcpOmschrijving": "Chronisch inwendig trauma knie"
+ },
+ {
+   "IcpIcpcKode": "L97.01",
+   "IcpOmschrijving": "Oud meniscusletsel"
+ },
+ {
+   "IcpIcpcKode": "L97.02",
+   "IcpOmschrijving": "Niet-traumatische meniscusafwijking"
+ },
+ {
+   "IcpIcpcKode": "L97.03",
+   "IcpOmschrijving": "Instabiele knie"
+ },
+ {
+   "IcpIcpcKode": "L97.04",
+   "IcpOmschrijving": "Corpus liberum knie"
+ },
+ {
+   "IcpIcpcKode": "L98",
+   "IcpOmschrijving": "Verworven afwijking(en) extremiteiten"
+ },
+ {
+   "IcpIcpcKode": "L98.01",
+   "IcpOmschrijving": "Mallet-vinger"
+ },
+ {
+   "IcpIcpcKode": "L98.02",
+   "IcpOmschrijving": "Pes planus"
+ },
+ {
+   "IcpIcpcKode": "L98.03",
+   "IcpOmschrijving": "Hallux valgus"
+ },
+ {
+   "IcpIcpcKode": "L98.04",
+   "IcpOmschrijving": "Hamerteen"
+ },
+ {
+   "IcpIcpcKode": "L98.05",
+   "IcpOmschrijving": "Beenlengteverschil"
+ },
+ {
+   "IcpIcpcKode": "L99",
+   "IcpOmschrijving": "Andere ziekte(n) bewegingsapparaat"
+ },
+ {
+   "IcpIcpcKode": "L99.01",
+   "IcpOmschrijving": "Bursitis [ex. L92]"
+ },
+ {
+   "IcpIcpcKode": "L99.02",
+   "IcpOmschrijving": "Tendovaginitis/tendinitis"
+ },
+ {
+   "IcpIcpcKode": "L99.03",
+   "IcpOmschrijving": "Contractuur van Dupuytren"
+ },
+ {
+   "IcpIcpcKode": "L99.04",
+   "IcpOmschrijving": "Trigger finger"
+ },
+ {
+   "IcpIcpcKode": "L99.05",
+   "IcpOmschrijving": "Epicondylitis medialis"
+ },
+ {
+   "IcpIcpcKode": "L99.06",
+   "IcpOmschrijving": "Syndroom van Tietze"
+ },
+ {
+   "IcpIcpcKode": "L99.07",
+   "IcpOmschrijving": "Retropatellaire chondropathie /patellofemoraal syn"
+ },
+ {
+   "IcpIcpcKode": "L99.08",
+   "IcpOmschrijving": "Hielspoor/fasciitis plantaris"
+ },
+ {
+   "IcpIcpcKode": "L99.09",
+   "IcpOmschrijving": "Hyperlaxiteit"
+ },
+ {
+   "IcpIcpcKode": "L99.10",
+   "IcpOmschrijving": "Corpus liberum gewricht [ex. L97]"
+ },
+ {
+   "IcpIcpcKode": "L99.11",
+   "IcpOmschrijving": "Pseudartrose"
+ },
+ {
+   "IcpIcpcKode": "L99.12",
+   "IcpOmschrijving": "Polymyalgia reumatica"
+ },
+ {
+   "IcpIcpcKode": "N01",
+   "IcpOmschrijving": "Hoofdpijn [ex. N02,N89,R09]"
+ },
+ {
+   "IcpIcpcKode": "N01.01",
+   "IcpOmschrijving": "Geneesmiddel geïnduceerde hoofdpijn"
+ },
+ {
+   "IcpIcpcKode": "N02",
+   "IcpOmschrijving": "Spanningshoofdpijn"
+ },
+ {
+   "IcpIcpcKode": "N03",
+   "IcpOmschrijving": "Aangezichtspijn"
+ },
+ {
+   "IcpIcpcKode": "N04",
+   "IcpOmschrijving": "Restless legs"
+ },
+ {
+   "IcpIcpcKode": "N05",
+   "IcpOmschrijving": "Tintelen vingers/voeten/tenen"
+ },
+ {
+   "IcpIcpcKode": "N06",
+   "IcpOmschrijving": "Andere sensibiliteitstoornis/onwillekeurige bewegi"
+ },
+ {
+   "IcpIcpcKode": "N06.01",
+   "IcpOmschrijving": "Onwillekeurige bewegingen"
+ },
+ {
+   "IcpIcpcKode": "N07",
+   "IcpOmschrijving": "Convulsies/stuipen (inclusief koorts-)"
+ },
+ {
+   "IcpIcpcKode": "N07.01",
+   "IcpOmschrijving": "Koortsstuipen"
+ },
+ {
+   "IcpIcpcKode": "N16",
+   "IcpOmschrijving": "Andere afwijking(en) reuk/smaak"
+ },
+ {
+   "IcpIcpcKode": "N17",
+   "IcpOmschrijving": "Vertigo/duizeligheid [ex. H82]"
+ },
+ {
+   "IcpIcpcKode": "N17.01",
+   "IcpOmschrijving": "Draaiduizeligheid"
+ },
+ {
+   "IcpIcpcKode": "N17.02",
+   "IcpOmschrijving": "Licht in het hoofd"
+ },
+ {
+   "IcpIcpcKode": "N18",
+   "IcpOmschrijving": "Verlamming/krachtverlies [ex. A04]"
+ },
+ {
+   "IcpIcpcKode": "N19",
+   "IcpOmschrijving": "Spraak-/fonatiestoornis"
+ },
+ {
+   "IcpIcpcKode": "N26",
+   "IcpOmschrijving": "Angst voor kanker zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N27",
+   "IcpOmschrijving": "Angst voor andere ziekte zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N28",
+   "IcpOmschrijving": "Functiebeperking/handicap zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N29",
+   "IcpOmschrijving": "Andere symptomen/klachten zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "N31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "N32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "N33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "N34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "N35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "N36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "N37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "N38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "N39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "N40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "N41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "N42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "N43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "N44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "N45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "N46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "N47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "N48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "N49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "N50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "N51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie N53]"
+ },
+ {
+   "IcpIcpcKode": "N52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "N53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "N54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "N55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "N56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "N57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "N58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "N59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "N60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "N61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "N62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "N63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "N64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "N65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "N66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "N67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "N68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "N69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "N70",
+   "IcpOmschrijving": "Poliomyelitis/andere enterovirus infectie"
+ },
+ {
+   "IcpIcpcKode": "N70.01",
+   "IcpOmschrijving": "Poliomyelitis acuta"
+ },
+ {
+   "IcpIcpcKode": "N70.02",
+   "IcpOmschrijving": "Slow-virus infectie zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N71",
+   "IcpOmschrijving": "Meningitis/encephalitis"
+ },
+ {
+   "IcpIcpcKode": "N71.01",
+   "IcpOmschrijving": "Bacteriële meningitis"
+ },
+ {
+   "IcpIcpcKode": "N71.02",
+   "IcpOmschrijving": "Virale meningitis"
+ },
+ {
+   "IcpIcpcKode": "N71.03",
+   "IcpOmschrijving": "Encephalitis"
+ },
+ {
+   "IcpIcpcKode": "N71.04",
+   "IcpOmschrijving": "Myelitis"
+ },
+ {
+   "IcpIcpcKode": "N72",
+   "IcpOmschrijving": "Tetanus"
+ },
+ {
+   "IcpIcpcKode": "N73",
+   "IcpOmschrijving": "Andere infectieziekte(n) zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N74",
+   "IcpOmschrijving": "Maligniteit zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N75",
+   "IcpOmschrijving": "Benigne neoplasma zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N76",
+   "IcpOmschrijving": "Niet-gespecificeerd neoplasma zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N79",
+   "IcpOmschrijving": "Hersenschudding"
+ },
+ {
+   "IcpIcpcKode": "N80",
+   "IcpOmschrijving": "Ander letsel hoofd [ex. L76]"
+ },
+ {
+   "IcpIcpcKode": "N80.01",
+   "IcpOmschrijving": "Posttraumatisch extraduraal hematoom"
+ },
+ {
+   "IcpIcpcKode": "N80.02",
+   "IcpOmschrijving": "Posttraumatisch subduraal hematoom"
+ },
+ {
+   "IcpIcpcKode": "N80.03",
+   "IcpOmschrijving": "Posttraumatisch intracerebraal hematoom"
+ },
+ {
+   "IcpIcpcKode": "N80.04",
+   "IcpOmschrijving": "Contusio cerebri"
+ },
+ {
+   "IcpIcpcKode": "N81",
+   "IcpOmschrijving": "Ander letsel zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N85",
+   "IcpOmschrijving": "Aangeboren afwijking(en) zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N85.01",
+   "IcpOmschrijving": "Spina bifida"
+ },
+ {
+   "IcpIcpcKode": "N85.02",
+   "IcpOmschrijving": "Hydrocephalus"
+ },
+ {
+   "IcpIcpcKode": "N86",
+   "IcpOmschrijving": "Multiple sclerose"
+ },
+ {
+   "IcpIcpcKode": "N87",
+   "IcpOmschrijving": "Parkinsonisme, ziekte van Parkinson"
+ },
+ {
+   "IcpIcpcKode": "N87.01",
+   "IcpOmschrijving": "Ziekte van Parkinson"
+ },
+ {
+   "IcpIcpcKode": "N88",
+   "IcpOmschrijving": "Epilepsie (alle vormen)"
+ },
+ {
+   "IcpIcpcKode": "N89",
+   "IcpOmschrijving": "Migraine"
+ },
+ {
+   "IcpIcpcKode": "N90",
+   "IcpOmschrijving": "Cluster headache"
+ },
+ {
+   "IcpIcpcKode": "N91",
+   "IcpOmschrijving": "Facialis parese/Bell's palsy"
+ },
+ {
+   "IcpIcpcKode": "N92",
+   "IcpOmschrijving": "Trigeminus neuralgie"
+ },
+ {
+   "IcpIcpcKode": "N93",
+   "IcpOmschrijving": "Carpale tunnelsyndroom"
+ },
+ {
+   "IcpIcpcKode": "N94",
+   "IcpOmschrijving": "Andere perifere neuritis/neuropathie"
+ },
+ {
+   "IcpIcpcKode": "N94.01",
+   "IcpOmschrijving": "Syndroom van Guillain-Barré"
+ },
+ {
+   "IcpIcpcKode": "N94.02",
+   "IcpOmschrijving": "Diabetische neuropathie"
+ },
+ {
+   "IcpIcpcKode": "N94.03",
+   "IcpOmschrijving": "Thoracic outlet syndroom"
+ },
+ {
+   "IcpIcpcKode": "N94.04",
+   "IcpOmschrijving": "Meralgia paresthetica"
+ },
+ {
+   "IcpIcpcKode": "N94.05",
+   "IcpOmschrijving": "Peroneusparalyse"
+ },
+ {
+   "IcpIcpcKode": "N94.06",
+   "IcpOmschrijving": "Metatarsalgie van Morton"
+ },
+ {
+   "IcpIcpcKode": "N94.07",
+   "IcpOmschrijving": "Fantoompijn"
+ },
+ {
+   "IcpIcpcKode": "N99",
+   "IcpOmschrijving": "Andere ziekte(n) zenuwstelsel"
+ },
+ {
+   "IcpIcpcKode": "N99.01",
+   "IcpOmschrijving": "ALS"
+ },
+ {
+   "IcpIcpcKode": "N99.02",
+   "IcpOmschrijving": "Myasthenia gravis"
+ },
+ {
+   "IcpIcpcKode": "N99.03",
+   "IcpOmschrijving": "Spierziekte"
+ },
+ {
+   "IcpIcpcKode": "P01",
+   "IcpOmschrijving": "Angstig/nerveus/gespannen gevoel"
+ },
+ {
+   "IcpIcpcKode": "P02",
+   "IcpOmschrijving": "Crisis/voorbijgaande stressreactie"
+ },
+ {
+   "IcpIcpcKode": "P02.01",
+   "IcpOmschrijving": "Post-traumatische stressstoornis"
+ },
+ {
+   "IcpIcpcKode": "P03",
+   "IcpOmschrijving": "Down/depressief gevoel"
+ },
+ {
+   "IcpIcpcKode": "P04",
+   "IcpOmschrijving": "Prikkelbaar/boos gevoel/gedrag"
+ },
+ {
+   "IcpIcpcKode": "P05",
+   "IcpOmschrijving": "Zich oud voelen/gedragen"
+ },
+ {
+   "IcpIcpcKode": "P06",
+   "IcpOmschrijving": "Slapeloosheid/andere slaapstoornis"
+ },
+ {
+   "IcpIcpcKode": "P06.01",
+   "IcpOmschrijving": "Slaapapnoesyndroom"
+ },
+ {
+   "IcpIcpcKode": "P07",
+   "IcpOmschrijving": "Libido verlies/vermindering"
+ },
+ {
+   "IcpIcpcKode": "P08",
+   "IcpOmschrijving": "Seksuele bevrediging verlies/vermindering"
+ },
+ {
+   "IcpIcpcKode": "P08.01",
+   "IcpOmschrijving": "Impotentie"
+ },
+ {
+   "IcpIcpcKode": "P08.02",
+   "IcpOmschrijving": "Vaginisme"
+ },
+ {
+   "IcpIcpcKode": "P08.03",
+   "IcpOmschrijving": "Ejaculatio praecox"
+ },
+ {
+   "IcpIcpcKode": "P09",
+   "IcpOmschrijving": "Bezorgdheid over seksuele voorkeur"
+ },
+ {
+   "IcpIcpcKode": "P10",
+   "IcpOmschrijving": "Stamelen/stotteren/tics"
+ },
+ {
+   "IcpIcpcKode": "P10.01",
+   "IcpOmschrijving": "Stamelen/stotteren"
+ },
+ {
+   "IcpIcpcKode": "P10.02",
+   "IcpOmschrijving": "Tics/stereotypie"
+ },
+ {
+   "IcpIcpcKode": "P11",
+   "IcpOmschrijving": "Eetprobleem(en) bij kind"
+ },
+ {
+   "IcpIcpcKode": "P12",
+   "IcpOmschrijving": "Enuresis [ex. U04]"
+ },
+ {
+   "IcpIcpcKode": "P13",
+   "IcpOmschrijving": "Encopresis"
+ },
+ {
+   "IcpIcpcKode": "P15",
+   "IcpOmschrijving": "Chronisch alcoholmisbruik"
+ },
+ {
+   "IcpIcpcKode": "P15.01",
+   "IcpOmschrijving": "Alcoholisme"
+ },
+ {
+   "IcpIcpcKode": "P15.02",
+   "IcpOmschrijving": "Delirium tremens"
+ },
+ {
+   "IcpIcpcKode": "P15.03",
+   "IcpOmschrijving": "Syndroom van Wernicke-Korsakoff"
+ },
+ {
+   "IcpIcpcKode": "P15.05",
+   "IcpOmschrijving": "Problematisch alcoholgebruik"
+ },
+ {
+   "IcpIcpcKode": "P15.06",
+   "IcpOmschrijving": "Binge drinken"
+ },
+ {
+   "IcpIcpcKode": "P16",
+   "IcpOmschrijving": "Acuut alcohol misbruik/intoxicatie"
+ },
+ {
+   "IcpIcpcKode": "P17",
+   "IcpOmschrijving": "Tabaksmisbruik"
+ },
+ {
+   "IcpIcpcKode": "P18",
+   "IcpOmschrijving": "Geneesmiddelmisbruik"
+ },
+ {
+   "IcpIcpcKode": "P19",
+   "IcpOmschrijving": "Drugsmisbruik"
+ },
+ {
+   "IcpIcpcKode": "P19.01",
+   "IcpOmschrijving": "Misbruik/verslaving soft drugs"
+ },
+ {
+   "IcpIcpcKode": "P19.02",
+   "IcpOmschrijving": "Misbruik/verslaving hard drugs"
+ },
+ {
+   "IcpIcpcKode": "P20",
+   "IcpOmschrijving": "Geheugen-/concentratie-/oriëntatiestoornissen"
+ },
+ {
+   "IcpIcpcKode": "P21",
+   "IcpOmschrijving": "Overactief kind/hyperkinetisch syndroom"
+ },
+ {
+   "IcpIcpcKode": "P22",
+   "IcpOmschrijving": "Andere zorgen gedrag kind"
+ },
+ {
+   "IcpIcpcKode": "P23",
+   "IcpOmschrijving": "Andere zorgen gedrag adolescent"
+ },
+ {
+   "IcpIcpcKode": "P24",
+   "IcpOmschrijving": "Specifiek leerprobleem"
+ },
+ {
+   "IcpIcpcKode": "P24.01",
+   "IcpOmschrijving": "Dyslexie"
+ },
+ {
+   "IcpIcpcKode": "P24.02",
+   "IcpOmschrijving": "Specifieke taal-/spraakontwikkelingsstoornis"
+ },
+ {
+   "IcpIcpcKode": "P24.03",
+   "IcpOmschrijving": "Motorische ontwikkelingsstoornis"
+ },
+ {
+   "IcpIcpcKode": "P25",
+   "IcpOmschrijving": "Levensfaseprobleem volwassene"
+ },
+ {
+   "IcpIcpcKode": "P27",
+   "IcpOmschrijving": "Angst voor psychische ziekte"
+ },
+ {
+   "IcpIcpcKode": "P28",
+   "IcpOmschrijving": "Functiebeperking/handicap psychische ziekte"
+ },
+ {
+   "IcpIcpcKode": "P29",
+   "IcpOmschrijving": "Andere psychische symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "P30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "P31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "P32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "P33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "P34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "P35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "P36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "P37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "P38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "P39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "P40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "P41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "P42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "P43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "P44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "P45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "P46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "P47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "P48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "P49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "P50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "P51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie P53]"
+ },
+ {
+   "IcpIcpcKode": "P52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "P53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "P54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "P55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "P56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "P57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "P58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "P59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "P60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "P61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "P62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "P63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "P64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "P65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "P66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "P67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "P68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "P69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "P70",
+   "IcpOmschrijving": "Seniele dementie/Alzheimer"
+ },
+ {
+   "IcpIcpcKode": "P70.01",
+   "IcpOmschrijving": "Ziekte van Alzheimer"
+ },
+ {
+   "IcpIcpcKode": "P70.02",
+   "IcpOmschrijving": "Multi-infarct dementie"
+ },
+ {
+   "IcpIcpcKode": "P71",
+   "IcpOmschrijving": "Andere organische psychose(n)"
+ },
+ {
+   "IcpIcpcKode": "P71.04",
+   "IcpOmschrijving": "Delier [ex.P15.02]"
+ },
+ {
+   "IcpIcpcKode": "P72",
+   "IcpOmschrijving": "Schizofrenie"
+ },
+ {
+   "IcpIcpcKode": "P73",
+   "IcpOmschrijving": "Affectieve psychose"
+ },
+ {
+   "IcpIcpcKode": "P73.02",
+   "IcpOmschrijving": "Bipolaire stoornis"
+ },
+ {
+   "IcpIcpcKode": "P74",
+   "IcpOmschrijving": "Angststoornis/angsttoestand"
+ },
+ {
+   "IcpIcpcKode": "P74.01",
+   "IcpOmschrijving": "Paniekaanvallen/stoornis"
+ },
+ {
+   "IcpIcpcKode": "P74.02",
+   "IcpOmschrijving": "Gegeneraliseerde angststoornis"
+ },
+ {
+   "IcpIcpcKode": "P75",
+   "IcpOmschrijving": "Hysterie/hypochondrie"
+ },
+ {
+   "IcpIcpcKode": "P76",
+   "IcpOmschrijving": "Depressie"
+ },
+ {
+   "IcpIcpcKode": "P76.01",
+   "IcpOmschrijving": "Post-partum depressie"
+ },
+ {
+   "IcpIcpcKode": "P77",
+   "IcpOmschrijving": "Suïcidepoging"
+ },
+ {
+   "IcpIcpcKode": "P77.01",
+   "IcpOmschrijving": "Suïcidepoging"
+ },
+ {
+   "IcpIcpcKode": "P77.02",
+   "IcpOmschrijving": "Suïcide"
+ },
+ {
+   "IcpIcpcKode": "P78",
+   "IcpOmschrijving": "Neurasthenie/surmenage"
+ },
+ {
+   "IcpIcpcKode": "P79",
+   "IcpOmschrijving": "Andere neurose"
+ },
+ {
+   "IcpIcpcKode": "P79.01",
+   "IcpOmschrijving": "Fobie"
+ },
+ {
+   "IcpIcpcKode": "P79.02",
+   "IcpOmschrijving": "Dwangneurose"
+ },
+ {
+   "IcpIcpcKode": "P80",
+   "IcpOmschrijving": "Persoonlijkheids-/karakterstoornis"
+ },
+ {
+   "IcpIcpcKode": "P80.01",
+   "IcpOmschrijving": "Borderline persoonlijkheidsstoornis"
+ },
+ {
+   "IcpIcpcKode": "P80.02",
+   "IcpOmschrijving": "Gokverslaving"
+ },
+ {
+   "IcpIcpcKode": "P85",
+   "IcpOmschrijving": "Mentale retardatie/intellectuele achterstand"
+ },
+ {
+   "IcpIcpcKode": "P98",
+   "IcpOmschrijving": "Andere/niet gespecificeerde psychose(n)"
+ },
+ {
+   "IcpIcpcKode": "P99",
+   "IcpOmschrijving": "Andere psychische stoornissen"
+ },
+ {
+   "IcpIcpcKode": "R01",
+   "IcpOmschrijving": "Pijn toegeschreven aan luchtwegen [ex. R09]"
+ },
+ {
+   "IcpIcpcKode": "R02",
+   "IcpOmschrijving": "Dyspnoe/benauwdheid toegeschreven aan luchtwegen ["
+ },
+ {
+   "IcpIcpcKode": "R03",
+   "IcpOmschrijving": "Piepende ademhaling"
+ },
+ {
+   "IcpIcpcKode": "R04",
+   "IcpOmschrijving": "Andere problemen ademhaling"
+ },
+ {
+   "IcpIcpcKode": "R04.01",
+   "IcpOmschrijving": "Snurken"
+ },
+ {
+   "IcpIcpcKode": "R05",
+   "IcpOmschrijving": "Hoesten"
+ },
+ {
+   "IcpIcpcKode": "R06",
+   "IcpOmschrijving": "Epistaxis/neusbloeding"
+ },
+ {
+   "IcpIcpcKode": "R07",
+   "IcpOmschrijving": "Niezen/neusverstopping/loopneus"
+ },
+ {
+   "IcpIcpcKode": "R08",
+   "IcpOmschrijving": "Andere symptomen/klachten neus"
+ },
+ {
+   "IcpIcpcKode": "R09",
+   "IcpOmschrijving": "Symptomen/klachten sinussen (inclusief pijn)"
+ },
+ {
+   "IcpIcpcKode": "R21",
+   "IcpOmschrijving": "Symptomen/klachten keel"
+ },
+ {
+   "IcpIcpcKode": "R21.01",
+   "IcpOmschrijving": "Keelpijn"
+ },
+ {
+   "IcpIcpcKode": "R22",
+   "IcpOmschrijving": "Symptomen/klachten tonsillen"
+ },
+ {
+   "IcpIcpcKode": "R23",
+   "IcpOmschrijving": "Symptomen/klachten stem"
+ },
+ {
+   "IcpIcpcKode": "R24",
+   "IcpOmschrijving": "Haemoptoë"
+ },
+ {
+   "IcpIcpcKode": "R25",
+   "IcpOmschrijving": "Abnormaal sputum/slijm"
+ },
+ {
+   "IcpIcpcKode": "R26",
+   "IcpOmschrijving": "Angst voor kanker luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R27",
+   "IcpOmschrijving": "Angst voor andere ziekte luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R28",
+   "IcpOmschrijving": "Functiebeperking/handicap luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R29",
+   "IcpOmschrijving": "Andere symptomen/klachten luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R29.01",
+   "IcpOmschrijving": "Hikken"
+ },
+ {
+   "IcpIcpcKode": "R30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "R31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "R32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "R33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "R34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "R35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "R36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "R37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "R38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "R39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "R40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "R41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "R42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "R43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "R44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "R45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "R46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "R47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "R48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "R49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "R50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "R51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie R53]"
+ },
+ {
+   "IcpIcpcKode": "R52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "R53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "R54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "R55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "R56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "R57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "R58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "R59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "R60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "R61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "R62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "R63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "R64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "R65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "R66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "R67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "R68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "R69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "R70",
+   "IcpOmschrijving": "Tuberculose luchtwegen [ex. A70]"
+ },
+ {
+   "IcpIcpcKode": "R71",
+   "IcpOmschrijving": "Kinkhoest"
+ },
+ {
+   "IcpIcpcKode": "R72",
+   "IcpOmschrijving": "Streptokokken-angina/roodvonk"
+ },
+ {
+   "IcpIcpcKode": "R72.01",
+   "IcpOmschrijving": "Streptokokken-angina"
+ },
+ {
+   "IcpIcpcKode": "R72.02",
+   "IcpOmschrijving": "Roodvonk"
+ },
+ {
+   "IcpIcpcKode": "R73",
+   "IcpOmschrijving": "Furunkel/abces neus"
+ },
+ {
+   "IcpIcpcKode": "R74",
+   "IcpOmschrijving": "Acute infectie bovenste luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R74.01",
+   "IcpOmschrijving": "Gewone verkoudheid"
+ },
+ {
+   "IcpIcpcKode": "R74.02",
+   "IcpOmschrijving": "Acute pharyngitis"
+ },
+ {
+   "IcpIcpcKode": "R75",
+   "IcpOmschrijving": "Acute/chronische sinusitis"
+ },
+ {
+   "IcpIcpcKode": "R75.01",
+   "IcpOmschrijving": "Acute sinusitis"
+ },
+ {
+   "IcpIcpcKode": "R75.02",
+   "IcpOmschrijving": "Chronische sinusitis"
+ },
+ {
+   "IcpIcpcKode": "R76",
+   "IcpOmschrijving": "Acute tonsillitis/peritonsillair abces"
+ },
+ {
+   "IcpIcpcKode": "R76.01",
+   "IcpOmschrijving": "Acute tonsillitis"
+ },
+ {
+   "IcpIcpcKode": "R76.02",
+   "IcpOmschrijving": "Peritonsillair abces"
+ },
+ {
+   "IcpIcpcKode": "R77",
+   "IcpOmschrijving": "Acute laryngitis/tracheïtis"
+ },
+ {
+   "IcpIcpcKode": "R77.01",
+   "IcpOmschrijving": "Laryngitis subglottica/pseudocroup"
+ },
+ {
+   "IcpIcpcKode": "R77.02",
+   "IcpOmschrijving": "Acute epiglottitis"
+ },
+ {
+   "IcpIcpcKode": "R78",
+   "IcpOmschrijving": "Acute bronchitis/bronchiolitis"
+ },
+ {
+   "IcpIcpcKode": "R80",
+   "IcpOmschrijving": "Influenza [ex. R81]"
+ },
+ {
+   "IcpIcpcKode": "R81",
+   "IcpOmschrijving": "Pneumonie"
+ },
+ {
+   "IcpIcpcKode": "R81.01",
+   "IcpOmschrijving": "Legionella pneumonie"
+ },
+ {
+   "IcpIcpcKode": "R82",
+   "IcpOmschrijving": "Pleuritis alle vormen [ex. R70]"
+ },
+ {
+   "IcpIcpcKode": "R83",
+   "IcpOmschrijving": "Andere infectie(s) luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R83.01",
+   "IcpOmschrijving": "Difterie"
+ },
+ {
+   "IcpIcpcKode": "R83.02",
+   "IcpOmschrijving": "Sarcoïdosis"
+ },
+ {
+   "IcpIcpcKode": "R84",
+   "IcpOmschrijving": "Maligniteit bronchus/long"
+ },
+ {
+   "IcpIcpcKode": "R85",
+   "IcpOmschrijving": "Andere maligniteit luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R86",
+   "IcpOmschrijving": "Benigne neoplasma luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R87",
+   "IcpOmschrijving": "Corpus alienum neus/larynx/bronchiën"
+ },
+ {
+   "IcpIcpcKode": "R88",
+   "IcpOmschrijving": "Ander letsel luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R89",
+   "IcpOmschrijving": "Aangeboren afwijking(en) luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R90",
+   "IcpOmschrijving": "Hypertrofie/chronische infectie tonsillen/adenoïd"
+ },
+ {
+   "IcpIcpcKode": "R91",
+   "IcpOmschrijving": "Chronische bronchitis/bronchiëctasieën"
+ },
+ {
+   "IcpIcpcKode": "R91.01",
+   "IcpOmschrijving": "Chronische bronchitis"
+ },
+ {
+   "IcpIcpcKode": "R91.02",
+   "IcpOmschrijving": "Bronchiëctasieën"
+ },
+ {
+   "IcpIcpcKode": "R93",
+   "IcpOmschrijving": "Pleuravocht"
+ },
+ {
+   "IcpIcpcKode": "R95",
+   "IcpOmschrijving": "Emfyseem/COPD"
+ },
+ {
+   "IcpIcpcKode": "R96",
+   "IcpOmschrijving": "Astma"
+ },
+ {
+   "IcpIcpcKode": "R96.01",
+   "IcpOmschrijving": "Hyperreactiviteit luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R96.02",
+   "IcpOmschrijving": "Allergisch astma"
+ },
+ {
+   "IcpIcpcKode": "R97",
+   "IcpOmschrijving": "Hooikoorts/allergische rhinitis"
+ },
+ {
+   "IcpIcpcKode": "R98",
+   "IcpOmschrijving": "Hyperventilatie"
+ },
+ {
+   "IcpIcpcKode": "R99",
+   "IcpOmschrijving": "Andere ziekte(n) luchtwegen"
+ },
+ {
+   "IcpIcpcKode": "R99.01",
+   "IcpOmschrijving": "Neusseptumdeviatie"
+ },
+ {
+   "IcpIcpcKode": "R99.02",
+   "IcpOmschrijving": "Neuspoliep"
+ },
+ {
+   "IcpIcpcKode": "R99.03",
+   "IcpOmschrijving": "Stembandpoliep/stembandknobbeltjes [ex. R86]"
+ },
+ {
+   "IcpIcpcKode": "R99.04",
+   "IcpOmschrijving": "Pneumothorax"
+ },
+ {
+   "IcpIcpcKode": "R99.05",
+   "IcpOmschrijving": "Aspiratiepneumonie"
+ },
+ {
+   "IcpIcpcKode": "R99.06",
+   "IcpOmschrijving": "Pneumoconiose"
+ },
+ {
+   "IcpIcpcKode": "S01",
+   "IcpOmschrijving": "Pijn/gevoeligheid huid"
+ },
+ {
+   "IcpIcpcKode": "S02",
+   "IcpOmschrijving": "Pruritus/jeuk [ex. D05,X16]"
+ },
+ {
+   "IcpIcpcKode": "S03",
+   "IcpOmschrijving": "Wratten"
+ },
+ {
+   "IcpIcpcKode": "S04",
+   "IcpOmschrijving": "Lokale zwelling/papel/knobbel huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S05",
+   "IcpOmschrijving": "Multiple zwellingen/papels/knobbels huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S06",
+   "IcpOmschrijving": "Lokale roodheid/erytheem huid"
+ },
+ {
+   "IcpIcpcKode": "S07",
+   "IcpOmschrijving": "Gegeneraliseerde roodheid/erytheem huid"
+ },
+ {
+   "IcpIcpcKode": "S08",
+   "IcpOmschrijving": "Andere verandering(en) in kleur huid"
+ },
+ {
+   "IcpIcpcKode": "S09",
+   "IcpOmschrijving": "Lokale infectie vinger/teen/paronychia"
+ },
+ {
+   "IcpIcpcKode": "S09.01",
+   "IcpOmschrijving": "Paronychia"
+ },
+ {
+   "IcpIcpcKode": "S09.02",
+   "IcpOmschrijving": "Panaritium"
+ },
+ {
+   "IcpIcpcKode": "S10",
+   "IcpOmschrijving": "Furunkel/karbunkel/cellulitis lokaal"
+ },
+ {
+   "IcpIcpcKode": "S10.01",
+   "IcpOmschrijving": "Furunkel/karbunkel"
+ },
+ {
+   "IcpIcpcKode": "S10.02",
+   "IcpOmschrijving": "Furunculose"
+ },
+ {
+   "IcpIcpcKode": "S10.03",
+   "IcpOmschrijving": "Cellulitis [ex. S09]"
+ },
+ {
+   "IcpIcpcKode": "S11",
+   "IcpOmschrijving": "Andere lokale infectie(s) huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S11.01",
+   "IcpOmschrijving": "Folliculitis"
+ },
+ {
+   "IcpIcpcKode": "S12",
+   "IcpOmschrijving": "Beet/steek insekt"
+ },
+ {
+   "IcpIcpcKode": "S12.01",
+   "IcpOmschrijving": "Tekenbeet"
+ },
+ {
+   "IcpIcpcKode": "S13",
+   "IcpOmschrijving": "Beet mens/dier"
+ },
+ {
+   "IcpIcpcKode": "S14",
+   "IcpOmschrijving": "Brandwond/verbranding huid (elke graad)"
+ },
+ {
+   "IcpIcpcKode": "S15",
+   "IcpOmschrijving": "Corpus alienum huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S16",
+   "IcpOmschrijving": "Buil/kneuzing/contusie intacte huid"
+ },
+ {
+   "IcpIcpcKode": "S16.01",
+   "IcpOmschrijving": "Subunguaal hematoom"
+ },
+ {
+   "IcpIcpcKode": "S17",
+   "IcpOmschrijving": "Schaafwond/schram/blaar"
+ },
+ {
+   "IcpIcpcKode": "S18",
+   "IcpOmschrijving": "Scheurwond/snijwond"
+ },
+ {
+   "IcpIcpcKode": "S19",
+   "IcpOmschrijving": "Ander letsel van de huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S19.01",
+   "IcpOmschrijving": "Nagelluxatie"
+ },
+ {
+   "IcpIcpcKode": "S20",
+   "IcpOmschrijving": "Likdoorn(s)/eeltknobbel(s)"
+ },
+ {
+   "IcpIcpcKode": "S21",
+   "IcpOmschrijving": "Andere symptomen/klachten aspect huid"
+ },
+ {
+   "IcpIcpcKode": "S21.01",
+   "IcpOmschrijving": "Droge huid/schilferen"
+ },
+ {
+   "IcpIcpcKode": "S21.02",
+   "IcpOmschrijving": "Lichenificatie/induratie"
+ },
+ {
+   "IcpIcpcKode": "S22",
+   "IcpOmschrijving": "Symptomen/klachten nagels"
+ },
+ {
+   "IcpIcpcKode": "S23",
+   "IcpOmschrijving": "Haaruitval/alopecia"
+ },
+ {
+   "IcpIcpcKode": "S23.01",
+   "IcpOmschrijving": "Alopecia areata"
+ },
+ {
+   "IcpIcpcKode": "S23.02",
+   "IcpOmschrijving": "Alopecia androgenetica"
+ },
+ {
+   "IcpIcpcKode": "S24",
+   "IcpOmschrijving": "Andere symptomen/klachten haar"
+ },
+ {
+   "IcpIcpcKode": "S24.01",
+   "IcpOmschrijving": "Hirsutisme"
+ },
+ {
+   "IcpIcpcKode": "S24.02",
+   "IcpOmschrijving": "Verandering haarkleur"
+ },
+ {
+   "IcpIcpcKode": "S26",
+   "IcpOmschrijving": "Angst voor kanker huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S27",
+   "IcpOmschrijving": "Angst voor andere ziekte huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S28",
+   "IcpOmschrijving": "Functiebeperking/handicap huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S29",
+   "IcpOmschrijving": "Andere symptomen/klachten huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "S31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "S32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "S33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "S34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "S35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "S36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "S37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "S38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "S39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "S40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "S41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "S42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "S43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "S44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "S45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "S46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "S47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "S48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "S49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "S50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "S51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie S53]"
+ },
+ {
+   "IcpIcpcKode": "S52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "S53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "S54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "S55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "S56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "S57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "S58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "S59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "S60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "S61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "S62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "S63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "S64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "S65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "S66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "S67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "S68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "S69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "S70",
+   "IcpOmschrijving": "Herpes zoster"
+ },
+ {
+   "IcpIcpcKode": "S70.01",
+   "IcpOmschrijving": "Herpes zoster"
+ },
+ {
+   "IcpIcpcKode": "S70.02",
+   "IcpOmschrijving": "Post-herpetische neuralgie"
+ },
+ {
+   "IcpIcpcKode": "S71",
+   "IcpOmschrijving": "Herpes simplex [ex. F85,X90,Y72]"
+ },
+ {
+   "IcpIcpcKode": "S71.01",
+   "IcpOmschrijving": "Herpes labialis"
+ },
+ {
+   "IcpIcpcKode": "S72",
+   "IcpOmschrijving": "Scabies/andere aandoening door mijten"
+ },
+ {
+   "IcpIcpcKode": "S72.01",
+   "IcpOmschrijving": "Scabies"
+ },
+ {
+   "IcpIcpcKode": "S73",
+   "IcpOmschrijving": "Pediculosis/andere huidinfestatie"
+ },
+ {
+   "IcpIcpcKode": "S73.01",
+   "IcpOmschrijving": "Pediculosis capitis"
+ },
+ {
+   "IcpIcpcKode": "S73.02",
+   "IcpOmschrijving": "Pediculosis pubis"
+ },
+ {
+   "IcpIcpcKode": "S74",
+   "IcpOmschrijving": "Dermatomycose(n)"
+ },
+ {
+   "IcpIcpcKode": "S74.01",
+   "IcpOmschrijving": "Tinea pedis"
+ },
+ {
+   "IcpIcpcKode": "S74.02",
+   "IcpOmschrijving": "Onychomycose"
+ },
+ {
+   "IcpIcpcKode": "S74.03",
+   "IcpOmschrijving": "Pityriasis versicolor"
+ },
+ {
+   "IcpIcpcKode": "S75",
+   "IcpOmschrijving": "Moniliasis/candidiasis [ex. X72,Y75]"
+ },
+ {
+   "IcpIcpcKode": "S75.01",
+   "IcpOmschrijving": "Candidiasis mond/spruw"
+ },
+ {
+   "IcpIcpcKode": "S75.02",
+   "IcpOmschrijving": "Candidiasis nagels/nagelriemen"
+ },
+ {
+   "IcpIcpcKode": "S75.03",
+   "IcpOmschrijving": "Intertrigo/luiercandidiasis"
+ },
+ {
+   "IcpIcpcKode": "S76",
+   "IcpOmschrijving": "Andere infectie huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S76.01",
+   "IcpOmschrijving": "Erysipelas"
+ },
+ {
+   "IcpIcpcKode": "S76.02",
+   "IcpOmschrijving": "Erythrasma"
+ },
+ {
+   "IcpIcpcKode": "S77",
+   "IcpOmschrijving": "Maligniteit huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S77.01",
+   "IcpOmschrijving": "Basaalcelcarcinoom"
+ },
+ {
+   "IcpIcpcKode": "S77.02",
+   "IcpOmschrijving": "Spinocellulair/plaveiselcelcarcinoom"
+ },
+ {
+   "IcpIcpcKode": "S77.03",
+   "IcpOmschrijving": "Maligne melanoom"
+ },
+ {
+   "IcpIcpcKode": "S77.04",
+   "IcpOmschrijving": "Kaposi-sarcoom"
+ },
+ {
+   "IcpIcpcKode": "S78",
+   "IcpOmschrijving": "Lipoom"
+ },
+ {
+   "IcpIcpcKode": "S79",
+   "IcpOmschrijving": "Ander benigne neoplasma huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S79.01",
+   "IcpOmschrijving": "Dermatofibroom"
+ },
+ {
+   "IcpIcpcKode": "S80",
+   "IcpOmschrijving": "Ander/niet-gespecificeerd neoplasma huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S80.01",
+   "IcpOmschrijving": "Dysplastische naevus"
+ },
+ {
+   "IcpIcpcKode": "S81",
+   "IcpOmschrijving": "Hemangioom/lymfangioom"
+ },
+ {
+   "IcpIcpcKode": "S82",
+   "IcpOmschrijving": "Naevus/moedervlek"
+ },
+ {
+   "IcpIcpcKode": "S83",
+   "IcpOmschrijving": "Andere aangeboren afwijking(en) huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S83.01",
+   "IcpOmschrijving": "Naevus flammeus"
+ },
+ {
+   "IcpIcpcKode": "S83.02",
+   "IcpOmschrijving": "Aardbeinaevus"
+ },
+ {
+   "IcpIcpcKode": "S84",
+   "IcpOmschrijving": "Impetigo/impetiginisatie"
+ },
+ {
+   "IcpIcpcKode": "S85",
+   "IcpOmschrijving": "Pilonidaal cyste/fistel"
+ },
+ {
+   "IcpIcpcKode": "S86",
+   "IcpOmschrijving": "Seborroïsch eczeem/roos"
+ },
+ {
+   "IcpIcpcKode": "S86.01",
+   "IcpOmschrijving": "Hoofdroos"
+ },
+ {
+   "IcpIcpcKode": "S86.02",
+   "IcpOmschrijving": "Berg"
+ },
+ {
+   "IcpIcpcKode": "S87",
+   "IcpOmschrijving": "Constitutioneel eczeem"
+ },
+ {
+   "IcpIcpcKode": "S88",
+   "IcpOmschrijving": "Contact eczeem/ander eczeem"
+ },
+ {
+   "IcpIcpcKode": "S88.01",
+   "IcpOmschrijving": "Contacteczeem"
+ },
+ {
+   "IcpIcpcKode": "S88.02",
+   "IcpOmschrijving": "Dyshidrotisch eczeem"
+ },
+ {
+   "IcpIcpcKode": "S88.03",
+   "IcpOmschrijving": "Dermatitis bij lokale toediening geneesmiddel"
+ },
+ {
+   "IcpIcpcKode": "S88.04",
+   "IcpOmschrijving": "Zonneallergie/fotodermatose"
+ },
+ {
+   "IcpIcpcKode": "S89",
+   "IcpOmschrijving": "Luiereczeem"
+ },
+ {
+   "IcpIcpcKode": "S90",
+   "IcpOmschrijving": "Pityriasis rosea"
+ },
+ {
+   "IcpIcpcKode": "S91",
+   "IcpOmschrijving": "Psoriasis (met of zonder artropathie)"
+ },
+ {
+   "IcpIcpcKode": "S92",
+   "IcpOmschrijving": "Ziekte(n) zweetklieren"
+ },
+ {
+   "IcpIcpcKode": "S92.01",
+   "IcpOmschrijving": "Anhidrosis/dyshidrosis"
+ },
+ {
+   "IcpIcpcKode": "S92.02",
+   "IcpOmschrijving": "Hidradenitis"
+ },
+ {
+   "IcpIcpcKode": "S93",
+   "IcpOmschrijving": "Atheroomcyste/epitheelcyste"
+ },
+ {
+   "IcpIcpcKode": "S93.01",
+   "IcpOmschrijving": "Atheroomcyste"
+ },
+ {
+   "IcpIcpcKode": "S93.02",
+   "IcpOmschrijving": "Epitheelcyste"
+ },
+ {
+   "IcpIcpcKode": "S94",
+   "IcpOmschrijving": "Unguis incarnatus/andere nagelaandoening"
+ },
+ {
+   "IcpIcpcKode": "S94.01",
+   "IcpOmschrijving": "Unguis incarnatus"
+ },
+ {
+   "IcpIcpcKode": "S94.02",
+   "IcpOmschrijving": "Onychogryposis"
+ },
+ {
+   "IcpIcpcKode": "S95",
+   "IcpOmschrijving": "Mollusca contagiosa"
+ },
+ {
+   "IcpIcpcKode": "S96",
+   "IcpOmschrijving": "Acne"
+ },
+ {
+   "IcpIcpcKode": "S96.01",
+   "IcpOmschrijving": "Acne vulgaris"
+ },
+ {
+   "IcpIcpcKode": "S96.02",
+   "IcpOmschrijving": "Acne conglobata"
+ },
+ {
+   "IcpIcpcKode": "S97",
+   "IcpOmschrijving": "Ulcus cruris/decubitus/chronisch ulcus"
+ },
+ {
+   "IcpIcpcKode": "S97.01",
+   "IcpOmschrijving": "Ulcus cruris"
+ },
+ {
+   "IcpIcpcKode": "S97.02",
+   "IcpOmschrijving": "Decubitus"
+ },
+ {
+   "IcpIcpcKode": "S98",
+   "IcpOmschrijving": "Urticaria"
+ },
+ {
+   "IcpIcpcKode": "S99",
+   "IcpOmschrijving": "Andere ziekte(n) huid/subcutis"
+ },
+ {
+   "IcpIcpcKode": "S99.01",
+   "IcpOmschrijving": "Granuloma pyogenicum/teleangiectaticum"
+ },
+ {
+   "IcpIcpcKode": "S99.02",
+   "IcpOmschrijving": "Verruca seborroica"
+ },
+ {
+   "IcpIcpcKode": "S99.03",
+   "IcpOmschrijving": "Rosacea"
+ },
+ {
+   "IcpIcpcKode": "S99.04",
+   "IcpOmschrijving": "Vitiligo"
+ },
+ {
+   "IcpIcpcKode": "S99.05",
+   "IcpOmschrijving": "Discoïde lupus erythematodes"
+ },
+ {
+   "IcpIcpcKode": "S99.06",
+   "IcpOmschrijving": "Lichen planus"
+ },
+ {
+   "IcpIcpcKode": "S99.07",
+   "IcpOmschrijving": "Striae"
+ },
+ {
+   "IcpIcpcKode": "S99.08",
+   "IcpOmschrijving": "Erythema nodosum"
+ },
+ {
+   "IcpIcpcKode": "S99.09",
+   "IcpOmschrijving": "Keloïd"
+ },
+ {
+   "IcpIcpcKode": "S99.10",
+   "IcpOmschrijving": "Keratoacanthoom"
+ },
+ {
+   "IcpIcpcKode": "T01",
+   "IcpOmschrijving": "Overmatige dorst"
+ },
+ {
+   "IcpIcpcKode": "T02",
+   "IcpOmschrijving": "Overmatige eetlust"
+ },
+ {
+   "IcpIcpcKode": "T03",
+   "IcpOmschrijving": "Verminderde eetlust"
+ },
+ {
+   "IcpIcpcKode": "T04",
+   "IcpOmschrijving": "Voedingsprobleem zuigeling/kind [ex. P11]"
+ },
+ {
+   "IcpIcpcKode": "T05",
+   "IcpOmschrijving": "Voedingsprobleem volwassene [ex. T06]"
+ },
+ {
+   "IcpIcpcKode": "T06",
+   "IcpOmschrijving": "Anorexia nervosa/boulimie"
+ },
+ {
+   "IcpIcpcKode": "T06.01",
+   "IcpOmschrijving": "Anorexia nervosa"
+ },
+ {
+   "IcpIcpcKode": "T06.02",
+   "IcpOmschrijving": "Boulimie"
+ },
+ {
+   "IcpIcpcKode": "T07",
+   "IcpOmschrijving": "Gewichtstoename"
+ },
+ {
+   "IcpIcpcKode": "T08",
+   "IcpOmschrijving": "Gewichtsverlies"
+ },
+ {
+   "IcpIcpcKode": "T10",
+   "IcpOmschrijving": "Achterblijven verwachte fysiologische ontwikkeling"
+ },
+ {
+   "IcpIcpcKode": "T11",
+   "IcpOmschrijving": "Dehydratie"
+ },
+ {
+   "IcpIcpcKode": "T15",
+   "IcpOmschrijving": "Knobbel/zwelling schildklier"
+ },
+ {
+   "IcpIcpcKode": "T26",
+   "IcpOmschrijving": "Angst voor kanker endocriene klieren"
+ },
+ {
+   "IcpIcpcKode": "T27",
+   "IcpOmschrijving": "Angst andere ziekte endocriene klieren/metabolisme"
+ },
+ {
+   "IcpIcpcKode": "T28",
+   "IcpOmschrijving": "Funct.beperking/handicap endocr. klieren/metabolis"
+ },
+ {
+   "IcpIcpcKode": "T29",
+   "IcpOmschrijving": "And. sympt./klacht. endocr. klieren/metabolisme/vo"
+ },
+ {
+   "IcpIcpcKode": "T30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "T31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "T32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "T33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "T34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "T35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "T36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "T37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "T38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "T39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "T40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "T41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "T42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "T43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "T44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "T45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "T46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "T47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "T48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "T49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "T50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "T51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie T53]"
+ },
+ {
+   "IcpIcpcKode": "T52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "T53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "T54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "T55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "T56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "T57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "T58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "T59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "T60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "T61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "T62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "T63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "T64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "T65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "T66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "T67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "T68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "T69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "T70",
+   "IcpOmschrijving": "Infectie endocriene klier(en)"
+ },
+ {
+   "IcpIcpcKode": "T71",
+   "IcpOmschrijving": "Maligniteit schildklier"
+ },
+ {
+   "IcpIcpcKode": "T72",
+   "IcpOmschrijving": "Benigne neoplasma schildklier"
+ },
+ {
+   "IcpIcpcKode": "T73",
+   "IcpOmschrijving": "Ander/niet-gespecificeerd neoplasma endocriene kli"
+ },
+ {
+   "IcpIcpcKode": "T78",
+   "IcpOmschrijving": "Persisterende ductus thyreoglossus/cyste"
+ },
+ {
+   "IcpIcpcKode": "T80",
+   "IcpOmschrijving": "Andere aangeboren afwijking endocriene klieren/met"
+ },
+ {
+   "IcpIcpcKode": "T81",
+   "IcpOmschrijving": "Struma/noduli [ex. T85,T86]"
+ },
+ {
+   "IcpIcpcKode": "T82",
+   "IcpOmschrijving": "Adipositas"
+ },
+ {
+   "IcpIcpcKode": "T83",
+   "IcpOmschrijving": "Overgewicht"
+ },
+ {
+   "IcpIcpcKode": "T85",
+   "IcpOmschrijving": "Hyperthyreoïdie/thyreotoxicose"
+ },
+ {
+   "IcpIcpcKode": "T86",
+   "IcpOmschrijving": "Hypothyreoïdie/myxoedeem"
+ },
+ {
+   "IcpIcpcKode": "T87",
+   "IcpOmschrijving": "Hypoglykemie"
+ },
+ {
+   "IcpIcpcKode": "T88",
+   "IcpOmschrijving": "Renale glucosurie"
+ },
+ {
+   "IcpIcpcKode": "T90",
+   "IcpOmschrijving": "Diabetes mellitus"
+ },
+ {
+   "IcpIcpcKode": "T90.01",
+   "IcpOmschrijving": "Diabetes mellitus type 1"
+ },
+ {
+   "IcpIcpcKode": "T90.02",
+   "IcpOmschrijving": "Diabetes mellitus type 2"
+ },
+ {
+   "IcpIcpcKode": "T90.80",
+   "IcpOmschrijving": "test T90.06"
+ },
+ {
+   "IcpIcpcKode": "T91",
+   "IcpOmschrijving": "Vitamine-/voedingsdeficiëntie(s)"
+ },
+ {
+   "IcpIcpcKode": "T91.01",
+   "IcpOmschrijving": "Vitaminedeficiëntie"
+ },
+ {
+   "IcpIcpcKode": "T92",
+   "IcpOmschrijving": "Jicht"
+ },
+ {
+   "IcpIcpcKode": "T93",
+   "IcpOmschrijving": "Vetstofwisselingsstoornis(sen)"
+ },
+ {
+   "IcpIcpcKode": "T93.01",
+   "IcpOmschrijving": "Hypercholesterolemie"
+ },
+ {
+   "IcpIcpcKode": "T93.02",
+   "IcpOmschrijving": "Hypertriglyceridemie"
+ },
+ {
+   "IcpIcpcKode": "T93.03",
+   "IcpOmschrijving": "Gemengde hyperlipidemie"
+ },
+ {
+   "IcpIcpcKode": "T93.04",
+   "IcpOmschrijving": "Familiaire hypercholesterolemie/lipidemie"
+ },
+ {
+   "IcpIcpcKode": "T99",
+   "IcpOmschrijving": "Andere ziekte(n) endocriene klieren/metabolisme/vo"
+ },
+ {
+   "IcpIcpcKode": "T99.01",
+   "IcpOmschrijving": "Immuundeficiëntie"
+ },
+ {
+   "IcpIcpcKode": "T99.02",
+   "IcpOmschrijving": "Thyreoïditis"
+ },
+ {
+   "IcpIcpcKode": "T99.03",
+   "IcpOmschrijving": "Lactose-intolerantie"
+ },
+ {
+   "IcpIcpcKode": "T99.04",
+   "IcpOmschrijving": "Hyperhomocysteïnemie"
+ },
+ {
+   "IcpIcpcKode": "T99.05",
+   "IcpOmschrijving": "Pubertas praecox"
+ },
+ {
+   "IcpIcpcKode": "T99.06",
+   "IcpOmschrijving": "Polycysteus ovariumsyndroom"
+ },
+ {
+   "IcpIcpcKode": "T99.07",
+   "IcpOmschrijving": "Premature menopauze"
+ },
+ {
+   "IcpIcpcKode": "T99.08",
+   "IcpOmschrijving": "Syndroom van Cushing"
+ },
+ {
+   "IcpIcpcKode": "T99.09",
+   "IcpOmschrijving": "Syndroom van Addison"
+ },
+ {
+   "IcpIcpcKode": "T99.10",
+   "IcpOmschrijving": "Cystic fibrosis"
+ },
+ {
+   "IcpIcpcKode": "T99.11",
+   "IcpOmschrijving": "Porfyrie"
+ },
+ {
+   "IcpIcpcKode": "U01",
+   "IcpOmschrijving": "Pijnlijke mictie"
+ },
+ {
+   "IcpIcpcKode": "U02",
+   "IcpOmschrijving": "Frequente mictie/aandrang"
+ },
+ {
+   "IcpIcpcKode": "U04",
+   "IcpOmschrijving": "Urine-incontinentie [ex. P12]"
+ },
+ {
+   "IcpIcpcKode": "U04.01",
+   "IcpOmschrijving": "Stress-incontinentie"
+ },
+ {
+   "IcpIcpcKode": "U04.02",
+   "IcpOmschrijving": "Urge-incontinentie"
+ },
+ {
+   "IcpIcpcKode": "U04.03",
+   "IcpOmschrijving": "Gemengde incontinentie"
+ },
+ {
+   "IcpIcpcKode": "U05",
+   "IcpOmschrijving": "Ander mictieprobleem"
+ },
+ {
+   "IcpIcpcKode": "U05.01",
+   "IcpOmschrijving": "Oligurie/anurie"
+ },
+ {
+   "IcpIcpcKode": "U05.02",
+   "IcpOmschrijving": "Urineretentie"
+ },
+ {
+   "IcpIcpcKode": "U06",
+   "IcpOmschrijving": "Hematurie"
+ },
+ {
+   "IcpIcpcKode": "U07",
+   "IcpOmschrijving": "Andere symptomen/klachten urine"
+ },
+ {
+   "IcpIcpcKode": "U13",
+   "IcpOmschrijving": "Andere symptomen/klachten blaas"
+ },
+ {
+   "IcpIcpcKode": "U14",
+   "IcpOmschrijving": "Symptomen/klachten nieren"
+ },
+ {
+   "IcpIcpcKode": "U14.01",
+   "IcpOmschrijving": "Nierkoliek"
+ },
+ {
+   "IcpIcpcKode": "U26",
+   "IcpOmschrijving": "Angst voor kanker urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U27",
+   "IcpOmschrijving": "Angst voor andere ziekte urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U28",
+   "IcpOmschrijving": "Functiebeperking/handicap urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U29",
+   "IcpOmschrijving": "Andere symptomen/klachten urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "U31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "U32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "U33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "U34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "U35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "U36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "U37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "U38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "U39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "U40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "U41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "U42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "U43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "U44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "U45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "U46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "U47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "U48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "U49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "U50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "U51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie U53]"
+ },
+ {
+   "IcpIcpcKode": "U52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "U53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "U54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "U55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "U56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "U57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "U58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "U59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "U60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "U61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "U62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "U63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "U64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "U65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "U66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "U67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "U68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "U69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "U70",
+   "IcpOmschrijving": "Acute pyelonephritis/pyelitis"
+ },
+ {
+   "IcpIcpcKode": "U71",
+   "IcpOmschrijving": "Cystitis/urineweginfectie"
+ },
+ {
+   "IcpIcpcKode": "U71.01",
+   "IcpOmschrijving": "Cystitis"
+ },
+ {
+   "IcpIcpcKode": "U71.02",
+   "IcpOmschrijving": "Urineweginfectie neg [ex. venerisch]"
+ },
+ {
+   "IcpIcpcKode": "U72",
+   "IcpOmschrijving": "Niet specifieke urethritis [ex. X99,Y99]"
+ },
+ {
+   "IcpIcpcKode": "U75",
+   "IcpOmschrijving": "Maligniteit nier"
+ },
+ {
+   "IcpIcpcKode": "U76",
+   "IcpOmschrijving": "Maligniteit blaas"
+ },
+ {
+   "IcpIcpcKode": "U77",
+   "IcpOmschrijving": "Andere maligniteit urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U78",
+   "IcpOmschrijving": "Benigne neoplasma urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U78.01",
+   "IcpOmschrijving": "Poliep blaas"
+ },
+ {
+   "IcpIcpcKode": "U79",
+   "IcpOmschrijving": "Niet-gespecificeerd neoplasma urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U80",
+   "IcpOmschrijving": "Letsel urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U80.01",
+   "IcpOmschrijving": "Subcapsulair nierhematoom/niercontusie"
+ },
+ {
+   "IcpIcpcKode": "U80.02",
+   "IcpOmschrijving": "Corpus alienum urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U85",
+   "IcpOmschrijving": "Aangeboren afwijking(en) urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U85.01",
+   "IcpOmschrijving": "Polycystische nieren"
+ },
+ {
+   "IcpIcpcKode": "U88",
+   "IcpOmschrijving": "Glomerulonephritis/nefrose"
+ },
+ {
+   "IcpIcpcKode": "U90",
+   "IcpOmschrijving": "Orthostatische proteïnurie"
+ },
+ {
+   "IcpIcpcKode": "U95",
+   "IcpOmschrijving": "Urolithiasis (alle vormen/lokalisaties)"
+ },
+ {
+   "IcpIcpcKode": "U98",
+   "IcpOmschrijving": "Afwijkende uitslag urine-onderzoek"
+ },
+ {
+   "IcpIcpcKode": "U98.01",
+   "IcpOmschrijving": "Proteïnurie"
+ },
+ {
+   "IcpIcpcKode": "U98.02",
+   "IcpOmschrijving": "Glucosurie"
+ },
+ {
+   "IcpIcpcKode": "U99",
+   "IcpOmschrijving": "Andere ziekte(n) urinewegen"
+ },
+ {
+   "IcpIcpcKode": "U99.01",
+   "IcpOmschrijving": "Nierfunctiestoornis/nierinsufficiëntie"
+ },
+ {
+   "IcpIcpcKode": "U99.02",
+   "IcpOmschrijving": "Schrompelnier/nierhypoplasie eci"
+ },
+ {
+   "IcpIcpcKode": "U99.03",
+   "IcpOmschrijving": "Obstructieve en reflux-uropathie/hydronefrose"
+ },
+ {
+   "IcpIcpcKode": "U99.04",
+   "IcpOmschrijving": "Urethrastrictuur"
+ },
+ {
+   "IcpIcpcKode": "W01",
+   "IcpOmschrijving": "Vraag bestaan zwangerschap [ex. W02]"
+ },
+ {
+   "IcpIcpcKode": "W02",
+   "IcpOmschrijving": "Angst zwanger te zijn"
+ },
+ {
+   "IcpIcpcKode": "W03",
+   "IcpOmschrijving": "Bloedverlies tijdens zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W03.01",
+   "IcpOmschrijving": "Bloedverlies eerste trimester"
+ },
+ {
+   "IcpIcpcKode": "W03.02",
+   "IcpOmschrijving": "Bloedverlies tweede/derde trimester"
+ },
+ {
+   "IcpIcpcKode": "W05",
+   "IcpOmschrijving": "Misselijkheid/braken in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W05.01",
+   "IcpOmschrijving": "Hyperemesis gravidarum"
+ },
+ {
+   "IcpIcpcKode": "W10",
+   "IcpOmschrijving": "Morning after pil/postcoïtale anticonceptie"
+ },
+ {
+   "IcpIcpcKode": "W10.01",
+   "IcpOmschrijving": "Morning after pil"
+ },
+ {
+   "IcpIcpcKode": "W10.02",
+   "IcpOmschrijving": "Morning after spiraal"
+ },
+ {
+   "IcpIcpcKode": "W11",
+   "IcpOmschrijving": "Anticonceptie: orale anticonceptie"
+ },
+ {
+   "IcpIcpcKode": "W12",
+   "IcpOmschrijving": "Anticonceptie: IUD"
+ },
+ {
+   "IcpIcpcKode": "W13",
+   "IcpOmschrijving": "Sterilisatie vrouw"
+ },
+ {
+   "IcpIcpcKode": "W14",
+   "IcpOmschrijving": "Andere anticonceptie vrouw"
+ },
+ {
+   "IcpIcpcKode": "W14.01",
+   "IcpOmschrijving": "Pessarium occlusivum"
+ },
+ {
+   "IcpIcpcKode": "W14.02",
+   "IcpOmschrijving": "Prikpil"
+ },
+ {
+   "IcpIcpcKode": "W15",
+   "IcpOmschrijving": "Sub-/infertiliteit vrouw"
+ },
+ {
+   "IcpIcpcKode": "W17",
+   "IcpOmschrijving": "Hevig bloedverlies post-partum"
+ },
+ {
+   "IcpIcpcKode": "W18",
+   "IcpOmschrijving": "Andere klachten post-partum/kraambed"
+ },
+ {
+   "IcpIcpcKode": "W18.01",
+   "IcpOmschrijving": "Riekende/overvloedige lochia"
+ },
+ {
+   "IcpIcpcKode": "W19",
+   "IcpOmschrijving": "Symptomen/klachten borstvoeding"
+ },
+ {
+   "IcpIcpcKode": "W20",
+   "IcpOmschrijving": "Andere symptomen/klachten borsten zwangerschap/kra"
+ },
+ {
+   "IcpIcpcKode": "W27",
+   "IcpOmschrijving": "Angst voor complicaties zwangerschap/bevalling"
+ },
+ {
+   "IcpIcpcKode": "W28",
+   "IcpOmschrijving": "Functiebeperking/handicap ten gevolge van zwangers"
+ },
+ {
+   "IcpIcpcKode": "W28.01",
+   "IcpOmschrijving": "Bekkeninstabiliteit"
+ },
+ {
+   "IcpIcpcKode": "W29",
+   "IcpOmschrijving": "And. sympt./klacht. zwangersch./beval./kraamb./ant"
+ },
+ {
+   "IcpIcpcKode": "W29.01",
+   "IcpOmschrijving": "Minder leven voelen"
+ },
+ {
+   "IcpIcpcKode": "W29.02",
+   "IcpOmschrijving": "Bezorgd/ontevreden over uiterlijk tijdens zwangers"
+ },
+ {
+   "IcpIcpcKode": "W30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "W31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "W32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "W33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "W34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "W35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "W36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "W37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "W38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "W39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "W40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "W41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "W42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "W43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "W44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "W45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "W46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "W47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "W48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "W49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "W50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "W51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie W53]"
+ },
+ {
+   "IcpIcpcKode": "W52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "W53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "W54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "W55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "W56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "W57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "W58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "W59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "W60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "W61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "W62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "W63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "W64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "W65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "W66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "W67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "W68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "W69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "W70",
+   "IcpOmschrijving": "Puerperale infectie/sepsis"
+ },
+ {
+   "IcpIcpcKode": "W70.01",
+   "IcpOmschrijving": "Endometritis puerperalis"
+ },
+ {
+   "IcpIcpcKode": "W70.02",
+   "IcpOmschrijving": "Geïnfecteerde perineumwond"
+ },
+ {
+   "IcpIcpcKode": "W71",
+   "IcpOmschrijving": "Andere infectie(s) zwangerschap/kraambed [ex. W70]"
+ },
+ {
+   "IcpIcpcKode": "W72",
+   "IcpOmschrijving": "Maligniteit in verband met zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W73",
+   "IcpOmschrijving": "Benigne neoplasma in verband met zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W75",
+   "IcpOmschrijving": "Zwangerschap complicerende letsels"
+ },
+ {
+   "IcpIcpcKode": "W76",
+   "IcpOmschrijving": "Zwangerschap complicerende aangeboren afwijking mo"
+ },
+ {
+   "IcpIcpcKode": "W77",
+   "IcpOmschrijving": "Zwangerschap complicerende niet-obstetrische facto"
+ },
+ {
+   "IcpIcpcKode": "W77.01",
+   "IcpOmschrijving": "Varices in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W77.02",
+   "IcpOmschrijving": "Hemorroïden in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W77.03",
+   "IcpOmschrijving": "Diep veneuze trombose in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W78",
+   "IcpOmschrijving": "Zwangerschap: bevestigd"
+ },
+ {
+   "IcpIcpcKode": "W79",
+   "IcpOmschrijving": "Ongewenste zwangerschap: bevestigd"
+ },
+ {
+   "IcpIcpcKode": "W80",
+   "IcpOmschrijving": "Ectopische zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W81",
+   "IcpOmschrijving": "Toxicose/(pre-)eclampsie"
+ },
+ {
+   "IcpIcpcKode": "W81.01",
+   "IcpOmschrijving": "Pre-existente hypertensie in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W81.02",
+   "IcpOmschrijving": "Toxicose/preëclampsie"
+ },
+ {
+   "IcpIcpcKode": "W81.03",
+   "IcpOmschrijving": "HELLP-syndroom"
+ },
+ {
+   "IcpIcpcKode": "W82",
+   "IcpOmschrijving": "Spontane abortus"
+ },
+ {
+   "IcpIcpcKode": "W83",
+   "IcpOmschrijving": "Abortus provocatus"
+ },
+ {
+   "IcpIcpcKode": "W84",
+   "IcpOmschrijving": "Zwangerschap met verhoogd risico"
+ },
+ {
+   "IcpIcpcKode": "W84.01",
+   "IcpOmschrijving": "Urogenitale infectie in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W84.02",
+   "IcpOmschrijving": "Zwangerschapsdiabetes"
+ },
+ {
+   "IcpIcpcKode": "W84.03",
+   "IcpOmschrijving": "Preëxistente diabetes in zwangerschap"
+ },
+ {
+   "IcpIcpcKode": "W84.04",
+   "IcpOmschrijving": "Groeivertraging/afwijkende groei foetus"
+ },
+ {
+   "IcpIcpcKode": "W84.05",
+   "IcpOmschrijving": "Disproportie"
+ },
+ {
+   "IcpIcpcKode": "W84.06",
+   "IcpOmschrijving": "Cervixinsufficiëntie"
+ },
+ {
+   "IcpIcpcKode": "W84.07",
+   "IcpOmschrijving": "Liggingsafwijking foetus"
+ },
+ {
+   "IcpIcpcKode": "W84.08",
+   "IcpOmschrijving": "Bloedgroep-/rhesusantagonisme"
+ },
+ {
+   "IcpIcpcKode": "W90",
+   "IcpOmschrijving": "Normale bevalling levendgeborene"
+ },
+ {
+   "IcpIcpcKode": "W91",
+   "IcpOmschrijving": "Normale bevalling doodgeborene"
+ },
+ {
+   "IcpIcpcKode": "W92",
+   "IcpOmschrijving": "Gecompliceerde bevalling levendgeborene"
+ },
+ {
+   "IcpIcpcKode": "W92.01",
+   "IcpOmschrijving": "Sectio caesarea"
+ },
+ {
+   "IcpIcpcKode": "W92.02",
+   "IcpOmschrijving": "Vacuümextractie"
+ },
+ {
+   "IcpIcpcKode": "W92.03",
+   "IcpOmschrijving": "Forcipale extractie"
+ },
+ {
+   "IcpIcpcKode": "W93",
+   "IcpOmschrijving": "Gecompliceerde bevalling doodgeborene"
+ },
+ {
+   "IcpIcpcKode": "W94",
+   "IcpOmschrijving": "Mastitis puerperalis"
+ },
+ {
+   "IcpIcpcKode": "W95",
+   "IcpOmschrijving": "Andere aandoening borsten kraambed"
+ },
+ {
+   "IcpIcpcKode": "W95.01",
+   "IcpOmschrijving": "Lactatiestoornissen"
+ },
+ {
+   "IcpIcpcKode": "W95.02",
+   "IcpOmschrijving": "Tepelkloven"
+ },
+ {
+   "IcpIcpcKode": "W96",
+   "IcpOmschrijving": "Andere complicatie(s) kraambed"
+ },
+ {
+   "IcpIcpcKode": "W96.01",
+   "IcpOmschrijving": "Vertraagde involutie uterus"
+ },
+ {
+   "IcpIcpcKode": "W96.02",
+   "IcpOmschrijving": "Dehiscentie episiotomie/obstetrische wond"
+ },
+ {
+   "IcpIcpcKode": "W99",
+   "IcpOmschrijving": "And. ziekte(n) ivm zwangersch./beval./kraamb./anti"
+ },
+ {
+   "IcpIcpcKode": "W99.01",
+   "IcpOmschrijving": "Valse weeën"
+ },
+ {
+   "IcpIcpcKode": "W99.02",
+   "IcpOmschrijving": "Serotinitas"
+ },
+ {
+   "IcpIcpcKode": "W99.03",
+   "IcpOmschrijving": "Trombose kraambed"
+ },
+ {
+   "IcpIcpcKode": "W99.04",
+   "IcpOmschrijving": "Hemorroïden kraambed"
+ },
+ {
+   "IcpIcpcKode": "X01",
+   "IcpOmschrijving": "Pijn geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X02",
+   "IcpOmschrijving": "Pijnlijke menstruatie"
+ },
+ {
+   "IcpIcpcKode": "X03",
+   "IcpOmschrijving": "Intermenstruele pijn"
+ },
+ {
+   "IcpIcpcKode": "X04",
+   "IcpOmschrijving": "Pijnlijke coïtus vrouw"
+ },
+ {
+   "IcpIcpcKode": "X05",
+   "IcpOmschrijving": "Amenorroe/hypomenorroe/oligomenorroe"
+ },
+ {
+   "IcpIcpcKode": "X05.01",
+   "IcpOmschrijving": "Amenorroe"
+ },
+ {
+   "IcpIcpcKode": "X05.02",
+   "IcpOmschrijving": "Hypomenorroe/oligomenorroe"
+ },
+ {
+   "IcpIcpcKode": "X06",
+   "IcpOmschrijving": "Menorragie"
+ },
+ {
+   "IcpIcpcKode": "X07",
+   "IcpOmschrijving": "Onregelmatige/frequente menstruatie"
+ },
+ {
+   "IcpIcpcKode": "X07.01",
+   "IcpOmschrijving": "Polymenorroe"
+ },
+ {
+   "IcpIcpcKode": "X07.02",
+   "IcpOmschrijving": "Onregelmatige menstruatie"
+ },
+ {
+   "IcpIcpcKode": "X08",
+   "IcpOmschrijving": "Intermenstrueel bloedverlies"
+ },
+ {
+   "IcpIcpcKode": "X08.01",
+   "IcpOmschrijving": "Ovulatiebloeding"
+ },
+ {
+   "IcpIcpcKode": "X09",
+   "IcpOmschrijving": "Premenstruele symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "X10",
+   "IcpOmschrijving": "Uitstel van de menstruatie"
+ },
+ {
+   "IcpIcpcKode": "X11",
+   "IcpOmschrijving": "Climacteriële symptomen/klachten"
+ },
+ {
+   "IcpIcpcKode": "X11.01",
+   "IcpOmschrijving": "Opvliegingen"
+ },
+ {
+   "IcpIcpcKode": "X11.02",
+   "IcpOmschrijving": "Atrofische vaginitis"
+ },
+ {
+   "IcpIcpcKode": "X12",
+   "IcpOmschrijving": "Postmenopauzaal bloedverlies"
+ },
+ {
+   "IcpIcpcKode": "X13",
+   "IcpOmschrijving": "Bloedverlies na coïtus"
+ },
+ {
+   "IcpIcpcKode": "X14",
+   "IcpOmschrijving": "Vaginale afscheiding [ex. X08]"
+ },
+ {
+   "IcpIcpcKode": "X15",
+   "IcpOmschrijving": "Andere symptomen/klachten vagina"
+ },
+ {
+   "IcpIcpcKode": "X16",
+   "IcpOmschrijving": "Symptomen/klachten vulva"
+ },
+ {
+   "IcpIcpcKode": "X17",
+   "IcpOmschrijving": "Symptomen/klachten kleine bekken"
+ },
+ {
+   "IcpIcpcKode": "X18",
+   "IcpOmschrijving": "Pijn in de borsten vrouw"
+ },
+ {
+   "IcpIcpcKode": "X19",
+   "IcpOmschrijving": "Knobbel/zwelling borst(en) vrouw"
+ },
+ {
+   "IcpIcpcKode": "X20",
+   "IcpOmschrijving": "Symptomen/klachten tepel vrouw"
+ },
+ {
+   "IcpIcpcKode": "X20.01",
+   "IcpOmschrijving": "Tepeluitvloed"
+ },
+ {
+   "IcpIcpcKode": "X21",
+   "IcpOmschrijving": "Andere symptomen/klachten borsten vrouw"
+ },
+ {
+   "IcpIcpcKode": "X23",
+   "IcpOmschrijving": "Angst voor geslachtsziekte vrouw"
+ },
+ {
+   "IcpIcpcKode": "X24",
+   "IcpOmschrijving": "Angst voor seksueel disfunctioneren vrouw"
+ },
+ {
+   "IcpIcpcKode": "X25",
+   "IcpOmschrijving": "Angst voor kanker geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X26",
+   "IcpOmschrijving": "Angst voor borstkanker vrouw"
+ },
+ {
+   "IcpIcpcKode": "X27",
+   "IcpOmschrijving": "Angst voor andere ziekte geslachtsorganen/borsten"
+ },
+ {
+   "IcpIcpcKode": "X28",
+   "IcpOmschrijving": "Functiebeperking/handicap geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X29",
+   "IcpOmschrijving": "Andere symptomen/klachten geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X29.01",
+   "IcpOmschrijving": "Ontevreden/bezorgd over uiterlijk borsten"
+ },
+ {
+   "IcpIcpcKode": "X30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "X31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "X32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "X33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "X34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "X35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "X36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "X37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "X38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "X39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "X40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "X41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "X42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "X43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "X44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "X45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "X46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "X47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "X48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "X49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "X50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "X51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie X53]"
+ },
+ {
+   "IcpIcpcKode": "X52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "X53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "X54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "X55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "X56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "X57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "X58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "X59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "X60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "X61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "X62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "X63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "X64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "X65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "X66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "X67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "X68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "X69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "X70",
+   "IcpOmschrijving": "Lues vrouw [ex. A90]"
+ },
+ {
+   "IcpIcpcKode": "X71",
+   "IcpOmschrijving": "Gonorroe vrouw"
+ },
+ {
+   "IcpIcpcKode": "X72",
+   "IcpOmschrijving": "Candidiasis urogenitale vrouw"
+ },
+ {
+   "IcpIcpcKode": "X73",
+   "IcpOmschrijving": "Trichomonas urogenitale vrouw"
+ },
+ {
+   "IcpIcpcKode": "X74",
+   "IcpOmschrijving": "Ontsteking kleine bekken/PID"
+ },
+ {
+   "IcpIcpcKode": "X74.01",
+   "IcpOmschrijving": "PID door Chlamydia"
+ },
+ {
+   "IcpIcpcKode": "X75",
+   "IcpOmschrijving": "Maligniteit cervix uteri"
+ },
+ {
+   "IcpIcpcKode": "X76",
+   "IcpOmschrijving": "Maligniteit borst vrouw"
+ },
+ {
+   "IcpIcpcKode": "X76.01",
+   "IcpOmschrijving": "Adenocarcinoom mamma vrouw"
+ },
+ {
+   "IcpIcpcKode": "X77",
+   "IcpOmschrijving": "Andere maligniteit geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X77.01",
+   "IcpOmschrijving": "Endometriumcarcinoom"
+ },
+ {
+   "IcpIcpcKode": "X77.02",
+   "IcpOmschrijving": "Maligniteit ovarium"
+ },
+ {
+   "IcpIcpcKode": "X78",
+   "IcpOmschrijving": "Benigne neoplasma uterus/cervix uteri"
+ },
+ {
+   "IcpIcpcKode": "X78.01",
+   "IcpOmschrijving": "Myoma uteri"
+ },
+ {
+   "IcpIcpcKode": "X79",
+   "IcpOmschrijving": "Benigne neoplasma borsten vrouw [ex. X88]"
+ },
+ {
+   "IcpIcpcKode": "X80",
+   "IcpOmschrijving": "Ander benigne neoplasma geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X81",
+   "IcpOmschrijving": "Ander/niet-gespecificeerd neoplasma geslachtsorgan"
+ },
+ {
+   "IcpIcpcKode": "X82",
+   "IcpOmschrijving": "Letsel geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X82.01",
+   "IcpOmschrijving": "Corpus alienum geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X83",
+   "IcpOmschrijving": "Aangeboren afwijking(en) geslachtsorganen vrouw"
+ },
+ {
+   "IcpIcpcKode": "X83.01",
+   "IcpOmschrijving": "Hymen imperforata"
+ },
+ {
+   "IcpIcpcKode": "X84",
+   "IcpOmschrijving": "Vaginitis/vulvitis nao"
+ },
+ {
+   "IcpIcpcKode": "X84.01",
+   "IcpOmschrijving": "Vaginitis door Chlamydia"
+ },
+ {
+   "IcpIcpcKode": "X84.02",
+   "IcpOmschrijving": "Bacteriële vaginose"
+ },
+ {
+   "IcpIcpcKode": "X85",
+   "IcpOmschrijving": "Cervicitis/andere ziekte cervix"
+ },
+ {
+   "IcpIcpcKode": "X85.01",
+   "IcpOmschrijving": "Cervicitis door Chlamydia"
+ },
+ {
+   "IcpIcpcKode": "X85.02",
+   "IcpOmschrijving": "Cervixerosie/ectopie"
+ },
+ {
+   "IcpIcpcKode": "X85.03",
+   "IcpOmschrijving": "Cervixpoliep"
+ },
+ {
+   "IcpIcpcKode": "X86",
+   "IcpOmschrijving": "Afwijkende cervixuitstrijk"
+ },
+ {
+   "IcpIcpcKode": "X87",
+   "IcpOmschrijving": "Prolaps vagina/uterus"
+ },
+ {
+   "IcpIcpcKode": "X87.01",
+   "IcpOmschrijving": "Cystokèle/rectokèle"
+ },
+ {
+   "IcpIcpcKode": "X87.02",
+   "IcpOmschrijving": "Uterovaginale prolaps"
+ },
+ {
+   "IcpIcpcKode": "X88",
+   "IcpOmschrijving": "Fibroadenoom/polycystische afwijking borsten"
+ },
+ {
+   "IcpIcpcKode": "X89",
+   "IcpOmschrijving": "Premenstrueel spanningssyndroom"
+ },
+ {
+   "IcpIcpcKode": "X90",
+   "IcpOmschrijving": "Herpes genitalis vrouw"
+ },
+ {
+   "IcpIcpcKode": "X91",
+   "IcpOmschrijving": "Condylomata acuminata vrouw"
+ },
+ {
+   "IcpIcpcKode": "X99",
+   "IcpOmschrijving": "Andere ziekte(n) geslachtsorganen/borsten vrouw"
+ },
+ {
+   "IcpIcpcKode": "X99.01",
+   "IcpOmschrijving": "Bartholinitis"
+ },
+ {
+   "IcpIcpcKode": "X99.02",
+   "IcpOmschrijving": "Endometriose"
+ },
+ {
+   "IcpIcpcKode": "X99.03",
+   "IcpOmschrijving": "Ovariumcyste"
+ },
+ {
+   "IcpIcpcKode": "X99.04",
+   "IcpOmschrijving": "Mastitis [ex. W94]"
+ },
+ {
+   "IcpIcpcKode": "X99.05",
+   "IcpOmschrijving": "Habituele abortus"
+ },
+ {
+   "IcpIcpcKode": "X99.06",
+   "IcpOmschrijving": "Lymphogranuloma venereum"
+ },
+ {
+   "IcpIcpcKode": "Y01",
+   "IcpOmschrijving": "Pijn in penis"
+ },
+ {
+   "IcpIcpcKode": "Y02",
+   "IcpOmschrijving": "Pijn testis/scrotum"
+ },
+ {
+   "IcpIcpcKode": "Y03",
+   "IcpOmschrijving": "Afscheiding penis/urethra"
+ },
+ {
+   "IcpIcpcKode": "Y04",
+   "IcpOmschrijving": "Andere symptomen/klachten penis"
+ },
+ {
+   "IcpIcpcKode": "Y05",
+   "IcpOmschrijving": "Symptomen/klachten scrotum/testis"
+ },
+ {
+   "IcpIcpcKode": "Y05.01",
+   "IcpOmschrijving": "Zwelling testis"
+ },
+ {
+   "IcpIcpcKode": "Y06",
+   "IcpOmschrijving": "Symptomen/klachten prostaat"
+ },
+ {
+   "IcpIcpcKode": "Y07",
+   "IcpOmschrijving": "Symptomen/klachten potentie [ex. P07,P08]"
+ },
+ {
+   "IcpIcpcKode": "Y08",
+   "IcpOmschrijving": "Ander seksueel probleem man [ex. P07,P08]"
+ },
+ {
+   "IcpIcpcKode": "Y10",
+   "IcpOmschrijving": "Sub-/infertiliteit man"
+ },
+ {
+   "IcpIcpcKode": "Y13",
+   "IcpOmschrijving": "Sterilisatie man"
+ },
+ {
+   "IcpIcpcKode": "Y14",
+   "IcpOmschrijving": "Andere anticonceptie man"
+ },
+ {
+   "IcpIcpcKode": "Y14.01",
+   "IcpOmschrijving": "Condoom"
+ },
+ {
+   "IcpIcpcKode": "Y16",
+   "IcpOmschrijving": "Symptomen/klachten borsten man"
+ },
+ {
+   "IcpIcpcKode": "Y24",
+   "IcpOmschrijving": "Angst voor seksueel disfunctioneren man"
+ },
+ {
+   "IcpIcpcKode": "Y25",
+   "IcpOmschrijving": "Angst voor geslachtsziekte man"
+ },
+ {
+   "IcpIcpcKode": "Y26",
+   "IcpOmschrijving": "Angst voor kanker geslachtsorganen man"
+ },
+ {
+   "IcpIcpcKode": "Y27",
+   "IcpOmschrijving": "Angst andere ziekte geslachtsorganen/borsten man"
+ },
+ {
+   "IcpIcpcKode": "Y28",
+   "IcpOmschrijving": "Functiebeperking/handicap geslachtsorganen man"
+ },
+ {
+   "IcpIcpcKode": "Y29",
+   "IcpOmschrijving": "Andere symptomen/klachten geslachtsorganen man"
+ },
+ {
+   "IcpIcpcKode": "Y29.01",
+   "IcpOmschrijving": "Gynaecomastie"
+ },
+ {
+   "IcpIcpcKode": "Y30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "Y31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "Y32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "Y33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "Y38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "Y41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "Y43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "Y44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "Y45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "Y46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "Y47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "Y48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "Y49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "Y50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "Y51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie Y53]"
+ },
+ {
+   "IcpIcpcKode": "Y52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "Y53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "Y54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "Y55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "Y56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "Y57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "Y58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "Y59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "Y60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "Y61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "Y62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "Y63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "Y64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "Y65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "Y66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "Y67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "Y68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "Y69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ },
+ {
+   "IcpIcpcKode": "Y70",
+   "IcpOmschrijving": "Lues man [ex. A90]"
+ },
+ {
+   "IcpIcpcKode": "Y71",
+   "IcpOmschrijving": "Gonorroe man"
+ },
+ {
+   "IcpIcpcKode": "Y72",
+   "IcpOmschrijving": "Herpes genitalis man"
+ },
+ {
+   "IcpIcpcKode": "Y73",
+   "IcpOmschrijving": "Prostatitis/vesiculitis seminalis"
+ },
+ {
+   "IcpIcpcKode": "Y74",
+   "IcpOmschrijving": "Orchitis/epididymitis"
+ },
+ {
+   "IcpIcpcKode": "Y74.01",
+   "IcpOmschrijving": "Orchitis"
+ },
+ {
+   "IcpIcpcKode": "Y74.02",
+   "IcpOmschrijving": "Epididymitis"
+ },
+ {
+   "IcpIcpcKode": "Y75",
+   "IcpOmschrijving": "Balanitis"
+ },
+ {
+   "IcpIcpcKode": "Y75.01",
+   "IcpOmschrijving": "Candida balanitis"
+ },
+ {
+   "IcpIcpcKode": "Y76",
+   "IcpOmschrijving": "Condylomata acuminata man"
+ },
+ {
+   "IcpIcpcKode": "Y77",
+   "IcpOmschrijving": "Maligniteit prostaat"
+ },
+ {
+   "IcpIcpcKode": "Y78",
+   "IcpOmschrijving": "Andere maligniteit geslachtsorganen/borsten man"
+ },
+ {
+   "IcpIcpcKode": "Y78.01",
+   "IcpOmschrijving": "Maligniteit penis"
+ },
+ {
+   "IcpIcpcKode": "Y78.02",
+   "IcpOmschrijving": "Maligniteit testis"
+ },
+ {
+   "IcpIcpcKode": "Y78.03",
+   "IcpOmschrijving": "Maligniteit borst"
+ },
+ {
+   "IcpIcpcKode": "Y79",
+   "IcpOmschrijving": "Benigne neoplasma geslachtsorganen/borsten man"
+ },
+ {
+   "IcpIcpcKode": "Y80",
+   "IcpOmschrijving": "Letsel geslachtsorganen man"
+ },
+ {
+   "IcpIcpcKode": "Y80.01",
+   "IcpOmschrijving": "Corpus alienum geslachtsorganen man"
+ },
+ {
+   "IcpIcpcKode": "Y81",
+   "IcpOmschrijving": "Phimosis/slurf-preputium"
+ },
+ {
+   "IcpIcpcKode": "Y82",
+   "IcpOmschrijving": "Hypospadie"
+ },
+ {
+   "IcpIcpcKode": "Y83",
+   "IcpOmschrijving": "Cryptorchisme/niet ingedaalde testis"
+ },
+ {
+   "IcpIcpcKode": "Y84",
+   "IcpOmschrijving": "Andere aangeboren afwijking(en) geslachtsorganen/b"
+ },
+ {
+   "IcpIcpcKode": "Y84.01",
+   "IcpOmschrijving": "Retractiele testis"
+ },
+ {
+   "IcpIcpcKode": "Y85",
+   "IcpOmschrijving": "Benigne prostaathypertrofie"
+ },
+ {
+   "IcpIcpcKode": "Y86",
+   "IcpOmschrijving": "Hydrokèle"
+ },
+ {
+   "IcpIcpcKode": "Y99",
+   "IcpOmschrijving": "Andere ziekte(n) geslachtsorganen/borsten man"
+ },
+ {
+   "IcpIcpcKode": "Y99.01",
+   "IcpOmschrijving": "Torsio testis"
+ },
+ {
+   "IcpIcpcKode": "Y99.02",
+   "IcpOmschrijving": "Spermatokèle"
+ },
+ {
+   "IcpIcpcKode": "Y99.03",
+   "IcpOmschrijving": "Chlamydia-infectie man"
+ },
+ {
+   "IcpIcpcKode": "Z01",
+   "IcpOmschrijving": "Armoede/financieel probleem"
+ },
+ {
+   "IcpIcpcKode": "Z02",
+   "IcpOmschrijving": "Probleem met voedsel/water"
+ },
+ {
+   "IcpIcpcKode": "Z03",
+   "IcpOmschrijving": "Probleem huisvesting/buurt"
+ },
+ {
+   "IcpIcpcKode": "Z03.01",
+   "IcpOmschrijving": "Inadequate behuizing"
+ },
+ {
+   "IcpIcpcKode": "Z03.02",
+   "IcpOmschrijving": "Dakloos"
+ },
+ {
+   "IcpIcpcKode": "Z03.03",
+   "IcpOmschrijving": "Burenruzie/lawaaioverlast"
+ },
+ {
+   "IcpIcpcKode": "Z04",
+   "IcpOmschrijving": "Probleem met sociale/culturele achtergrond"
+ },
+ {
+   "IcpIcpcKode": "Z04.01",
+   "IcpOmschrijving": "Discriminatie ras/religie/sekse"
+ },
+ {
+   "IcpIcpcKode": "Z04.02",
+   "IcpOmschrijving": "Probleem door illegaal verblijf"
+ },
+ {
+   "IcpIcpcKode": "Z04.03",
+   "IcpOmschrijving": "Eenzaamheid"
+ },
+ {
+   "IcpIcpcKode": "Z04.04",
+   "IcpOmschrijving": "Probleem met pensionering"
+ },
+ {
+   "IcpIcpcKode": "Z04.05",
+   "IcpOmschrijving": "Empty nest syndrome"
+ },
+ {
+   "IcpIcpcKode": "Z05",
+   "IcpOmschrijving": "Probleem met werksituatie"
+ },
+ {
+   "IcpIcpcKode": "Z05.01",
+   "IcpOmschrijving": "Dreigend ontslag"
+ },
+ {
+   "IcpIcpcKode": "Z05.02",
+   "IcpOmschrijving": "Arbeidsconflict/probleem met collega's"
+ },
+ {
+   "IcpIcpcKode": "Z05.03",
+   "IcpOmschrijving": "Hoge werkdruk"
+ },
+ {
+   "IcpIcpcKode": "Z05.04",
+   "IcpOmschrijving": "Blootstelling aan lawaai op werk"
+ },
+ {
+   "IcpIcpcKode": "Z05.05",
+   "IcpOmschrijving": "Blootstelling aan toxische stoffen op werk"
+ },
+ {
+   "IcpIcpcKode": "Z06",
+   "IcpOmschrijving": "Probleem met werkloosheid"
+ },
+ {
+   "IcpIcpcKode": "Z07",
+   "IcpOmschrijving": "Probleem met opleiding"
+ },
+ {
+   "IcpIcpcKode": "Z07.01",
+   "IcpOmschrijving": "Analfabetisme"
+ },
+ {
+   "IcpIcpcKode": "Z07.02",
+   "IcpOmschrijving": "Achterblijven/blijven zitten op school"
+ },
+ {
+   "IcpIcpcKode": "Z07.03",
+   "IcpOmschrijving": "Gezakt voor examen"
+ },
+ {
+   "IcpIcpcKode": "Z08",
+   "IcpOmschrijving": "Probleem met sociale verzekering/welzijnszorg"
+ },
+ {
+   "IcpIcpcKode": "Z08.01",
+   "IcpOmschrijving": "Probleem met ziektewet/WAO"
+ },
+ {
+   "IcpIcpcKode": "Z08.02",
+   "IcpOmschrijving": "Probleem met bijstand"
+ },
+ {
+   "IcpIcpcKode": "Z09",
+   "IcpOmschrijving": "Probleem met justitie/politie"
+ },
+ {
+   "IcpIcpcKode": "Z09.01",
+   "IcpOmschrijving": "Gevangenschap/gevangenisstraf"
+ },
+ {
+   "IcpIcpcKode": "Z09.02",
+   "IcpOmschrijving": "Probleem met voogdijschap/alimentatie"
+ },
+ {
+   "IcpIcpcKode": "Z10",
+   "IcpOmschrijving": "Probleem toegankelijkheid/beschikbaarheid gezondhe"
+ },
+ {
+   "IcpIcpcKode": "Z10.01",
+   "IcpOmschrijving": "Wachten op behandeling"
+ },
+ {
+   "IcpIcpcKode": "Z10.02",
+   "IcpOmschrijving": "Wachten op plaats verzorgings-/verpleeghuis"
+ },
+ {
+   "IcpIcpcKode": "Z11",
+   "IcpOmschrijving": "Probleem met ziek zijn"
+ },
+ {
+   "IcpIcpcKode": "Z12",
+   "IcpOmschrijving": "Relatieprobleem met partner"
+ },
+ {
+   "IcpIcpcKode": "Z12.01",
+   "IcpOmschrijving": "Scheiding van partner"
+ },
+ {
+   "IcpIcpcKode": "Z12.02",
+   "IcpOmschrijving": "Mishandeling/seksueel misbruik door partner"
+ },
+ {
+   "IcpIcpcKode": "Z13",
+   "IcpOmschrijving": "Probleem met gedrag van partner"
+ },
+ {
+   "IcpIcpcKode": "Z13.01",
+   "IcpOmschrijving": "Probleem met verslaving van partner"
+ },
+ {
+   "IcpIcpcKode": "Z13.02",
+   "IcpOmschrijving": "Probleem met agressie van partner"
+ },
+ {
+   "IcpIcpcKode": "Z13.03",
+   "IcpOmschrijving": "Probleem met ontrouw van partner"
+ },
+ {
+   "IcpIcpcKode": "Z14",
+   "IcpOmschrijving": "Probleem met ziekte van partner"
+ },
+ {
+   "IcpIcpcKode": "Z15",
+   "IcpOmschrijving": "Verlies/overlijden van partner"
+ },
+ {
+   "IcpIcpcKode": "Z16",
+   "IcpOmschrijving": "Relatieprobleem met kind"
+ },
+ {
+   "IcpIcpcKode": "Z16.01",
+   "IcpOmschrijving": "Mishandeling/seksueel misbruik van kind"
+ },
+ {
+   "IcpIcpcKode": "Z16.02",
+   "IcpOmschrijving": "Verwaarlozing van kind"
+ },
+ {
+   "IcpIcpcKode": "Z16.03",
+   "IcpOmschrijving": "Opvoeding van kind buiten gezinsverband"
+ },
+ {
+   "IcpIcpcKode": "Z18",
+   "IcpOmschrijving": "Probleem met ziekte van kind"
+ },
+ {
+   "IcpIcpcKode": "Z19",
+   "IcpOmschrijving": "Verlies/overlijden van kind"
+ },
+ {
+   "IcpIcpcKode": "Z20",
+   "IcpOmschrijving": "Relatieprobleem met ouders/familie"
+ },
+ {
+   "IcpIcpcKode": "Z21",
+   "IcpOmschrijving": "Probleem met gedrag van ouders/familie"
+ },
+ {
+   "IcpIcpcKode": "Z21.01",
+   "IcpOmschrijving": "Probleem met verslaving van ouders/familie"
+ },
+ {
+   "IcpIcpcKode": "Z21.02",
+   "IcpOmschrijving": "Probleem met agressie van ouders/familie"
+ },
+ {
+   "IcpIcpcKode": "Z22",
+   "IcpOmschrijving": "Probleem met ziekte van ouders/familie"
+ },
+ {
+   "IcpIcpcKode": "Z23",
+   "IcpOmschrijving": "Verlies/overlijden van ouders/familie"
+ },
+ {
+   "IcpIcpcKode": "Z24",
+   "IcpOmschrijving": "Relatieprobleem met vrienden"
+ },
+ {
+   "IcpIcpcKode": "Z25",
+   "IcpOmschrijving": "Probleem ten gevolge van geweld"
+ },
+ {
+   "IcpIcpcKode": "Z25.01",
+   "IcpOmschrijving": "Probleem ten gevolge van aanranding/verkrachting"
+ },
+ {
+   "IcpIcpcKode": "Z27",
+   "IcpOmschrijving": "Angst een sociaal probleem te hebben"
+ },
+ {
+   "IcpIcpcKode": "Z28",
+   "IcpOmschrijving": "Sociale functiebeperking/handicap"
+ },
+ {
+   "IcpIcpcKode": "Z29",
+   "IcpOmschrijving": "Ander sociaal probleem"
+ },
+ {
+   "IcpIcpcKode": "Z29.01",
+   "IcpOmschrijving": "Burn-out"
+ },
+ {
+   "IcpIcpcKode": "Z29.02",
+   "IcpOmschrijving": "Gebrek aan vrije tijd/ontspanning"
+ },
+ {
+   "IcpIcpcKode": "Z29.03",
+   "IcpOmschrijving": "Afhankelijkheid van anderen"
+ },
+ {
+   "IcpIcpcKode": "Z30",
+   "IcpOmschrijving": "Lichamelijk onderzoek volledig"
+ },
+ {
+   "IcpIcpcKode": "Z31",
+   "IcpOmschrijving": "Lichamelijk onderzoek gericht"
+ },
+ {
+   "IcpIcpcKode": "Z32",
+   "IcpOmschrijving": "Gevoeligheidstest"
+ },
+ {
+   "IcpIcpcKode": "Z33",
+   "IcpOmschrijving": "Microbiologisch/immunologisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z34",
+   "IcpOmschrijving": "Bloedonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z35",
+   "IcpOmschrijving": "Urineonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z36",
+   "IcpOmschrijving": "Faecesonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z37",
+   "IcpOmschrijving": "Histologie/exfoliatieve cytologie"
+ },
+ {
+   "IcpIcpcKode": "Z38",
+   "IcpOmschrijving": "Ander laboratoriumonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z39",
+   "IcpOmschrijving": "Functieonderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z40",
+   "IcpOmschrijving": "Endoscopie"
+ },
+ {
+   "IcpIcpcKode": "Z41",
+   "IcpOmschrijving": "Röntgen-/beeldvormend onderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z42",
+   "IcpOmschrijving": "Elektrische afleidingen"
+ },
+ {
+   "IcpIcpcKode": "Z43",
+   "IcpOmschrijving": "Ander diagnostisch onderzoek"
+ },
+ {
+   "IcpIcpcKode": "Z44",
+   "IcpOmschrijving": "Immunisatie/preventieve medicatie"
+ },
+ {
+   "IcpIcpcKode": "Z45",
+   "IcpOmschrijving": "Advies/observatie/voorlichting/dieet"
+ },
+ {
+   "IcpIcpcKode": "Z46",
+   "IcpOmschrijving": "Overleg binnen eerste lijn"
+ },
+ {
+   "IcpIcpcKode": "Z47",
+   "IcpOmschrijving": "Overleg met specialist"
+ },
+ {
+   "IcpIcpcKode": "Z48",
+   "IcpOmschrijving": "vervallen"
+ },
+ {
+   "IcpIcpcKode": "Z49",
+   "IcpOmschrijving": "Andere preventieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "Z50",
+   "IcpOmschrijving": "Medicatie/recept/injectie"
+ },
+ {
+   "IcpIcpcKode": "Z51",
+   "IcpOmschrijving": "Incisie/drain/aspiratie [ex. catheterisatie Z53]"
+ },
+ {
+   "IcpIcpcKode": "Z52",
+   "IcpOmschrijving": "Excisie/biopsie/débridement/cauterisatie"
+ },
+ {
+   "IcpIcpcKode": "Z53",
+   "IcpOmschrijving": "Instrumentatie/catheterisatie/intubatie/dilatatie"
+ },
+ {
+   "IcpIcpcKode": "Z54",
+   "IcpOmschrijving": "Hechting/gipsspalk/prothese"
+ },
+ {
+   "IcpIcpcKode": "Z55",
+   "IcpOmschrijving": "Lokale injectie/infiltratie"
+ },
+ {
+   "IcpIcpcKode": "Z56",
+   "IcpOmschrijving": "Verband/compressie/tamponade"
+ },
+ {
+   "IcpIcpcKode": "Z57",
+   "IcpOmschrijving": "Revalidatie"
+ },
+ {
+   "IcpIcpcKode": "Z58",
+   "IcpOmschrijving": "Therapeutisch gesprek/counselen"
+ },
+ {
+   "IcpIcpcKode": "Z59",
+   "IcpOmschrijving": "Andere therapeutische verrichting"
+ },
+ {
+   "IcpIcpcKode": "Z60",
+   "IcpOmschrijving": "Uitslag onderzoek/verrichting"
+ },
+ {
+   "IcpIcpcKode": "Z61",
+   "IcpOmschrijving": "Uitslag/verslag andere hulpverlener"
+ },
+ {
+   "IcpIcpcKode": "Z62",
+   "IcpOmschrijving": "Administratieve verrichting"
+ },
+ {
+   "IcpIcpcKode": "Z63",
+   "IcpOmschrijving": "Vervolgcontact niet gespecificeerd"
+ },
+ {
+   "IcpIcpcKode": "Z64",
+   "IcpOmschrijving": "Episode op initiatief huisarts"
+ },
+ {
+   "IcpIcpcKode": "Z65",
+   "IcpOmschrijving": "Episode op initiatief derde"
+ },
+ {
+   "IcpIcpcKode": "Z66",
+   "IcpOmschrijving": "Verwijzing eerstelijnshulpverlener [ex. arts]"
+ },
+ {
+   "IcpIcpcKode": "Z67",
+   "IcpOmschrijving": "Verwijzing specialist/ziekenhuis"
+ },
+ {
+   "IcpIcpcKode": "Z68",
+   "IcpOmschrijving": "Andere verwijzing"
+ },
+ {
+   "IcpIcpcKode": "Z69",
+   "IcpOmschrijving": "Andere reden voor contact"
+ }
+]

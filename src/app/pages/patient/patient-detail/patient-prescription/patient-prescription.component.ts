@@ -11,6 +11,7 @@ import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "../patient-journal/journal.service"
 import { MedicationService } from "./medication.service"
 import { PrescriptionService } from "./prescription.service"
+import { ICPC } from "src/app/models/ICPC.model"
 
 @Component({
 	selector: "app-patient-prescription",
@@ -23,6 +24,7 @@ export class PatientPrescriptionComponent implements OnInit {
 	@Input() prescriptions$: Observable<Prescription[]>
 	@Input() patient$: Observable<Patient>
 	@Input() episodes$: Observable<Episode[]>
+	@Input() ICPCs: ICPC[]
 	@Output() prescriptions$Change = new EventEmitter<Observable<Prescription[]>>()
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
 	constructor(
@@ -178,10 +180,10 @@ export class PatientPrescriptionComponent implements OnInit {
 							medication: medications.find(medication => medication._id == result.value.medication)
 						}
 
-						const ICPC: string[] = ["B81", "C80", "A55", "C11", "F22"]
 						let ICPCOptions: string
-						ICPC.forEach(element => {
-							ICPCOptions = ICPCOptions + `<option>${element}</option>`
+						this.ICPCs.forEach(element => 
+						{
+							ICPCOptions = ICPCOptions + `<option>${element.IcpCode} ${element.IcpDescription}</option>`
 						})
 
 						Swal.fire(
@@ -194,10 +196,11 @@ export class PatientPrescriptionComponent implements OnInit {
 								</select>
 								<input type="text" id="characteristics" class="swal2-input px-1" placeholder="Kenmerken">
 								<input type="text" id="consult" class="swal2-input px-1" placeholder="Consult">
-								<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
-									<option selected disabled>Kies een ICPC code...</option>
+								<input list="ICPC" id="selectedICPC" class="swal2-input px-1" placeholder="ICPC Code">
+								<datalist id="ICPC">
 									${ICPCOptions}
-								</select>`,
+								</datalist>
+								`,
 								showConfirmButton: true,
 								confirmButtonText: "Voeg toe",
 								showDenyButton: true,
@@ -209,7 +212,7 @@ export class PatientPrescriptionComponent implements OnInit {
 									const episode = Swal.getPopup().querySelector<HTMLInputElement>("#episode").value
 									const characteristics = Swal.getPopup().querySelector<HTMLInputElement>("#characteristics").value
 									const consult = Swal.getPopup().querySelector<HTMLInputElement>("#consult").value
-									const ICPC = Swal.getPopup().querySelector<HTMLInputElement>("#ICPC").value
+									const ICPC = Swal.getPopup().querySelector<HTMLInputElement>("#selectedICPC").value
 									return {
 										episode: episode,
 										characteristics: characteristics,
@@ -217,7 +220,8 @@ export class PatientPrescriptionComponent implements OnInit {
 										ICPC: ICPC
 									}
 								}
-							}).then(journalresult => {
+							}).then(journalresult => 
+							{
 								if (journalresult.isConfirmed) {
 									const medication = medications.find(medication => medication._id == result.value.medication)
 									const journalEntry: Journal =
