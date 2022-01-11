@@ -54,14 +54,14 @@ export class PatientDetailComponent implements OnInit
 			html: `
 			<input type="text" id="title" class="swal2-input" placeholder="Afspraak naam">
 			<input type="text" id="description" class="swal2-input" placeholder="Afspraak Omschrijving">
-			<input type="date" id="date" class="swal2-input " placeholder="Datum">
-			<div>
+			<p class='mt-2 mb-0 mr-4'>Datum:</p>
+			<input type="date" id="date" class="swal2-input mt-1" placeholder="Datum">
+			<br>
 			<label for="startTime">Start tijd:</label>
-			<input type="time" id="startTime" class="swal2-input ml-1 mr-2" placeholder="Begin tijd">
+			<input type="time" id="startTime" class="swal2-input mx-1" placeholder="Begin tijd">
 			<br>
 			<label for="endTime">Eind tijd:</label>
 			<input type="time" id="endTime" class="swal2-input mx-1" placeholder="Eind tijd">
-			</div>
 			`,
 			confirmButtonText: "Voeg toe",
 			showDenyButton: true,
@@ -71,21 +71,11 @@ export class PatientDetailComponent implements OnInit
 			focusConfirm: false,
 			preConfirm: () =>
 			{
-				const title = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#title"
-				).value
-				const description = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#description").value
-				const date = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#date"
-				).value
-				const startTime = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#startTime").value
-				const endTime = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#endTime"
-				).value
+				const title = Swal.getPopup().querySelector<HTMLInputElement>("#title").value
+				const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
+				const date = Swal.getPopup().querySelector<HTMLInputElement>("#date").value
+				const startTime = Swal.getPopup().querySelector<HTMLInputElement>("#startTime").value
+				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
 
 				if (!title || !date || !startTime || !endTime)
 				{

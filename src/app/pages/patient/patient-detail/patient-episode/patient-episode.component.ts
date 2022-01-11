@@ -57,7 +57,8 @@ export class PatientEpisodeComponent implements OnInit
 				}
 			</style>
 			<input type="text" id="description" class="swal2-input" placeholder="Omschrijving">
-			<input type="date" id="startDate" class="swal2-input" placeholder="Start Datum">
+			<p class='mt-2 mb-0 mr-4'>Datum:</p>
+			<input type="date" id="startDate" class="swal2-input mt-1" placeholder="Start Datum">
 			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
 				<option selected disabled>Kies een ICPC code...</option>
 				${ICPCOptions}
@@ -65,7 +66,7 @@ export class PatientEpisodeComponent implements OnInit
 			<br>
 			<input type="checkbox" id="priority" class="swal2-checkbox mt-3">
 			<label class="form-check-label" for="priority">
-				Priority
+				Prioriteit
 			</label>    
 			`,
 			confirmButtonText: "Voeg toe",
