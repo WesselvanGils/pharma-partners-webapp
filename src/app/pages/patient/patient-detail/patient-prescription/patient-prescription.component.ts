@@ -105,8 +105,26 @@ export class PatientPrescriptionComponent implements OnInit {
 					showDenyButton: true,
 					denyButtonText: "Voeg los toe",
 					focusConfirm: false,
-					returnInputValueOnDeny: true,
 					preConfirm: () => {
+						const medication = Swal.getPopup().querySelector<HTMLInputElement>("#medication").value
+						const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
+						const dosage = Swal.getPopup().querySelector<HTMLInputElement>("#dosage").value
+						const periodStart = Swal.getPopup().querySelector<HTMLInputElement>("#periodStart").value
+						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
+
+						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
+							Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+						}
+						return {
+							medication: medication,
+							description: description,
+							dosage: dosage,
+							periodStart: periodStart,
+							periodEnd: periodEnd
+						}
+					},
+					preDeny: () =>
+					{
 						const medication = Swal.getPopup().querySelector<HTMLInputElement>("#medication").value
 						const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
 						const dosage = Swal.getPopup().querySelector<HTMLInputElement>("#dosage").value
@@ -125,7 +143,6 @@ export class PatientPrescriptionComponent implements OnInit {
 						}
 					}
 				}).then(result => {
-					console.log(result)
 					if (result.isDenied) {
 						const prescriptionEntry: Prescription =
 						{
