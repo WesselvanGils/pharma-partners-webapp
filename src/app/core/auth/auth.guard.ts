@@ -20,12 +20,13 @@ export class LoggedInAuthGuard implements CanActivate, CanActivateChild
 		return this.authService.currentUser$.pipe(
 			map((user: User) =>
 			{
-				if (user && user.token)
+				if (user && user.token && user.authToken)
 				{
 					return true;
 				} else
 				{
 					console.log('not logged in, rerouting to /login');
+					this.authService.setRedirectUrl(this.router.url);
 					this.router.navigate([ '/login' ]);
 					return false;
 				}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core"
 import { FormGroup, FormControl, Validators } from "@angular/forms"
 import { Router } from "@angular/router"
-import { BehaviorSubject, map, Observable, Subscription } from "rxjs"
+import { BehaviorSubject, catchError, map, Observable, Subject, Subscription, throwError } from "rxjs"
 import { User } from "src/app/models/user.model"
 import { AuthService } from "../auth.service"
 
@@ -15,6 +15,8 @@ export class LoginComponent implements OnInit
 	loginForm: FormGroup
 	subs: Observable<User>
 	submitted = false
+
+	public message: Subject<string> = new BehaviorSubject('');
 
 	constructor(private authService: AuthService, private router: Router) { }
 
@@ -49,7 +51,11 @@ export class LoginComponent implements OnInit
 			const email = this.loginForm.value.email
 			const password = this.loginForm.value.password
 			this.authService
-				.login(email, password)
+				.auth(email, password)
+				.pipe(catchError(()=> {
+					this.message.next('Bad credentials');
+					return throwError('Not logged in!');
+				}))
 				.subscribe(user =>
 				{
 					this.submitted = false

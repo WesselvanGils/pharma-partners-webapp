@@ -9,6 +9,7 @@ export class User extends Entity
     doctorCode: string
     token: string
     role: role
+	authToken: any;
 }
 
 export enum role

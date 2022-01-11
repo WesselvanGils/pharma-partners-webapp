@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { Inject, Injectable, Optional, PLATFORM_ID } from '@angular/core';
+import { BehaviorSubject, Observable, of, Subject, Subscription, timer } from 'rxjs';
 import { User } from 'src/app/models/user.model';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import { map, catchError } from 'rxjs/operators';
+import { map, catchError, flatMap } from 'rxjs/operators';
 import { AlertService } from 'src/app/shared/alert/alert.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { isPlatformServer } from '@angular/common';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService
@@ -16,13 +17,20 @@ export class AuthService
 		'Content-Type': 'application/json',
 	});
 
+	private redirectUrl: string;
+
 	constructor
 		(
 			private alertService: AlertService,
 			private http: HttpClient,
-			private router: Router
+			private router: Router,
+			@Inject(PLATFORM_ID) private platformId: any,
+			@Optional() @Inject(Request) private request: any
 		)
 	{
+
+		
+
 		// Initializes the authentication service with the user from
 		// the local storage making it so users stays logged in. 
 		this.getUserFromLocalStorage()
@@ -52,6 +60,16 @@ export class AuthService
 		)
 	}
 
+	public setRedirectUrl(url: string) {
+		this.redirectUrl = url;
+	  }
+
+
+	  public auth(login: string, password: string): Observable<any> {
+		return this.http.post<any>('/auth/login', {login: login, password: password}).pipe(
+		  flatMap(response => this.secondFactor(response.token) )
+		);
+	  }
 	// Sends a login request to the backend api taking the email and password as input
 	// Saves the user to local storage if the login is successfull
 	// Returns an error if the login was unsuccessfull or an error occured at the api
@@ -71,7 +89,9 @@ export class AuthService
 
 					const userToSave: User = response.employee
 					userToSave.token = response.token
+					userToSave.authToken = this.secondFactor(response.authToken);
 
+					console.log(userToSave.authToken);
 					this.saveUserToLocalStorage(userToSave);
 					this.currentUser$.next(userToSave)
 					this.alertService.success('You have been signed in');
@@ -155,5 +175,49 @@ export class AuthService
 	private saveUserToLocalStorage(user: User): void
 	{
 		localStorage.setItem(this.CURRENT_USER, JSON.stringify(user));
+	}
+
+
+	private secondFactor(authToken: string): Observable<any> {
+		const httpOptions = {
+			headers: new HttpHeaders({'AuthToken': authToken, 'Content-Type': 'application/json'})
+		};
+
+		const tick: Observable<number> = timer(1000, 1000);
+		return Observable.create(subject => {
+			const url = `${environment.apiUrl}authentication/status`;
+			let tock = 0;
+			const timerSubscription = tick.subscribe(() => {
+				tock++;
+				this.http.get<any>(url, httpOptions).subscribe( response => {
+					if(response.status === 'approved'){
+						console.log('Twilio approved');
+						this.redirectUrl = this.redirectUrl === undefined ? '/' : this.redirectUrl;
+						this.router.navigate([this.redirectUrl]);
+						this.closeSecondFactorObservables(subject, true, timerSubscription);
+					} else if(response.status === 'denied'){
+						console.log('Twilio denied')
+						this.closeSecondFactorObservables(subject, false, timerSubscription);
+					}
+				})
+				if(tock === 60){
+					this.closeSecondFactorObservables(subject, false, timerSubscription);
+				}
+			})
+		})
+
+	}
+
+	public isAuthenticated(): Observable<boolean> {
+		if(isPlatformServer(this.platformId)){
+			return of(this.request.cookies.authentication === 'super-encrypted-value-indicating-that-user-is-authenticated!');
+		}
+		return this.http.get<any>(`${environment.apiUrl}authentication/isLogged`).pipe(map(response => response.authenticated));
+	}
+
+	private closeSecondFactorObservables(subject: Subject<any>, result: boolean, timerSubscription: Subscription): void {
+		subject.next(result);
+		subject.complete();
+		timerSubscription.unsubscribe();
 	}
 }
