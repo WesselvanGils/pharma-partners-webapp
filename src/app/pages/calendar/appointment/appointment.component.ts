@@ -99,25 +99,21 @@ export class AppointmentComponent implements OnInit
 			{
 				// this.patient$.subscribe(patient =>
 				// {
+					//Check if the start time is changed, if not use the existing start time
 					let formattedStart
 					if(result.value.startTime == 'empty'){
 						formattedStart = new Date(focusedMeeting.meeting.start)
 					} else {
-						formattedStart = new Date(
-							`${result.value.date}T${result.value.startTime}`
-							)
+						formattedStart = new Date(`${result.value.date}T${result.value.startTime}`)
 					}
-						
+
+					//Check if the end time is changed, if not use the existing end time
 					let formattedEnd
 					if(result.value.endTime == 'empty'){
 						formattedEnd = new Date(focusedMeeting.meeting.end)
 					} else {
-						formattedEnd = new Date(
-							`${result.value.date}T${result.value.endTime}`
-							)
+						formattedEnd = new Date(`${result.value.date}T${result.value.endTime}`)
 					}
-
-					console.warn(formattedStart + formattedEnd)
 					
 					const entry: Appointment = {
 						_id: focusedMeeting._id,
