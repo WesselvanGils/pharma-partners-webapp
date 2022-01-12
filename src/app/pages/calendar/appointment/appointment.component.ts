@@ -18,7 +18,7 @@ export class AppointmentComponent implements OnInit
 {
 	patient$: Observable<Patient>
 	@Input() focusedMeeting: Observable<Appointment>
-	@Output() onDelete = new EventEmitter<boolean>()
+	@Output() onDelete = new EventEmitter<string>()
 	constructor(
 		private authService: AuthService,
 		private calendarService: CalendarService,
@@ -41,8 +41,9 @@ export class AppointmentComponent implements OnInit
 		{
 			if (result.isConfirmed)
 			{
-				this.appointmentService.delete(focusedMeeting._id).subscribe(resolve => {
-					this.onDelete.emit(true)
+				this.appointmentService.delete(focusedMeeting._id).subscribe(resolve => 
+				{
+					this.onDelete.emit(focusedMeeting._id)
 				})
 			}
 		})

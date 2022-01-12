@@ -49,6 +49,19 @@ export class CalendarComponent implements OnInit
 
 	backToCalendar()
 	{
+		let calendar = document.getElementById('calendarColumns')
+		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
+		this.focusedMeeting = undefined
+	}
+
+	onDeleteTrigger(deletedAppointmentId: string)
+	{
+		this.events.forEach((element, index) =>
+		{
+			if (element.id == deletedAppointmentId)
+				this.events.splice(index, 1)
+		})
+
 		this.refresh.next("refresh")
 		let calendar = document.getElementById('calendarColumns')
 		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
