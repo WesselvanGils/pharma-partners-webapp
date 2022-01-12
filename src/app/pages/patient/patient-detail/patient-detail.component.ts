@@ -131,8 +131,8 @@ export class PatientDetailComponent implements OnInit
 						// returns true if there is an overlap otherwise returns false
 						if (appointmentStartAndEnds.some(item =>
 						{
-							if ((item.startTime < entry.meeting.start && entry.meeting.start < item.endTime) ||
-								(item.startTime < entry.meeting.end && entry.meeting.end < item.endTime))
+							if ((item.startTime <= entry.meeting.start && entry.meeting.start <= item.endTime) ||
+								(item.startTime <= entry.meeting.end && entry.meeting.end <= item.endTime))
 								return true
 							else
 								return false
