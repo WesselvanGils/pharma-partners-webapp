@@ -30,7 +30,7 @@
                             </thead>
                             <tbody>
                                 <tr *ngFor="let appointment of appointments$ | async">
-                                    <td class="align-middle">{{appointment.meeting.start | date: 'hh:mm'}}</td>
+                                    <td class="align-middle">{{appointment.meeting.start | date:'shortTime'}}</td>
                                     <td class="align-middle">{{appointment.patient.prefix}} {{appointment.patient.firstName}} {{appointment.patient.lastName}}</td>
                                     <td class="align-middle">{{appointment.meeting.title}}</td>
                                     <td class="align-middle">

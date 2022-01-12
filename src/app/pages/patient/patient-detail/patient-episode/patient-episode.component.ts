@@ -69,10 +69,10 @@ export class PatientEpisodeComponent implements OnInit
 				Prioriteit
 			</label>    
 			`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
@@ -92,7 +92,7 @@ export class PatientEpisodeComponent implements OnInit
 				const priority = priorityInput.checked
 				if (!description || !startDate || !ICPC)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					description: description,
