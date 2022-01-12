@@ -92,7 +92,7 @@ export class PatientEpisodeComponent implements OnInit
 				const priority = priorityInput.checked
 				if (!description || !startDate || !ICPC)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					description: description,

@@ -78,7 +78,7 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 
 				if (!characteristics || !consult || !ICPC || !date)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				const returnJournal: Journal =
 				{

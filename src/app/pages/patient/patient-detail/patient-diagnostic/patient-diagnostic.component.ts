@@ -53,7 +53,7 @@ export class PatientDiagnosticComponent implements OnInit
 				).value as unknown) as Date
 				if (!valueNumber || !date)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					valueNumber: valueNumber,
@@ -149,7 +149,7 @@ export class PatientDiagnosticComponent implements OnInit
 				).value as unknown) as Date
 				if (!name || !unit || !valueNumber || !date)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					name: name,

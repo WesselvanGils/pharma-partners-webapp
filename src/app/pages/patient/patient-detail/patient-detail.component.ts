@@ -79,7 +79,7 @@ export class PatientDetailComponent implements OnInit
 
 				if (!title || !date || !startTime || !endTime)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					title: title,

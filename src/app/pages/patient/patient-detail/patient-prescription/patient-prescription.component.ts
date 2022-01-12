@@ -113,7 +113,7 @@ export class PatientPrescriptionComponent implements OnInit {
 						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
 
 						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
-							Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+							Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 						}
 						return {
 							medication: medication,
@@ -132,7 +132,7 @@ export class PatientPrescriptionComponent implements OnInit {
 						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
 
 						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
-							Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+							Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 						}
 						return {
 							medication: medication,
