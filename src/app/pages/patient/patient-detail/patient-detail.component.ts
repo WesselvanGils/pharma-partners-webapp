@@ -77,7 +77,7 @@ export class PatientDetailComponent implements OnInit
 				const startTime = Swal.getPopup().querySelector<HTMLInputElement>("#startTime").value
 				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
 
-				if (!title || !date || !startTime || !endTime)
+				if (!title || !description || !date || !startTime || !endTime)
 				{
 					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
