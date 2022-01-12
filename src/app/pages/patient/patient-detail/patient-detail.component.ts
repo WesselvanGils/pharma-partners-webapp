@@ -63,10 +63,10 @@ export class PatientDetailComponent implements OnInit
 			<label for="endTime">Eind tijd:</label>
 			<input type="time" id="endTime" class="swal2-input mx-1" placeholder="Eind tijd">
 			`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
@@ -159,7 +159,7 @@ export class PatientDetailComponent implements OnInit
 								title: "Wacht even!",
 								html: `<span>Je hebt al een afspraak op deze tijd staan</span>`,
 								showDenyButton: true,
-								denyButtonText: "Annuleer",
+								denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 								showConfirmButton: true,
 								confirmButtonText: "Toch inplannen"
 							}).then(answer =>
