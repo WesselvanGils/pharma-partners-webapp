@@ -64,10 +64,11 @@ export class CalendarComponent implements OnInit
 			end: new Date(appointmentToUpdate.meeting.end)
 		}
 		const location = this.events.findIndex(item => item.id == appointmentToUpdate._id)
-		this.events.splice(location, 1)
-		this.events.splice(location, 0, eventToInsert)
-		console.log("sup")
+		this.events[location] = eventToInsert
 		this.refresh.next("refresh")
+		let calendar = document.getElementById('calendarColumns')
+		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
+		this.focusedMeeting = undefined
 	}
 
 	onDeleteTrigger(deletedAppointmentId: string)

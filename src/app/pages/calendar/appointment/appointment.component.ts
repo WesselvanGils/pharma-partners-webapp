@@ -165,7 +165,7 @@ export class AppointmentComponent implements OnInit
 									{
 										this.appointmentService.update(entry).subscribe(resolve =>
 										{
-											this.onUpdate.emit(focusedMeeting)
+											this.onUpdate.emit(entry)
 										})
 									}
 									if (answer.isDenied)
@@ -178,7 +178,7 @@ export class AppointmentComponent implements OnInit
 							{
 								this.appointmentService.update(entry).subscribe(resolve =>
 								{
-									this.onUpdate.emit(focusedMeeting)
+									this.onUpdate.emit(entry)
 								})
 							}
 						})
