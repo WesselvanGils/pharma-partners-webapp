@@ -21,12 +21,4 @@ export class AppointmentService extends EntityService<Appointment>
 		super(http, environment.apiUrl, "meetings")
 	}
 
-	public updateAppointment(id: number | string, options?: any): Observable<Appointment>{
-        const endpoint = `${environment.apiUrl}meetings/${id}`;
-		console.log(`update ${endpoint}`);
-		return this.http.put<Appointment[]>(endpoint, { ...options, ...httpOptions }).pipe(
-			// tap(console.log),
-			catchError(this.handleError)
-		);
-    }
 }

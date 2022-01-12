@@ -49,6 +49,7 @@ export class CalendarComponent implements OnInit
 
 	backToCalendar()
 	{
+		this.refresh.next("refresh")
 		let calendar = document.getElementById('calendarColumns')
 		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
 		this.focusedMeeting = undefined

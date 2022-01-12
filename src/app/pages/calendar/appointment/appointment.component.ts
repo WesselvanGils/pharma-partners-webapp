@@ -6,6 +6,7 @@ import { Appointment } from 'src/app/models/appointment.model';
 import { Patient } from 'src/app/models/patient.model';
 import Swal from "sweetalert2"
 import { CalendarService } from '../calendar.service';
+import { AppointmentService } from './appointment.service';
 
 @Component({
 	selector: 'app-appointment',
@@ -20,7 +21,8 @@ export class AppointmentComponent implements OnInit
 	@Output() onDelete = new EventEmitter<boolean>()
 	constructor(
 		private authService: AuthService,
-		private calendarService: CalendarService
+		private calendarService: CalendarService,
+		private appointmentService: AppointmentService,
 	) { }
 	
 	ngOnInit(): void 
@@ -39,7 +41,9 @@ export class AppointmentComponent implements OnInit
 		{
 			if (result.isConfirmed)
 			{
-				this.onDelete.emit(true)
+				this.appointmentService.delete(focusedMeeting._id).subscribe(resolve => {
+					this.onDelete.emit(true)
+				})
 			}
 		})
 	}
@@ -181,7 +185,7 @@ export class AppointmentComponent implements OnInit
 							{
 								if (answer.isConfirmed)
 								{
-									console.warn("isConfirmed")
+									console.warn("isConfirmed") 
 									// this.calendarService.create(entry).subscribe()
 								}
 								if (answer.isDenied)
