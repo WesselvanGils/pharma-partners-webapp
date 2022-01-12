@@ -5,6 +5,7 @@ import { Journal } from "src/app/models/journal.model"
 import Swal from "sweetalert2"
 import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "./journal.service"
+import { ICPC } from "src/app/models/ICPC.model"
 
 @Component({
 	selector: "app-patient-journal",
@@ -16,6 +17,7 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 	journals: Journal[]
 	episode: Episode
 
+	@Input() ICPCs: ICPC[]
 	constructor
 	( 
 		private journalService: JournalService,
@@ -40,11 +42,10 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 
 	addJournal()
 	{
-		const ICPC: string[] = [ "B81", "C80", "A55", "C11", "F22" ]
 		let ICPCOptions: string
-		ICPC.forEach(element =>
+		this.ICPCs.forEach(element =>
 		{
-			ICPCOptions = ICPCOptions + `<option>${element}</option>`
+			ICPCOptions = ICPCOptions + `<option>${element.IcpCode} ${element.IcpDescription}</option>`
 		})
 		Swal.fire({
 			title: "Voeg journal toe",
@@ -55,10 +56,10 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 			<input type="text" id="P" class="swal2-input px-1" placeholder="P">
 			<input type="text" id="characteristics" class="swal2-input px-1" placeholder="Kenmerken">
 			<input type="text" id="consult" class="swal2-input px-1" placeholder="Consult">
-			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
-				<option selected disabled>Kies een ICPC code...</option>
+			<input list="ICPC" id="selectedICPC" class="swal2-input px-1" placeholder="ICPC Code">
+			<datalist id="ICPC">
 				${ICPCOptions}
-			</select>
+			</datalist>
 			<input type="date" id="date" class="swal2-input px-1">`,
 			confirmButtonText: "Voeg toe",
 			showCloseButton: true,
@@ -73,7 +74,7 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 				const P = Swal.getPopup().querySelector<HTMLInputElement>("#P").value
 				const characteristics = Swal.getPopup().querySelector<HTMLInputElement>("#characteristics").value
 				const consult = Swal.getPopup().querySelector<	HTMLInputElement>("#consult").value
-				const ICPC = Swal.getPopup().querySelector<	HTMLInputElement>("#ICPC").value
+				const ICPC = Swal.getPopup().querySelector<	HTMLInputElement>("#selectedICPC").value
 				const date = Swal.getPopup().querySelector<	HTMLInputElement>("#date").value as unknown as Date
 
 				if (!characteristics || !consult || !ICPC || !date)

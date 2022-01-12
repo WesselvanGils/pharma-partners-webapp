@@ -71,12 +71,12 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-8 col-lg-8 mb-sm-3">
-					<app-patient-episode [(patient$)]="patient$" [(episodes$)]="episodes$"></app-patient-episode>
+					<app-patient-episode [ICPCs]="ICPCs" [(patient$)]="patient$" [(episodes$)]="episodes$"></app-patient-episode>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
-			<app-patient-journal></app-patient-journal>
+			<app-patient-journal [ICPCs]="ICPCs"></app-patient-journal>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row gutters-sm">
