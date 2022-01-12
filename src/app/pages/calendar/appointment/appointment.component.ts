@@ -100,7 +100,7 @@ export class AppointmentComponent implements OnInit
 				// this.patient$.subscribe(patient =>
 				// {
 					//Check if the start time is changed, if not use the existing start time
-					let formattedStart
+					let formattedStart: Date
 					if(result.value.startTime == 'empty'){
 						formattedStart = new Date(focusedMeeting.meeting.start)
 					} else {
