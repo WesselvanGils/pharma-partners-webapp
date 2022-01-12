@@ -54,6 +54,22 @@ export class CalendarComponent implements OnInit
 		this.focusedMeeting = undefined
 	}
 
+	onUpdateTrigger(appointmentToUpdate: Appointment)
+	{
+		const eventToInsert: CalendarEvent = 
+		{
+			id: appointmentToUpdate._id,
+			title: appointmentToUpdate.meeting.title,
+			start: new Date(appointmentToUpdate.meeting.start),
+			end: new Date(appointmentToUpdate.meeting.end)
+		}
+		const location = this.events.findIndex(item => item.id == appointmentToUpdate._id)
+		this.events.splice(location, 1)
+		this.events.splice(location, 0, eventToInsert)
+		console.log("sup")
+		this.refresh.next("refresh")
+	}
+
 	onDeleteTrigger(deletedAppointmentId: string)
 	{
 		this.events.forEach((element, index) =>

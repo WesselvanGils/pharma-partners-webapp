@@ -19,6 +19,7 @@ export class AppointmentComponent implements OnInit
 	patient$: Observable<Patient>
 	@Input() focusedMeeting: Observable<Appointment>
 	@Output() onDelete = new EventEmitter<string>()
+	@Output() onUpdate = new EventEmitter<Appointment>()
 	constructor(
 		private authService: AuthService,
 		private calendarService: CalendarService,
@@ -166,8 +167,10 @@ export class AppointmentComponent implements OnInit
 								{
 									if (answer.isConfirmed)
 									{
-										// this.calendarService.create(entry).subscribe()
-										this.appointmentService.update(entry).subscribe()
+										this.appointmentService.update(entry).subscribe(resolve =>
+										{
+											this.onUpdate.emit(focusedMeeting)
+										})
 									}
 									if (answer.isDenied)
 									{
@@ -177,8 +180,10 @@ export class AppointmentComponent implements OnInit
 							}
 							else
 							{
-								// this.calendarService.create(entry).subscribe()
-								this.appointmentService.update(entry).subscribe()
+								this.appointmentService.update(entry).subscribe(resolve =>
+								{
+									this.onUpdate.emit(focusedMeeting)
+								})
 							}
 						})
 				// })
