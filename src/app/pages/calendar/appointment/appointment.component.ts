@@ -108,7 +108,7 @@ export class AppointmentComponent implements OnInit
 					}
 
 					//Check if the end time is changed, if not use the existing end time
-					let formattedEnd
+					let formattedEnd: Date
 					if(result.value.endTime == 'empty'){
 						formattedEnd = new Date(focusedMeeting.meeting.end)
 					} else {
@@ -135,7 +135,9 @@ export class AppointmentComponent implements OnInit
 							{
 								const startToBeAdded = new Date(item.meeting.start)
 								const endToBeAdded = new Date(item.meeting.end)
-								if (startToBeAdded.getDate() == formattedStart.getDate() && endToBeAdded.getDate() == formattedEnd.getDate())
+								let areStartAndEndTimeEqual = startToBeAdded.getTime() == formattedStart.getTime() && endToBeAdded.getTime() == formattedEnd.getTime()
+								console.warn(areStartAndEndTimeEqual)
+								if (!areStartAndEndTimeEqual && startToBeAdded.getDate() == formattedStart.getDate() && endToBeAdded.getDate() == formattedEnd.getDate())
 									appointmentStartAndEnds.push({startTime: startToBeAdded, endTime: endToBeAdded})
 							})
 							
