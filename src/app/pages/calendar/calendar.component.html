@@ -20,6 +20,6 @@
 	</div>
 	<div class="col-sm-12 col-md-5 col-lg-5">
 		<button *ngIf="focusedMeeting" class="btn btn-danger btn-sm float-right" (click)="backToCalendar()"><i class="fas fa-times"></i> </button>
-		<app-appointment [focusedMeeting]="focusedMeeting"></app-appointment>
+		<app-appointment (onDelete)="backToCalendar()" [focusedMeeting]="focusedMeeting"></app-appointment>
 	</div>
 </div>

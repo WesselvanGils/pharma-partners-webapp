@@ -47,7 +47,8 @@ export class CalendarComponent implements OnInit
 		this.calendarService.read(event.id).pipe((data) => this.focusedMeeting = data)
 	}
 
-	backToCalendar(){
+	backToCalendar()
+	{
 		let calendar = document.getElementById('calendarColumns')
 		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
 		this.focusedMeeting = undefined

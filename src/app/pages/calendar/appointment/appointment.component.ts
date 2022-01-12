@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CalendarEvent } from 'angular-calendar';
 import { Observable } from 'rxjs';
 import { AuthService } from 'src/app/core/auth/auth.service';
@@ -17,6 +17,7 @@ export class AppointmentComponent implements OnInit
 {
 	patient$: Observable<Patient>
 	@Input() focusedMeeting: Observable<Appointment>
+	@Output() onDelete = new EventEmitter<boolean>()
 	constructor(
 		private authService: AuthService,
 		private calendarService: CalendarService
@@ -27,8 +28,20 @@ export class AppointmentComponent implements OnInit
 
 	}
 
-	deleteAppointment(focusedMeeting: Appointment){
-
+	deleteAppointment(focusedMeeting: Appointment)
+	{
+		Swal.fire(
+		{
+			title: "Weet je het zeker?",
+			showConfirmButton: true,
+			showDenyButton: true
+		}).then(result =>
+		{
+			if (result.isConfirmed)
+			{
+				this.onDelete.emit(true)
+			}
+		})
 	}
 
 	editAppointment(focusedMeeting: Appointment)
