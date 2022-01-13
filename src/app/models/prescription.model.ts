@@ -6,6 +6,7 @@ export class Prescription extends Entity
     description: string
     dosage: string
     publicationDate: Date
-    period: string
+    periodStart: Date
+    periodEnd: Date
     medication: Medication
 }

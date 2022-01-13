@@ -4,7 +4,7 @@
             <h3 class="col-sm-6 col-md-6 col-lg-7">Recepten</h3>
             <span class="col-sm-6 col-md-6 col-lg-5">
                 <button class="btn btn-primary btn-sm float-right" (click)="addPrescription()">
-                    <i class="fas fa-plus"></i> Voeg recept toe
+                    <i class="fas fa-plus-circle"></i> Voeg recept toe
                 </button>
             </span>
         </div>
@@ -25,7 +25,7 @@
                             {{ prescription.medication.unit }}
                         </td>
                         <td class="align-middle">{{ prescription.dosage }}</td>
-                        <td class="align-middle">{{ prescription.period }}</td>
+                        <td class="align-middle">{{ prescription.periodStart | date: "dd MMM" }} - {{ prescription.periodEnd | date: "dd MMM" }}</td>
                         <td class="align-middle">
                             <button class="btn btn-info btn-sm"
                                 (click)="detailPrescription(prescription, patient)">

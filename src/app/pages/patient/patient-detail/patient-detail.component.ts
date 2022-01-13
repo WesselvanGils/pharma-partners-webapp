@@ -10,6 +10,8 @@ import { Diagnostic } from "src/app/models/diagnostic.model"
 import { Appointment } from "src/app/models/appointment.model"
 import { AuthService } from "src/app/core/auth/auth.service"
 import { CalendarService } from "../../calendar/calendar.service"
+import rootICPC from "src/assets/documents/IcpcTrimmed.json"
+import { ICPC } from "src/app/models/ICPC.model"
 
 @Component({
 	selector: "app-patient-detail",
@@ -22,6 +24,7 @@ export class PatientDetailComponent implements OnInit
 	prescriptions$: Observable<Prescription[]>
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
+	ICPCs: ICPC[] = []
 
 	constructor(
 		private route: ActivatedRoute,
@@ -45,6 +48,11 @@ export class PatientDetailComponent implements OnInit
 				this.episodes$ = of(result.medicalrecord.episodes)
 				this.diagnostics$ = of(result.medicalrecord.diagnostics)
 			})
+
+		rootICPC.forEach(element =>
+		{
+			this.ICPCs.push({IcpCode: element.IcpIcpcKode, IcpDescription: element.IcpOmschrijving})
+		})
 	}
 
 	addAppointment()
@@ -54,41 +62,32 @@ export class PatientDetailComponent implements OnInit
 			html: `
 			<input type="text" id="title" class="swal2-input" placeholder="Afspraak naam">
 			<input type="text" id="description" class="swal2-input" placeholder="Afspraak Omschrijving">
-			<input type="date" id="date" class="swal2-input " placeholder="Datum">
-			<div>
+			<p class='mt-2 mb-0 mr-4'>Datum:</p>
+			<input type="date" id="date" class="swal2-input mt-1" placeholder="Datum">
+			<br>
 			<label for="startTime">Start tijd:</label>
-			<input type="time" id="startTime" class="swal2-input ml-1 mr-2" placeholder="Begin tijd">
+			<input type="time" id="startTime" class="swal2-input mx-1" placeholder="Begin tijd">
+			<br>
 			<label for="endTime">Eind tijd:</label>
 			<input type="time" id="endTime" class="swal2-input mx-1" placeholder="Eind tijd">
-			</div>
 			`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
 			{
-				const title = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#title"
-				).value
-				const description = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#description").value
-				const date = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#date"
-				).value
-				const startTime = Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#startTime").value
-				const endTime = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#endTime"
-				).value
+				const title = Swal.getPopup().querySelector<HTMLInputElement>("#title").value
+				const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
+				const date = Swal.getPopup().querySelector<HTMLInputElement>("#date").value
+				const startTime = Swal.getPopup().querySelector<HTMLInputElement>("#startTime").value
+				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
 
-				if (!title || !date || !startTime || !endTime)
+				if (!title || !description || !date || !startTime || !endTime)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					title: title,
@@ -122,7 +121,56 @@ export class PatientDetailComponent implements OnInit
 							end: formattedEnd
 						}
 					}
-					this.calendarService.create(entry).subscribe()
+
+					this.calendarService.list(this.authService.currentUser$.value._id).subscribe(appointments =>
+					{
+						let appointmentStartAndEnds: [{startTime: Date, endTime: Date}] = [{startTime: undefined, endTime: undefined}]
+
+						appointments.forEach(item =>
+						{
+							const startToBeAdded = new Date(item.meeting.start)
+							const endToBeAdded = new Date(item.meeting.end)
+							if (startToBeAdded.getDate() == formattedStart.getDate() && endToBeAdded.getDate() == formattedEnd.getDate())
+								appointmentStartAndEnds.push({startTime: startToBeAdded, endTime: endToBeAdded})
+						})
+						
+						// Check if there's no overlapping times between the current appointments
+						// and the new entry that is being inserted
+						// returns true if there is an overlap otherwise returns false
+						if (appointmentStartAndEnds.some(item =>
+						{
+							if ((item.startTime <= entry.meeting.start && entry.meeting.start <= item.endTime) ||
+								(item.startTime <= entry.meeting.end && entry.meeting.end <= item.endTime))
+								return true
+							else
+								return false
+						}))
+						{
+							Swal.fire(
+							{
+								title: "Wacht even!",
+								html: `<span>Je hebt al een afspraak op deze tijd staan</span>`,
+								showDenyButton: true,
+								denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
+								showConfirmButton: true,
+								confirmButtonText: "Toch inplannen"
+							}).then(answer =>
+							{
+								if (answer.isConfirmed)
+								{
+									this.calendarService.create(entry).subscribe()
+								}
+								if (answer.isDenied)
+								{
+									this.addAppointment()
+								}
+							})
+						}
+						else
+						{
+							this.calendarService.create(entry).subscribe()
+						}
+					})
 				})
 			}
 		})

@@ -6,6 +6,7 @@ import { EpisodeService } from "./episode.service"
 import { MedicalRecordService } from "../medicalRecord.service"
 import { Journal } from "src/app/models/journal.model"
 import { Patient } from "src/app/models/patient.model"
+import { ICPC } from "src/app/models/ICPC.model"
 
 @Component({
 	selector: "app-patient-episode",
@@ -16,6 +17,7 @@ export class PatientEpisodeComponent implements OnInit
 {
 	@Input() episodes$: Observable<Episode[]>
 	@Input() patient$: Observable<Patient>
+	@Input() ICPCs: ICPC[]
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
 	@Output() episodes$Change = new EventEmitter<Observable<Episode[]>>()
 	constructor
@@ -26,8 +28,6 @@ export class PatientEpisodeComponent implements OnInit
 
 	ngOnInit(): void { }
 
-	
-
 	setJournal(journals: Journal[], episode: Episode)
 	{
 		this.episodeService.changeJournal(journals, episode)
@@ -35,11 +35,10 @@ export class PatientEpisodeComponent implements OnInit
 
 	addEpisode()
 	{
-		const ICPC: string[] = [ "B81", "C80", "A55", "C11", "F22" ]
 		let ICPCOptions: string
-		ICPC.forEach(element =>
+		this.ICPCs.forEach(element =>
 		{
-			ICPCOptions = ICPCOptions + `<option>${element}</option>`
+			ICPCOptions = ICPCOptions + `<option>${element.IcpCode} ${element.IcpDescription}</option>`
 		})
 
 		Swal.fire({
@@ -59,21 +58,22 @@ export class PatientEpisodeComponent implements OnInit
 				}
 			</style>
 			<input type="text" id="description" class="swal2-input" placeholder="Omschrijving">
-			<input type="date" id="startDate" class="swal2-input" placeholder="Start Datum">
-			<select type="text" id="ICPC" class="swal2-input" placeholder="ICPC">
-				<option selected disabled>Kies een ICPC code...</option>
+			<p class='mt-2 mb-0 mr-4'>Datum:</p>
+			<input type="date" id="startDate" class="swal2-input mt-1" placeholder="Start Datum">
+			<input list="ICPC" id="selectedICPC" class="swal2-input px-1" placeholder="ICPC Code">
+			<datalist id="ICPC">
 				${ICPCOptions}
-			</select>
+			</datalist>
 			<br>
 			<input type="checkbox" id="priority" class="swal2-checkbox mt-3">
 			<label class="form-check-label" for="priority">
-				Priority
+				Prioriteit
 			</label>    
 			`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
@@ -85,7 +85,7 @@ export class PatientEpisodeComponent implements OnInit
 					HTMLInputElement
 				>("#startDate").value as unknown) as Date
 				const ICPC = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#ICPC"
+					"#selectedICPC"
 				).value
 				const priorityInput = <HTMLInputElement>(
 					document.getElementById("priority")
@@ -93,7 +93,7 @@ export class PatientEpisodeComponent implements OnInit
 				const priority = priorityInput.checked
 				if (!description || !startDate || !ICPC)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					description: description,
