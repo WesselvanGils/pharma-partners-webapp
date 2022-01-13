@@ -43,7 +43,7 @@ describe('PatientListComponent', () =>
 	let routerSpy
 	beforeEach(() =>
 	{
-		patientServiceSpy = jasmine.createSpyObj('PatientService', [ 'list' ])
+		patientServiceSpy = jasmine.createSpyObj('PatientService', [ 'batch' ])
 		routerSpy = jasmine.createSpyObj('Router', [ 'navigateByUrl' ])
 		TestBed.configureTestingModule({
 			declarations: [
@@ -82,10 +82,10 @@ describe('PatientListComponent', () =>
 	});
 	it('should have a list of patients', (done) =>
 	{
-		patientServiceSpy.list.and.returnValue(of(PATIENTS));
+		patientServiceSpy.batch.and.returnValue(of(PATIENTS));
 		fixture.detectChanges();
 		expect(component).toBeTruthy();
-		patientServiceSpy.list().subscribe((patient) => expect(patient).toEqual(PATIENTS))
+		patientServiceSpy.batch().subscribe((patient) => expect(patient).toEqual(PATIENTS))
 		done();
 	})
 });
