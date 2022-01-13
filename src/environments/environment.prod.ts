@@ -4,7 +4,7 @@ export const environment =
 {
 	production: true,
 
-	apiUrl: "https://pharma-partners-api.herokuapp.com/api/",
+	apiUrl: "http://localhost:3000/api/",
 
 	version: packagejson.version
 }

@@ -1,7 +1,8 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable, catchError, throwError } from 'rxjs';
+import { Observable, catchError, throwError, from } from 'rxjs';
 import { Entity } from '../models/entity.model';
 import { Alert } from './alert/alert.service';
+import { db } from './offlineDatabase';
 
 const httpOptions = {
 	observe: 'body',
@@ -12,7 +13,7 @@ export class EntityService<T extends Entity> {
 	constructor(
 		protected readonly http: HttpClient,
 		public readonly url: string,
-		public readonly endpoint: string
+		public readonly endpoint: string,
 	) { }
 
 	public create(item: T, options?: any): Observable<T>
@@ -50,12 +51,23 @@ export class EntityService<T extends Entity> {
 	 */
 	public list(id?: number | string, options?: any): Observable<T[]>
 	{
-		let endpoint = `${this.url}${this.endpoint}`;
-		if (id) endpoint = endpoint + `/doctor/${id}`
-		console.log(`list ${endpoint}`);
-		return this.http
-			.get<T[]>(endpoint, { ...options, ...httpOptions })
-			.pipe(catchError(this.handleError));
+		console.warn(`${navigator.onLine}`)
+		if (navigator.onLine)
+		{
+			let endpoint = `${this.url}${this.endpoint}`;
+			if (id) endpoint = endpoint + `/doctor/${id}`
+			console.log(`list ${endpoint}`);
+			const response = this.http
+				.get<T[]>(endpoint, { ...options, ...httpOptions })
+				.pipe(catchError(this.handleError))
+			// console.warn("Adding something to the local database")
+			db.populate()
+			return response
+		}
+		else
+		{
+			return from(db.patientTable.get(0))
+		}
 	}
 
 	public batch(amount: number, batchnmbr: number, options?: any): Observable<T[]>

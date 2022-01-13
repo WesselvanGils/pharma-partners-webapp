@@ -31,6 +31,8 @@ import { PatientJournalComponent } from './pages/patient/patient-detail/patient-
 import { PatientEpisodeComponent } from './pages/patient/patient-detail/patient-episode/patient-episode.component';
 import { PatientDiagnosticComponent } from './pages/patient/patient-detail/patient-diagnostic/patient-diagnostic.component';
 import { PatientPrescriptionComponent } from './pages/patient/patient-detail/patient-prescription/patient-prescription.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
 	declarations: [
@@ -73,7 +75,13 @@ import { PatientPrescriptionComponent } from './pages/patient/patient-detail/pat
 				provide: DateAdapter,
 				useFactory: adapterFactory
 			}
-		)
+		),
+		ServiceWorkerModule.register('ngsw-worker.js', {
+			enabled: environment.production,
+			// Register the ServiceWorker as soon as the app is stable
+			// or after 30 seconds (whichever comes first).
+			registrationStrategy: 'registerWhenStable:30000'
+		})
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]
