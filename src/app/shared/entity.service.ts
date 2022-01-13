@@ -58,6 +58,15 @@ export class EntityService<T extends Entity> {
 			.pipe(catchError(this.handleError));
 	}
 
+	public batch(amount: number, batchnmbr: number, options?: any): Observable<T[]>
+	{
+		const endpoint = `${this.url}${this.endpoint}/${amount}/${batchnmbr}`
+		console.log(`batch ${endpoint}`)
+		return this.http
+			.get<T[]>(endpoint, { ...options, ...httpOptions })
+			.pipe(catchError(this.handleError))
+	}
+
 	/**
 	 * Get a single item from the service.
 	 *

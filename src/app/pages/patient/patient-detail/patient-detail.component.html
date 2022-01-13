@@ -3,7 +3,7 @@
 		<h1 class="col-sm-10 col-md-7 col-lg-8">Patiënt dossier</h1>
 		<div class="col-sm-2 col-md-5 col-lg-4">
 			<button class="btn btn-warning float-right mt-sm-1 mt-md-3 mt-lg-3" (click)="addAppointment()">
-				<i class="fas fa-plus"></i> Voeg vervolg afspraak toe
+				<i class="far fa-calendar-plus"></i> Voeg vervolg afspraak toe
 			</button>
 		</div>
 	</div>
@@ -52,7 +52,7 @@
 							<hr />
 							<div class="row">
 								<div class="col-sm-3 col-md-12 col-lg-4 pr-0">
-									<h6 class="mb-0">Adress</h6>
+									<h6 class="mb-0">Adres</h6>
 								</div>
 								<div class="col-sm-9 col-md-12 col-lg-8 text-secondary">
 									{{ patient.adress }}
@@ -71,12 +71,12 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-8 col-lg-8 mb-sm-3">
-					<app-patient-episode [(patient$)]="patient$" [(episodes$)]="episodes$"></app-patient-episode>
+					<app-patient-episode [ICPCs]="ICPCs" [(patient$)]="patient$" [(episodes$)]="episodes$"></app-patient-episode>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
-			<app-patient-journal></app-patient-journal>
+			<app-patient-journal [ICPCs]="ICPCs"></app-patient-journal>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row gutters-sm">
@@ -84,7 +84,7 @@
 					<app-patient-diagnostic [(patient$)]="patient$" [(diagnostics$)]="diagnostics$"></app-patient-diagnostic>
 				</div>
 				<div class="col-sm-12 col-md-7 col-lg-6 mb-3">
-					<app-patient-prescription [(patient$)]="patient$" [(prescriptions$)]="prescriptions$"></app-patient-prescription>
+					<app-patient-prescription [(patient$)]="patient$" [(prescriptions$)]="prescriptions$" [episodes$]="episodes$" [ICPCs]="ICPCs"></app-patient-prescription>
 				</div>
 			</div>
 		</div>

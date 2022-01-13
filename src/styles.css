@@ -176,7 +176,7 @@ h6 {
   background-color: #17a2b8 !important;
 }
 .swal2-styled.swal2-confirm:focus {
-  box-shadow: 0 0 0 3px #17a2b8 !important;
+  box-shadow: 0 0 0 3px #17a2b880 !important;
 }
 /* Close button hover*/
 .swal2-close:hover {
@@ -187,7 +187,7 @@ h6 {
   background-color: #ed1e79 !important;
 }
 .swal2-styled.swal2-deny:focus {
-  box-shadow: 0 0 0 3px rgb(237, 30, 121, 0.5) !important;
+  box-shadow: 0 0 0 3px #ed1e7980 !important;
 }
 /* Error message icon */
 .swal2-validation-message::before {
