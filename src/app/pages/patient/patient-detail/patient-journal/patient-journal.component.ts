@@ -61,10 +61,10 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 				${ICPCOptions}
 			</datalist>
 			<input type="date" id="date" class="swal2-input px-1">`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showCloseButton: true,
 			showDenyButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusConfirm: false,
 			preConfirm: () =>
 			{
@@ -79,7 +79,7 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 
 				if (!characteristics || !consult || !ICPC || !date)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				const returnJournal: Journal =
 				{

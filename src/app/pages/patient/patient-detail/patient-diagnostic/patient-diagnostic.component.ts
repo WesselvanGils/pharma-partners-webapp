@@ -38,10 +38,10 @@ export class PatientDiagnosticComponent implements OnInit
 				<input type="date" id="date" class="swal2-input mt-1" placeholder="Datum">
 				<input type="number" min="0" id="valueNumber" class="swal2-input" placeholder="Waarde (getal)">
 				`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showCloseButton: true,
 			showDenyButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusConfirm: false,
 			preConfirm: () =>
 			{
@@ -53,7 +53,7 @@ export class PatientDiagnosticComponent implements OnInit
 				).value as unknown) as Date
 				if (!valueNumber || !date)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					valueNumber: valueNumber,
@@ -127,10 +127,10 @@ export class PatientDiagnosticComponent implements OnInit
 		  <input type="text" id="unit" class="swal2-input" placeholder="Eenheid">
 		  <input type="date" id="date" class="swal2-input" placeholder="Datum">
 		  `,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
@@ -149,7 +149,7 @@ export class PatientDiagnosticComponent implements OnInit
 				).value as unknown) as Date
 				if (!name || !unit || !valueNumber || !date)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					name: name,

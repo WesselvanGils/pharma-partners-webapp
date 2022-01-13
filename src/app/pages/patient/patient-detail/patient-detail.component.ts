@@ -71,10 +71,10 @@ export class PatientDetailComponent implements OnInit
 			<label for="endTime">Eind tijd:</label>
 			<input type="time" id="endTime" class="swal2-input mx-1" placeholder="Eind tijd">
 			`,
-			confirmButtonText: "Voeg toe",
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
-			denyButtonText: "Annuleer",
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
 			preConfirm: () =>
@@ -85,9 +85,9 @@ export class PatientDetailComponent implements OnInit
 				const startTime = Swal.getPopup().querySelector<HTMLInputElement>("#startTime").value
 				const endTime = Swal.getPopup().querySelector<HTMLInputElement>("#endTime").value
 
-				if (!title || !date || !startTime || !endTime)
+				if (!title || !description || !date || !startTime || !endTime)
 				{
-					Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
 					title: title,
@@ -124,50 +124,34 @@ export class PatientDetailComponent implements OnInit
 
 					this.calendarService.list(this.authService.currentUser$.value._id).subscribe(appointments =>
 					{
-						let appointmentStartDates: Date[] = []
-						let appointmentEndDates: Date[] = []
-						appointments.forEach(appointment => 
+						let appointmentStartAndEnds: [{startTime: Date, endTime: Date}] = [{startTime: undefined, endTime: undefined}]
+
+						appointments.forEach(item =>
 						{
-							appointmentStartDates.push(new Date(appointment.meeting.start))
-							appointmentEndDates.push(new Date(appointment.meeting.end))
+							const startToBeAdded = new Date(item.meeting.start)
+							const endToBeAdded = new Date(item.meeting.end)
+							if (startToBeAdded.getDate() == formattedStart.getDate() && endToBeAdded.getDate() == formattedEnd.getDate())
+								appointmentStartAndEnds.push({startTime: startToBeAdded, endTime: endToBeAdded})
 						})
+						
 						// Check if there's no overlapping times between the current appointments
 						// and the new entry that is being inserted
 						// returns true if there is an overlap otherwise returns false
-						if (appointmentStartDates.some(appointmentStart =>
-							{
-								// Checks if the appointment start is before the new entry's start
-								if (appointmentStart <= entry.meeting.start)
-								{
-									// If the appointment starts before the new entry's start is before the end of the appointment
-									return appointmentEndDates.some(appointmentEnd =>
-									{
-										if (appointmentEnd <= entry.meeting.start)
-											return false
-										else
-											return true
-									})
-								}
-								else
-								{
-									// If the appoinment starts after the new entry starts 
-									// check if the end doesn't end before the appointment does
-									return appointmentEndDates.some(appointmentEnd =>
-									{
-										if (entry.meeting.end <= appointmentEnd)
-											return true
-										else
-											return false
-									})
-								}
-							}))
+						if (appointmentStartAndEnds.some(item =>
+						{
+							if ((item.startTime <= entry.meeting.start && entry.meeting.start <= item.endTime) ||
+								(item.startTime <= entry.meeting.end && entry.meeting.end <= item.endTime))
+								return true
+							else
+								return false
+						}))
 						{
 							Swal.fire(
 							{
 								title: "Wacht even!",
 								html: `<span>Je hebt al een afspraak op deze tijd staan</span>`,
 								showDenyButton: true,
-								denyButtonText: "Annuleer",
+								denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 								showConfirmButton: true,
 								confirmButtonText: "Toch inplannen"
 							}).then(answer =>

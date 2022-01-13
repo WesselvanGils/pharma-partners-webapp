@@ -102,7 +102,7 @@ export class PatientPrescriptionComponent implements OnInit {
 						`,
 					confirmButtonText: `<i class="fas fa-list-alt fa-sm p-0"></i> Voeg toe als journaalregel`,
 					showCancelButton: true,
-					cancelButtonText: "Annuleer",
+					cancelButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 					showCloseButton: true,
 					showDenyButton: true,
 					denyButtonText: "Voeg los toe",
@@ -115,7 +115,7 @@ export class PatientPrescriptionComponent implements OnInit {
 						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
 
 						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
-							Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+							Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 						}
 						return {
 							medication: medication,
@@ -134,7 +134,7 @@ export class PatientPrescriptionComponent implements OnInit {
 						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
 
 						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
-							Swal.showValidationMessage(`Vul a.u.b alle velden in`)
+							Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 						}
 						return {
 							medication: medication,
@@ -202,10 +202,10 @@ export class PatientPrescriptionComponent implements OnInit {
 								</datalist>
 								`,
 								showConfirmButton: true,
-								confirmButtonText: "Voeg toe",
+								confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 								showDenyButton: true,
 								showCloseButton: true,
-								denyButtonText: "Annuleer",
+								denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 								focusDeny: false,
 								focusConfirm: false,
 								preConfirm: () => {
