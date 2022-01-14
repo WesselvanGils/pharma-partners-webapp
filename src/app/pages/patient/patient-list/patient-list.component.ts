@@ -21,7 +21,7 @@ export class PatientListComponent implements OnInit
 	patients: Patient[] = []
 	selectedId = 0
 
-	batchSize = 100
+	batchSize = 10
 	batchNmbr = 0
 
 	constructor
