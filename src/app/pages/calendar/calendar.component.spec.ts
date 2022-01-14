@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
+import { BehaviorSubject, of } from 'rxjs';
 import { AuthService } from 'src/app/core/auth/auth.service';
 import { Appointment } from 'src/app/models/appointment.model';
 import { Patient } from 'src/app/models/patient.model';
@@ -47,7 +47,7 @@ describe('CalendarComponent', () =>
 
 	beforeEach(async () =>
 	{
-		calendarServiceSpy = jasmine.createSpyObj("CalendarService", ["list"])
+		calendarServiceSpy = jasmine.createSpyObj("CalendarService", ["list", "currentAppointment", "changeAppointment"])
 		authServiceSpy = jasmine.createSpyObj("AuthService", ["currentUser"])
 
 		await TestBed.configureTestingModule({
@@ -66,10 +66,15 @@ describe('CalendarComponent', () =>
 		authServiceSpy.currentUser$ = of(expectedUserData)
 		authServiceSpy.currentUser$.value = of(expectedUserData)
 		calendarServiceSpy.list.and.returnValue(of(expectedMeetingData))
+		calendarServiceSpy.currentAppointment = (of(undefined))
 		fixture = TestBed.createComponent(CalendarComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});
+
+	afterEach(() => {
+		calendarServiceSpy.changeAppointment.and.returnValue(new BehaviorSubject<Appointment>(undefined))
+	})
 
 	it('should create', () =>
 	{
