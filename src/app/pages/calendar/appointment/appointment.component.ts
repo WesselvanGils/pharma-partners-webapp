@@ -136,7 +136,6 @@ export class AppointmentComponent implements OnInit
 								const startToBeAdded = new Date(item.meeting.start)
 								const endToBeAdded = new Date(item.meeting.end)
 								let areStartAndEndTimeEqual = startToBeAdded.getTime() == formattedStart.getTime() && endToBeAdded.getTime() == formattedEnd.getTime()
-								console.warn(areStartAndEndTimeEqual)
 								if (!areStartAndEndTimeEqual && startToBeAdded.getDate() == formattedStart.getDate() && endToBeAdded.getDate() == formattedEnd.getDate())
 									appointmentStartAndEnds.push({startTime: startToBeAdded, endTime: endToBeAdded})
 							})

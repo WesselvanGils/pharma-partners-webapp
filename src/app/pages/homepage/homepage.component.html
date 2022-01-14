@@ -34,7 +34,7 @@
                                     <td class="align-middle">{{appointment.patient.prefix}} {{appointment.patient.firstName}} {{appointment.patient.lastName}}</td>
                                     <td class="align-middle">{{appointment.meeting.title}}</td>
                                     <td class="align-middle">
-                                        <button class="btn btn-primary btn-sm" (click)="goToAppointment()">
+                                        <button class="btn btn-primary btn-sm" (click)="goToAppointment(appointment)">
                                             <i class="fa fa-info-circle fa-sm"></i> Details
                                         </button>
                                     </td>

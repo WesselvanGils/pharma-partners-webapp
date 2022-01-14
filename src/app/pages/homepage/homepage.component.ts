@@ -21,6 +21,7 @@ export class HomepageComponent implements OnInit
 	constructor
 	(
 		private appointmentService: CalendarService,
+		private calendarService: CalendarService,
 		private authService: AuthService,
 		private router: Router
 	)
@@ -43,9 +44,10 @@ export class HomepageComponent implements OnInit
 		})
 	}
 
-	goToAppointment()
+	goToAppointment(appointment: Appointment)
 	{
 		this.router.navigate(['/calendar'])
+		this.calendarService.changeAppointment(appointment)
 		// TODO: Deze wellicht doorrouten naar de informatie van die afspraak?
 		// Swal.fire({ title: "Dit zou doorgestuurd moeten worden naar de info voor de details" })
 	}

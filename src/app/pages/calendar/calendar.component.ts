@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
-import { Observable, Subject } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
 import { Appointment } from '../../models/appointment.model';
 import Swal from 'sweetalert2';
 import { CalendarService } from './calendar.service';
@@ -38,6 +38,16 @@ export class CalendarComponent implements OnInit
 				]
 			})
 			this.refresh.next("refresh")
+		})
+
+		this.calendarService.currentAppointment.subscribe(result => 
+		{
+			if (result)
+			{
+				let calendar = document.getElementById('calendarColumns')
+				calendar.className = 'card col-sm-12 col-md-7 col-lg-7 p-0'
+				this.focusedMeeting = of(result)
+			}
 		})
 	}
 
