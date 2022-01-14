@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
 import { Observable, of, Subject } from 'rxjs';
 import { Appointment } from '../../models/appointment.model';
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './calendar.component.html',
 })
-export class CalendarComponent implements OnInit
+export class CalendarComponent implements OnInit, OnDestroy
 {
 	view: CalendarView = CalendarView.Week
 	viewDate: Date = new Date()
@@ -93,5 +93,11 @@ export class CalendarComponent implements OnInit
 		let calendar = document.getElementById('calendarColumns')
 		calendar.className = 'card col-sm-12 col-md-12 col-lg-12 p-0'
 		this.focusedMeeting = undefined
+	}
+
+	ngOnDestroy(): void 
+	{
+		this.focusedMeeting = undefined
+		this.calendarService.changeAppointment(undefined)	
 	}
 }
