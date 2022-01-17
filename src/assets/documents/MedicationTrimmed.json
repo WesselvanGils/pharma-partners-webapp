@@ -1,0 +1,3002 @@
+[
+  {
+    "Bp": 1,
+    "BpNaam": "FENOXYMETHYLPENICILLINE KALIUM CAPS 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 2,
+    "BpNaam": "TIMOLOL (MALEAAT) OOGDR 2,5MG/ML OCUDOSE",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 7,
+    "BpNaam": "RANITIDINE (HCL) TABL 150MG",
+    "SterkteHv": 1500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 8,
+    "BpNaam": "COLESTIPOL HCL PDR IN SACH 5G",
+    "SterkteHv": 50,
+    "SterkteEh": "G"
+  },
+  {
+    "Bp": 12,
+    "BpNaam": "STERCULIAGOM GRANULAAT 620MG/G",
+    "SterkteHv": 6200,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 14,
+    "BpNaam": "PENTOXYVERINE CITRAAT DRAG 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 16,
+    "BpNaam": "INSUL.GEWOON/ISOFAAN HUM.INJ.100E/ML 30/70 AMP",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 17,
+    "BpNaam": "INSULINE ISOFAAN HUMAAN INJVLST 100E/ML AMP",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 18,
+    "BpNaam": "PIRPROFEN CAPS 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 19,
+    "BpNaam": "INDOMETACINE CAPS 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 21,
+    "BpNaam": "CHLOORTALIDON TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 22,
+    "BpNaam": "TERTATOLOL HCL TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 31,
+    "BpNaam": "TRIMETHOPRIM TABL 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 32,
+    "BpNaam": "VALPROINE NAZOUT TABL MSR 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 33,
+    "BpNaam": "ETOPOSIDE INFVLST CONC 20MG/ML",
+    "SterkteHv": 200,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 34,
+    "BpNaam": "BROOMPERIDOL TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 35,
+    "BpNaam": "NITROGLYCERINE ZALF 20MG/G",
+    "SterkteHv": 200,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 36,
+    "BpNaam": "BROOMPERIDOL TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 37,
+    "BpNaam": "DIPYRIDAMOL TABL 75MG",
+    "SterkteHv": 750,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 41,
+    "BpNaam": "PETHIDINE HCL INJVLST 50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 44,
+    "BpNaam": "ERYTROMYCINE (ETHYLSUCCINAAT) PDR SACH 1000MG",
+    "SterkteHv": 10000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 47,
+    "BpNaam": "PROMAZINE HCL DRAG 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 48,
+    "BpNaam": "PROMAZINE HCL DRAG 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 49,
+    "BpNaam": "VALERIAAN EXTRACT,DIKVLOEIBAAR DRAG 45MG",
+    "SterkteHv": 450,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 52,
+    "BpNaam": "CLOFIBRAAT CAPS 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 55,
+    "BpNaam": "AMINOZUREN MENGSEL INFVLST 100MG/ML (AMINOPLASMAL)",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 57,
+    "BpNaam": "NIFEDIPINE CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 58,
+    "BpNaam": "DOXORUBICINE HCL INJPDR 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 59,
+    "BpNaam": "FENOXYMETHYLPENICILLINE KZOUT TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 61,
+    "BpNaam": "CITROENZ./COFFEINE/FENAZON TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 69,
+    "BpNaam": "OFLOXACINE TABL 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 72,
+    "BpNaam": "SOTALOL HCL TABL 160MG",
+    "SterkteHv": 1600,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 73,
+    "BpNaam": "GLUCOSE 0-WATER INFVLST  50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 75,
+    "BpNaam": "LACTULOSE STROOP 500MG/G (667 MG/ML)",
+    "SterkteHv": 5000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 79,
+    "BpNaam": "HEPATITIS B IMMUNOGLOBULINE INJVLST 200E/ML",
+    "SterkteHv": 2000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 80,
+    "BpNaam": "ASCORBINEZUUR BRUISTABL 1000MG SINAS",
+    "SterkteHv": 10000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 83,
+    "BpNaam": "THEOFYLLINE CAPS MGA 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 88,
+    "BpNaam": "ROXITROMYCINE TABL 150MG",
+    "SterkteHv": 1500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 103,
+    "BpNaam": "CHLOORHEXIDINE DIGLUCONAAT OPLOSSING 200MG/ML",
+    "SterkteHv": 2000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 125,
+    "BpNaam": "CHLOORTHIAZIDE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 127,
+    "BpNaam": "AMITRIPTYLINE HCL TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 132,
+    "BpNaam": "SUXAMETHONIUM DICHLORIDE INJVLST 50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 134,
+    "BpNaam": "ENOXIMON CONC V INFVLST 5MG/ML",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 141,
+    "BpNaam": "INDOMETACINE ZETPIL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 143,
+    "BpNaam": "INDOMETACINE ZETPIL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 151,
+    "BpNaam": "FENFLURAMINE HCL TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 155,
+    "BpNaam": "BROOMHEXINE HCL DRANK 0,8MG/ML",
+    "SterkteHv": 8,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 156,
+    "BpNaam": "BROOMHEXINE HCL DRANK/INHVLST 2MG/ML",
+    "SterkteHv": 20,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 157,
+    "BpNaam": "BROOMHEXINE HCL TABL 4MG",
+    "SterkteHv": 40,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 158,
+    "BpNaam": "AMOXICILLINE CAPS 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 159,
+    "BpNaam": "AMOXICILLINE CAPS 375MG",
+    "SterkteHv": 3750,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 162,
+    "BpNaam": "AMOXICILLINE CAPS 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 168,
+    "BpNaam": "GENTAMICINE SULFAAT INJVLST 40MG/ML",
+    "SterkteHv": 400,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 196,
+    "BpNaam": "ISOSORBIDI DINITRAS 40% CUM LACTOSE 60%",
+    "SterkteHv": 4000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 227,
+    "BpNaam": "HYDROCHLOORTHIAZIDE TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 229,
+    "BpNaam": "GADOPENTETINE DIMEGLUMINEZT INJVLST 469,01MG/ML",
+    "SterkteHv": 46901,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 230,
+    "BpNaam": "HYDROCHLOORTHIAZIDE TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 231,
+    "BpNaam": "DANTROLEEN NATRIUM INJPDR 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 240,
+    "BpNaam": "CROMOGLICINE DINATRIUM INH AMP 20MG (10MG/ML)",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 243,
+    "BpNaam": "FLUOROURACIL NAZOUT INJVLST 25MG/ML",
+    "SterkteHv": 250,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 246,
+    "BpNaam": "POLYGELINE INFVLST 35MG/ML",
+    "SterkteHv": 350,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 252,
+    "BpNaam": "GLUCOSE 0-WATER INFVLST 400MG/ML",
+    "SterkteHv": 4000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 258,
+    "BpNaam": "FOSCARNET TRINATRIUM INFVLST 24MG/ML",
+    "SterkteHv": 240,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 260,
+    "BpNaam": "GELATINE, GEMODIFICEERD INFVLST 30MG/ML",
+    "SterkteHv": 300,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 261,
+    "BpNaam": "DEXFENFLURAMINE HCL CAPS 15MG",
+    "SterkteHv": 150,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 263,
+    "BpNaam": "PENTAZOCINE (LACTAAT) INJVLST 30MG/ML",
+    "SterkteHv": 300,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 268,
+    "BpNaam": "C1-ESTERASEREMMER INJPDR 500E",
+    "SterkteHv": 5000,
+    "SterkteEh": "E"
+  },
+  {
+    "Bp": 272,
+    "BpNaam": "BUDESONIDE AEROSOL 200MCG/DOSIS",
+    "SterkteHv": 2000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 277,
+    "BpNaam": "AMOXICILLINE 3-WATER PDR V SUSP  50MG/ML SKVR (KK)",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 281,
+    "BpNaam": "LACTITOL 1-WATER POEDER IN SACH 5G",
+    "SterkteHv": 50,
+    "SterkteEh": "G"
+  },
+  {
+    "Bp": 287,
+    "BpNaam": "AMOXICILLINE 3-WATER PDR V SUSP  25MG/ML SKVR (KK)",
+    "SterkteHv": 250,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 290,
+    "BpNaam": "TIMOLOL (MALEAAT) OOGDR 5MG/ML BAK",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 293,
+    "BpNaam": "TIMOLOL (MALEAAT) OOGDR 2,5MG/ML BAK",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 298,
+    "BpNaam": "UROKINASE INJPDR 250.000IE",
+    "SterkteHv": 2500000,
+    "SterkteEh": "IE"
+  },
+  {
+    "Bp": 314,
+    "BpNaam": "PYRIDOXINE HCL TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 315,
+    "BpNaam": "ASCORBINEZUUR TABL  250MG CITROENSMAAK",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 325,
+    "BpNaam": "PREDNISON TABL  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 330,
+    "BpNaam": "ALLOPURINOL TABL 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 331,
+    "BpNaam": "DIACHYLON ZALF 400MG/G",
+    "SterkteHv": 4000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 332,
+    "BpNaam": "LIDOCAINE HCL ZALF 50MG/G (IN ADEPS LAN/VASEL.ALB)",
+    "SterkteHv": 500,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 333,
+    "BpNaam": "BENZOCAINE ZALF 100MG/G",
+    "SterkteHv": 1000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 334,
+    "BpNaam": "BOORZUUR ZALF 100MG/G",
+    "SterkteHv": 1000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 341,
+    "BpNaam": "TUBOCURARINE DICHLORIDE 5-WATER INJVLST 10MG/ML",
+    "SterkteHv": 100,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 342,
+    "BpNaam": "CARBASALAAT CALCIUM PDR SACHET 600MG",
+    "SterkteHv": 6000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 347,
+    "BpNaam": "RETINOL OPLOSSING 50.000IE/ML IN WATER",
+    "SterkteHv": 500000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 348,
+    "BpNaam": "DICLOFENAC NATRIUM TABL MSR  50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 349,
+    "BpNaam": "DICLOFENAC NATRIUM TABL MSR  25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 351,
+    "BpNaam": "OXPRENOLOL HCL TABL 80MG",
+    "SterkteHv": 800,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 352,
+    "BpNaam": "CLORAZEPINE DIKALIUM CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 353,
+    "BpNaam": "FLUNARIZINE (DIHYDROCHLORIDE) CAPS 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 354,
+    "BpNaam": "CHLOORAMFENICOL OOGZALF 10MG/G",
+    "SterkteHv": 100,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 357,
+    "BpNaam": "LORATADINE TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 359,
+    "BpNaam": "LORAZEPAM TABL 2,5MG",
+    "SterkteHv": 25,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 372,
+    "BpNaam": "PIRACETAM TABL  800MG",
+    "SterkteHv": 8000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 373,
+    "BpNaam": "SIMVASTATINE TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 384,
+    "BpNaam": "METHYLPREDNISOLON NATRIUM SUCCINAAT INFPDR  250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 388,
+    "BpNaam": "VERAPAMIL HCL DRAG 80MG",
+    "SterkteHv": 800,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 389,
+    "BpNaam": "VERAPAMIL HCL DRAG 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 390,
+    "BpNaam": "DIPYRIDAMOL DRAG 75MG",
+    "SterkteHv": 750,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 392,
+    "BpNaam": "METHYLDOPA,L TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 393,
+    "BpNaam": "KALIUM CHLORIDE CONC V INFVLST 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 396,
+    "BpNaam": "METHYLDOPA,L 1,5-WATER TABL 125MG",
+    "SterkteHv": 1250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 397,
+    "BpNaam": "METOCLOPRAMIDE HCL TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 398,
+    "BpNaam": "TAMOXIFEN (CITRAAT) TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 404,
+    "BpNaam": "KALIUM CHLORIDE CONC V INFVLST 149MG/ML",
+    "SterkteHv": 1490,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 406,
+    "BpNaam": "KALIUM CHLORIDE CONC V INFVLST  74,5MG/ML",
+    "SterkteHv": 745,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 410,
+    "BpNaam": "AMITRIPTYLINE (HCL) TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 411,
+    "BpNaam": "SULFASALAZINE TABL MAAGSAPRESISTENT 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 412,
+    "BpNaam": "AMITRIPTYLINE HCL TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 414,
+    "BpNaam": "MEDROXYPROGESTERON ACETAAT TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 415,
+    "BpNaam": "TOLBUTAMIDE TABL 1000MG",
+    "SterkteHv": 10000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 417,
+    "BpNaam": "FLURAZEPAM HCL CAPS 30MG",
+    "SterkteHv": 300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 419,
+    "BpNaam": "ATENOLOL TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 420,
+    "BpNaam": "PARACETAMOL TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 422,
+    "BpNaam": "LITHIUM CARBONAAT TABL MGA 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 424,
+    "BpNaam": "FLURAZEPAM HCL CAPS 15MG",
+    "SterkteHv": 150,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 426,
+    "BpNaam": "ACETYLLEUCINE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 427,
+    "BpNaam": "ATENOLOL TABL  50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 428,
+    "BpNaam": "BISMUT SUBCITRAAT TRI-KALIUM TABL 120MG",
+    "SterkteHv": 1200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 444,
+    "BpNaam": "BECLOMETASON DIPROPION. INHPDR CAPS 400MCG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 445,
+    "BpNaam": "BECLOMETASON DIPROPION. INHPDR CAPS 200 MCG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 448,
+    "BpNaam": "BECLOMETASON DIPROPION. INHPDR CAPS 100MCG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 452,
+    "BpNaam": "PIROXICAM CAPS 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 453,
+    "BpNaam": "PIROXICAM CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 489,
+    "BpNaam": "TRIPELENNAMINE HCL TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 490,
+    "BpNaam": "TANNALBUMINE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 491,
+    "BpNaam": "SULFAMETHIZOL TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 492,
+    "BpNaam": "PROMETHAZINE (HCL) OMH. TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 493,
+    "BpNaam": "PREDNISOLON TABL  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 495,
+    "BpNaam": "FENYTOINE NATRIUM TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 496,
+    "BpNaam": "FENOBARBITAL TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 500,
+    "BpNaam": "PARACETAMOL TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 501,
+    "BpNaam": "PAPAVERINE HCL TABL 30MG",
+    "SterkteHv": 300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 502,
+    "BpNaam": "OXYFENBUTAZON 1-WATER DRAG 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 503,
+    "BpNaam": "ORFENADRINE HCL DRAG 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 504,
+    "BpNaam": "NITROGLYCERINE TABL 0,5MG",
+    "SterkteHv": 5,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 505,
+    "BpNaam": "NATRIUM SALICYLAAT TABL MAAGSAPRESISTENT 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 506,
+    "BpNaam": "NATRIUM FLUORIDE TABL 0,56MG",
+    "SterkteHv": 56,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 507,
+    "BpNaam": "NATRIUMCHLORIDE TABL 1G",
+    "SterkteHv": 10,
+    "SterkteEh": "G"
+  },
+  {
+    "Bp": 508,
+    "BpNaam": "MEPROBAMAAT TABL 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 509,
+    "BpNaam": "LOPERAMIDE HCL CAPS 2MG",
+    "SterkteHv": 20,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 511,
+    "BpNaam": "MAGNESIUM PEROXIDE TABLET 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 512,
+    "BpNaam": "LACTOSE 1-WATER TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 513,
+    "BpNaam": "HYDROCORTISON TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 514,
+    "BpNaam": "FERROFUMARAAT TABL 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 516,
+    "BpNaam": "EXTR.CASCARA SAGRADA DRAG 130MG",
+    "SterkteHv": 1300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 517,
+    "BpNaam": "EXTR.BELLADONNAE HERBAE SPISSUM TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 519,
+    "BpNaam": "CYCLIZINE HCL TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 523,
+    "BpNaam": "BROOMHEXINE HCL TABL 8MG",
+    "SterkteHv": 80,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 524,
+    "BpNaam": "CODEINE HCL 2-WATER TABL 15MG",
+    "SterkteHv": 150,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 525,
+    "BpNaam": "CINNARIZINE TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 527,
+    "BpNaam": "CHOLINETHEOFYLLINAAT TABL MSR 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 528,
+    "BpNaam": "METOCLOPRAMIDE HCL 1-WATER CONC V INFVLST 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 529,
+    "BpNaam": "METOCLOPRAMIDE HCL 1-WATER CONC V INFVLST 25MG/ML",
+    "SterkteHv": 250,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 530,
+    "BpNaam": "CARBUTAMIDE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 531,
+    "BpNaam": "CARBROMAL TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 533,
+    "BpNaam": "STERCULIAGOM GRANULAAT IN SACH 620MG/G",
+    "SterkteHv": 6200,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 535,
+    "BpNaam": "CIPROFLOXACINE (HCL) TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 536,
+    "BpNaam": "CIPROFLOXACINE (HCL) TABL 250 MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 537,
+    "BpNaam": "OXATOMIDE TABL 30MG",
+    "SterkteHv": 300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 553,
+    "BpNaam": "FUROSEMIDE TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 555,
+    "BpNaam": "MENTHOL STROOIPOEDER 20MG/G",
+    "SterkteHv": 200,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 556,
+    "BpNaam": "WATERSTOFPEROXIDE OPLOSSING 30MG/ML (MONDSPOELING)",
+    "SterkteHv": 300,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 562,
+    "BpNaam": "SULFAMETHOXYPYRIDAZINE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 569,
+    "BpNaam": "CROMOGLICINE DINATRIUM AEROSOL 5MG/DOSIS",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 577,
+    "BpNaam": "SULPIRIDE CAPS 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 595,
+    "BpNaam": "PARACETAMOL ZETPIL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 597,
+    "BpNaam": "DILTIAZEM HCL TABL 60MG",
+    "SterkteHv": 600,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 598,
+    "BpNaam": "SALICYLZUUR APPLVLST 10MG/G IN ALCOHOL",
+    "SterkteHv": 100,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 600,
+    "BpNaam": "SULFASALAZINE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 603,
+    "BpNaam": "METHYLDOPA,L TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 604,
+    "BpNaam": "DOXYCYCLINE (1-WTR) DISPERTABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 610,
+    "BpNaam": "DOXYCYCLINE HYCLAAT TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 650,
+    "BpNaam": "ZINKOXIDE ZALF 100MG/G",
+    "SterkteHv": 1000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 662,
+    "BpNaam": "CROMOGLICINE DINATRIUM DRANK 20MG/ML (AMPUL 10ML)",
+    "SterkteHv": 200,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 674,
+    "BpNaam": "TOSYLCHLOORAMIDE NAZOUT TABL 1G",
+    "SterkteHv": 10,
+    "SterkteEh": "G"
+  },
+  {
+    "Bp": 691,
+    "BpNaam": "PARACETAMOL ZETPIL 1000MG",
+    "SterkteHv": 10000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 697,
+    "BpNaam": "ACETYLCYSTEINE GRANULAAT SACH 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 712,
+    "BpNaam": "BISACODYL ZETPIL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 713,
+    "BpNaam": "BISACODYL ZETPIL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 736,
+    "BpNaam": "FORMALDEHYDE OPLOSSING 360MG/G",
+    "SterkteHv": 3600,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 739,
+    "BpNaam": "KOOLTEER OPLOSSING,REINIGENDE",
+    "SterkteHv": 1600,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 744,
+    "BpNaam": "CHLOORTALIDON TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 747,
+    "BpNaam": "CHLOORTALIDON TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 759,
+    "BpNaam": "FLUNITRAZEPAM TABL 2MG",
+    "SterkteHv": 20,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 761,
+    "BpNaam": "FLUNITRAZEPAM TABL 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 763,
+    "BpNaam": "BETAXOLOL HCL OOGDR 5MG/ML BAK",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 766,
+    "BpNaam": "RANITIDINE (HCL) TABL 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 801,
+    "BpNaam": "DICLOFENAC NATRIUM TABL MGA 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 818,
+    "BpNaam": "IBUPROFEN DRAG 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 832,
+    "BpNaam": "PARACETAMOL TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 833,
+    "BpNaam": "PARACETAMOL TABL 160MG",
+    "SterkteHv": 1600,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 836,
+    "BpNaam": "SALBUTAMOL (SULFAAT) INH AMP 2,5MG (1MG/ML)",
+    "SterkteHv": 25,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 838,
+    "BpNaam": "IPRATROPIUM BROMIDE INHVLST 250MCG/ML",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 850,
+    "BpNaam": "ZINKOXIDE PASTA 250MG/G",
+    "SterkteHv": 2500,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 868,
+    "BpNaam": "CALCIUM LACTAAT TABL 500MG PEPERMUNTSMAAK",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 870,
+    "BpNaam": "BUTOBARBITAL TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 871,
+    "BpNaam": "BISACODYL DRAG 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 875,
+    "BpNaam": "ARSENICUM TRIOXYDE TABL 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 877,
+    "BpNaam": "ASCORBINEZUUR TABL  500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 878,
+    "BpNaam": "ASCORBINEZUUR TABL   50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 881,
+    "BpNaam": "ACETYLSALICYLZUUR DRAG MAAGSAPRESISTENT 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 882,
+    "BpNaam": "ACETYLSALICYLZUUR TABL MSR 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 883,
+    "BpNaam": "ACETYLSALICYLZUUR TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 884,
+    "BpNaam": "ACETYLSALICYLZUUR TABL 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 885,
+    "BpNaam": "ACETYLSALICYLZUUR TABL  80MG",
+    "SterkteHv": 800,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 887,
+    "BpNaam": "ASCORBINEZUUR TABL   50MG CITROENSMAAK",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 903,
+    "BpNaam": "NORADRENALINE (TARTRAAT) CONC V INFVLST 1MG/ML",
+    "SterkteHv": 10,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 905,
+    "BpNaam": "ETIDRONINE DI-NAZOUT TABL 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 909,
+    "BpNaam": "IBUPROFEN DRAG 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 915,
+    "BpNaam": "XYLOMETAZOLINE HCL NEUSDR 0,5MG/ML",
+    "SterkteHv": 5,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 917,
+    "BpNaam": "XYLOMETAZOLINE HCL NEUSDR 1MG/ML",
+    "SterkteHv": 10,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 924,
+    "BpNaam": "SALBUTAMOL (SULFAAT) TABL 4MG",
+    "SterkteHv": 40,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 925,
+    "BpNaam": "SALBUTAMOL (SULFAAT) TABL 2MG",
+    "SterkteHv": 20,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 927,
+    "BpNaam": "SALBUTAMOL (SULFAAT) INHVLST 5MG/ML",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 933,
+    "BpNaam": "METOPROLOL TARTRAAT TABL MGA 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 934,
+    "BpNaam": "TRIAMCINOLON ACETONIDE ZALF  1MG/G",
+    "SterkteHv": 10,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 938,
+    "BpNaam": "LEVOMEPROMAZINE WATERSTOFMALEAAT TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 940,
+    "BpNaam": "PIRACETAM CAPS 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 941,
+    "BpNaam": "MEDAZEPAM CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 942,
+    "BpNaam": "DOMPERIDON (MALEAAT) TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 943,
+    "BpNaam": "NITRAZEPAM TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 944,
+    "BpNaam": "SULFADIMETHOXINE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 945,
+    "BpNaam": "MAPROTILINE HCL TABL 75MG",
+    "SterkteHv": 750,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 946,
+    "BpNaam": "MAPROTILINE HCL TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 947,
+    "BpNaam": "MAPROTILINE HCL TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 948,
+    "BpNaam": "BACLOFEN TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 949,
+    "BpNaam": "CHLOORDIAZEPOXIDE DRAG 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 950,
+    "BpNaam": "CHLOORDIAZEPOXIDE DRAG 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 951,
+    "BpNaam": "CEFALEXINE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 956,
+    "BpNaam": "PROPRANOLOL HCL TABL 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 957,
+    "BpNaam": "AMFOTERICINE B SUSPENSIE 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 958,
+    "BpNaam": "METRONIDAZOL OVULE 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 959,
+    "BpNaam": "LOPERAMIDE HCL DRUPPELVLST 2MG/ML",
+    "SterkteHv": 20,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 962,
+    "BpNaam": "IBUPROFEN TABL 600MG",
+    "SterkteHv": 6000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 965,
+    "BpNaam": "LEVOTHYROXINE (NATRIUM) TABL 100MCG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 966,
+    "BpNaam": "LEVOTHYROXINE (NATRIUM) TABL  48MCG",
+    "SterkteHv": 486,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 968,
+    "BpNaam": "DIPYRIDAMOL DRAG 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 969,
+    "BpNaam": "INDOMETACINE CAPS 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 972,
+    "BpNaam": "CARBAMAZEPINE TABL 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 973,
+    "BpNaam": "PIPEMIDINEZUUR 3-WATER CAPS 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 978,
+    "BpNaam": "BACLOFEN TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 982,
+    "BpNaam": "HALOPERIDOL DECANOAAT INJVLST 50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 983,
+    "BpNaam": "LORMETAZEPAM TABL 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 990,
+    "BpNaam": "AZIJNZUUR 970MG/ML VOOR BENZIDINE OPLOSSINGEN",
+    "SterkteHv": 9700,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 993,
+    "BpNaam": "GLUCAGON (HCL) INJPDR  1MG WWSP + SOLV",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 997,
+    "BpNaam": "DICLOFENAC NATRIUM ZETPIL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 998,
+    "BpNaam": "DICLOFENAC NATRIUM ZETPIL  50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 999,
+    "BpNaam": "DICLOFENAC NATRIUM ZETPIL  25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1002,
+    "BpNaam": "KININE DIHYDROCHLORIDE CONC V INFVLST 300MG/ML",
+    "SterkteHv": 3000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1008,
+    "BpNaam": "VERAPAMIL HCL DRAG 120MG",
+    "SterkteHv": 1200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1009,
+    "BpNaam": "NIFEDIPINE TABL MGA 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1010,
+    "BpNaam": "NITROFURANTOINE (MACROKRIST) CAPS 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1011,
+    "BpNaam": "LITHIUM CARBONAAT TABL 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1012,
+    "BpNaam": "ISOSORBIDE MONONITRAAT TABL 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1022,
+    "BpNaam": "IMIPRAMINE HCL DRAG 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1029,
+    "BpNaam": "PROMETHAZINE HCL CAPS 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1030,
+    "BpNaam": "LITHIUM CARBONAAT CAPS 150MG",
+    "SterkteHv": 1500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1031,
+    "BpNaam": "IMIPRAMINE HCL CAPS 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1032,
+    "BpNaam": "IMIPRAMINE HCL CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1034,
+    "BpNaam": "CYCLIZINE HCL CAPS 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1036,
+    "BpNaam": "CHLOORAMFENICOL CAPS 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1041,
+    "BpNaam": "ERYTROMYCINE (ETHYLSUCCINAAT) TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1059,
+    "BpNaam": "BETAMETHASON (17-VALERAAT) APPLVLST 1MG/G",
+    "SterkteHv": 10,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1141,
+    "BpNaam": "FENOBARBITAL NAZOUT INJVLST 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1142,
+    "BpNaam": "FENOBARBITAL NAZOUT INJVLST 50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1144,
+    "BpNaam": "PENTETRAZOL INJVLST 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1147,
+    "BpNaam": "EMETINE DIHYDROCHLORIDE 0-WATER INJVLST 60MG/ML",
+    "SterkteHv": 600,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1148,
+    "BpNaam": "CYANOCOBALAMINE INJVLST 500MCG/ML",
+    "SterkteHv": 5,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1150,
+    "BpNaam": "CYANOCOBALAMINE INJVLST 250MCG/ML",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1151,
+    "BpNaam": "CYANOCOBALAMINE INJVLST 30MCG/ML",
+    "SterkteHv": 3,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1152,
+    "BpNaam": "CYANOCOBALAMINE INJVLST 15MCG/ML",
+    "SterkteHv": 15,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1154,
+    "BpNaam": "NAPROXEN TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1158,
+    "BpNaam": "GLAFENINE TABL 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1166,
+    "BpNaam": "MEDAZEPAM CAPS 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1177,
+    "BpNaam": "BROOMHEXINE HCL DRANK 1,6MG/ML",
+    "SterkteHv": 16,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1261,
+    "BpNaam": "ERYTROMYCINE (STEARAAT) TABL MSR 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1267,
+    "BpNaam": "ACETAZOLAMIDE TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1287,
+    "BpNaam": "VALPROINE NAZOUT TABL MSR 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1288,
+    "BpNaam": "HALOPERIDOL TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1289,
+    "BpNaam": "CLINDAMYCINE (DIWTST FOSFAAT) INJVL 150MG/ML",
+    "SterkteHv": 1500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1290,
+    "BpNaam": "XANTINOL NICOTINAAT TABL MGA 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1304,
+    "BpNaam": "CLONIDINE HCL TABL 0,15MG",
+    "SterkteHv": 15,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1305,
+    "BpNaam": "FENETICILLINE (KALIUM) CAPS 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1343,
+    "BpNaam": "OXYFENONIUM BROMIDE TABL MET GEREG.AFGIFTE 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1345,
+    "BpNaam": "SPIRONOLACTON TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1348,
+    "BpNaam": "DINOPROSTON TABL 0,5MG",
+    "SterkteHv": 5,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1349,
+    "BpNaam": "ETOMIDAAT INJVLST 2MG/ML",
+    "SterkteHv": 20,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1352,
+    "BpNaam": "PRAZOSINE HCL TABL 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1353,
+    "BpNaam": "BACLOFEN TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1366,
+    "BpNaam": "CROMOGLICINE DINATRIUM NEUSSPRAY 20MG/ML",
+    "SterkteHv": 200,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1367,
+    "BpNaam": "MINOCYCLINE (HCL) CAPS 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1368,
+    "BpNaam": "ESTRAMUSTINE FOSFAAT (DINATRIUM) CAPS 140MG",
+    "SterkteHv": 1400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1369,
+    "BpNaam": "PINDOLOL TABL  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1370,
+    "BpNaam": "METHYLPREDNISOLON ACETAAT INJVLST 40MG/ML",
+    "SterkteHv": 400,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1374,
+    "BpNaam": "FENETICILLINE KZOUT CAPS 125MG",
+    "SterkteHv": 1250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1375,
+    "BpNaam": "MEBHYDROLINE NAPADISILAAT DRAG 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1378,
+    "BpNaam": "HEPARINOIDEN CREME 3MG/G",
+    "SterkteHv": 30,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1379,
+    "BpNaam": "HALOPERIDOL INJVLST 5MG/ML",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1381,
+    "BpNaam": "DYDROGESTERON TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1383,
+    "BpNaam": "HYDROXYETHYLRUTOSIDEN CAPS 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1385,
+    "BpNaam": "BELLAPAN TABL 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1386,
+    "BpNaam": "TOLBUTAMIDE TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1387,
+    "BpNaam": "GENTAMICINE SULFAAT INJVLST 10MG/ML",
+    "SterkteHv": 100,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1388,
+    "BpNaam": "MERCAPTOPURINE TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1389,
+    "BpNaam": "ERYTROMYCINE ZINK-VERB PDR+SOLV V APPLVLST 40MG/ML",
+    "SterkteHv": 400,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1390,
+    "BpNaam": "LISINOPRIL TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1391,
+    "BpNaam": "LISINOPRIL TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1392,
+    "BpNaam": "LISINOPRIL TABL  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1393,
+    "BpNaam": "VINBLASTINE SULFAAT INJPDR 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1396,
+    "BpNaam": "THEOFYLLINE TABL MGA 175MG",
+    "SterkteHv": 1750,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1397,
+    "BpNaam": "HYDROCORTISON NATRIUM SUCCINAAT INJPDR  100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1398,
+    "BpNaam": "FENOTEROL HBR CONC V INFVLST 0,05MG/ML",
+    "SterkteHv": 5,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1400,
+    "BpNaam": "FLUFENAZINE DECANOAAT INJVLST 25MG/ML",
+    "SterkteHv": 250,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1401,
+    "BpNaam": "FUROSEMIDE INJVLST 10MG/ML",
+    "SterkteHv": 100,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1402,
+    "BpNaam": "ISOSORBIDEDINITRAAT TABL 30MG",
+    "SterkteHv": 300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1403,
+    "BpNaam": "ERYTROMYCINE (LACTOBIONAAT) INF/INJPDR 1000MG",
+    "SterkteHv": 10000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1404,
+    "BpNaam": "VINDESINE SULFAAT PDR V INJVLST 5MG + SOLV 5ML",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1405,
+    "BpNaam": "PROPOFOL INJVLST 10MG/ML",
+    "SterkteHv": 100,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1407,
+    "BpNaam": "CEFOTAXIM NATRIUM INJPDR  500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1408,
+    "BpNaam": "AMIKACINE (SULFAAT) INJVLST 250MG/ML",
+    "SterkteHv": 2500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1413,
+    "BpNaam": "CODERGOCRINE MESILAAT TABL 4,5MG",
+    "SterkteHv": 45,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1414,
+    "BpNaam": "CICLOSPORINE CAPS 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1415,
+    "BpNaam": "CICLOSPORINE CAPS  25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1418,
+    "BpNaam": "MENOPAUZEGONADOTROFINE INJPDR 150IE",
+    "SterkteHv": 1500,
+    "SterkteEh": "IE"
+  },
+  {
+    "Bp": 1419,
+    "BpNaam": "PENTAMIDINE DI-ISETIONAAT INJPDR 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1420,
+    "BpNaam": "XYLOMETAZOLINE HCL NEUSSPRAY 0,5MG/ML\"DOSEERSPRAY",
+    "SterkteHv": 5,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1422,
+    "BpNaam": "PERINDOPRIL T-BUTYLAMINE TABL 4MG",
+    "SterkteHv": 40,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1424,
+    "BpNaam": "OESTROGENEN,GECONJUG.DRAG 1,25MG",
+    "SterkteHv": 125,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1425,
+    "BpNaam": "NORTRIPTYLINE (HCL) TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1426,
+    "BpNaam": "MEBENDAZOL TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1427,
+    "BpNaam": "PLANTAGO OVATA PREP.PDR 490MG/G",
+    "SterkteHv": 4900,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1430,
+    "BpNaam": "ZINKOXIDE SMEERSEL 600MG/G",
+    "SterkteHv": 6000,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1437,
+    "BpNaam": "PROGESTERON CAPS 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1441,
+    "BpNaam": "ACETAZOLAMIDE CAPS MGA 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1442,
+    "BpNaam": "INTERFERON ALFA-2A PDR V INJVLST 18MILJ E+SOLV 1ML",
+    "SterkteHv": 180,
+    "SterkteEh": "MEM"
+  },
+  {
+    "Bp": 1443,
+    "BpNaam": "CISAPRIDE TABLET 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1444,
+    "BpNaam": "CISAPRIDE TABLET  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1445,
+    "BpNaam": "CISAPRIDE SUSPENSIE  1MG/ML",
+    "SterkteHv": 10,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1446,
+    "BpNaam": "DAUNORUBICINE HCL INFPDR 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1447,
+    "BpNaam": "VARICELLA ZOSTER IMMUNOGLOBULINE INJVLST 100IE/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1448,
+    "BpNaam": "RHESUS(D) IMMUNOGLOBULINE INJVLST 500IE/ML",
+    "SterkteHv": 5000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1450,
+    "BpNaam": "MICONAZOL NITRAAT CREME 20MG/G",
+    "SterkteHv": 200,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1451,
+    "BpNaam": "PLANTAGO OVATA PREP.PDR SACH 3,6/6,4G",
+    "SterkteHv": 36,
+    "SterkteEh": "G"
+  },
+  {
+    "Bp": 1461,
+    "BpNaam": "TRIAMTEREEN TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1462,
+    "BpNaam": "VANCOMYCINE HCL CAPS 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1463,
+    "BpNaam": "CICLOSPORINE DRANK 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1465,
+    "BpNaam": "VALEPOTRIAAT DRAG 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1467,
+    "BpNaam": "OXPRENOLOL HCL TABL 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1468,
+    "BpNaam": "SALBUTAMOL (SULFAAT) INHPDR 400MCG CAPSULE",
+    "SterkteHv": 4000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1469,
+    "BpNaam": "OXPRENOLOL HCL TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1470,
+    "BpNaam": "SALBUTAMOL (SULFAAT) INHPDR 200MCG CAPSULE",
+    "SterkteHv": 2000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1471,
+    "BpNaam": "PROPRANOLOL HCL TABL 80MG",
+    "SterkteHv": 800,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1472,
+    "BpNaam": "PROPRANOLOL HCL TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1476,
+    "BpNaam": "TEMAZEPAM CAPS 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1477,
+    "BpNaam": "TEMAZEPAM CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1478,
+    "BpNaam": "CIMETIDINE TABL 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1480,
+    "BpNaam": "SULPIRIDE TABL 200MG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1482,
+    "BpNaam": "PINDOLOL TABL 15MG",
+    "SterkteHv": 150,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1483,
+    "BpNaam": "SPIRONOLACTON TABL  25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1485,
+    "BpNaam": "PINDOLOL TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1487,
+    "BpNaam": "OXAZEPAM TABL 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1489,
+    "BpNaam": "PILOCARPINE HCL OOGGEL 40MG/G",
+    "SterkteHv": 400,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1490,
+    "BpNaam": "DESMOPRESSINE ACETAAT NEUSDR 1,5MG/ML",
+    "SterkteHv": 15,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1492,
+    "BpNaam": "KETOCONAZOL CREME 20MG/G",
+    "SterkteHv": 200,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1494,
+    "BpNaam": "NIMODIPINE TABL 30MG",
+    "SterkteHv": 300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1495,
+    "BpNaam": "NIMODIPINE INFVLST 0,2MG/ML",
+    "SterkteHv": 2,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1496,
+    "BpNaam": "PARACETAMOL ZETPIL 240MG",
+    "SterkteHv": 2400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1497,
+    "BpNaam": "DIPYRIDAMOL INJVLST 5MG/ML",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1498,
+    "BpNaam": "FLUFENAZINE DIHYDROCHLORIDE DRAG 2,5MG",
+    "SterkteHv": 25,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1500,
+    "BpNaam": "CARBACHOLINE CHLORIDE INSTILL.VLST 0,1MG/ML",
+    "SterkteHv": 1,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1501,
+    "BpNaam": "GLYCER/OVOLECITH/SOJAOLIE,GEFR.INFVL 25/12/200G/L",
+    "SterkteHv": 2000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1503,
+    "BpNaam": "DESMOPRESSINE ACETAAT TABL 0,2MG",
+    "SterkteHv": 2,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1504,
+    "BpNaam": "DESMOPRESSINE ACETAAT TABL 0,1MG",
+    "SterkteHv": 1,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1505,
+    "BpNaam": "GLYCEROL/OVOLECITH/SOJAOLIE INFVLST 25/12/100G/L",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1506,
+    "BpNaam": "FLUOXETINE HCL CAPS 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1508,
+    "BpNaam": "CARBASALAAT CALCIUM PDR SACHET 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1509,
+    "BpNaam": "ACETYLCYSTEINE GRANULAAT SACH 200MG SKRVR",
+    "SterkteHv": 2000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1510,
+    "BpNaam": "THEOFYLLINE 0-WATER CAPS MET GEREG.AFGIFTE 375MG",
+    "SterkteHv": 3750,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1511,
+    "BpNaam": "THEOFYLLINE 0-WATER CAPS MET GEREG.AFGIFTE 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1514,
+    "BpNaam": "NIFEDIPINE INFVLST 0,1MG/ML",
+    "SterkteHv": 1,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1515,
+    "BpNaam": "BENZOYLPEROXIDE HYDROGEL 50MG/G",
+    "SterkteHv": 500,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1516,
+    "BpNaam": "BENZOYLPEROXIDE HYDROGEL 100MG/G",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1519,
+    "BpNaam": "DIGOXINE TABL 0,250MG",
+    "SterkteHv": 25,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1525,
+    "BpNaam": "NAPROXEN GRANULAAT IN SACHET 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1526,
+    "BpNaam": "SALBUTAMOL (SULFAAT) INHPDR ROTADISK 200MCG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1528,
+    "BpNaam": "SALBUTAMOL (SULFAAT) INHPDR ROTADISK 400MCG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1529,
+    "BpNaam": "BECLOMETASON DIPROPION.INH.PDR IN ROTADISK 100MCG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1530,
+    "BpNaam": "BECLOMETASON DIPROPION.INH.PDR IN ROTADISK 200MCG",
+    "SterkteHv": 2000,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1536,
+    "BpNaam": "ISOSORBIDEDINITRAAT TABL MGA 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1537,
+    "BpNaam": "ACICLOVIR SUSPENSIE 40MG/ML",
+    "SterkteHv": 400,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1538,
+    "BpNaam": "ACICLOVIR OOGZALF 30MG/G",
+    "SterkteHv": 300,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1540,
+    "BpNaam": "SULFACETAMIDE NAZOUT OOGDR 150MG/ML",
+    "SterkteHv": 1500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1541,
+    "BpNaam": "MECLOZINE DIHYDROCHLORIDE TABL 25MG",
+    "SterkteHv": 250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1546,
+    "BpNaam": "ALFACALCIDOL CAPS 1MCG",
+    "SterkteHv": 10,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1549,
+    "BpNaam": "ALFACALCIDOL CAPS 0,25MCG",
+    "SterkteHv": 25,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1552,
+    "BpNaam": "HEPATITIS B-VACCIN INJVLST 10MCG/ML",
+    "SterkteHv": 1,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1558,
+    "BpNaam": "HEPATITIS B-VACCIN DNA INJVLST 20MCG/ML",
+    "SterkteHv": 2,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1561,
+    "BpNaam": "NATRIUM WATERSTOFCARBONAAT INFVLST 84MG/ML",
+    "SterkteHv": 840,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1563,
+    "BpNaam": "HALOPERIDOL TABL 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1565,
+    "BpNaam": "TERLIPRESSINE DIACETAAT INJPDR 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1566,
+    "BpNaam": "CEFACLOR CAPS 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1569,
+    "BpNaam": "GLUCOSE 0-WATER INFVLST 700MG/ML",
+    "SterkteHv": 7000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1581,
+    "BpNaam": "GLIBENCLAMIDE TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1585,
+    "BpNaam": "BENPERIDOL DRUPPELVLST 1MG/ML",
+    "SterkteHv": 10,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1594,
+    "BpNaam": "CODERGOCRINE MESILAAT TABL 1,5MG",
+    "SterkteHv": 15,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1597,
+    "BpNaam": "DISOPYRAMIDE FOSFAAT TABL MGA 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1599,
+    "BpNaam": "CLOXACILLINE NAZOUT CAPS 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1601,
+    "BpNaam": "AMINOVENOS N PAED INFVLST 60MG/ML",
+    "SterkteHv": 600,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1603,
+    "BpNaam": "CLORAZEPINE DIKALIUM CAPS  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1604,
+    "BpNaam": "AMINOZUREN MENGSEL INFVLST  80MG/ML (AMINOSTERIL N",
+    "SterkteHv": 800,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1605,
+    "BpNaam": "AMINOZUREN,L-/GLYCINE MENGSEL INFVLST 50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1606,
+    "BpNaam": "AMINOSTERIL KE NEFRO INFVLST 67MG/ML KOOLHYDR.VRIJ",
+    "SterkteHv": 670,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1607,
+    "BpNaam": "AMINOSTERIL KE INFVLST 100MG/ML KOOLHYDRAAT VRIJ",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1614,
+    "BpNaam": "DIAZEPAM TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1615,
+    "BpNaam": "DIAZEPAM TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1616,
+    "BpNaam": "ALLOPURINOL TABL 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1623,
+    "BpNaam": "SPIRONOLACTON TABL  50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1624,
+    "BpNaam": "CHLOORDIAZEPOXIDE DRAG  5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1626,
+    "BpNaam": "ALBUMINE INFVLST 200MG/ML",
+    "SterkteHv": 2000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1630,
+    "BpNaam": "OESTROGENEN,GECONJUG.DRAG 0,625MG",
+    "SterkteHv": 625,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1631,
+    "BpNaam": "CALCIUM (CARBONAAT) BRUISTABL  500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1632,
+    "BpNaam": "TAMOXIFEN (CITRAAT) TABL 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1634,
+    "BpNaam": "TIZANIDINE HCL CAPS MET GEREG.AFGIFTE 12MG",
+    "SterkteHv": 120,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1635,
+    "BpNaam": "TIZANIDINE HCL CAPS MGA 6MG",
+    "SterkteHv": 60,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1636,
+    "BpNaam": "OXYMETAZOLINE HCL OOGDR 0,25MG/ML BAK",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1642,
+    "BpNaam": "DIGOXINE TABL 0,0625MG",
+    "SterkteHv": 63,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1643,
+    "BpNaam": "DIGOXINE TABL 0,125MG",
+    "SterkteHv": 125,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1644,
+    "BpNaam": "BROMOCRIPTINE MESILAAT CAPS 10MG",
+    "SterkteHv": 100,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1645,
+    "BpNaam": "BROMOCRIPTINE MESILAAT CAPS 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1646,
+    "BpNaam": "BROMOCRIPTINE MESILAAT TABL 2,5MG",
+    "SterkteHv": 25,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1647,
+    "BpNaam": "LEVOBUNOLOL HCL OOGDR 2,5MG/ML BAK",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1649,
+    "BpNaam": "ETHINYLESTRADIOL TABL 50MCG",
+    "SterkteHv": 500,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1650,
+    "BpNaam": "TIMOLOL (MALEAAT) OOGDR 5MG/ML OCUDOSE",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1651,
+    "BpNaam": "ETHINYLESTRADIOL TABL 10MCG",
+    "SterkteHv": 100,
+    "SterkteEh": "MCG"
+  },
+  {
+    "Bp": 1652,
+    "BpNaam": "INSULINE GEWOON HUMAAN INJVLST 100E/ML AMP",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1654,
+    "BpNaam": "INSULINE GEWOON/ISOFAAN HUM.INJVLST 100E/ML 25/75",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1656,
+    "BpNaam": "ISOSORBIDE MONONITRAAT TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1657,
+    "BpNaam": "NATRIUMCHLORIDE SPOELVLST 9MG/ML",
+    "SterkteHv": 90,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1658,
+    "BpNaam": "INSULINE ZINK KRISTAL.HUMAAN INJVLST 100E/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1662,
+    "BpNaam": "INSUL.GEWOON/ISOFAAN HUM.INJ.100E/ML 40/60 AMP",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1664,
+    "BpNaam": "INSUL.GEWOON/ISOFAAN HUM.INJ.100E/ML 20/80 AMP",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1665,
+    "BpNaam": "INSUL.GEWOON/ISOFAAN HUM.INJ.100E/ML 10/90 AMP",
+    "SterkteHv": 1000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1666,
+    "BpNaam": "GLUCOSE 0-WATER INJVLST 500MG/ML",
+    "SterkteHv": 5000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1667,
+    "BpNaam": "DIMERCAPROL INJVLST 50MG/ML IN OLIE",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1668,
+    "BpNaam": "CHLOORHEXIDINE DIGLUC.SPOELVLOEISTOF 0,2MG/ML",
+    "SterkteHv": 2,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1670,
+    "BpNaam": "SOMATROPINE INJPDR 16E (5,3MG)",
+    "SterkteHv": 160,
+    "SterkteEh": "IE"
+  },
+  {
+    "Bp": 1673,
+    "BpNaam": "JOPROMIDE INJVLST 769MG/ML",
+    "SterkteHv": 7690,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1676,
+    "BpNaam": "FLUORESCEINE DI-NAZOUT OOGSTRIP 1MG",
+    "SterkteHv": 10,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1678,
+    "BpNaam": "BUPRENORFINE (HCL) OROMUCOSALE TABL 0,2MG",
+    "SterkteHv": 2,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1680,
+    "BpNaam": "EPOETINE INJVLST 4000E/ML",
+    "SterkteHv": 40000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1681,
+    "BpNaam": "TAMOXIFEN (CITRAAT) TABL 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1682,
+    "BpNaam": "TAMOXIFEN (CITRAAT) TABL 30MG",
+    "SterkteHv": 300,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1683,
+    "BpNaam": "MECLOZINE DIHYDROCHLORIDE TABL 12,5MG",
+    "SterkteHv": 125,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1684,
+    "BpNaam": "DISOPYRAMIDE CAPS 100MG",
+    "SterkteHv": 1000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1686,
+    "BpNaam": "SOMATOSTATINE (ACETAAT) INJPDR 0,25MG",
+    "SterkteHv": 25,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1687,
+    "BpNaam": "SOMATOSTATINE (ACETAAT) INFPDR 6MG",
+    "SterkteHv": 60,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1688,
+    "BpNaam": "OCTREOTIDE (ACETAAT) INJVLST 0,2MG/ML",
+    "SterkteHv": 2,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1689,
+    "BpNaam": "OCTREOTIDE (ACETAAT) INJVLST 0,1MG/ML",
+    "SterkteHv": 1,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1690,
+    "BpNaam": "OCTREOTIDE (ACETAAT) INJVLST 0,05MG/ML",
+    "SterkteHv": 5,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1691,
+    "BpNaam": "ETIDRONINE DI-NAZOUT CONC.V INFVLST 50MG/ML",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1693,
+    "BpNaam": "INTERFERON ALFA-2A PDR V INJVLST 3MILJ E+SOLV 1ML",
+    "SterkteHv": 30,
+    "SterkteEh": "MEM"
+  },
+  {
+    "Bp": 1699,
+    "BpNaam": "FAMOTIDINE TABL 40MG",
+    "SterkteHv": 400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1700,
+    "BpNaam": "FAMOTIDINE TABL 20MG",
+    "SterkteHv": 200,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1702,
+    "BpNaam": "NAPROXEN ZETPIL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1703,
+    "BpNaam": "NAPROXEN ZETPIL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1705,
+    "BpNaam": "NAPROXEN TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1711,
+    "BpNaam": "LACTULOSE GRANULAAT SACHET 6G",
+    "SterkteHv": 60,
+    "SterkteEh": "G"
+  },
+  {
+    "Bp": 1713,
+    "BpNaam": "BETAHISTINE DIHYDROCHLORIDE TABL 16MG",
+    "SterkteHv": 160,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1719,
+    "BpNaam": "ATRACURIUM DIBESILAAT INJVLST 10MG/ML",
+    "SterkteHv": 100,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1721,
+    "BpNaam": "FLUOCINOLON ACETONIDE ZALF 0,25MG/ML",
+    "SterkteHv": 25,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1722,
+    "BpNaam": "FLUOCINOLON ACETONIDE CREME 0,1MG/G",
+    "SterkteHv": 1,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1723,
+    "BpNaam": "FLUOCINOLON ACETONIDE CREME 0,25MG/G",
+    "SterkteHv": 25,
+    "SterkteEh": "MGG"
+  },
+  {
+    "Bp": 1724,
+    "BpNaam": "AURANOFINE TABL 3MG",
+    "SterkteHv": 30,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1726,
+    "BpNaam": "PEFLOXACINE MESILAAT 2-WATER TABL 400MG",
+    "SterkteHv": 4000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1727,
+    "BpNaam": "PEFLOXACINE MESILAAT 2-WTR CONC.V INFVLST 80MG/ML",
+    "SterkteHv": 800,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1728,
+    "BpNaam": "PIMOZIDE TABL 4MG",
+    "SterkteHv": 40,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1729,
+    "BpNaam": "ACICLOVIR NATRIUM INFPDR 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1730,
+    "BpNaam": "CEFUROXIM AXETIL TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1731,
+    "BpNaam": "CEFUROXIM AXETIL TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1732,
+    "BpNaam": "CEFUROXIM AXETIL TABL 125MG",
+    "SterkteHv": 1250,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1735,
+    "BpNaam": "VERAPAMIL HCL TABL MGA 240MG",
+    "SterkteHv": 2400,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1738,
+    "BpNaam": "VALEPOTRIAAT CAPS 50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1739,
+    "BpNaam": "NIZATIDINE CAPS 300MG",
+    "SterkteHv": 3000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1740,
+    "BpNaam": "NIZATIDINE CAPS 150MG",
+    "SterkteHv": 1500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1745,
+    "BpNaam": "NADROPARINE CAZOUT INJVLST  9500E/ML WWSP",
+    "SterkteHv": 95000,
+    "SterkteEh": "E/M"
+  },
+  {
+    "Bp": 1747,
+    "BpNaam": "ERYTROMYCINE ETHYLSUCC. GRAN V SUSP 100MG/ML BANAA",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1748,
+    "BpNaam": "ERYTROMYCINE ETHYLSUCC. GRAN V SUSP 50MG/ML BANAAN",
+    "SterkteHv": 500,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1749,
+    "BpNaam": "ERYTROMYCINE ETHYLSUCC. GRAN V SUSP 25MG/ML BANAAN",
+    "SterkteHv": 250,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1752,
+    "BpNaam": "SELEGILINE HCL TABL 5MG",
+    "SterkteHv": 50,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1754,
+    "BpNaam": "ISOSORBIDE MONONITRAAT CAPS MGA  50MG",
+    "SterkteHv": 500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1755,
+    "BpNaam": "GANCICLOVIR (NATRIUM) INFPDR 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1756,
+    "BpNaam": "TRANEXAMINEZUUR TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1757,
+    "BpNaam": "METRONIDAZOL TABL 500MG",
+    "SterkteHv": 5000,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1758,
+    "BpNaam": "METRONIDAZOL TABL 250MG",
+    "SterkteHv": 2500,
+    "SterkteEh": "MG"
+  },
+  {
+    "Bp": 1761,
+    "BpNaam": "TETRYZOLINE HCL OOGDR 0,5MG/ML BAK",
+    "SterkteHv": 5,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1762,
+    "BpNaam": "ENOXAPARINE NAZOUT INJVLST 100MG/ML",
+    "SterkteHv": 1000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1763,
+    "BpNaam": "LEUPRORELINE ACETAAT INJVLST 5MG/ML",
+    "SterkteHv": 50,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1765,
+    "BpNaam": "ZUCLOPENTIXOL DECANOAAT INJVLST 500MG/ML",
+    "SterkteHv": 5000,
+    "SterkteEh": "G/L"
+  },
+  {
+    "Bp": 1766,
+    "BpNaam": "DOXAZOSINE (MESILAAT) TABL 4MG",
+    "SterkteHv": 40,
+    "SterkteEh": "MG"
+  }
+]

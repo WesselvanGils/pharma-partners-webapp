@@ -9,61 +9,63 @@ import Swal from "sweetalert2"
 import { MedicalRecordService } from "../medicalRecord.service"
 import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "../patient-journal/journal.service"
-import { MedicationService } from "./medication.service"
 import { PrescriptionService } from "./prescription.service"
 import { ICPC } from "src/app/models/ICPC.model"
 
 @Component({
 	selector: "app-patient-prescription",
 	templateUrl: "./patient-prescription.component.html",
-	styleUrls: ["./patient-prescription.component.css"]
+	styleUrls: [ "./patient-prescription.component.css" ]
 })
-export class PatientPrescriptionComponent implements OnInit {
-	medications$: Observable<Medication[]>
-
+export class PatientPrescriptionComponent implements OnInit
+{
 	@Input() prescriptions$: Observable<Prescription[]>
 	@Input() patient$: Observable<Patient>
 	@Input() episodes$: Observable<Episode[]>
+	@Input() medications: Medication[]
 	@Input() ICPCs: ICPC[]
 	@Output() prescriptions$Change = new EventEmitter<Observable<Prescription[]>>()
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
-	constructor(
-		private prescriptionService: PrescriptionService,
-		private medicationService: MedicationService,
-		private medicalRecordService: MedicalRecordService,
-		private journalService: JournalService,
-		private episodeService: EpisodeService) { }
+	constructor
+		(
+			private prescriptionService: PrescriptionService,
+			private medicalRecordService: MedicalRecordService,
+			private journalService: JournalService,
+			private episodeService: EpisodeService
+		) { }
 
-	ngOnInit(): void {
-		this.medications$ = this.medicationService.list()
-	}
+	ngOnInit(): void { }
 
-	detailPrescription(prescription: Prescription, patient: Patient) {
-		const title = `Het recept van ${patient.firstName + " " + patient.lastName}`
-		const message = `${prescription.dosage + " " + prescription.medication.name}`
+	detailPrescription(prescription: Prescription, patient: Patient)
+	{
+		const title = `Het recept van ${patient.firstName} ${patient.lastName}`
+		const message = `${prescription.dosage} ${prescription.medication.name}`
 		Swal.fire(title, message)
 	}
 
-	addPrescription() {
+	addPrescription()
+	{
 		let medicationOptions: string
 		let episodeOptions: string
-		this.medications$.subscribe(medications => {
-			this.episodes$.subscribe(episodes => {
-				episodes.forEach(episode => {
-					episodeOptions =
-						episodeOptions +
-						`<option value=${episode._id}>${episode.description}</option>`
-				})
+		this.episodes$.subscribe(episodes =>
+		{
+			episodes.forEach(episode =>
+			{
+				episodeOptions =
+					episodeOptions +
+					`<option value=${episode._id}>${episode.description}</option>`
+			})
 
-				medications.forEach(medication => {
-					medicationOptions =
-						medicationOptions +
-						`<option value=${medication._id}>${medication.name} ${medication.unit}</option>`
-				})
+			this.medications.forEach(medication =>
+			{
+				medicationOptions =
+					medicationOptions +
+					`<option value="${medication.name}">${medication.unit}</option>`
+			})
 
-				Swal.fire({
-					title: "Voeg recept toe",
-					html: `
+			Swal.fire({
+				title: "Voeg recept toe",
+				html: `
 						<style>
 							/* Confirm button */
 							.swal2-styled.swal2-confirm {
@@ -87,10 +89,10 @@ export class PatientPrescriptionComponent implements OnInit {
 								box-shadow: 0 0 0 3px rgb(237, 30, 121, 0.5) !important;
 							}
 						</style>
-						<select type="text" id="medication" class="swal2-input px-2" placeholder="Medicatie">
-							<option selected disabled>Kies een medicijn...</option>
+						<input list="medicationList" id="medication" class="swal2-input px-2" placeholder="Medicatie">
+						<datalist id="medicationList">
 							${medicationOptions}
-						</select>
+						</datalist>
 						<input type="text" id="description" class="swal2-input px-1" placeholder="Beschrijving">
 						<input type="text" id="dosage" class="swal2-input px-1" placeholder="Dosering">
 						<br>
@@ -100,97 +102,105 @@ export class PatientPrescriptionComponent implements OnInit {
 						<label for="endTime">Eind datum van inname:</label>
 						<input type="Date" id="periodEnd" class="swal2-input px-1 mx-1" placeholder="Eind van inname">
 						`,
-					confirmButtonText: `<i class="fas fa-list-alt fa-sm p-0"></i> Voeg toe als journaalregel`,
-					showCancelButton: true,
-					cancelButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
-					showCloseButton: true,
-					showDenyButton: true,
-					denyButtonText: "Voeg los toe",
-					focusConfirm: false,
-					preConfirm: () => {
-						const medication = Swal.getPopup().querySelector<HTMLInputElement>("#medication").value
-						const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
-						const dosage = Swal.getPopup().querySelector<HTMLInputElement>("#dosage").value
-						const periodStart = Swal.getPopup().querySelector<HTMLInputElement>("#periodStart").value
-						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
+				confirmButtonText: `<i class="fas fa-list-alt fa-sm p-0"></i> Voeg toe als journaalregel`,
+				showCancelButton: true,
+				cancelButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
+				showCloseButton: true,
+				showDenyButton: true,
+				denyButtonText: "Voeg los toe",
+				focusConfirm: false,
+				preConfirm: () =>
+				{
+					const medication = Swal.getPopup().querySelector<HTMLInputElement>("#medication").value
+					const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
+					const dosage = Swal.getPopup().querySelector<HTMLInputElement>("#dosage").value
+					const periodStart = Swal.getPopup().querySelector<HTMLInputElement>("#periodStart").value
+					const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
 
-						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
-							Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
-						}
-						return {
-							medication: medication,
-							description: description,
-							dosage: dosage,
-							periodStart: periodStart,
-							periodEnd: periodEnd
-						}
-					},
-					preDeny: () =>
+					if (!medication || !description || !dosage || !periodStart || !periodEnd)
 					{
-						const medication = Swal.getPopup().querySelector<HTMLInputElement>("#medication").value
-						const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
-						const dosage = Swal.getPopup().querySelector<HTMLInputElement>("#dosage").value
-						const periodStart = Swal.getPopup().querySelector<HTMLInputElement>("#periodStart").value
-						const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
-
-						if (!medication || !description || !dosage || !periodStart || !periodEnd) {
-							Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
-						}
-						return {
-							medication: medication,
-							description: description,
-							dosage: dosage,
-							periodStart: periodStart,
-							periodEnd: periodEnd
-						}
+						Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 					}
-				}).then(result => {
-					if (result.isDenied) {
-						const prescriptionEntry: Prescription =
-						{
-							_id: undefined,
-							description: result.value.description,
-							dosage: result.value.dosage,
-							periodStart: new Date(result.value.periodStart),
-							periodEnd: new Date(result.value.periodEnd),
-							publicationDate: new Date(),
-							medication: medications.find(
-								medication =>
-									medication._id == result.value.medication
-							)
-						}
-
-						this.prescriptionService.create(prescriptionEntry).subscribe(prescription => {
-							this.patient$.subscribe(patient => {
-								patient.medicalrecord.prescriptions.push(prescription)
-								this.medicalRecordService
-									.update(patient.medicalrecord)
-									.subscribe()
-							})
-						})
+					return {
+						medication: medication,
+						description: description,
+						dosage: dosage,
+						periodStart: periodStart,
+						periodEnd: periodEnd
 					}
-					if (result.isConfirmed) {
-						const prescriptionEntry: Prescription = {
-							_id: undefined,
-							description: result.value.description,
-							dosage: result.value.dosage,
-							periodStart: new Date(result.value.periodStart),
-							periodEnd: new Date(result.value.periodEnd),
-							publicationDate: new Date(),
-							medication: medications.find(medication => medication._id == result.value.medication)
-						}
+				},
+				preDeny: () =>
+				{
+					const medication = Swal.getPopup().querySelector<HTMLInputElement>("#medication").value
+					const description = Swal.getPopup().querySelector<HTMLInputElement>("#description").value
+					const dosage = Swal.getPopup().querySelector<HTMLInputElement>("#dosage").value
+					const periodStart = Swal.getPopup().querySelector<HTMLInputElement>("#periodStart").value
+					const periodEnd = Swal.getPopup().querySelector<HTMLInputElement>("#periodEnd").value
 
-						let ICPCOptions: string
-						this.ICPCs.forEach(element => 
+					if (!medication || !description || !dosage || !periodStart || !periodEnd)
+					{
+						Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
+					}
+					return {
+						medication: medication,
+						description: description,
+						dosage: dosage,
+						periodStart: periodStart,
+						periodEnd: periodEnd
+					}
+				}
+			}).then(result =>
+			{
+				if (result.isDenied)
+				{
+					const prescriptionEntry: Prescription =
+					{
+						_id: undefined,
+						description: result.value.description,
+						dosage: result.value.dosage,
+						periodStart: new Date(result.value.periodStart),
+						periodEnd: new Date(result.value.periodEnd),
+						publicationDate: new Date(),
+						medication: this.medications.find(
+							medication =>
+								medication.name == result.value.medication
+						)
+					}
+
+					this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
+					{
+						this.patient$.subscribe(patient =>
 						{
-							ICPCOptions = ICPCOptions + `<option>${element.IcpCode} ${element.IcpDescription}</option>`
+							patient.medicalrecord.prescriptions.push(prescription)
+							this.medicalRecordService
+								.update(patient.medicalrecord)
+								.subscribe()
 						})
+					})
+				}
+				if (result.isConfirmed)
+				{
+					const prescriptionEntry: Prescription = {
+						_id: undefined,
+						description: result.value.description,
+						dosage: result.value.dosage,
+						periodStart: new Date(result.value.periodStart),
+						periodEnd: new Date(result.value.periodEnd),
+						publicationDate: new Date(),
+						medication: this.medications.find(element => element.name == result.value.medication)
+					}
 
-						Swal.fire(
-							{
-								title: "Journaalregel toevoegen",
-								html:
-									`<select type="text" id="episode" class="swal2-input px-1" placeholder="Episode">
+					let ICPCOptions: string
+					this.ICPCs.forEach(element => 
+					{
+						ICPCOptions = ICPCOptions + `<option>${element.IcpCode} ${element.IcpDescription}</option>`
+					})
+
+					Swal.fire(
+						{
+							title: "Journaalregel toevoegen",
+							html:
+								`<select type="text" id="episode" class="swal2-input px-1" placeholder="Episode">
 									<option selected disabled>Kies een Episode...</option>
 									${episodeOptions}
 								</select>
@@ -201,61 +211,65 @@ export class PatientPrescriptionComponent implements OnInit {
 									${ICPCOptions}
 								</datalist>
 								`,
-								showConfirmButton: true,
-								confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
-								showDenyButton: true,
-								showCloseButton: true,
-								denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
-								focusDeny: false,
-								focusConfirm: false,
-								preConfirm: () => {
-									const episode = Swal.getPopup().querySelector<HTMLInputElement>("#episode").value
-									const characteristics = Swal.getPopup().querySelector<HTMLInputElement>("#characteristics").value
-									const consult = Swal.getPopup().querySelector<HTMLInputElement>("#consult").value
-									const ICPC = Swal.getPopup().querySelector<HTMLInputElement>("#selectedICPC").value
-									return {
-										episode: episode,
-										characteristics: characteristics,
-										consult: consult,
-										ICPC: ICPC
-									}
-								}
-							}).then(journalresult => 
+							showConfirmButton: true,
+							confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
+							showDenyButton: true,
+							showCloseButton: true,
+							denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
+							focusDeny: false,
+							focusConfirm: false,
+							preConfirm: () =>
 							{
-								if (journalresult.isConfirmed) {
-									const medication = medications.find(medication => medication._id == result.value.medication)
-									const journalEntry: Journal =
-									{
-										_id: undefined,
-										ICPC: journalresult.value.ICPC,
-										SOEP:
-										{
-											P: "Voorgeschreven medicatie: "+ medication.name + " " + medication.unit
-										},
-										characteristics: journalresult.value.characteristics,
-										consult: journalresult.value.consult,
-										publicationDate: new Date()
-									}
-
-									this.prescriptionService.create(prescriptionEntry).subscribe(prescription => {
-										this.journalService.create(journalEntry).subscribe(journal => {
-											this.patient$.subscribe(patient => {
-												const episodeToUpdate = patient.medicalrecord.episodes.find(episode => episode._id == journalresult.value.episode)
-												episodeToUpdate.journals.push(journal)
-												patient.medicalrecord.prescriptions.push(prescription)
-												this.episodeService.update(episodeToUpdate).subscribe()
-												this.medicalRecordService
-													.update(patient.medicalrecord)
-													.subscribe()
-											})
-										})
-									})
+								const episode = Swal.getPopup().querySelector<HTMLInputElement>("#episode").value
+								const characteristics = Swal.getPopup().querySelector<HTMLInputElement>("#characteristics").value
+								const consult = Swal.getPopup().querySelector<HTMLInputElement>("#consult").value
+								const ICPC = Swal.getPopup().querySelector<HTMLInputElement>("#selectedICPC").value
+								return {
+									episode: episode,
+									characteristics: characteristics,
+									consult: consult,
+									ICPC: ICPC
 								}
 							}
-							)
-					}
-				})
+						}).then(journalresult => 
+						{
+							if (journalresult.isConfirmed)
+							{
+								const journalEntry: Journal =
+								{
+									_id: undefined,
+									ICPC: journalresult.value.ICPC,
+									SOEP:
+									{
+										P: `Voorgeschreven medicatie: ${prescriptionEntry.medication.name} ${prescriptionEntry.medication.unit}`
+									},
+									characteristics: journalresult.value.characteristics,
+									consult: journalresult.value.consult,
+									publicationDate: new Date()
+								}
+
+								this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
+								{
+									this.journalService.create(journalEntry).subscribe(journal =>
+									{
+										this.patient$.subscribe(patient =>
+										{
+											const episodeToUpdate = patient.medicalrecord.episodes.find(episode => episode._id == journalresult.value.episode)
+											episodeToUpdate.journals.push(journal)
+											patient.medicalrecord.prescriptions.push(prescription)
+											this.episodeService.update(episodeToUpdate).subscribe()
+											this.medicalRecordService
+												.update(patient.medicalrecord)
+												.subscribe()
+										})
+									})
+								})
+							}
+						}
+					)
+				}
 			})
 		})
+
 	}
 }
