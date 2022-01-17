@@ -11,8 +11,10 @@ import { Appointment } from "src/app/models/appointment.model"
 import { AuthService } from "src/app/core/auth/auth.service"
 import { CalendarService } from "../../calendar/calendar.service"
 import rootICPC from "src/assets/documents/IcpcTrimmed.json"
-import { ICPC } from "src/app/models/ICPC.model"
 import rootDiagnosticTypes from "src/assets/documents/DDElementenTrimmed.json"
+import rootMedications from "src/assets/documents/MedicationTrimmed.json"
+import { ICPC } from "src/app/models/ICPC.model"
+import { Medication } from "src/app/models/medication.model"
 
 @Component({
 	selector: "app-patient-detail",
@@ -26,6 +28,7 @@ export class PatientDetailComponent implements OnInit
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
 	ICPCs: ICPC[] = []
+	medications: Medication[] = []
 	diagnosticTypes: Diagnostic[] = []
 
 	constructor(
@@ -58,6 +61,10 @@ export class PatientDetailComponent implements OnInit
 		rootDiagnosticTypes.forEach(element =>
 		{
 			this.diagnosticTypes.push({_id: undefined, aolType: element.AolSort, memoCode: element.Memocode, name: element.Naam, unit: element.Eenheid})
+		})
+		rootMedications.forEach(element =>
+		{
+			this.medications.push({_id: undefined, amount: element.SterkteHv, index: element.Bp, name: element.BpNaam, unit: element.SterkteEh})
 		})
 	}
 
