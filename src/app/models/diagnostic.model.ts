@@ -6,4 +6,6 @@ export class Diagnostic extends Entity
     measurements?: Measurement[]
     name: string
     unit: string
+    memoCode: string
+    aolType: number
 }

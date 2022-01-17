@@ -12,6 +12,7 @@ import { AuthService } from "src/app/core/auth/auth.service"
 import { CalendarService } from "../../calendar/calendar.service"
 import rootICPC from "src/assets/documents/IcpcTrimmed.json"
 import { ICPC } from "src/app/models/ICPC.model"
+import rootDiagnosticTypes from "src/assets/documents/DDElementenTrimmed.json"
 
 @Component({
 	selector: "app-patient-detail",
@@ -25,6 +26,7 @@ export class PatientDetailComponent implements OnInit
 	episodes$: Observable<Episode[]>
 	diagnostics$: Observable<Diagnostic[]>
 	ICPCs: ICPC[] = []
+	diagnosticTypes: Diagnostic[] = []
 
 	constructor(
 		private route: ActivatedRoute,
@@ -52,6 +54,10 @@ export class PatientDetailComponent implements OnInit
 		rootICPC.forEach(element =>
 		{
 			this.ICPCs.push({IcpCode: element.IcpIcpcKode, IcpDescription: element.IcpOmschrijving})
+		})
+		rootDiagnosticTypes.forEach(element =>
+		{
+			this.diagnosticTypes.push({_id: undefined, aolType: element.AolSort, memoCode: element.Memocode, name: element.Naam, unit: element.Eenheid})
 		})
 	}
 
