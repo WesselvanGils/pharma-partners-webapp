@@ -38,8 +38,8 @@ export class PatientPrescriptionComponent implements OnInit
 
 	detailPrescription(prescription: Prescription, patient: Patient)
 	{
-		const title = `Het recept van ${patient.firstName} ${patient.lastName}`
-		const message = `${prescription.dosage} ${prescription.medication.name}`
+		const title = `Een recept van ${patient.firstName} ${patient.lastName}`
+		const message = `<p><strong>Beschrijving:</strong> ${prescription.description}</p> <p><strong>Dosis:</strong> ${prescription.dosage}</p> <p><strong>Medicatie:</strong> ${prescription.medication.name.toLowerCase()}</p>`
 		Swal.fire(title, message)
 	}
 

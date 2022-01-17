@@ -21,7 +21,7 @@
                 <tbody>
                     <tr *ngFor="let prescription of prescriptions$ | async">
                         <td class="align-middle">
-                            {{ prescription.medication.name }}
+                            {{ prescription.medication.name.toLowerCase() }}
                             {{ prescription.medication.unit }}
                         </td>
                         <td class="align-middle">{{ prescription.dosage }}</td>
