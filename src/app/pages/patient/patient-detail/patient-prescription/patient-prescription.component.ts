@@ -169,7 +169,6 @@ export class PatientPrescriptionComponent implements OnInit
 
 					this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
 					{
-						console.warn(prescription)
 						this.patient$.subscribe(patient =>
 						{
 							patient.medicalrecord.prescriptions.push(prescription)
