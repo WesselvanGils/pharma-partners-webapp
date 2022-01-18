@@ -94,7 +94,9 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 					ICPC: ICPC,
 					characteristics: characteristics,
 					consult: consult,
-					publicationDate: date
+					publicationDate: date,
+					isArchived: false,
+					episode: this.episode
 				}
 				return returnJournal
 			}

@@ -27,7 +27,9 @@ describe("PatientJournalComponent", () =>
 		},
 		characteristics: undefined,
 		consult: undefined,
-		publicationDate: undefined
+		publicationDate: undefined,
+		isArchived: undefined,
+		episode: undefined
 	}]
 
 	const expectedEpisode: Episode =
