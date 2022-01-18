@@ -9,7 +9,6 @@ import { DiagnosticService } from "./patient-diagnostic/diagnostic.service"
 import { EpisodeService } from "./patient-episode/episode.service" 
 import { MeasurementService } from "./patient-diagnostic/measurement.service" 
 import { MedicalRecordService } from "./medicalRecord.service"
-import { MedicationService } from "./patient-prescription/medication.service"
 
 import { PatientDetailComponent } from "./patient-detail.component"
 import { PrescriptionService } from "./patient-prescription/prescription.service"

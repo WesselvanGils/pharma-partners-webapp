@@ -35,7 +35,11 @@ export class HomepageComponent implements OnInit
 			let appointmentList: Appointment[] = []
 			result.forEach( (appointment: Appointment) =>
 			{
-				if (new Date(`${appointment.meeting.start}`).getDate() == new Date().getDate())
+				let dateToCompare = new Date(`${appointment.meeting.start}`)
+				let today = new Date()
+				if (dateToCompare.getDate() == today.getDate() && 
+					dateToCompare.getMonth() == today.getMonth() &&
+					dateToCompare.getFullYear() == today.getFullYear())
 				{
 					appointmentList.push(appointment)
 				}
@@ -48,7 +52,5 @@ export class HomepageComponent implements OnInit
 	{
 		this.router.navigate(['/calendar'])
 		this.calendarService.changeAppointment(appointment)
-		// TODO: Deze wellicht doorrouten naar de informatie van die afspraak?
-		// Swal.fire({ title: "Dit zou doorgestuurd moeten worden naar de info voor de details" })
 	}
 }

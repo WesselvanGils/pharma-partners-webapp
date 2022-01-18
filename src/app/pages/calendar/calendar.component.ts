@@ -19,6 +19,7 @@ export class CalendarComponent implements OnInit, OnDestroy
 	events: CalendarEvent[] = []
 	refresh: Subject<any> = new Subject<any>()
 	focusedMeeting: Observable<Appointment>
+	locale: string = "nl-BE"
 
 	constructor(private calendarService: CalendarService, private authService: AuthService) { }
 

@@ -20,7 +20,7 @@ import { CalendarView } from 'angular-calendar';
             mwlCalendarToday
             [(viewDate)]="viewDate"
             (viewDateChange)="viewDateChange.next(viewDate)">
-            Today
+            Vandaag
           </div>
           <div
             class="btn btn-primary btn-sm"
@@ -69,7 +69,7 @@ export class CalendarHeaderComponent
 
 	@Input() viewDate: Date;
 
-	@Input() locale: string = 'en';
+	@Input() locale: string = 'nl-BE';
 
 	@Output() viewChange = new EventEmitter<CalendarView>();
 

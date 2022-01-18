@@ -30,7 +30,7 @@
             </ul>
 
             <ul *ngIf="(loggedInUser | async) as loggedInUser" class="navbar-nav">
-                <span class="navbar-text mr-4" routerLink="home">Logged in: <span class="user ml-1"><i class="fas fa-user-circle"></i> {{loggedInUser.firstName}} {{loggedInUser.lastName}}</span></span>
+                <span class="navbar-text mr-4" routerLink="home">Gebruiker: <span class="user ml-1"><i class="fas fa-user-circle"></i> {{loggedInUser.firstName}} {{loggedInUser.lastName}}</span></span>
                   <span class="navbar-text">
                     <a class="nav-link logout p-0" (click)="logUserOut()"><i class="fas fa-sign-out-alt"></i> Uitloggen</a>
                   </span>
