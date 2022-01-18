@@ -154,6 +154,7 @@ export class PatientEpisodeComponent implements OnInit
 
 								this.medicalRecordService.update(patient.medicalrecord).subscribe()
 								this.onDelete.emit(episode._id)
+								this.setJournal(undefined, undefined)
 							})
 						})
 					})
