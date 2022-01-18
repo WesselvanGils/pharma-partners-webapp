@@ -6,6 +6,7 @@ import Swal from "sweetalert2"
 import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "./journal.service"
 import { ICPC } from "src/app/models/ICPC.model"
+import { AuthService } from "src/app/core/auth/auth.service"
 
 @Component({
 	selector: "app-patient-journal",
@@ -21,7 +22,8 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 	constructor
 	( 
 		private journalService: JournalService,
-		private episodeService: EpisodeService 
+		private episodeService: EpisodeService,
+		private authService: AuthService
 	) { }
 
 	
@@ -94,7 +96,8 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 					ICPC: ICPC,
 					characteristics: characteristics,
 					consult: consult,
-					publicationDate: date
+					publicationDate: date,
+					author: this.authService.currentUser$.value
 				}
 				return returnJournal
 			}
