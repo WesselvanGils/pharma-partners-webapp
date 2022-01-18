@@ -1,4 +1,5 @@
 import { Entity } from "./entity.model";
+import { User } from "./user.model";
 
 export class Journal extends Entity
 {
@@ -13,4 +14,5 @@ export class Journal extends Entity
     characteristics: string
     ICPC: string
     consult: string
+    author: User
 }

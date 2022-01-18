@@ -15,6 +15,7 @@ import { MeasurementService } from "./measurement.service"
 })
 export class PatientDiagnosticComponent implements OnInit
 {
+	@Input() diagnosticTypes: Diagnostic[]
 	@Input() patient$: Observable<Patient>
 	@Input() diagnostics$: Observable<Diagnostic[]>
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
@@ -119,14 +120,21 @@ export class PatientDiagnosticComponent implements OnInit
 
 	addDiagnostic()
 	{
+		let diagnosticTypesOptions: string
+		this.diagnosticTypes.forEach(element =>
+		{
+			diagnosticTypesOptions = diagnosticTypesOptions + `<option value="${element.name}">${element.unit ? element.unit : "N.A"}</option>`
+		})
+
 		Swal.fire({
 			title: "Voeg meting toe",
-			html: `
-		  <input type="text" id="name" class="swal2-input" placeholder="Naam">
-		  <input type="number" min="0" id="valueNumber" class="swal2-input" placeholder="Waarde (getal)">
-		  <input type="text" id="unit" class="swal2-input" placeholder="Eenheid">
-		  <input type="date" id="date" class="swal2-input" placeholder="Datum">
-		  `,
+			html:
+			`
+				<input list="nameList" id="diagnostic" class="swal2-input" placeholder="Naam">
+				<datalist id="nameList">
+					${diagnosticTypesOptions}
+				</datalist>
+		  	`,
 			confirmButtonText: `<i class="fas fa-check-circle"></i> Voeg toe`,
 			showDenyButton: true,
 			showCloseButton: true,
@@ -135,70 +143,37 @@ export class PatientDiagnosticComponent implements OnInit
 			focusConfirm: false,
 			preConfirm: () =>
 			{
-				const name = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#name"
-				).value
-				const unit = Swal.getPopup().querySelector<HTMLInputElement>(
-					"#unit"
-				).value
-				const valueNumber = (Swal.getPopup().querySelector<
-					HTMLInputElement
-				>("#valueNumber").value as unknown) as number
-				const date = (Swal.getPopup().querySelector<HTMLInputElement>(
-					"#date"
-				).value as unknown) as Date
-				if (!name || !unit || !valueNumber || !date)
+				const diagnosticName = Swal.getPopup().querySelector<HTMLInputElement>("#diagnostic").value
+				let diagnostic = this.diagnosticTypes.find(element => element.name == diagnosticName)
+				diagnostic.unit = diagnostic.unit ? diagnostic.unit : "N.A"
+				// const unit = Swal.getPopup().querySelector<HTMLInputElement>("#unit").value
+				// const valueNumber = (Swal.getPopup().querySelector<HTMLInputElement>("#valueNumber").value as unknown) as number
+				// const date = (Swal.getPopup().querySelector<HTMLInputElement>("#date").value as unknown) as Date
+				if (!diagnostic)
 				{
-					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
+					Swal.showValidationMessage(`Geef a.u.b aan welke meting U toe wilt voegen`)
 				}
 				return {
-					name: name,
-					unit: unit,
-					valueNumber: valueNumber,
-					date: date
+					diagnostic: diagnostic,
 				}
 			}
 		}).then(result =>
 		{
 			if (result.isConfirmed)
 			{
-				const measurementEntry: Measurement = {
-					_id: undefined,
-					valueNumber: result.value.valueNumber,
-					date: result.value.date
-				}
+				console.warn(result.value.diagnostic)
 
-				const diagnosticEntry: Diagnostic = {
-					_id: undefined,
-					name: result.value.name,
-					unit: result.value.unit
-				}
-
-				this.diagnosticService
-					.create(diagnosticEntry)
-					.subscribe(diagnostic =>
+				this.diagnosticService.create(result.value.diagnostic).subscribe(diagnostic =>
+				{
+					this.patient$.subscribe(patient =>
 					{
-						this.patient$.subscribe(patient =>
+						patient.medicalrecord.diagnostics.push(diagnostic)
+						this.medicalRecordService.update(patient.medicalrecord).subscribe(medicalRecord =>
 						{
-							patient.medicalrecord.diagnostics.push(diagnostic)
-
-							this.medicalRecordService
-								.update(patient.medicalrecord)
-								.subscribe(result =>
-								{
-									this.measurementService
-										.create(measurementEntry)
-										.subscribe(result =>
-										{
-											diagnostic.measurements.push(result)
-
-											this.diagnosticService
-												.update(diagnostic)
-												.subscribe()
-										})
-								})
+							this.addMeasurement(diagnostic)
 						})
 					})
+				})
 			}
 		})
 	}

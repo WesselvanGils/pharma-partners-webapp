@@ -4,7 +4,7 @@ import { BrowserModule } from "@angular/platform-browser"
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { HttpClientModule } from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
-import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { CalendarDateFormatter, CalendarModule, CalendarNativeDateFormatter, DateAdapter, DateFormatterParams } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { CalendarUtilsModule } from "./pages/calendar/calendar-header/module"
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
@@ -14,7 +14,6 @@ import { MatRadioModule } from '@angular/material/radio';
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
-import { AboutComponent } from "./pages/about/about.component"
 import { SpinnerComponent } from "./shared/spinner/spinner.component"
 import { LayoutComponent } from "./core/layout/layout.component"
 import { NavbarComponent } from "./core/navbar/navbar.component"
@@ -32,11 +31,16 @@ import { PatientEpisodeComponent } from './pages/patient/patient-detail/patient-
 import { PatientDiagnosticComponent } from './pages/patient/patient-detail/patient-diagnostic/patient-diagnostic.component';
 import { PatientPrescriptionComponent } from './pages/patient/patient-detail/patient-prescription/patient-prescription.component';
 
+import { registerLocaleData } from "@angular/common"
+import localeNl from "@angular/common/locales/nl-BE"
+import { extend } from "jquery"
+
+registerLocaleData(localeNl)
+
 @NgModule({
 	declarations: [
 		LoginComponent,
 		HomepageComponent,
-		AboutComponent,
 		SpinnerComponent,
 		LayoutComponent,
 		NavbarComponent,
@@ -72,10 +76,27 @@ import { PatientPrescriptionComponent } from './pages/patient/patient-detail/pat
 			{
 				provide: DateAdapter,
 				useFactory: adapterFactory
+			},
+			{
+				dateFormatter:
+				{
+					provide: CalendarDateFormatter,
+					useClass: AppModule
+				}
 			}
 		)
 	],
 	providers: [],
 	bootstrap: [ RootComponent ]
 })
-export class AppModule { }
+export class AppModule extends CalendarNativeDateFormatter
+{
+	public override weekViewHour({ date, locale }: DateFormatterParams): string 
+	{
+		return new Intl.DateTimeFormat('nl', 
+		{
+			hour: 'numeric',
+			minute: 'numeric',
+		}).format(date);
+	}
+}
