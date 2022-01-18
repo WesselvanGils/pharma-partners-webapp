@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing"
 import { of } from "rxjs"
+import { AuthService } from "src/app/core/auth/auth.service"
 import { Medication } from "src/app/models/medication.model"
 import { MedicalRecordService } from "../medicalRecord.service"
 import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "../patient-journal/journal.service"
-import { MedicationService } from "./medication.service"
 
 import { PatientPrescriptionComponent } from "./patient-prescription.component"
 import { PrescriptionService } from "./prescription.service"
@@ -16,6 +16,7 @@ describe("PatientPrescriptionComponent", () =>
 	let journalRecordServiceSpy
 	let episodeServiceSpy
 	let medicalRecordServiceSpy: jasmine.SpyObj<MedicalRecordService>
+	let authServiceSpy
 
 	let component: PatientPrescriptionComponent
 	let fixture: ComponentFixture<PatientPrescriptionComponent>
@@ -24,7 +25,9 @@ describe("PatientPrescriptionComponent", () =>
 	{
 		_id: undefined,
 		name: undefined,
-		unit: undefined
+		unit: undefined,
+		amount: undefined,
+		index: undefined
 	}
 
 	beforeEach(async () =>
@@ -34,16 +37,17 @@ describe("PatientPrescriptionComponent", () =>
 		medicalRecordServiceSpy = jasmine.createSpyObj("MedicalRecordService", ["list"])
 		journalRecordServiceSpy = jasmine.createSpyObj("MedicalRecordService", ["list"])
 		episodeServiceSpy = jasmine.createSpyObj("episodeService", ["list"])
+		authServiceSpy = jasmine.createSpyObj("authService", ["currentUser"])
 
 		await TestBed.configureTestingModule({
 			declarations: [ PatientPrescriptionComponent ],
 			providers:
 			[
 				{ provide: PrescriptionService, useValue: prescriptionServiceSpy },
-				{ provide: MedicationService, useValue: medicationServiceSpy },
 				{ provide: MedicalRecordService, useValue: medicalRecordServiceSpy },
 				{ provide: JournalService, useValue: journalRecordServiceSpy },
-				{ provide: EpisodeService, useValue: episodeServiceSpy }
+				{ provide: EpisodeService, useValue: episodeServiceSpy },
+				{ provide: AuthService, useValue: authServiceSpy }
 			]
 		}).compileComponents()
 	})
