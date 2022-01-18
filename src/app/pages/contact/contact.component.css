@@ -7,10 +7,7 @@ body {
 }
 
 a {
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-  color: #1089ff;
+  color: #fff;
 }
 a:hover,
 a:focus {
@@ -54,12 +51,14 @@ a:focus {
   box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
 }
 
+
 .contact-wrap {
   background: #fff;
 }
 
 .info-wrap h3 {
   color: #fff;
+  font-size: 25px!important;
 }
 
 .info-wrap .dbox {
@@ -183,4 +182,16 @@ a:focus {
 
 .pharma-primary {
   background-color: #003E79;
+}
+
+.dbox:hover .icon {
+  box-shadow: 0 0 .2em #ffffff80 !important;
+  
+}
+.dbox:hover .contact-link{
+  font-weight: bold
+}
+
+.contact-link {
+  font-style: italic;
 }
