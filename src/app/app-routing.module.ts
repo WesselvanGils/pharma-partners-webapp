@@ -3,7 +3,6 @@ import { RouterModule, Routes } from "@angular/router"
 import { LoggedInAuthGuard } from "./core/auth/auth.guard"
 import { LoginComponent } from "./core/auth/login/login.component"
 import { LayoutComponent } from "./core/layout/layout.component"
-import { AboutComponent } from "./pages/about/about.component"
 import { CalendarComponent } from "./pages/calendar/calendar.component"
 import { ContactComponent } from "./pages/contact/contact.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
@@ -20,7 +19,6 @@ const routes: Routes = [
 		[
 			{ path: "", pathMatch: "full", redirectTo: "home" },
 			{ path: "home", component: HomepageComponent },
-			{ path: "about", component: AboutComponent },
 			{ path: "contact", component: ContactComponent },
 			{ path: "calendar", component: CalendarComponent },
 			{ path: "patient", component: PatientComponent,

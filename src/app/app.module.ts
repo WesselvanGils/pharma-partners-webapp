@@ -14,7 +14,6 @@ import { MatRadioModule } from '@angular/material/radio';
 import { AppRoutingModule } from "./app-routing.module"
 import { LoginComponent } from "./core/auth/login/login.component"
 import { HomepageComponent } from "./pages/homepage/homepage.component"
-import { AboutComponent } from "./pages/about/about.component"
 import { SpinnerComponent } from "./shared/spinner/spinner.component"
 import { LayoutComponent } from "./core/layout/layout.component"
 import { NavbarComponent } from "./core/navbar/navbar.component"
@@ -42,7 +41,6 @@ registerLocaleData(localeNl)
 	declarations: [
 		LoginComponent,
 		HomepageComponent,
-		AboutComponent,
 		SpinnerComponent,
 		LayoutComponent,
 		NavbarComponent,
