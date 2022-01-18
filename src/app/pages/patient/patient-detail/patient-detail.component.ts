@@ -189,7 +189,7 @@ export class PatientDetailComponent implements OnInit
 		})
 	}
 
-	onDeleteTrigger(deletedId: string)
+	onDeleteTrigger()
 	{
 		this.route.paramMap
 			.pipe(

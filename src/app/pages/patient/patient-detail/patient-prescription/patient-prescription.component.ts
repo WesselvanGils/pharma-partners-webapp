@@ -24,6 +24,7 @@ export class PatientPrescriptionComponent implements OnInit
 	@Input() episodes$: Observable<Episode[]>
 	@Input() medications: Medication[]
 	@Input() ICPCs: ICPC[]
+	@Output() onDelete = new EventEmitter<string>()
 	@Output() prescriptions$Change = new EventEmitter<Observable<Prescription[]>>()
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
 	constructor
@@ -235,6 +236,12 @@ export class PatientPrescriptionComponent implements OnInit
 						{
 							if (journalresult.isConfirmed)
 							{
+								let episodeForJournal 
+								this.episodes$.subscribe(result => {
+									episodeForJournal  = result.find(element => {
+										 element.description == journalresult.value.episode
+										}) 
+									})
 								const journalEntry: Journal =
 								{
 									_id: undefined,
@@ -245,7 +252,9 @@ export class PatientPrescriptionComponent implements OnInit
 									},
 									characteristics: journalresult.value.characteristics,
 									consult: journalresult.value.consult,
-									publicationDate: new Date()
+									publicationDate: new Date(),
+									isArchived: false,
+									episode: episodeForJournal
 								}
 
 								this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
@@ -271,5 +280,32 @@ export class PatientPrescriptionComponent implements OnInit
 			})
 		})
 
+	}
+
+	removePrescription(prescription: Prescription) {
+		Swal.fire(
+			{
+				title: "Weet u het zeker?",
+				showConfirmButton: true,
+				confirmButtonText: `<i class="fas fa-check-circle"></i> Bevestig`,
+				showDenyButton: true,
+				denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`
+			}).then(result => {
+				if (result.isConfirmed) {
+					this.patient$.subscribe(patient => {
+
+						this.prescriptionService.delete(prescription._id).subscribe(resolve => {
+
+							patient.medicalrecord.prescriptions.forEach((element, index) => {
+								if (element._id == prescription._id)
+									patient.medicalrecord.prescriptions.splice(index, 1)
+							})
+
+							this.medicalRecordService.update(patient.medicalrecord).subscribe()
+							this.onDelete.emit(prescription._id)
+						})
+					})
+				}
+			})
 	}
 }
