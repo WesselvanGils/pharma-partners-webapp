@@ -32,6 +32,11 @@ import { PatientEpisodeComponent } from './pages/patient/patient-detail/patient-
 import { PatientDiagnosticComponent } from './pages/patient/patient-detail/patient-diagnostic/patient-diagnostic.component';
 import { PatientPrescriptionComponent } from './pages/patient/patient-detail/patient-prescription/patient-prescription.component';
 
+import { registerLocaleData } from "@angular/common"
+import localeNl from "@angular/common/locales/nl-BE"
+
+registerLocaleData(localeNl)
+
 @NgModule({
 	declarations: [
 		LoginComponent,
