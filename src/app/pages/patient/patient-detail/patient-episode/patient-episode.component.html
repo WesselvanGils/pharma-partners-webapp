@@ -18,6 +18,7 @@
                         <th class="align-middle" scope="col">Code</th>
                         <th class="align-middle" scope="col">Prioriteit</th>
                         <th class="align-middle" scope="col">Journaalregels</th>
+                        <th class="align-middle" scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,6 +35,11 @@
                         <td class="align-middle">
                             <button class="btn btn-info btn-sm" (click)="setJournal(episode.journals, episode)">
                                 <i class="fas fa-list-alt fa-sm p-0"></i> Journaalregels
+                            </button>
+                        </td>
+                        <td class="align-middle m-0 px-0 mb-0 mt-1">
+                            <button class="btn btn-danger btn-sm" style="margin-left: 10px;" (click)="removeEpisode(episode)">
+                                <i class="fas fa-trash"></i>
                             </button>
                         </td>
                     </tr>

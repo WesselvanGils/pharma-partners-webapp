@@ -35,9 +35,11 @@ export class AppointmentComponent implements OnInit
 	{
 		Swal.fire(
 		{
-			title: "Weet je het zeker?",
+			title: "Weet u het zeker?",
 			showConfirmButton: true,
-			showDenyButton: true
+			confirmButtonText: `<i class="fas fa-check-circle"></i> Bevestig`,
+			showDenyButton: true,
+			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`
 		}).then(result =>
 		{
 			if (result.isConfirmed)

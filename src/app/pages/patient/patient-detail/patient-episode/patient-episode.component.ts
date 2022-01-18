@@ -7,6 +7,7 @@ import { MedicalRecordService } from "../medicalRecord.service"
 import { Journal } from "src/app/models/journal.model"
 import { Patient } from "src/app/models/patient.model"
 import { ICPC } from "src/app/models/ICPC.model"
+import { JournalService } from "../patient-journal/journal.service"
 
 @Component({
 	selector: "app-patient-episode",
@@ -18,11 +19,13 @@ export class PatientEpisodeComponent implements OnInit
 	@Input() episodes$: Observable<Episode[]>
 	@Input() patient$: Observable<Patient>
 	@Input() ICPCs: ICPC[]
+	@Output() onDelete = new EventEmitter<string>()
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
 	@Output() episodes$Change = new EventEmitter<Observable<Episode[]>>()
 	constructor
 	(
 		private episodeService: EpisodeService,
+		private journalService: JournalService,
 		private medicalRecordService: MedicalRecordService
 	) { }
 
@@ -127,5 +130,35 @@ export class PatientEpisodeComponent implements OnInit
 				})
 			}
 		})
+	}
+
+	removeEpisode(episode: Episode) {
+		Swal.fire(
+			{
+				title: "Weet u het zeker?",
+				showConfirmButton: true,
+				confirmButtonText: `<i class="fas fa-check-circle"></i> Bevestig`,
+				showDenyButton: true,
+				denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`
+			}).then(result => {
+				if (result.isConfirmed) {
+					this.patient$.subscribe(patient => {
+
+						this.journalService.archiveJournals(episode, patient).subscribe(result => {
+							this.episodeService.delete(episode._id).subscribe(resolve => {
+
+								patient.medicalrecord.episodes.forEach((element, index) => {
+									if (element._id == episode._id)
+										patient.medicalrecord.episodes.splice(index, 1)
+								})
+
+								this.medicalRecordService.update(patient.medicalrecord).subscribe()
+								this.onDelete.emit(episode._id)
+							})
+						})
+					})
+					
+				}
+			})
 	}
 }

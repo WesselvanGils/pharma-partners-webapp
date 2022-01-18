@@ -1,6 +1,8 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, catchError, throwError } from 'rxjs';
 import { Entity } from '../models/entity.model';
+import { Episode } from '../models/episode.model';
+import { Patient } from '../models/patient.model';
 import { Alert } from './alert/alert.service';
 
 const httpOptions = {
@@ -41,6 +43,15 @@ export class EntityService<T extends Entity> {
 			// map((response: any) => response.result),
 			catchError(this.handleError)
 		);
+	}
+
+	public archiveJournals(item: Episode, patient: Patient, options?: any): Observable<T>
+	{
+		const endpoint = `${this.url}${this.endpoint}/${item._id}/${patient._id}`;
+		console.log(`archive journals ${endpoint}`);
+		return this.http.put(endpoint, item, {...options, ...httpOptions}).pipe(
+			catchError(this.handleError)
+		)
 	}
 
 	/**
