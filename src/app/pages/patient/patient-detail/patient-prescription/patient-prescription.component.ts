@@ -11,6 +11,7 @@ import { EpisodeService } from "../patient-episode/episode.service"
 import { JournalService } from "../patient-journal/journal.service"
 import { PrescriptionService } from "./prescription.service"
 import { ICPC } from "src/app/models/ICPC.model"
+import { AuthService } from "src/app/core/auth/auth.service"
 
 @Component({
 	selector: "app-patient-prescription",
@@ -31,7 +32,8 @@ export class PatientPrescriptionComponent implements OnInit
 			private prescriptionService: PrescriptionService,
 			private medicalRecordService: MedicalRecordService,
 			private journalService: JournalService,
-			private episodeService: EpisodeService
+			private episodeService: EpisodeService,
+			private authService: AuthService
 		) { }
 
 	ngOnInit(): void { }
@@ -245,7 +247,8 @@ export class PatientPrescriptionComponent implements OnInit
 									},
 									characteristics: journalresult.value.characteristics,
 									consult: journalresult.value.consult,
-									publicationDate: new Date()
+									publicationDate: new Date(),
+									author: this.authService.currentUser$.value
 								}
 
 								this.prescriptionService.create(prescriptionEntry).subscribe(prescription =>
