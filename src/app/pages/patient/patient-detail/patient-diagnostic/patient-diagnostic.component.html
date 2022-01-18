@@ -17,6 +17,7 @@
                         <th scope="col">Datum</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,6 +33,11 @@
                         <td class="align-middle m-0 px-0 mb-0 mt-1">
                             <button class="btn btn-primary btn-sm" style="margin-left: 10px;" (click)="addMeasurement(diagnostic)">
                                 <i class="fas fa-plus"></i>
+                            </button>
+                        </td>
+                        <td class="align-middle m-0 px-0 mb-0 mt-1">
+                            <button class="btn btn-danger btn-sm" style="margin-left: 10px;" (click)="removeDiagnostic(diagnostic)">
+                                <i class="fas fa-trash"></i>
                             </button>
                         </td>
                     </tr>
