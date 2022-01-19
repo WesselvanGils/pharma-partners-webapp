@@ -81,10 +81,10 @@
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row gutters-sm">
 				<div class="col-sm-12 col-md-5 col-lg-6 pr-md-0">
-					<app-patient-diagnostic [diagnosticTypes]="diagnosticTypes" [(patient$)]="patient$" [(diagnostics$)]="diagnostics$"></app-patient-diagnostic>
+					<app-patient-diagnostic [diagnosticTypes]="diagnosticTypes" [(patient$)]="patient$" [(diagnostics$)]="diagnostics$" (onDelete)="onDeleteTrigger()"></app-patient-diagnostic>
 				</div>
 				<div class="col-sm-12 col-md-7 col-lg-6 mb-3">
-					<app-patient-prescription [(patient$)]="patient$" [(prescriptions$)]="prescriptions$" [episodes$]="episodes$" [ICPCs]="ICPCs" [medications]="medications"></app-patient-prescription>
+					<app-patient-prescription [(patient$)]="patient$" [(prescriptions$)]="prescriptions$" [episodes$]="episodes$" [ICPCs]="ICPCs" [medications]="medications" (onDelete)="onDeleteTrigger()"></app-patient-prescription>
 				</div>
 			</div>
 		</div>

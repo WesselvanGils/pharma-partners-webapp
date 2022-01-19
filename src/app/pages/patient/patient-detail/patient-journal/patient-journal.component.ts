@@ -97,6 +97,8 @@ export class PatientJournalComponent implements OnInit, OnDestroy
 					characteristics: characteristics,
 					consult: consult,
 					publicationDate: date,
+					isArchived: false,
+					episode: this.episode,
 					author: this.authService.currentUser$.value
 				}
 				return returnJournal

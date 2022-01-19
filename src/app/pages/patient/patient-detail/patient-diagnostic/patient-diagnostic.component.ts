@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core"
 import { Measurement } from "src/app/models/measurement.model"
 import Swal from "sweetalert2"
-import { Diagnostic } from "src/app/models/diagnostic.model" 
+import { Diagnostic } from "src/app/models/diagnostic.model"
 import { DiagnosticService } from "./diagnostic.service"
 import { Observable } from "rxjs"
 import { Patient } from "src/app/models/patient.model"
@@ -11,26 +11,25 @@ import { MeasurementService } from "./measurement.service"
 @Component({
 	selector: "app-patient-diagnostic",
 	templateUrl: "./patient-diagnostic.component.html",
-	styleUrls: [ "./patient-diagnostic.component.css" ]
+	styleUrls: ["./patient-diagnostic.component.css"]
 })
-export class PatientDiagnosticComponent implements OnInit
-{
+export class PatientDiagnosticComponent implements OnInit {
 	@Input() diagnosticTypes: Diagnostic[]
 	@Input() patient$: Observable<Patient>
 	@Input() diagnostics$: Observable<Diagnostic[]>
+	@Output() onDelete = new EventEmitter<string>()
 	@Output() patient$Change = new EventEmitter<Observable<Patient>>()
 	@Output() diagnostics$Change = new EventEmitter<Observable<Diagnostic[]>>()
 	constructor
-	(
-		private diagnosticService: DiagnosticService,
-		private medicalRecordService: MedicalRecordService,
-		private measurementService: MeasurementService
-	) { }
+		(
+			private diagnosticService: DiagnosticService,
+			private medicalRecordService: MedicalRecordService,
+			private measurementService: MeasurementService
+		) { }
 
 	ngOnInit(): void { }
 
-	addMeasurement(diagnostic: Diagnostic)
-	{
+	addMeasurement(diagnostic: Diagnostic) {
 		Swal.fire({
 			title: "Voeg waarde toe aan: ",
 			html: `
@@ -44,16 +43,14 @@ export class PatientDiagnosticComponent implements OnInit
 			showDenyButton: true,
 			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusConfirm: false,
-			preConfirm: () =>
-			{
+			preConfirm: () => {
 				const valueNumber = (Swal.getPopup().querySelector<
 					HTMLInputElement
 				>("#valueNumber").value as unknown) as number
 				const date = (Swal.getPopup().querySelector<HTMLInputElement>(
 					"#date"
 				).value as unknown) as Date
-				if (!valueNumber || !date)
-				{
+				if (!valueNumber || !date) {
 					Swal.showValidationMessage(`Vul a.u.b. alle velden in`)
 				}
 				return {
@@ -61,18 +58,15 @@ export class PatientDiagnosticComponent implements OnInit
 					date: date
 				}
 			}
-		}).then(result =>
-		{
-			if (result.isConfirmed)
-			{
+		}).then(result => {
+			if (result.isConfirmed) {
 				let entry: Measurement = {
 					_id: undefined,
 					valueNumber: result.value.valueNumber,
 					date: result.value.date
 				}
 
-				this.measurementService.create(entry).subscribe(result =>
-				{
+				this.measurementService.create(entry).subscribe(result => {
 					diagnostic.measurements.push(result)
 					this.diagnosticService.update(diagnostic).subscribe()
 				})
@@ -80,13 +74,10 @@ export class PatientDiagnosticComponent implements OnInit
 		})
 	}
 
-	getMeasurementHistory(diagnostic: Diagnostic)
-	{
+	getMeasurementHistory(diagnostic: Diagnostic) {
 		let measurementOptions: string = ""
-		diagnostic.measurements.forEach(measurement =>
-		{
-			if (measurement)
-			{
+		diagnostic.measurements.forEach(measurement => {
+			if (measurement) {
 				measurementOptions += `<tr> <td>${measurement.valueNumber}</td> 
 				 <td>${new Date(measurement.date).toLocaleDateString()}</td> </tr>`
 			}
@@ -118,18 +109,16 @@ export class PatientDiagnosticComponent implements OnInit
 		})
 	}
 
-	addDiagnostic()
-	{
+	addDiagnostic() {
 		let diagnosticTypesOptions: string
-		this.diagnosticTypes.forEach(element =>
-		{
+		this.diagnosticTypes.forEach(element => {
 			diagnosticTypesOptions = diagnosticTypesOptions + `<option value="${element.name}">${element.unit ? element.unit : "N.A"}</option>`
 		})
 
 		Swal.fire({
 			title: "Voeg meting toe",
 			html:
-			`
+				`
 				<input list="nameList" id="diagnostic" class="swal2-input" placeholder="Naam">
 				<datalist id="nameList">
 					${diagnosticTypesOptions}
@@ -141,35 +130,28 @@ export class PatientDiagnosticComponent implements OnInit
 			denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`,
 			focusDeny: false,
 			focusConfirm: false,
-			preConfirm: () =>
-			{
+			preConfirm: () => {
 				const diagnosticName = Swal.getPopup().querySelector<HTMLInputElement>("#diagnostic").value
 				let diagnostic = this.diagnosticTypes.find(element => element.name == diagnosticName)
 				diagnostic.unit = diagnostic.unit ? diagnostic.unit : "N.A"
 				// const unit = Swal.getPopup().querySelector<HTMLInputElement>("#unit").value
 				// const valueNumber = (Swal.getPopup().querySelector<HTMLInputElement>("#valueNumber").value as unknown) as number
 				// const date = (Swal.getPopup().querySelector<HTMLInputElement>("#date").value as unknown) as Date
-				if (!diagnostic)
-				{
+				if (!diagnostic) {
 					Swal.showValidationMessage(`Geef a.u.b aan welke meting U toe wilt voegen`)
 				}
 				return {
 					diagnostic: diagnostic,
 				}
 			}
-		}).then(result =>
-		{
-			if (result.isConfirmed)
-			{
+		}).then(result => {
+			if (result.isConfirmed) {
 				console.warn(result.value.diagnostic)
 
-				this.diagnosticService.create(result.value.diagnostic).subscribe(diagnostic =>
-				{
-					this.patient$.subscribe(patient =>
-					{
+				this.diagnosticService.create(result.value.diagnostic).subscribe(diagnostic => {
+					this.patient$.subscribe(patient => {
 						patient.medicalrecord.diagnostics.push(diagnostic)
-						this.medicalRecordService.update(patient.medicalrecord).subscribe(medicalRecord =>
-						{
+						this.medicalRecordService.update(patient.medicalrecord).subscribe(medicalRecord => {
 							this.addMeasurement(diagnostic)
 						})
 					})
@@ -177,4 +159,32 @@ export class PatientDiagnosticComponent implements OnInit
 			}
 		})
 	}
+
+	removeDiagnostic(diagnostic: Diagnostic) {
+		Swal.fire(
+			{
+				title: "Weet u het zeker?",
+				showConfirmButton: true,
+				confirmButtonText: `<i class="fas fa-check-circle"></i> Bevestig`,
+				showDenyButton: true,
+				denyButtonText: `<i class="fas fa-times-circle"></i> Annuleer`
+			}).then(result => {
+				if (result.isConfirmed) {
+					this.patient$.subscribe(patient => {
+
+						this.diagnosticService.delete(diagnostic._id).subscribe(resolve => {
+
+							patient.medicalrecord.diagnostics.forEach((element, index) => {
+								if (element._id == diagnostic._id)
+									patient.medicalrecord.diagnostics.splice(index, 1)
+							})
+
+							this.medicalRecordService.update(patient.medicalrecord).subscribe()
+							this.onDelete.emit(diagnostic._id)
+						})
+					})
+				}
+			})
+	}
+
 }

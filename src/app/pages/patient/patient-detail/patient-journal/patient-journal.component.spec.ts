@@ -28,6 +28,8 @@ describe("PatientJournalComponent", () =>
 		characteristics: undefined,
 		consult: undefined,
 		publicationDate: undefined,
+		isArchived: undefined,
+		episode: undefined,
 		author: undefined
 	}]
 

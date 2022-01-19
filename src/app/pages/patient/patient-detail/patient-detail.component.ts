@@ -188,4 +188,22 @@ export class PatientDetailComponent implements OnInit
 			}
 		})
 	}
+
+	onDeleteTrigger()
+	{
+		this.route.paramMap
+			.pipe(
+				switchMap((params: ParamMap) =>
+					this.patientService.read(params.get("_id")!)
+				)
+			)
+			.subscribe(result =>
+			{
+				this.patient$ = of(result)
+				this.prescriptions$ = of(result.medicalrecord.prescriptions)
+				this.episodes$ = of(result.medicalrecord.episodes)
+				this.diagnostics$ = of(result.medicalrecord.diagnostics)
+			})
+	}
+
 }
