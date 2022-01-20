@@ -1,4 +1,4 @@
-# PharmaPartnersWebapp
+# Pharma Partners Webapp
 
 The finalizing project for the second period of the second year on [Avans Hogeschool](https://www.avans.nl/). In this repository you will find the front end portion of the application, this includes: the unit tests done with Cypress, the unit tests done with Karma and Jasmine and the Angular code.
 
