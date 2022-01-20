@@ -8,8 +8,11 @@ The finalizing project for the second period of the second year on [Avans Hogesc
 You should find the files for this in the provided folder.  
   
 Make sure you have the angular CLI installed, if not follow this [link](https://angular.io/cli) for installation instructions.  
-Run `npm install` to install all the required dependencies.  
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.  
+  
+1. Run `npm install` to install all the required dependencies.  
+2. Run `ng serve` for a dev server. 
+3. Navigate to `http://localhost:4200/`.
+    
 The app will automatically reload if you change any of the source files.
 
 ## Build
